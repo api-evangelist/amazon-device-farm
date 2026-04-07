@@ -8,11 +8,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Mobile Testing
   - Application Testing
-  - Device Testing
-  - Quality Assurance
   - AWS
+  - Device Testing
+  - Mobile Testing
+  - Quality Assurance
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/apis.yml
 created: '2026-03-16'
@@ -28,9 +28,9 @@ apis:
     humanURL: https://aws.amazon.com/device-farm/
     baseURL: https://devicefarm.amazonaws.com
     tags:
-      - Mobile Testing
       - Application Testing
       - Device Management
+      - Mobile Testing
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
