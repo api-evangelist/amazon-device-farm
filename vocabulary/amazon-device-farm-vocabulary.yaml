@@ -1,0 +1,301 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Amazon Device Farm
+  description: Unified taxonomy mapping operational (OpenAPI) and capability (Naftiko) dimensions for AWS Device Farm application testing service.
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - namespace: device-farm
+      version: "2015-06-23"
+      baseUrl: https://devicefarm.us-west-2.amazonaws.com
+      status: active
+      description: AWS Device Farm REST API for mobile device and browser testing
+
+  resources:
+    - name: projects
+      description: Device Farm projects that organize test runs and resources
+      api: device-farm
+      actions: [create, get, list, update, delete]
+    - name: runs
+      description: Test executions on devices or browsers
+      api: device-farm
+      actions: [schedule, get, list, stop, delete]
+    - name: jobs
+      description: Individual device jobs within a test run
+      api: device-farm
+      actions: [get, list, stop]
+    - name: suites
+      description: Test suites within a job
+      api: device-farm
+      actions: [get, list]
+    - name: tests
+      description: Individual tests within a suite
+      api: device-farm
+      actions: [get, list]
+    - name: devices
+      description: Physical mobile devices available for testing
+      api: device-farm
+      actions: [get, list]
+    - name: device-pools
+      description: Named groups of devices filtered by rules
+      api: device-farm
+      actions: [create, get, list, update, delete, check-compatibility]
+    - name: device-instances
+      description: Private device instances in a private fleet
+      api: device-farm
+      actions: [get, list, update]
+    - name: uploads
+      description: App binaries, test packages, and other artifacts
+      api: device-farm
+      actions: [create, get, list, update, delete]
+    - name: artifacts
+      description: Output artifacts from test runs (logs, screenshots, videos)
+      api: device-farm
+      actions: [list]
+    - name: remote-access-sessions
+      description: Interactive remote access sessions on devices
+      api: device-farm
+      actions: [create, get, list, stop, delete]
+    - name: network-profiles
+      description: Network condition profiles for simulating bandwidth and latency
+      api: device-farm
+      actions: [create, get, list, update, delete]
+    - name: instance-profiles
+      description: Profiles for configuring private fleet device instances
+      api: device-farm
+      actions: [create, get, list, update, delete]
+    - name: test-grid-projects
+      description: Selenium test grid projects for desktop browser testing
+      api: device-farm
+      actions: [create, get, list, update, delete]
+    - name: test-grid-sessions
+      description: Selenium test grid sessions
+      api: device-farm
+      actions: [get, list]
+    - name: vpce-configurations
+      description: VPC endpoint configurations for testing private apps
+      api: device-farm
+      actions: [create, get, list, update, delete]
+    - name: offerings
+      description: Device subscription offerings
+      api: device-farm
+      actions: [list, purchase, renew, get-status]
+
+  actions:
+    - name: schedule
+      httpMethod: POST
+      pattern: write
+      description: Schedule a new test run
+    - name: create
+      httpMethod: POST
+      pattern: write
+      description: Create a new resource
+    - name: get
+      httpMethod: POST
+      pattern: read
+      description: Get details of a specific resource
+    - name: list
+      httpMethod: POST
+      pattern: read
+      description: List resources with pagination
+    - name: update
+      httpMethod: POST
+      pattern: write
+      description: Update a resource
+    - name: delete
+      httpMethod: POST
+      pattern: destructive
+      description: Delete a resource
+    - name: stop
+      httpMethod: POST
+      pattern: write
+      description: Stop a running operation
+    - name: install
+      httpMethod: POST
+      pattern: write
+      description: Install an app on a remote access session device
+    - name: purchase
+      httpMethod: POST
+      pattern: write
+      description: Purchase a device offering
+    - name: renew
+      httpMethod: POST
+      pattern: write
+      description: Renew a device offering subscription
+
+  schemas:
+    core:
+      - name: Project
+        description: A Device Farm project for organizing test resources
+        properties: [arn, name, created, defaultJobTimeoutMinutes]
+      - name: Run
+        description: A test execution across one or more devices
+        properties: [arn, name, type, platform, status, result, started, stopped, totalJobs]
+      - name: Job
+        description: A test job on a specific device within a run
+        properties: [arn, name, status, result, device, started, stopped]
+      - name: Device
+        description: A physical mobile device available for testing
+        properties: [arn, name, platform, os, manufacturer, model, resolution]
+      - name: Upload
+        description: An app binary or test package uploaded for testing
+        properties: [arn, name, type, status, url, created, contentType]
+
+    test-infrastructure:
+      - name: DevicePool
+        description: A named group of devices filtered by rules for test targeting
+        properties: [arn, name, type, rules, maxDevices]
+      - name: NetworkProfile
+        description: Network simulation profile for testing under various conditions
+        properties: [arn, name, type, uplinkBandwidthBits, downlinkBandwidthBits]
+      - name: InstanceProfile
+        description: Configuration profile for private fleet device instances
+        properties: [arn, name, packageCleanup, excludeAppPackagesFromCleanup]
+
+    browser-testing:
+      - name: TestGridProject
+        description: A Selenium test grid project for desktop browser testing
+        properties: [arn, name, description, created]
+      - name: TestGridSession
+        description: A Selenium test grid session
+        properties: [arn, status, created, ended, billingMinutes]
+
+  parameters:
+    pagination:
+      - name: nextToken
+        description: Pagination token for next page
+        type: string
+      - name: maxResults
+        description: Maximum number of results
+        type: integer
+    identifiers:
+      - name: arn
+        description: Amazon Resource Name of the resource
+        type: string
+      - name: projectArn
+        description: ARN of the Device Farm project
+        type: string
+      - name: runArn
+        description: ARN of the test run
+        type: string
+
+  enums:
+    testType:
+      - BUILTIN_FUZZ
+      - BUILTIN_EXPLORER
+      - WEB_PERFORMANCE_PROFILE
+      - APPIUM_JAVA_JUNIT
+      - APPIUM_JAVA_TESTNG
+      - APPIUM_PYTHON
+      - APPIUM_NODE
+      - APPIUM_RUBY
+      - APPIUM_WEB_JAVA_JUNIT
+      - APPIUM_WEB_JAVA_TESTNG
+      - CALABASH
+      - INSTRUMENTATION
+      - UIAUTOMATION
+      - UIAUTOMATOR
+      - XCTEST
+      - XCTEST_UI
+    platform:
+      - ANDROID
+      - IOS
+    runStatus:
+      - PENDING
+      - PENDING_CONCURRENCY
+      - PENDING_DEVICE
+      - PROCESSING
+      - SCHEDULING
+      - PREPARING
+      - RUNNING
+      - COMPLETED
+      - STOPPING
+    runResult:
+      - PENDING
+      - PASSED
+      - WARNED
+      - FAILED
+      - SKIPPED
+      - ERRORED
+      - STOPPED
+
+  authentication:
+    schemes:
+      - name: sigv4
+        type: apikey
+        description: AWS Signature Version 4
+
+capability:
+  workflows:
+    - name: Mobile and Browser Testing
+      file: capabilities/mobile-browser-testing.yaml
+      description: End-to-end testing workflow for mobile apps on real devices and web apps in browsers
+      apisConsumed: [device-farm]
+      toolCount: 18
+      personas:
+        - QA Engineer
+        - Mobile Developer
+      domains:
+        - Mobile Testing
+        - Browser Testing
+
+  personas:
+    - id: qa-engineer
+      name: QA Engineer
+      description: Quality assurance engineer managing test infrastructure and running automated test suites
+      workflows: [Mobile and Browser Testing]
+    - id: mobile-developer
+      name: Mobile Developer
+      description: Mobile app developer running tests on real devices to validate app quality
+      workflows: [Mobile and Browser Testing]
+
+  domains:
+    - name: Mobile Testing
+      description: Testing mobile applications on real physical iOS and Android devices
+      resources: [runs, jobs, devices, device-pools, uploads]
+    - name: Browser Testing
+      description: Testing web applications in Selenium-powered desktop browsers
+      resources: [test-grid-projects, test-grid-sessions]
+    - name: Remote Access
+      description: Interactive remote access to real devices for debugging
+      resources: [remote-access-sessions]
+
+  namespaces:
+    - type: consumed
+      name: device-farm
+      description: AWS Device Farm REST API
+    - type: rest
+      name: mobile-browser-testing-api
+      port: 8080
+    - type: mcp
+      name: mobile-browser-testing-mcp
+      port: 9090
+
+  binds:
+    - name: AWS_ACCESS_KEY_ID
+      workflows: [Mobile and Browser Testing]
+    - name: AWS_SECRET_ACCESS_KEY
+      workflows: [Mobile and Browser Testing]
+    - name: AWS_REGION
+      workflows: [Mobile and Browser Testing]
+
+crossReference:
+  - resource: runs
+    operations: [scheduleRun, getRun, listRuns, stopRun, deleteRun]
+    workflows: [Mobile and Browser Testing]
+    personas: [QA Engineer, Mobile Developer]
+  - resource: devices
+    operations: [getDevice, listDevices]
+    workflows: [Mobile and Browser Testing]
+    personas: [QA Engineer, Mobile Developer]
+  - resource: uploads
+    operations: [createUpload, getUpload, listUploads]
+    workflows: [Mobile and Browser Testing]
+    personas: [QA Engineer, Mobile Developer]
+  - resource: test-grid-projects
+    operations: [createTestGridProject, listTestGridProjects, createTestGridUrl]
+    workflows: [Mobile and Browser Testing]
+    personas: [QA Engineer]

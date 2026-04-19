@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-structure/amazon-device-farm-account-settings-structure.json",
+  "description": "A container for account-level settings in AWS Device Farm.",
+  "type": "object",
+  "properties": {
+    "awsAccountNumber": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AWSAccountNumber"
+        },
+        {
+          "description": "The AWS account number specified in the <code>AccountSettings</code> container."
+        }
+      ]
+    },
+    "unmeteredDevices": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PurchasedDevicesMap"
+        },
+        {
+          "description": "Returns the unmetered devices you have purchased or want to purchase."
+        }
+      ]
+    },
+    "unmeteredRemoteAccessDevices": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PurchasedDevicesMap"
+        },
+        {
+          "description": "Returns the unmetered remote access devices you have purchased or want to purchase."
+        }
+      ]
+    },
+    "maxJobTimeoutMinutes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/JobTimeoutMinutes"
+        },
+        {
+          "description": "The maximum number of minutes a test run executes before it times out."
+        }
+      ]
+    },
+    "trialMinutes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TrialMinutes"
+        },
+        {
+          "description": "Information about an AWS account's usage of free trial device minutes."
+        }
+      ]
+    },
+    "maxSlots": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MaxSlotMap"
+        },
+        {
+          "description": "The maximum number of device slots that the AWS account can purchase. Each maximum is expressed as an <code>offering-id:number</code> pair, where the <code>offering-id</code> represents one of the IDs returned by the <code>ListOfferings</code> command."
+        }
+      ]
+    },
+    "defaultJobTimeoutMinutes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/JobTimeoutMinutes"
+        },
+        {
+          "description": "The default number of minutes (at the account level) a test run executes before it times out. The default value is 150 minutes."
+        }
+      ]
+    },
+    "skipAppResign": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SkipAppResign"
+        },
+        {
+          "description": "<p>When set to <code>true</code>, for private devices, Device Farm does not sign your app again. For public devices, Device Farm always signs your apps again.</p> <p>For more information about how Device Farm re-signs your apps, see <a href=\"http://aws.amazon.com/device-farm/faqs/\">Do you modify my app?</a> in the <i>AWS Device Farm FAQs</i>.</p>"
+        }
+      ]
+    }
+  },
+  "name": "AccountSettings"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "example-id",
+  "description": "example-description",
+  "type": "BUILTIN_FUZZ",
+  "platform": "ANDROID",
+  "recurringCharges": "example-recurringCharge"
+}

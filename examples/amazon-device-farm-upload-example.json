@@ -1,0 +1,12 @@
+{
+  "arn": "arn:aws:devicefarm:us-west-2:123456789012:project:abc123",
+  "name": "Example name",
+  "created": "example-created",
+  "type": "BUILTIN_FUZZ",
+  "status": "COMPLETED",
+  "url": "https://example.com/resource",
+  "metadata": "example-metadata",
+  "contentType": "BUILTIN_FUZZ",
+  "message": "An example message",
+  "category": "example-category"
+}

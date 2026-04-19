@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-schema/amazon-device-farm-vpce-configuration-schema.json",
+  "title": "VPCEConfiguration",
+  "description": "Represents an Amazon Virtual Private Cloud (VPC) endpoint configuration.",
+  "type": "object",
+  "properties": {
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the VPC endpoint configuration."
+        }
+      ]
+    },
+    "vpceConfigurationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VPCEConfigurationName"
+        },
+        {
+          "description": "The friendly name you give to your VPC endpoint configuration to manage your configurations more easily."
+        }
+      ]
+    },
+    "vpceServiceName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VPCEServiceName"
+        },
+        {
+          "description": "The name of the VPC endpoint service running in your AWS account that you want Device Farm to test."
+        }
+      ]
+    },
+    "serviceDnsName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ServiceDnsName"
+        },
+        {
+          "description": "The DNS name that maps to the private IP address of the service you want to access."
+        }
+      ]
+    },
+    "vpceConfigurationDescription": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VPCEConfigurationDescription"
+        },
+        {
+          "description": "An optional description that provides details about your VPC endpoint configuration."
+        }
+      ]
+    }
+  }
+}

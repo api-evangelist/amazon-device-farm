@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-structure/amazon-device-farm-test-grid-project-structure.json",
+  "description": "A Selenium testing project. Projects are used to collect and collate sessions.",
+  "type": "object",
+  "properties": {
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceFarmArn"
+        },
+        {
+          "description": "The ARN for the project."
+        }
+      ]
+    },
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "A human-readable name for the project."
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "A human-readable description for the project."
+        }
+      ]
+    },
+    "vpcConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TestGridVpcConfig"
+        },
+        {
+          "description": "The VPC security groups and subnets that are attached to a project."
+        }
+      ]
+    },
+    "created": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateTime"
+        },
+        {
+          "description": "When the project was created."
+        }
+      ]
+    }
+  },
+  "name": "TestGridProject"
+}

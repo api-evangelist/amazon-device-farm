@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-structure/amazon-device-farm-project-structure.json",
+  "description": "Represents an operating-system neutral workspace for running and managing tests.",
+  "type": "object",
+  "properties": {
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The project's ARN."
+        }
+      ]
+    },
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "The project's name."
+        }
+      ]
+    },
+    "defaultJobTimeoutMinutes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/JobTimeoutMinutes"
+        },
+        {
+          "description": "The default number of minutes (at the project level) a test run executes before it times out. The default value is 150 minutes."
+        }
+      ]
+    },
+    "created": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateTime"
+        },
+        {
+          "description": "When the project was created."
+        }
+      ]
+    },
+    "vpcConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VpcConfig"
+        },
+        {
+          "description": "The VPC security groups and subnets that are attached to a project."
+        }
+      ]
+    }
+  },
+  "name": "Project"
+}

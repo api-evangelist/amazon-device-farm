@@ -1,0 +1,23 @@
+{
+  "arn": "arn:aws:devicefarm:us-west-2:123456789012:project:abc123",
+  "name": "Example name",
+  "manufacturer": "example-manufacturer",
+  "model": "example-model",
+  "modelId": "example-modelId",
+  "formFactor": "example-formFactor",
+  "platform": "ANDROID",
+  "os": "example-os",
+  "cpu": "example-cpu",
+  "resolution": "example-resolution",
+  "heapSize": "example-heapSize",
+  "memory": "example-memory",
+  "image": "example-image",
+  "carrier": "example-carrier",
+  "radio": "example-radio",
+  "remoteAccessEnabled": "example-remoteAccessEna",
+  "remoteDebugEnabled": "example-remoteDebugEnab",
+  "fleetType": "BUILTIN_FUZZ",
+  "fleetName": "Example fleetName",
+  "instances": "example-instances",
+  "availability": "example-availability"
+}

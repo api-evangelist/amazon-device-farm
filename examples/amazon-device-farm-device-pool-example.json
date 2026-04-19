@@ -1,0 +1,8 @@
+{
+  "arn": "arn:aws:devicefarm:us-west-2:123456789012:project:abc123",
+  "name": "Example name",
+  "description": "example-description",
+  "type": "BUILTIN_FUZZ",
+  "rules": "example-rules",
+  "maxDevices": "example-maxDevices"
+}

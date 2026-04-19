@@ -1,0 +1,5 @@
+{
+  "arn": "arn:aws:devicefarm:us-west-2:123456789012:project:abc123",
+  "type": "BUILTIN_FUZZ",
+  "url": "https://example.com/resource"
+}

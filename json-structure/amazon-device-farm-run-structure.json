@@ -1,0 +1,329 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-structure/amazon-device-farm-run-structure.json",
+  "description": "Represents a test run on a set of devices with a given app package, test parameters, and so on.",
+  "type": "object",
+  "properties": {
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The run's ARN."
+        }
+      ]
+    },
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "The run's name."
+        }
+      ]
+    },
+    "type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TestType"
+        },
+        {
+          "description": "<p>The run's type.</p> <p>Must be one of the following values:</p> <ul> <li> <p>BUILTIN_FUZZ</p> </li> <li> <p>BUILTIN_EXPLORER</p> <note> <p>For Android, an app explorer that traverses an Android app, interacting with it and capturing screenshots at the same time.</p> </note> </li> <li> <p>APPIUM_JAVA_JUNIT</p> </li> <li> <p>APPIUM_JAVA_TESTNG</p> </li> <li> <p>APPIUM_PYTHON</p> </li> <li> <p>APPIUM_NODE</p> </li> <li> <p>APPIUM_RUBY</p> </li> <li> <p>APPIUM_WEB_JAVA_JUNIT</p> </li> <li> <p>APPIUM_WEB_JAVA_TESTNG</p> </li> <li> <p>APPIUM_WEB_PYTHON</p> </li> <li> <p>APPIUM_WEB_NODE</p> </li> <li> <p>APPIUM_WEB_RUBY</p> </li> <li> <p>CALABASH</p> </li> <li> <p>INSTRUMENTATION</p> </li> <li> <p>UIAUTOMATION</p> </li> <li> <p>UIAUTOMATOR</p> </li> <li> <p>XCTEST</p> </li> <li> <p>XCTEST_UI</p> </li> </ul>"
+        }
+      ]
+    },
+    "platform": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DevicePlatform"
+        },
+        {
+          "description": "<p>The run's platform.</p> <p>Allowed values include:</p> <ul> <li> <p>ANDROID</p> </li> <li> <p>IOS</p> </li> </ul>"
+        }
+      ]
+    },
+    "created": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateTime"
+        },
+        {
+          "description": "When the run was created."
+        }
+      ]
+    },
+    "status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ExecutionStatus"
+        },
+        {
+          "description": "<p>The run's status.</p> <p>Allowed values include:</p> <ul> <li> <p>PENDING</p> </li> <li> <p>PENDING_CONCURRENCY</p> </li> <li> <p>PENDING_DEVICE</p> </li> <li> <p>PROCESSING</p> </li> <li> <p>SCHEDULING</p> </li> <li> <p>PREPARING</p> </li> <li> <p>RUNNING</p> </li> <li> <p>COMPLETED</p> </li> <li> <p>STOPPING</p> </li> </ul>"
+        }
+      ]
+    },
+    "result": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ExecutionResult"
+        },
+        {
+          "description": "<p>The run's result.</p> <p>Allowed values include:</p> <ul> <li> <p>PENDING</p> </li> <li> <p>PASSED</p> </li> <li> <p>WARNED</p> </li> <li> <p>FAILED</p> </li> <li> <p>SKIPPED</p> </li> <li> <p>ERRORED</p> </li> <li> <p>STOPPED</p> </li> </ul>"
+        }
+      ]
+    },
+    "started": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateTime"
+        },
+        {
+          "description": "The run's start time."
+        }
+      ]
+    },
+    "stopped": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateTime"
+        },
+        {
+          "description": "The run's stop time."
+        }
+      ]
+    },
+    "counters": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Counters"
+        },
+        {
+          "description": "The run's result counters."
+        }
+      ]
+    },
+    "message": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Message"
+        },
+        {
+          "description": "A message about the run's result."
+        }
+      ]
+    },
+    "totalJobs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Integer"
+        },
+        {
+          "description": "The total number of jobs for the run."
+        }
+      ]
+    },
+    "completedJobs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Integer"
+        },
+        {
+          "description": "The total number of completed jobs."
+        }
+      ]
+    },
+    "billingMethod": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BillingMethod"
+        },
+        {
+          "description": "<p>Specifies the billing method for a test run: <code>metered</code> or <code>unmetered</code>. If the parameter is not specified, the default value is <code>metered</code>.</p> <note> <p>If you have unmetered device slots, you must set this to <code>unmetered</code> to use them. Otherwise, the run is counted toward metered device minutes.</p> </note>"
+        }
+      ]
+    },
+    "deviceMinutes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceMinutes"
+        },
+        {
+          "description": "Represents the total (metered or unmetered) minutes used by the test run."
+        }
+      ]
+    },
+    "networkProfile": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NetworkProfile"
+        },
+        {
+          "description": "The network profile being used for a test run."
+        }
+      ]
+    },
+    "parsingResultUrl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "Read-only URL for an object in an S3 bucket where you can get the parsing results of the test package. If the test package doesn't parse, the reason why it doesn't parse appears in the file that this URL points to."
+        }
+      ]
+    },
+    "resultCode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ExecutionResultCode"
+        },
+        {
+          "description": "Supporting field for the result field. Set only if <code>result</code> is <code>SKIPPED</code>. <code>PARSING_FAILED</code> if the result is skipped because of test package parsing failure."
+        }
+      ]
+    },
+    "seed": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Integer"
+        },
+        {
+          "description": "For fuzz tests, this is a seed to use for randomizing the UI fuzz test. Using the same seed value between tests ensures identical event sequences."
+        }
+      ]
+    },
+    "appUpload": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "An app to upload or that has been uploaded."
+        }
+      ]
+    },
+    "eventCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Integer"
+        },
+        {
+          "description": "For fuzz tests, this is the number of events, between 1 and 10000, that the UI fuzz test should perform."
+        }
+      ]
+    },
+    "jobTimeoutMinutes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/JobTimeoutMinutes"
+        },
+        {
+          "description": "The number of minutes the job executes before it times out."
+        }
+      ]
+    },
+    "devicePoolArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The ARN of the device pool for the run."
+        }
+      ]
+    },
+    "locale": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "Information about the locale that is used for the run."
+        }
+      ]
+    },
+    "radios": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Radios"
+        },
+        {
+          "description": "Information about the radio states for the run."
+        }
+      ]
+    },
+    "location": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Location"
+        },
+        {
+          "description": "Information about the location that is used for the run."
+        }
+      ]
+    },
+    "customerArtifactPaths": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CustomerArtifactPaths"
+        },
+        {
+          "description": "Output <code>CustomerArtifactPaths</code> object for the test run."
+        }
+      ]
+    },
+    "webUrl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The Device Farm console URL for the recording of the run."
+        }
+      ]
+    },
+    "skipAppResign": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SkipAppResign"
+        },
+        {
+          "description": "<p>When set to <code>true</code>, for private devices, Device Farm does not sign your app again. For public devices, Device Farm always signs your apps again.</p> <p>For more information about how Device Farm re-signs your apps, see <a href=\"http://aws.amazon.com/device-farm/faqs/\">Do you modify my app?</a> in the <i>AWS Device Farm FAQs</i>.</p>"
+        }
+      ]
+    },
+    "testSpecArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The ARN of the YAML-formatted test specification for the run."
+        }
+      ]
+    },
+    "deviceSelectionResult": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceSelectionResult"
+        },
+        {
+          "description": "The results of a device filter used to select the devices for a test run."
+        }
+      ]
+    },
+    "vpcConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VpcConfig"
+        },
+        {
+          "description": "The VPC security groups and subnets that are attached to a project."
+        }
+      ]
+    }
+  },
+  "name": "Run"
+}

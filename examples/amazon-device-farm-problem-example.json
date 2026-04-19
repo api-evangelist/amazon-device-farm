@@ -1,0 +1,9 @@
+{
+  "run": "example-run",
+  "job": "example-job",
+  "suite": "example-suite",
+  "test": "example-test",
+  "device": "example-device",
+  "result": "PASSED",
+  "message": "An example message"
+}

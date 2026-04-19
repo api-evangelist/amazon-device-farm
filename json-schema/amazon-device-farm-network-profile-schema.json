@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-schema/amazon-device-farm-network-profile-schema.json",
+  "title": "NetworkProfile",
+  "description": "An array of settings that describes characteristics of a network profile.",
+  "type": "object",
+  "properties": {
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the network profile."
+        }
+      ]
+    },
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "The name of the network profile."
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Message"
+        },
+        {
+          "description": "The description of the network profile."
+        }
+      ]
+    },
+    "type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NetworkProfileType"
+        },
+        {
+          "description": "The type of network profile. Valid values are listed here."
+        }
+      ]
+    },
+    "uplinkBandwidthBits": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Long"
+        },
+        {
+          "description": "The data throughput rate in bits per second, as an integer from 0 to 104857600."
+        }
+      ]
+    },
+    "downlinkBandwidthBits": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Long"
+        },
+        {
+          "description": "The data throughput rate in bits per second, as an integer from 0 to 104857600."
+        }
+      ]
+    },
+    "uplinkDelayMs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Long"
+        },
+        {
+          "description": "Delay time for all packets to destination in milliseconds as an integer from 0 to 2000."
+        }
+      ]
+    },
+    "downlinkDelayMs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Long"
+        },
+        {
+          "description": "Delay time for all packets to destination in milliseconds as an integer from 0 to 2000."
+        }
+      ]
+    },
+    "uplinkJitterMs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Long"
+        },
+        {
+          "description": "Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000."
+        }
+      ]
+    },
+    "downlinkJitterMs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Long"
+        },
+        {
+          "description": "Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000."
+        }
+      ]
+    },
+    "uplinkLossPercent": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PercentInteger"
+        },
+        {
+          "description": "Proportion of transmitted packets that fail to arrive from 0 to 100 percent."
+        }
+      ]
+    },
+    "downlinkLossPercent": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PercentInteger"
+        },
+        {
+          "description": "Proportion of received packets that fail to arrive from 0 to 100 percent."
+        }
+      ]
+    }
+  }
+}

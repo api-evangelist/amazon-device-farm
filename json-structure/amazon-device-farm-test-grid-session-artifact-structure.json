@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-structure/amazon-device-farm-test-grid-session-artifact-structure.json",
+  "description": "Artifacts are video and other files that are produced in the process of running a browser in an automated context.   Video elements might be broken up into multiple artifacts as they grow in size during creation.",
+  "type": "object",
+  "properties": {
+    "filename": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The file name of the artifact."
+        }
+      ]
+    },
+    "type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TestGridSessionArtifactType"
+        },
+        {
+          "description": "The kind of artifact."
+        }
+      ]
+    },
+    "url": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SensitiveString"
+        },
+        {
+          "description": "A semi-stable URL to the content of the object."
+        }
+      ]
+    }
+  },
+  "name": "TestGridSessionArtifact"
+}

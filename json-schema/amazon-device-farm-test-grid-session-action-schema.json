@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-schema/amazon-device-farm-test-grid-session-action-schema.json",
+  "title": "TestGridSessionAction",
+  "description": "An action taken by a TestGridSession browser instance.",
+  "type": "object",
+  "properties": {
+    "action": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The action taken by the session."
+        }
+      ]
+    },
+    "started": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateTime"
+        },
+        {
+          "description": "The time that the session invoked the action."
+        }
+      ]
+    },
+    "duration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Long"
+        },
+        {
+          "description": "The time, in milliseconds, that the action took to complete in the browser."
+        }
+      ]
+    },
+    "statusCode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "HTTP status code returned to the browser when the action was taken."
+        }
+      ]
+    },
+    "requestMethod": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "HTTP method that the browser used to make the request."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-structure/amazon-device-farm-offering-transaction-structure.json",
+  "description": "Represents the metadata of an offering transaction.",
+  "type": "object",
+  "properties": {
+    "offeringStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OfferingStatus"
+        },
+        {
+          "description": "The status of an offering transaction."
+        }
+      ]
+    },
+    "transactionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TransactionIdentifier"
+        },
+        {
+          "description": "The transaction ID of the offering transaction."
+        }
+      ]
+    },
+    "offeringPromotionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OfferingPromotionIdentifier"
+        },
+        {
+          "description": "The ID that corresponds to a device offering promotion."
+        }
+      ]
+    },
+    "createdOn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateTime"
+        },
+        {
+          "description": "The date on which an offering transaction was created."
+        }
+      ]
+    },
+    "cost": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MonetaryAmount"
+        },
+        {
+          "description": "The cost of an offering transaction."
+        }
+      ]
+    }
+  },
+  "name": "OfferingTransaction"
+}

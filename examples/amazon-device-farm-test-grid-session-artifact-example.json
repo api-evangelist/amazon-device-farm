@@ -1,0 +1,5 @@
+{
+  "filename": "Example filename",
+  "type": "BUILTIN_FUZZ",
+  "url": "https://example.com/resource"
+}

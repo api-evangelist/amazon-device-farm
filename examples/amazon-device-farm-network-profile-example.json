@@ -1,0 +1,14 @@
+{
+  "arn": "arn:aws:devicefarm:us-west-2:123456789012:project:abc123",
+  "name": "Example name",
+  "description": "example-description",
+  "type": "BUILTIN_FUZZ",
+  "uplinkBandwidthBits": "example-uplinkBandwidth",
+  "downlinkBandwidthBits": "example-downlinkBandwid",
+  "uplinkDelayMs": "example-uplinkDelayMs",
+  "downlinkDelayMs": "example-downlinkDelayMs",
+  "uplinkJitterMs": "example-uplinkJitterMs",
+  "downlinkJitterMs": "example-downlinkJitterM",
+  "uplinkLossPercent": "example-uplinkLossPerce",
+  "downlinkLossPercent": "example-downlinkLossPer"
+}

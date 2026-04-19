@@ -1,0 +1,10 @@
+{
+  "awsAccountNumber": "example-awsAccountNumbe",
+  "unmeteredDevices": "example-unmeteredDevice",
+  "unmeteredRemoteAccessDevices": "example-unmeteredRemote",
+  "maxJobTimeoutMinutes": "example-maxJobTimeoutMi",
+  "trialMinutes": "example-trialMinutes",
+  "maxSlots": "example-maxSlots",
+  "defaultJobTimeoutMinutes": "example-defaultJobTimeo",
+  "skipAppResign": "example-skipAppResign"
+}

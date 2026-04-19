@@ -1,0 +1,8 @@
+{
+  "arn": "arn:aws:devicefarm:us-west-2:123456789012:project:abc123",
+  "status": "COMPLETED",
+  "created": "example-created",
+  "ended": "example-ended",
+  "billingMinutes": "example-billingMinutes",
+  "seleniumProperties": "example-seleniumPropert"
+}

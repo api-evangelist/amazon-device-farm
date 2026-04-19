@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-schema/amazon-device-farm-offering-schema.json",
+  "title": "Offering",
+  "description": "Represents the metadata of a device offering.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OfferingIdentifier"
+        },
+        {
+          "description": "The ID that corresponds to a device offering."
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Message"
+        },
+        {
+          "description": "A string that describes the offering."
+        }
+      ]
+    },
+    "type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OfferingType"
+        },
+        {
+          "description": "The type of offering (for example, <code>RECURRING</code>) for a device."
+        }
+      ]
+    },
+    "platform": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DevicePlatform"
+        },
+        {
+          "description": "The platform of the device (for example, <code>ANDROID</code> or <code>IOS</code>)."
+        }
+      ]
+    },
+    "recurringCharges": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RecurringCharges"
+        },
+        {
+          "description": "Specifies whether there are recurring charges for the offering."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-schema/amazon-device-farm-device-schema.json",
+  "title": "Device",
+  "description": "Represents a device type that an app is tested against.",
+  "type": "object",
+  "properties": {
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The device's ARN."
+        }
+      ]
+    },
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "The device's display name."
+        }
+      ]
+    },
+    "manufacturer": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The device's manufacturer name."
+        }
+      ]
+    },
+    "model": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The device's model name."
+        }
+      ]
+    },
+    "modelId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The device's model ID."
+        }
+      ]
+    },
+    "formFactor": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceFormFactor"
+        },
+        {
+          "description": "<p>The device's form factor.</p> <p>Allowed values include:</p> <ul> <li> <p>PHONE</p> </li> <li> <p>TABLET</p> </li> </ul>"
+        }
+      ]
+    },
+    "platform": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DevicePlatform"
+        },
+        {
+          "description": "<p>The device's platform.</p> <p>Allowed values include:</p> <ul> <li> <p>ANDROID</p> </li> <li> <p>IOS</p> </li> </ul>"
+        }
+      ]
+    },
+    "os": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The device's operating system type."
+        }
+      ]
+    },
+    "cpu": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CPU"
+        },
+        {
+          "description": "Information about the device's CPU."
+        }
+      ]
+    },
+    "resolution": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Resolution"
+        },
+        {
+          "description": "The resolution of the device."
+        }
+      ]
+    },
+    "heapSize": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Long"
+        },
+        {
+          "description": "The device's heap size, expressed in bytes."
+        }
+      ]
+    },
+    "memory": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Long"
+        },
+        {
+          "description": "The device's total memory size, expressed in bytes."
+        }
+      ]
+    },
+    "image": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The device's image name."
+        }
+      ]
+    },
+    "carrier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The device's carrier."
+        }
+      ]
+    },
+    "radio": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The device's radio."
+        }
+      ]
+    },
+    "remoteAccessEnabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "Specifies whether remote access has been enabled for the specified device."
+        }
+      ]
+    },
+    "remoteDebugEnabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "<p>This flag is set to <code>true</code> if remote debugging is enabled for the device.</p> <p>Remote debugging is <a href=\"https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html\">no longer supported</a>.</p>"
+        }
+      ]
+    },
+    "fleetType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The type of fleet to which this device belongs. Possible values are PRIVATE and PUBLIC."
+        }
+      ]
+    },
+    "fleetName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/String"
+        },
+        {
+          "description": "The name of the fleet to which this device belongs."
+        }
+      ]
+    },
+    "instances": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceInstances"
+        },
+        {
+          "description": "The instances that belong to this device."
+        }
+      ]
+    },
+    "availability": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceAvailability"
+        },
+        {
+          "description": "Indicates how likely a device is available for a test run. Currently available in the <a>ListDevices</a> and GetDevice API methods."
+        }
+      ]
+    }
+  }
+}

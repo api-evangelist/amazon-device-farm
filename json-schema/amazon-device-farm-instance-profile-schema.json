@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-schema/amazon-device-farm-instance-profile-schema.json",
+  "title": "InstanceProfile",
+  "description": "Represents the instance profile.",
+  "type": "object",
+  "properties": {
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AmazonResourceName"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the instance profile."
+        }
+      ]
+    },
+    "packageCleanup": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "When set to <code>true</code>, Device Farm removes app packages after a test run. The default value is <code>false</code> for private devices."
+        }
+      ]
+    },
+    "excludeAppPackagesFromCleanup": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PackageIds"
+        },
+        {
+          "description": "<p>An array of strings containing the list of app packages that should not be cleaned up from the device after a test run completes.</p> <p>The list of packages is considered only if you set <code>packageCleanup</code> to <code>true</code>.</p>"
+        }
+      ]
+    },
+    "rebootAfterUse": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "When set to <code>true</code>, Device Farm reboots the instance after a test run. The default value is <code>true</code>."
+        }
+      ]
+    },
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "The name of the instance profile."
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Message"
+        },
+        {
+          "description": "The description of the instance profile."
+        }
+      ]
+    }
+  }
+}

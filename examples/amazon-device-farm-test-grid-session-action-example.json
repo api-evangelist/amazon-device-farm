@@ -1,0 +1,7 @@
+{
+  "action": "example-action",
+  "started": "example-started",
+  "duration": "example-duration",
+  "statusCode": "COMPLETED",
+  "requestMethod": "example-requestMethod"
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/json-schema/amazon-device-farm-problem-schema.json",
+  "title": "Problem",
+  "description": "Represents a specific warning or failure.",
+  "type": "object",
+  "properties": {
+    "run": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProblemDetail"
+        },
+        {
+          "description": "Information about the associated run."
+        }
+      ]
+    },
+    "job": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProblemDetail"
+        },
+        {
+          "description": "Information about the associated job."
+        }
+      ]
+    },
+    "suite": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProblemDetail"
+        },
+        {
+          "description": "Information about the associated suite."
+        }
+      ]
+    },
+    "test": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProblemDetail"
+        },
+        {
+          "description": "Information about the associated test."
+        }
+      ]
+    },
+    "device": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Device"
+        },
+        {
+          "description": "Information about the associated device."
+        }
+      ]
+    },
+    "result": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ExecutionResult"
+        },
+        {
+          "description": "<p>The problem's result.</p> <p>Allowed values include:</p> <ul> <li> <p>PENDING</p> </li> <li> <p>PASSED</p> </li> <li> <p>WARNED</p> </li> <li> <p>FAILED</p> </li> <li> <p>SKIPPED</p> </li> <li> <p>ERRORED</p> </li> <li> <p>STOPPED</p> </li> </ul>"
+        }
+      ]
+    },
+    "message": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Message"
+        },
+        {
+          "description": "A message about the problem's result."
+        }
+      ]
+    }
+  }
+}

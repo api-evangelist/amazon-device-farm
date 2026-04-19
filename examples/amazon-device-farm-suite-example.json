@@ -1,0 +1,13 @@
+{
+  "arn": "arn:aws:devicefarm:us-west-2:123456789012:project:abc123",
+  "name": "Example name",
+  "type": "BUILTIN_FUZZ",
+  "created": "example-created",
+  "status": "COMPLETED",
+  "result": "PASSED",
+  "started": "example-started",
+  "stopped": "example-stopped",
+  "counters": "example-counters",
+  "message": "An example message",
+  "deviceMinutes": "example-deviceMinutes"
+}
