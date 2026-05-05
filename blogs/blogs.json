@@ -1,0 +1,13 @@
+{
+  "repo": "amazon-device-farm",
+  "feeds": [
+    {
+      "source": "https://aws.amazon.com/blogs/mobile/category/mobile-services/aws-device-farm/",
+      "feed_url": "https://aws.amazon.com/blogs/mobile/category/mobile-services/aws-device-farm/feed/",
+      "saved": 10,
+      "title": "AWS Device Farm \u2013 Front-End Web & Mobile"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:20:59Z"
+}
