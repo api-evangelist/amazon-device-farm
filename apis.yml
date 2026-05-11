@@ -136,6 +136,18 @@ common:
         description: Integrates with Selenium RemoteWebDriver for automated desktop browser testing.
       - name: GitHub Actions
         description: Trigger Device Farm test runs using the AWS Device Farm GitHub Action in your workflows.
+  - type: Integrations
+    url: https://aws.amazon.com/marketplace
+integrations:
+  - name: Sign in
+  - name: Agent Mode
+  - name: 'Why AWS Marketplace?'
+  - name: Get started in AWS Marketplace
+  - name: Industry
+  - name: Resources
+  - name: Become a Channel Partner
+  - name: Sell in AWS Marketplace
+  - name: Manage Your Account
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
