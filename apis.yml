@@ -51,7 +51,7 @@ apis:
         url: json-structure/amazon-device-farm-run-structure.json
       - type: JSONStructure
         url: json-structure/amazon-device-farm-device-structure.json
-      - type: JSON-LD
+      - type: JSONLD
         url: json-ld/amazon-device-farm-context.jsonld
       - type: Example
         url: examples/amazon-device-farm-project-example.json
