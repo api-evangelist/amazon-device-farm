@@ -1,0 +1,3945 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: AWS Device Farm
+  description: 'AWS Device Farm. 77 operations. Lead operation: AWS Device Farm. Self-contained Naftiko capability covering
+    one Amazon Device Farm business surface.'
+  tags:
+  - Amazon Device Farm
+  - AWS Device Farm
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    AMAZON_DEVICE_FARM_API_KEY: AMAZON_DEVICE_FARM_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: amazon-device-farm
+    baseUri: http://devicefarm.{region}.amazonaws.com
+    description: AWS Device Farm business capability. Self-contained, no shared references.
+    resources:
+    - name: '#X-Amz-Target=DeviceFarm_20150623.CreateDevicePool'
+      path: /#X-Amz-Target=DeviceFarm_20150623.CreateDevicePool
+      operations:
+      - name: createdevicepool
+        method: POST
+        description: Creates a device pool.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.CreateInstanceProfile'
+      path: /#X-Amz-Target=DeviceFarm_20150623.CreateInstanceProfile
+      operations:
+      - name: createinstanceprofile
+        method: POST
+        description: Creates a profile that can be applied to one or more private fleet device instances.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile'
+      path: /#X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile
+      operations:
+      - name: createnetworkprofile
+        method: POST
+        description: Creates a network profile.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.CreateProject'
+      path: /#X-Amz-Target=DeviceFarm_20150623.CreateProject
+      operations:
+      - name: createproject
+        method: POST
+        description: Creates a project.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.CreateRemoteAccessSession'
+      path: /#X-Amz-Target=DeviceFarm_20150623.CreateRemoteAccessSession
+      operations:
+      - name: createremoteaccesssession
+        method: POST
+        description: Specifies and starts a remote access session.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.CreateTestGridProject'
+      path: /#X-Amz-Target=DeviceFarm_20150623.CreateTestGridProject
+      operations:
+      - name: createtestgridproject
+        method: POST
+        description: Creates a Selenium testing project. Projects are used to track <a>TestGridSession</a> instances.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.CreateTestGridUrl'
+      path: /#X-Amz-Target=DeviceFarm_20150623.CreateTestGridUrl
+      operations:
+      - name: createtestgridurl
+        method: POST
+        description: Creates a signed, short-term URL that can be passed to a Selenium <code>RemoteWebDriver</code> constructor.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.CreateUpload'
+      path: /#X-Amz-Target=DeviceFarm_20150623.CreateUpload
+      operations:
+      - name: createupload
+        method: POST
+        description: Uploads an app or test scripts.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.CreateVPCEConfiguration'
+      path: /#X-Amz-Target=DeviceFarm_20150623.CreateVPCEConfiguration
+      operations:
+      - name: createvpceconfiguration
+        method: POST
+        description: Creates a configuration record in Device Farm for your Amazon Virtual Private Cloud (VPC) endpoint.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.DeleteDevicePool'
+      path: /#X-Amz-Target=DeviceFarm_20150623.DeleteDevicePool
+      operations:
+      - name: deletedevicepool
+        method: POST
+        description: Deletes a device pool given the pool ARN. Does not allow deletion of curated pools owned by the system.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.DeleteInstanceProfile'
+      path: /#X-Amz-Target=DeviceFarm_20150623.DeleteInstanceProfile
+      operations:
+      - name: deleteinstanceprofile
+        method: POST
+        description: Deletes a profile that can be applied to one or more private device instances.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.DeleteNetworkProfile'
+      path: /#X-Amz-Target=DeviceFarm_20150623.DeleteNetworkProfile
+      operations:
+      - name: deletenetworkprofile
+        method: POST
+        description: Deletes a network profile.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.DeleteProject'
+      path: /#X-Amz-Target=DeviceFarm_20150623.DeleteProject
+      operations:
+      - name: deleteproject
+        method: POST
+        description: <p>Deletes an AWS Device Farm project, given the project ARN.</p> <p> Deleting this resource does not
+          stop an in-progress run.</p>
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.DeleteRemoteAccessSession'
+      path: /#X-Amz-Target=DeviceFarm_20150623.DeleteRemoteAccessSession
+      operations:
+      - name: deleteremoteaccesssession
+        method: POST
+        description: Deletes a completed remote access session and its results.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.DeleteRun'
+      path: /#X-Amz-Target=DeviceFarm_20150623.DeleteRun
+      operations:
+      - name: deleterun
+        method: POST
+        description: <p>Deletes the run, given the run ARN.</p> <p> Deleting this resource does not stop an in-progress run.</p>
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.DeleteTestGridProject'
+      path: /#X-Amz-Target=DeviceFarm_20150623.DeleteTestGridProject
+      operations:
+      - name: deletetestgridproject
+        method: POST
+        description: <p> Deletes a Selenium testing project and all content generated under it. </p> <important> <p>You cannot
+          undo this operation.</p> </important> <note> <p>You cannot delete a project if it has active sessions.</p> </note>
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.DeleteUpload'
+      path: /#X-Amz-Target=DeviceFarm_20150623.DeleteUpload
+      operations:
+      - name: deleteupload
+        method: POST
+        description: Deletes an upload given the upload ARN.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.DeleteVPCEConfiguration'
+      path: /#X-Amz-Target=DeviceFarm_20150623.DeleteVPCEConfiguration
+      operations:
+      - name: deletevpceconfiguration
+        method: POST
+        description: Deletes a configuration for your Amazon Virtual Private Cloud (VPC) endpoint.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetAccountSettings'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetAccountSettings
+      operations:
+      - name: getaccountsettings
+        method: POST
+        description: Returns the number of unmetered iOS or unmetered Android devices that have been purchased by the account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetDevice'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetDevice
+      operations:
+      - name: getdevice
+        method: POST
+        description: Gets information about a unique device type.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetDeviceInstance'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetDeviceInstance
+      operations:
+      - name: getdeviceinstance
+        method: POST
+        description: Returns information about a device instance that belongs to a private device fleet.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetDevicePool'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetDevicePool
+      operations:
+      - name: getdevicepool
+        method: POST
+        description: Gets information about a device pool.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetDevicePoolCompatibility'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetDevicePoolCompatibility
+      operations:
+      - name: getdevicepoolcompatibility
+        method: POST
+        description: Gets information about compatibility with a device pool.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetInstanceProfile'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetInstanceProfile
+      operations:
+      - name: getinstanceprofile
+        method: POST
+        description: Returns information about the specified instance profile.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetJob'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetJob
+      operations:
+      - name: getjob
+        method: POST
+        description: Gets information about a job.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetNetworkProfile'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetNetworkProfile
+      operations:
+      - name: getnetworkprofile
+        method: POST
+        description: Returns information about a network profile.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetOfferingStatus'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetOfferingStatus
+      operations:
+      - name: getofferingstatus
+        method: POST
+        description: Gets the current status and future status of all offerings purchased by an AWS account. The response
+          indicates how many offerings are currently available and the offerings that will be available in the next period.
+          The API returns a <code>N
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetProject'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetProject
+      operations:
+      - name: getproject
+        method: POST
+        description: Gets information about a project.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession
+      operations:
+      - name: getremoteaccesssession
+        method: POST
+        description: Returns a link to a currently running remote access session.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetRun'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetRun
+      operations:
+      - name: getrun
+        method: POST
+        description: Gets information about a run.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetSuite'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetSuite
+      operations:
+      - name: getsuite
+        method: POST
+        description: Gets information about a suite.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetTest'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetTest
+      operations:
+      - name: gettest
+        method: POST
+        description: Gets information about a test.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetTestGridProject'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetTestGridProject
+      operations:
+      - name: gettestgridproject
+        method: POST
+        description: Retrieves information about a Selenium testing project.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetTestGridSession'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetTestGridSession
+      operations:
+      - name: gettestgridsession
+        method: POST
+        description: <p>A session is an instance of a browser created through a <code>RemoteWebDriver</code> with the URL
+          from <a>CreateTestGridUrlResult$url</a>. You can use the following to look up sessions:</p> <ul> <li> <p>The session
+          ARN (<a>GetTestGridSes
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetUpload'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetUpload
+      operations:
+      - name: getupload
+        method: POST
+        description: Gets information about an upload.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.GetVPCEConfiguration'
+      path: /#X-Amz-Target=DeviceFarm_20150623.GetVPCEConfiguration
+      operations:
+      - name: getvpceconfiguration
+        method: POST
+        description: Returns information about the configuration settings for your Amazon Virtual Private Cloud (VPC) endpoint.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.InstallToRemoteAccessSession'
+      path: /#X-Amz-Target=DeviceFarm_20150623.InstallToRemoteAccessSession
+      operations:
+      - name: installtoremoteaccesssession
+        method: POST
+        description: Installs an application to the device in a remote access session. For Android applications, the file
+          must be in .apk format. For iOS applications, the file must be in .ipa format.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListArtifacts'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListArtifacts
+      operations:
+      - name: listartifacts
+        method: POST
+        description: Gets information about artifacts.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListDeviceInstances'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListDeviceInstances
+      operations:
+      - name: listdeviceinstances
+        method: POST
+        description: Returns information about the private device instances associated with one or more AWS accounts.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListDevicePools'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListDevicePools
+      operations:
+      - name: listdevicepools
+        method: POST
+        description: Gets information about device pools.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListDevices'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListDevices
+      operations:
+      - name: listdevices
+        method: POST
+        description: Gets information about unique device types.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListInstanceProfiles'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListInstanceProfiles
+      operations:
+      - name: listinstanceprofiles
+        method: POST
+        description: Returns information about all the instance profiles in an AWS account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListJobs'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListJobs
+      operations:
+      - name: listjobs
+        method: POST
+        description: Gets information about jobs for a given test run.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListNetworkProfiles'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListNetworkProfiles
+      operations:
+      - name: listnetworkprofiles
+        method: POST
+        description: Returns the list of available network profiles.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListOfferingPromotions'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListOfferingPromotions
+      operations:
+      - name: listofferingpromotions
+        method: POST
+        description: Returns a list of offering promotions. Each offering promotion record contains the ID and description
+          of the promotion. The API returns a <code>NotEligible</code> error if the caller is not permitted to invoke the
+          operation. Contact <a href
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListOfferingTransactions'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListOfferingTransactions
+      operations:
+      - name: listofferingtransactions
+        method: POST
+        description: Returns a list of all historical purchases, renewals, and system renewal transactions for an AWS account.
+          The list is paginated and ordered by a descending timestamp (most recent transactions are first). The API returns
+          a <code>NotEligible<
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListOfferings'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListOfferings
+      operations:
+      - name: listofferings
+        method: POST
+        description: 'Returns a list of products or offerings that the user can manage through the API. Each offering record
+          indicates the recurring price per unit and the frequency for that offering. The API returns a <code>NotEligible</code>
+          error if the user '
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListProjects'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListProjects
+      operations:
+      - name: listprojects
+        method: POST
+        description: Gets information about projects.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListRemoteAccessSessions'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListRemoteAccessSessions
+      operations:
+      - name: listremoteaccesssessions
+        method: POST
+        description: Returns a list of all currently running remote access sessions.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListRuns'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListRuns
+      operations:
+      - name: listruns
+        method: POST
+        description: Gets information about runs, given an AWS Device Farm project ARN.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListSamples'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListSamples
+      operations:
+      - name: listsamples
+        method: POST
+        description: Gets information about samples, given an AWS Device Farm job ARN.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListSuites'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListSuites
+      operations:
+      - name: listsuites
+        method: POST
+        description: Gets information about test suites for a given job.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListTagsForResource'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListTagsForResource
+      operations:
+      - name: listtagsforresource
+        method: POST
+        description: List the tags for an AWS Device Farm resource.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListTestGridProjects'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListTestGridProjects
+      operations:
+      - name: listtestgridprojects
+        method: POST
+        description: Gets a list of all Selenium testing projects in your account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: maxResult
+          in: query
+          type: string
+          description: Pagination limit
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListTestGridSessionActions'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListTestGridSessionActions
+      operations:
+      - name: listtestgridsessionactions
+        method: POST
+        description: Returns a list of the actions taken in a <a>TestGridSession</a>.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: maxResult
+          in: query
+          type: string
+          description: Pagination limit
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListTestGridSessionArtifacts'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListTestGridSessionArtifacts
+      operations:
+      - name: listtestgridsessionartifacts
+        method: POST
+        description: Retrieves a list of artifacts created during the session.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: maxResult
+          in: query
+          type: string
+          description: Pagination limit
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListTestGridSessions'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListTestGridSessions
+      operations:
+      - name: listtestgridsessions
+        method: POST
+        description: Retrieves a list of sessions for a <a>TestGridProject</a>.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: maxResult
+          in: query
+          type: string
+          description: Pagination limit
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListTests'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListTests
+      operations:
+      - name: listtests
+        method: POST
+        description: Gets information about tests in a given test suite.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems
+      operations:
+      - name: listuniqueproblems
+        method: POST
+        description: <p>Gets information about unique problems, such as exceptions or crashes.</p> <p>Unique problems are
+          defined as a single instance of an error across a run, job, or suite. For example, if a call in your application
+          consistently raises an exc
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListUploads'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListUploads
+      operations:
+      - name: listuploads
+        method: POST
+        description: Gets information about uploads, given an AWS Device Farm project ARN.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: nextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ListVPCEConfigurations'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ListVPCEConfigurations
+      operations:
+      - name: listvpceconfigurations
+        method: POST
+        description: Returns information about all Amazon Virtual Private Cloud (VPC) endpoint configurations in the AWS account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.PurchaseOffering'
+      path: /#X-Amz-Target=DeviceFarm_20150623.PurchaseOffering
+      operations:
+      - name: purchaseoffering
+        method: POST
+        description: Immediately purchases offerings for an AWS account. Offerings renew with the latest total purchased quantity
+          for an offering, unless the renewal was overridden. The API returns a <code>NotEligible</code> error if the user
+          is not permitted t
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.RenewOffering'
+      path: /#X-Amz-Target=DeviceFarm_20150623.RenewOffering
+      operations:
+      - name: renewoffering
+        method: POST
+        description: Explicitly sets the quantity of devices to renew for an offering, starting from the <code>effectiveDate</code>
+          of the next period. The API returns a <code>NotEligible</code> error if the user is not permitted to invoke the
+          operation. If you
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.ScheduleRun'
+      path: /#X-Amz-Target=DeviceFarm_20150623.ScheduleRun
+      operations:
+      - name: schedulerun
+        method: POST
+        description: Schedules a run.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.StopJob'
+      path: /#X-Amz-Target=DeviceFarm_20150623.StopJob
+      operations:
+      - name: stopjob
+        method: POST
+        description: Initiates a stop request for the current job. AWS Device Farm immediately stops the job on the device
+          where tests have not started. You are not billed for this device. On the device where tests have started, setup
+          suite and teardown suite t
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.StopRemoteAccessSession'
+      path: /#X-Amz-Target=DeviceFarm_20150623.StopRemoteAccessSession
+      operations:
+      - name: stopremoteaccesssession
+        method: POST
+        description: Ends a specified remote access session.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.StopRun'
+      path: /#X-Amz-Target=DeviceFarm_20150623.StopRun
+      operations:
+      - name: stoprun
+        method: POST
+        description: Initiates a stop request for the current test run. AWS Device Farm immediately stops the run on devices
+          where tests have not started. You are not billed for these devices. On devices where tests have started executing,
+          setup suite and teard
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.TagResource'
+      path: /#X-Amz-Target=DeviceFarm_20150623.TagResource
+      operations:
+      - name: tagresource
+        method: POST
+        description: 'Associates the specified tags to a resource with the specified <code>resourceArn</code>. If existing
+          tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted,
+          the tags associated with '
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.UntagResource'
+      path: /#X-Amz-Target=DeviceFarm_20150623.UntagResource
+      operations:
+      - name: untagresource
+        method: POST
+        description: Deletes the specified tags from a resource.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.UpdateDeviceInstance'
+      path: /#X-Amz-Target=DeviceFarm_20150623.UpdateDeviceInstance
+      operations:
+      - name: updatedeviceinstance
+        method: POST
+        description: Updates information about a private device instance.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.UpdateDevicePool'
+      path: /#X-Amz-Target=DeviceFarm_20150623.UpdateDevicePool
+      operations:
+      - name: updatedevicepool
+        method: POST
+        description: Modifies the name, description, and rules in a device pool given the attributes and the pool ARN. Rule
+          updates are all-or-nothing, meaning they can only be updated as a whole (or not at all).
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.UpdateInstanceProfile'
+      path: /#X-Amz-Target=DeviceFarm_20150623.UpdateInstanceProfile
+      operations:
+      - name: updateinstanceprofile
+        method: POST
+        description: Updates information about an existing private device instance profile.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.UpdateNetworkProfile'
+      path: /#X-Amz-Target=DeviceFarm_20150623.UpdateNetworkProfile
+      operations:
+      - name: updatenetworkprofile
+        method: POST
+        description: Updates the network profile.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.UpdateProject'
+      path: /#X-Amz-Target=DeviceFarm_20150623.UpdateProject
+      operations:
+      - name: updateproject
+        method: POST
+        description: Modifies the specified project name, given the project ARN and a new name.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.UpdateTestGridProject'
+      path: /#X-Amz-Target=DeviceFarm_20150623.UpdateTestGridProject
+      operations:
+      - name: updatetestgridproject
+        method: POST
+        description: Change details of a project.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.UpdateUpload'
+      path: /#X-Amz-Target=DeviceFarm_20150623.UpdateUpload
+      operations:
+      - name: updateupload
+        method: POST
+        description: Updates an uploaded test spec.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DeviceFarm_20150623.UpdateVPCEConfiguration'
+      path: /#X-Amz-Target=DeviceFarm_20150623.UpdateVPCEConfiguration
+      operations:
+      - name: updatevpceconfiguration
+        method: POST
+        description: Updates information about an Amazon Virtual Private Cloud (VPC) endpoint configuration.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{env.AMAZON_DEVICE_FARM_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: amazon-device-farm-rest
+    port: 8080
+    description: REST adapter for AWS Device Farm. One Spectral-compliant resource per consumed operation, prefixed with /v1.
+    resources:
+    - path: /v1/x-amz-target-devicefarm-20150623-createdevicepool
+      name: x-amz-target-devicefarm-20150623-createdevicepool
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.CreateDevicePool.'
+      operations:
+      - method: POST
+        name: createdevicepool
+        description: Creates a device pool.
+        call: amazon-device-farm.createdevicepool
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-createinstanceprofile
+      name: x-amz-target-devicefarm-20150623-createinstanceprofile
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.CreateInstanceProfile.'
+      operations:
+      - method: POST
+        name: createinstanceprofile
+        description: Creates a profile that can be applied to one or more private fleet device instances.
+        call: amazon-device-farm.createinstanceprofile
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-createnetworkprofile
+      name: x-amz-target-devicefarm-20150623-createnetworkprofile
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile.'
+      operations:
+      - method: POST
+        name: createnetworkprofile
+        description: Creates a network profile.
+        call: amazon-device-farm.createnetworkprofile
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-createproject
+      name: x-amz-target-devicefarm-20150623-createproject
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.CreateProject.'
+      operations:
+      - method: POST
+        name: createproject
+        description: Creates a project.
+        call: amazon-device-farm.createproject
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-createremoteaccesssession
+      name: x-amz-target-devicefarm-20150623-createremoteaccesssession
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.CreateRemoteAccessSession.'
+      operations:
+      - method: POST
+        name: createremoteaccesssession
+        description: Specifies and starts a remote access session.
+        call: amazon-device-farm.createremoteaccesssession
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-createtestgridproject
+      name: x-amz-target-devicefarm-20150623-createtestgridproject
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.CreateTestGridProject.'
+      operations:
+      - method: POST
+        name: createtestgridproject
+        description: Creates a Selenium testing project. Projects are used to track <a>TestGridSession</a> instances.
+        call: amazon-device-farm.createtestgridproject
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-createtestgridurl
+      name: x-amz-target-devicefarm-20150623-createtestgridurl
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.CreateTestGridUrl.'
+      operations:
+      - method: POST
+        name: createtestgridurl
+        description: Creates a signed, short-term URL that can be passed to a Selenium <code>RemoteWebDriver</code> constructor.
+        call: amazon-device-farm.createtestgridurl
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-createupload
+      name: x-amz-target-devicefarm-20150623-createupload
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.CreateUpload.'
+      operations:
+      - method: POST
+        name: createupload
+        description: Uploads an app or test scripts.
+        call: amazon-device-farm.createupload
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-createvpceconfiguration
+      name: x-amz-target-devicefarm-20150623-createvpceconfiguration
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.CreateVPCEConfiguration.'
+      operations:
+      - method: POST
+        name: createvpceconfiguration
+        description: Creates a configuration record in Device Farm for your Amazon Virtual Private Cloud (VPC) endpoint.
+        call: amazon-device-farm.createvpceconfiguration
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-deletedevicepool
+      name: x-amz-target-devicefarm-20150623-deletedevicepool
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.DeleteDevicePool.'
+      operations:
+      - method: POST
+        name: deletedevicepool
+        description: Deletes a device pool given the pool ARN. Does not allow deletion of curated pools owned by the system.
+        call: amazon-device-farm.deletedevicepool
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-deleteinstanceprofile
+      name: x-amz-target-devicefarm-20150623-deleteinstanceprofile
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.DeleteInstanceProfile.'
+      operations:
+      - method: POST
+        name: deleteinstanceprofile
+        description: Deletes a profile that can be applied to one or more private device instances.
+        call: amazon-device-farm.deleteinstanceprofile
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-deletenetworkprofile
+      name: x-amz-target-devicefarm-20150623-deletenetworkprofile
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.DeleteNetworkProfile.'
+      operations:
+      - method: POST
+        name: deletenetworkprofile
+        description: Deletes a network profile.
+        call: amazon-device-farm.deletenetworkprofile
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-deleteproject
+      name: x-amz-target-devicefarm-20150623-deleteproject
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.DeleteProject.'
+      operations:
+      - method: POST
+        name: deleteproject
+        description: <p>Deletes an AWS Device Farm project, given the project ARN.</p> <p> Deleting this resource does not
+          stop an in-progress run.</p>
+        call: amazon-device-farm.deleteproject
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-deleteremoteaccesssession
+      name: x-amz-target-devicefarm-20150623-deleteremoteaccesssession
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.DeleteRemoteAccessSession.'
+      operations:
+      - method: POST
+        name: deleteremoteaccesssession
+        description: Deletes a completed remote access session and its results.
+        call: amazon-device-farm.deleteremoteaccesssession
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-deleterun
+      name: x-amz-target-devicefarm-20150623-deleterun
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.DeleteRun.'
+      operations:
+      - method: POST
+        name: deleterun
+        description: <p>Deletes the run, given the run ARN.</p> <p> Deleting this resource does not stop an in-progress run.</p>
+        call: amazon-device-farm.deleterun
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-deletetestgridproject
+      name: x-amz-target-devicefarm-20150623-deletetestgridproject
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.DeleteTestGridProject.'
+      operations:
+      - method: POST
+        name: deletetestgridproject
+        description: <p> Deletes a Selenium testing project and all content generated under it. </p> <important> <p>You cannot
+          undo this operation.</p> </important> <note> <p>You cannot delete a project if it has active sessions.</p> </note>
+        call: amazon-device-farm.deletetestgridproject
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-deleteupload
+      name: x-amz-target-devicefarm-20150623-deleteupload
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.DeleteUpload.'
+      operations:
+      - method: POST
+        name: deleteupload
+        description: Deletes an upload given the upload ARN.
+        call: amazon-device-farm.deleteupload
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-deletevpceconfiguration
+      name: x-amz-target-devicefarm-20150623-deletevpceconfiguration
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.DeleteVPCEConfiguration.'
+      operations:
+      - method: POST
+        name: deletevpceconfiguration
+        description: Deletes a configuration for your Amazon Virtual Private Cloud (VPC) endpoint.
+        call: amazon-device-farm.deletevpceconfiguration
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getaccountsettings
+      name: x-amz-target-devicefarm-20150623-getaccountsettings
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetAccountSettings.'
+      operations:
+      - method: POST
+        name: getaccountsettings
+        description: Returns the number of unmetered iOS or unmetered Android devices that have been purchased by the account.
+        call: amazon-device-farm.getaccountsettings
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getdevice
+      name: x-amz-target-devicefarm-20150623-getdevice
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetDevice.'
+      operations:
+      - method: POST
+        name: getdevice
+        description: Gets information about a unique device type.
+        call: amazon-device-farm.getdevice
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getdeviceinstance
+      name: x-amz-target-devicefarm-20150623-getdeviceinstance
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetDeviceInstance.'
+      operations:
+      - method: POST
+        name: getdeviceinstance
+        description: Returns information about a device instance that belongs to a private device fleet.
+        call: amazon-device-farm.getdeviceinstance
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getdevicepool
+      name: x-amz-target-devicefarm-20150623-getdevicepool
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetDevicePool.'
+      operations:
+      - method: POST
+        name: getdevicepool
+        description: Gets information about a device pool.
+        call: amazon-device-farm.getdevicepool
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getdevicepoolcompatibility
+      name: x-amz-target-devicefarm-20150623-getdevicepoolcompatibility
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetDevicePoolCompatibility.'
+      operations:
+      - method: POST
+        name: getdevicepoolcompatibility
+        description: Gets information about compatibility with a device pool.
+        call: amazon-device-farm.getdevicepoolcompatibility
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getinstanceprofile
+      name: x-amz-target-devicefarm-20150623-getinstanceprofile
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetInstanceProfile.'
+      operations:
+      - method: POST
+        name: getinstanceprofile
+        description: Returns information about the specified instance profile.
+        call: amazon-device-farm.getinstanceprofile
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getjob
+      name: x-amz-target-devicefarm-20150623-getjob
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetJob.'
+      operations:
+      - method: POST
+        name: getjob
+        description: Gets information about a job.
+        call: amazon-device-farm.getjob
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getnetworkprofile
+      name: x-amz-target-devicefarm-20150623-getnetworkprofile
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetNetworkProfile.'
+      operations:
+      - method: POST
+        name: getnetworkprofile
+        description: Returns information about a network profile.
+        call: amazon-device-farm.getnetworkprofile
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getofferingstatus
+      name: x-amz-target-devicefarm-20150623-getofferingstatus
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetOfferingStatus.'
+      operations:
+      - method: POST
+        name: getofferingstatus
+        description: Gets the current status and future status of all offerings purchased by an AWS account. The response
+          indicates how many offerings are currently available and the offerings that will be available in the next period.
+          The API returns a <code>N
+        call: amazon-device-farm.getofferingstatus
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getproject
+      name: x-amz-target-devicefarm-20150623-getproject
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetProject.'
+      operations:
+      - method: POST
+        name: getproject
+        description: Gets information about a project.
+        call: amazon-device-farm.getproject
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getremoteaccesssession
+      name: x-amz-target-devicefarm-20150623-getremoteaccesssession
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession.'
+      operations:
+      - method: POST
+        name: getremoteaccesssession
+        description: Returns a link to a currently running remote access session.
+        call: amazon-device-farm.getremoteaccesssession
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getrun
+      name: x-amz-target-devicefarm-20150623-getrun
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetRun.'
+      operations:
+      - method: POST
+        name: getrun
+        description: Gets information about a run.
+        call: amazon-device-farm.getrun
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getsuite
+      name: x-amz-target-devicefarm-20150623-getsuite
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetSuite.'
+      operations:
+      - method: POST
+        name: getsuite
+        description: Gets information about a suite.
+        call: amazon-device-farm.getsuite
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-gettest
+      name: x-amz-target-devicefarm-20150623-gettest
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetTest.'
+      operations:
+      - method: POST
+        name: gettest
+        description: Gets information about a test.
+        call: amazon-device-farm.gettest
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-gettestgridproject
+      name: x-amz-target-devicefarm-20150623-gettestgridproject
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetTestGridProject.'
+      operations:
+      - method: POST
+        name: gettestgridproject
+        description: Retrieves information about a Selenium testing project.
+        call: amazon-device-farm.gettestgridproject
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-gettestgridsession
+      name: x-amz-target-devicefarm-20150623-gettestgridsession
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetTestGridSession.'
+      operations:
+      - method: POST
+        name: gettestgridsession
+        description: <p>A session is an instance of a browser created through a <code>RemoteWebDriver</code> with the URL
+          from <a>CreateTestGridUrlResult$url</a>. You can use the following to look up sessions:</p> <ul> <li> <p>The session
+          ARN (<a>GetTestGridSes
+        call: amazon-device-farm.gettestgridsession
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getupload
+      name: x-amz-target-devicefarm-20150623-getupload
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetUpload.'
+      operations:
+      - method: POST
+        name: getupload
+        description: Gets information about an upload.
+        call: amazon-device-farm.getupload
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-getvpceconfiguration
+      name: x-amz-target-devicefarm-20150623-getvpceconfiguration
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.GetVPCEConfiguration.'
+      operations:
+      - method: POST
+        name: getvpceconfiguration
+        description: Returns information about the configuration settings for your Amazon Virtual Private Cloud (VPC) endpoint.
+        call: amazon-device-farm.getvpceconfiguration
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-installtoremoteaccesssession
+      name: x-amz-target-devicefarm-20150623-installtoremoteaccesssession
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.InstallToRemoteAccessSession.'
+      operations:
+      - method: POST
+        name: installtoremoteaccesssession
+        description: Installs an application to the device in a remote access session. For Android applications, the file
+          must be in .apk format. For iOS applications, the file must be in .ipa format.
+        call: amazon-device-farm.installtoremoteaccesssession
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listartifacts
+      name: x-amz-target-devicefarm-20150623-listartifacts
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListArtifacts.'
+      operations:
+      - method: POST
+        name: listartifacts
+        description: Gets information about artifacts.
+        call: amazon-device-farm.listartifacts
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listdeviceinstances
+      name: x-amz-target-devicefarm-20150623-listdeviceinstances
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListDeviceInstances.'
+      operations:
+      - method: POST
+        name: listdeviceinstances
+        description: Returns information about the private device instances associated with one or more AWS accounts.
+        call: amazon-device-farm.listdeviceinstances
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listdevicepools
+      name: x-amz-target-devicefarm-20150623-listdevicepools
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListDevicePools.'
+      operations:
+      - method: POST
+        name: listdevicepools
+        description: Gets information about device pools.
+        call: amazon-device-farm.listdevicepools
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listdevices
+      name: x-amz-target-devicefarm-20150623-listdevices
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListDevices.'
+      operations:
+      - method: POST
+        name: listdevices
+        description: Gets information about unique device types.
+        call: amazon-device-farm.listdevices
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listinstanceprofiles
+      name: x-amz-target-devicefarm-20150623-listinstanceprofiles
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListInstanceProfiles.'
+      operations:
+      - method: POST
+        name: listinstanceprofiles
+        description: Returns information about all the instance profiles in an AWS account.
+        call: amazon-device-farm.listinstanceprofiles
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listjobs
+      name: x-amz-target-devicefarm-20150623-listjobs
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListJobs.'
+      operations:
+      - method: POST
+        name: listjobs
+        description: Gets information about jobs for a given test run.
+        call: amazon-device-farm.listjobs
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listnetworkprofiles
+      name: x-amz-target-devicefarm-20150623-listnetworkprofiles
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListNetworkProfiles.'
+      operations:
+      - method: POST
+        name: listnetworkprofiles
+        description: Returns the list of available network profiles.
+        call: amazon-device-farm.listnetworkprofiles
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listofferingpromotions
+      name: x-amz-target-devicefarm-20150623-listofferingpromotions
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListOfferingPromotions.'
+      operations:
+      - method: POST
+        name: listofferingpromotions
+        description: Returns a list of offering promotions. Each offering promotion record contains the ID and description
+          of the promotion. The API returns a <code>NotEligible</code> error if the caller is not permitted to invoke the
+          operation. Contact <a href
+        call: amazon-device-farm.listofferingpromotions
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listofferingtransactions
+      name: x-amz-target-devicefarm-20150623-listofferingtransactions
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListOfferingTransactions.'
+      operations:
+      - method: POST
+        name: listofferingtransactions
+        description: Returns a list of all historical purchases, renewals, and system renewal transactions for an AWS account.
+          The list is paginated and ordered by a descending timestamp (most recent transactions are first). The API returns
+          a <code>NotEligible<
+        call: amazon-device-farm.listofferingtransactions
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listofferings
+      name: x-amz-target-devicefarm-20150623-listofferings
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListOfferings.'
+      operations:
+      - method: POST
+        name: listofferings
+        description: 'Returns a list of products or offerings that the user can manage through the API. Each offering record
+          indicates the recurring price per unit and the frequency for that offering. The API returns a <code>NotEligible</code>
+          error if the user '
+        call: amazon-device-farm.listofferings
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listprojects
+      name: x-amz-target-devicefarm-20150623-listprojects
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListProjects.'
+      operations:
+      - method: POST
+        name: listprojects
+        description: Gets information about projects.
+        call: amazon-device-farm.listprojects
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listremoteaccesssessions
+      name: x-amz-target-devicefarm-20150623-listremoteaccesssessions
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListRemoteAccessSessions.'
+      operations:
+      - method: POST
+        name: listremoteaccesssessions
+        description: Returns a list of all currently running remote access sessions.
+        call: amazon-device-farm.listremoteaccesssessions
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listruns
+      name: x-amz-target-devicefarm-20150623-listruns
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListRuns.'
+      operations:
+      - method: POST
+        name: listruns
+        description: Gets information about runs, given an AWS Device Farm project ARN.
+        call: amazon-device-farm.listruns
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listsamples
+      name: x-amz-target-devicefarm-20150623-listsamples
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListSamples.'
+      operations:
+      - method: POST
+        name: listsamples
+        description: Gets information about samples, given an AWS Device Farm job ARN.
+        call: amazon-device-farm.listsamples
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listsuites
+      name: x-amz-target-devicefarm-20150623-listsuites
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListSuites.'
+      operations:
+      - method: POST
+        name: listsuites
+        description: Gets information about test suites for a given job.
+        call: amazon-device-farm.listsuites
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listtagsforresource
+      name: x-amz-target-devicefarm-20150623-listtagsforresource
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListTagsForResource.'
+      operations:
+      - method: POST
+        name: listtagsforresource
+        description: List the tags for an AWS Device Farm resource.
+        call: amazon-device-farm.listtagsforresource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listtestgridprojects
+      name: x-amz-target-devicefarm-20150623-listtestgridprojects
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListTestGridProjects.'
+      operations:
+      - method: POST
+        name: listtestgridprojects
+        description: Gets a list of all Selenium testing projects in your account.
+        call: amazon-device-farm.listtestgridprojects
+        with:
+          maxResult: rest.maxResult
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listtestgridsessionactions
+      name: x-amz-target-devicefarm-20150623-listtestgridsessionactions
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListTestGridSessionActions.'
+      operations:
+      - method: POST
+        name: listtestgridsessionactions
+        description: Returns a list of the actions taken in a <a>TestGridSession</a>.
+        call: amazon-device-farm.listtestgridsessionactions
+        with:
+          maxResult: rest.maxResult
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listtestgridsessionartifacts
+      name: x-amz-target-devicefarm-20150623-listtestgridsessionartifacts
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListTestGridSessionArtifacts.'
+      operations:
+      - method: POST
+        name: listtestgridsessionartifacts
+        description: Retrieves a list of artifacts created during the session.
+        call: amazon-device-farm.listtestgridsessionartifacts
+        with:
+          maxResult: rest.maxResult
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listtestgridsessions
+      name: x-amz-target-devicefarm-20150623-listtestgridsessions
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListTestGridSessions.'
+      operations:
+      - method: POST
+        name: listtestgridsessions
+        description: Retrieves a list of sessions for a <a>TestGridProject</a>.
+        call: amazon-device-farm.listtestgridsessions
+        with:
+          maxResult: rest.maxResult
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listtests
+      name: x-amz-target-devicefarm-20150623-listtests
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListTests.'
+      operations:
+      - method: POST
+        name: listtests
+        description: Gets information about tests in a given test suite.
+        call: amazon-device-farm.listtests
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listuniqueproblems
+      name: x-amz-target-devicefarm-20150623-listuniqueproblems
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems.'
+      operations:
+      - method: POST
+        name: listuniqueproblems
+        description: <p>Gets information about unique problems, such as exceptions or crashes.</p> <p>Unique problems are
+          defined as a single instance of an error across a run, job, or suite. For example, if a call in your application
+          consistently raises an exc
+        call: amazon-device-farm.listuniqueproblems
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listuploads
+      name: x-amz-target-devicefarm-20150623-listuploads
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListUploads.'
+      operations:
+      - method: POST
+        name: listuploads
+        description: Gets information about uploads, given an AWS Device Farm project ARN.
+        call: amazon-device-farm.listuploads
+        with:
+          nextToken: rest.nextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-listvpceconfigurations
+      name: x-amz-target-devicefarm-20150623-listvpceconfigurations
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ListVPCEConfigurations.'
+      operations:
+      - method: POST
+        name: listvpceconfigurations
+        description: Returns information about all Amazon Virtual Private Cloud (VPC) endpoint configurations in the AWS account.
+        call: amazon-device-farm.listvpceconfigurations
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-purchaseoffering
+      name: x-amz-target-devicefarm-20150623-purchaseoffering
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.PurchaseOffering.'
+      operations:
+      - method: POST
+        name: purchaseoffering
+        description: Immediately purchases offerings for an AWS account. Offerings renew with the latest total purchased quantity
+          for an offering, unless the renewal was overridden. The API returns a <code>NotEligible</code> error if the user
+          is not permitted t
+        call: amazon-device-farm.purchaseoffering
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-renewoffering
+      name: x-amz-target-devicefarm-20150623-renewoffering
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.RenewOffering.'
+      operations:
+      - method: POST
+        name: renewoffering
+        description: Explicitly sets the quantity of devices to renew for an offering, starting from the <code>effectiveDate</code>
+          of the next period. The API returns a <code>NotEligible</code> error if the user is not permitted to invoke the
+          operation. If you
+        call: amazon-device-farm.renewoffering
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-schedulerun
+      name: x-amz-target-devicefarm-20150623-schedulerun
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.ScheduleRun.'
+      operations:
+      - method: POST
+        name: schedulerun
+        description: Schedules a run.
+        call: amazon-device-farm.schedulerun
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-stopjob
+      name: x-amz-target-devicefarm-20150623-stopjob
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.StopJob.'
+      operations:
+      - method: POST
+        name: stopjob
+        description: Initiates a stop request for the current job. AWS Device Farm immediately stops the job on the device
+          where tests have not started. You are not billed for this device. On the device where tests have started, setup
+          suite and teardown suite t
+        call: amazon-device-farm.stopjob
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-stopremoteaccesssession
+      name: x-amz-target-devicefarm-20150623-stopremoteaccesssession
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.StopRemoteAccessSession.'
+      operations:
+      - method: POST
+        name: stopremoteaccesssession
+        description: Ends a specified remote access session.
+        call: amazon-device-farm.stopremoteaccesssession
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-stoprun
+      name: x-amz-target-devicefarm-20150623-stoprun
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.StopRun.'
+      operations:
+      - method: POST
+        name: stoprun
+        description: Initiates a stop request for the current test run. AWS Device Farm immediately stops the run on devices
+          where tests have not started. You are not billed for these devices. On devices where tests have started executing,
+          setup suite and teard
+        call: amazon-device-farm.stoprun
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-tagresource
+      name: x-amz-target-devicefarm-20150623-tagresource
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.TagResource.'
+      operations:
+      - method: POST
+        name: tagresource
+        description: 'Associates the specified tags to a resource with the specified <code>resourceArn</code>. If existing
+          tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted,
+          the tags associated with '
+        call: amazon-device-farm.tagresource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-untagresource
+      name: x-amz-target-devicefarm-20150623-untagresource
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.UntagResource.'
+      operations:
+      - method: POST
+        name: untagresource
+        description: Deletes the specified tags from a resource.
+        call: amazon-device-farm.untagresource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-updatedeviceinstance
+      name: x-amz-target-devicefarm-20150623-updatedeviceinstance
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.UpdateDeviceInstance.'
+      operations:
+      - method: POST
+        name: updatedeviceinstance
+        description: Updates information about a private device instance.
+        call: amazon-device-farm.updatedeviceinstance
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-updatedevicepool
+      name: x-amz-target-devicefarm-20150623-updatedevicepool
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.UpdateDevicePool.'
+      operations:
+      - method: POST
+        name: updatedevicepool
+        description: Modifies the name, description, and rules in a device pool given the attributes and the pool ARN. Rule
+          updates are all-or-nothing, meaning they can only be updated as a whole (or not at all).
+        call: amazon-device-farm.updatedevicepool
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-updateinstanceprofile
+      name: x-amz-target-devicefarm-20150623-updateinstanceprofile
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.UpdateInstanceProfile.'
+      operations:
+      - method: POST
+        name: updateinstanceprofile
+        description: Updates information about an existing private device instance profile.
+        call: amazon-device-farm.updateinstanceprofile
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-updatenetworkprofile
+      name: x-amz-target-devicefarm-20150623-updatenetworkprofile
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.UpdateNetworkProfile.'
+      operations:
+      - method: POST
+        name: updatenetworkprofile
+        description: Updates the network profile.
+        call: amazon-device-farm.updatenetworkprofile
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-updateproject
+      name: x-amz-target-devicefarm-20150623-updateproject
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.UpdateProject.'
+      operations:
+      - method: POST
+        name: updateproject
+        description: Modifies the specified project name, given the project ARN and a new name.
+        call: amazon-device-farm.updateproject
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-updatetestgridproject
+      name: x-amz-target-devicefarm-20150623-updatetestgridproject
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.UpdateTestGridProject.'
+      operations:
+      - method: POST
+        name: updatetestgridproject
+        description: Change details of a project.
+        call: amazon-device-farm.updatetestgridproject
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-updateupload
+      name: x-amz-target-devicefarm-20150623-updateupload
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.UpdateUpload.'
+      operations:
+      - method: POST
+        name: updateupload
+        description: Updates an uploaded test spec.
+        call: amazon-device-farm.updateupload
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-devicefarm-20150623-updatevpceconfiguration
+      name: x-amz-target-devicefarm-20150623-updatevpceconfiguration
+      description: 'REST surface for #X-Amz-Target=DeviceFarm_20150623.UpdateVPCEConfiguration.'
+      operations:
+      - method: POST
+        name: updatevpceconfiguration
+        description: Updates information about an Amazon Virtual Private Cloud (VPC) endpoint configuration.
+        call: amazon-device-farm.updatevpceconfiguration
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: amazon-device-farm-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for AWS Device Farm. One tool per consumed operation, routed inline through this capability's
+      consumes block.
+    tools:
+    - name: creates-device-pool
+      description: Creates a device pool.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.createdevicepool
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-profile-that-can-be
+      description: Creates a profile that can be applied to one or more private fleet device instances.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.createinstanceprofile
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-network-profile
+      description: Creates a network profile.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.createnetworkprofile
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-project
+      description: Creates a project.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.createproject
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: specifies-and-starts-remote-access
+      description: Specifies and starts a remote access session.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.createremoteaccesssession
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-selenium-testing-project-projects
+      description: Creates a Selenium testing project. Projects are used to track <a>TestGridSession</a> instances.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.createtestgridproject
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-signed-short-term-url
+      description: Creates a signed, short-term URL that can be passed to a Selenium <code>RemoteWebDriver</code> constructor.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.createtestgridurl
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: uploads-app-test-scripts
+      description: Uploads an app or test scripts.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.createupload
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-configuration-record-device-farm
+      description: Creates a configuration record in Device Farm for your Amazon Virtual Private Cloud (VPC) endpoint.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.createvpceconfiguration
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-device-pool-given-pool
+      description: Deletes a device pool given the pool ARN. Does not allow deletion of curated pools owned by the system.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.deletedevicepool
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-profile-that-can-be
+      description: Deletes a profile that can be applied to one or more private device instances.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.deleteinstanceprofile
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-network-profile
+      description: Deletes a network profile.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.deletenetworkprofile
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-deletes-aws-device-farm-project
+      description: <p>Deletes an AWS Device Farm project, given the project ARN.</p> <p> Deleting this resource does not stop
+        an in-progress run.</p>
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.deleteproject
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-completed-remote-access-session
+      description: Deletes a completed remote access session and its results.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.deleteremoteaccesssession
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-deletes-run-given-run-arn
+      description: <p>Deletes the run, given the run ARN.</p> <p> Deleting this resource does not stop an in-progress run.</p>
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.deleterun
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-deletes-selenium-testing-project
+      description: <p> Deletes a Selenium testing project and all content generated under it. </p> <important> <p>You cannot
+        undo this operation.</p> </important> <note> <p>You cannot delete a project if it has active sessions.</p> </note>
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.deletetestgridproject
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-upload-given-upload-arn
+      description: Deletes an upload given the upload ARN.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.deleteupload
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-configuration-your-amazon-virtual
+      description: Deletes a configuration for your Amazon Virtual Private Cloud (VPC) endpoint.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.deletevpceconfiguration
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-number-unmetered-ios-unmetered
+      description: Returns the number of unmetered iOS or unmetered Android devices that have been purchased by the account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getaccountsettings
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-unique-device
+      description: Gets information about a unique device type.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getdevice
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-information-about-device-instance
+      description: Returns information about a device instance that belongs to a private device fleet.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getdeviceinstance
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-device-pool
+      description: Gets information about a device pool.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getdevicepool
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-compatibility-device
+      description: Gets information about compatibility with a device pool.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getdevicepoolcompatibility
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-information-about-specified-instance
+      description: Returns information about the specified instance profile.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getinstanceprofile
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-job
+      description: Gets information about a job.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getjob
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-information-about-network-profile
+      description: Returns information about a network profile.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getnetworkprofile
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-current-status-and-future
+      description: Gets the current status and future status of all offerings purchased by an AWS account. The response indicates
+        how many offerings are currently available and the offerings that will be available in the next period. The API returns
+        a <code>N
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getofferingstatus
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-project
+      description: Gets information about a project.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getproject
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-link-currently-running-remote
+      description: Returns a link to a currently running remote access session.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getremoteaccesssession
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-run
+      description: Gets information about a run.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getrun
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-suite
+      description: Gets information about a suite.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getsuite
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-test
+      description: Gets information about a test.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.gettest
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-information-about-selenium-testing
+      description: Retrieves information about a Selenium testing project.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.gettestgridproject
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-a-session-is-instance-browser
+      description: <p>A session is an instance of a browser created through a <code>RemoteWebDriver</code> with the URL from
+        <a>CreateTestGridUrlResult$url</a>. You can use the following to look up sessions:</p> <ul> <li> <p>The session ARN
+        (<a>GetTestGridSes
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.gettestgridsession
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-upload
+      description: Gets information about an upload.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getupload
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-information-about-configuration-settings
+      description: Returns information about the configuration settings for your Amazon Virtual Private Cloud (VPC) endpoint.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.getvpceconfiguration
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: installs-application-device-remote-access
+      description: Installs an application to the device in a remote access session. For Android applications, the file must
+        be in .apk format. For iOS applications, the file must be in .ipa format.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.installtoremoteaccesssession
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-artifacts
+      description: Gets information about artifacts.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listartifacts
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-information-about-private-device
+      description: Returns information about the private device instances associated with one or more AWS accounts.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listdeviceinstances
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-device-pools
+      description: Gets information about device pools.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listdevicepools
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-unique-device-2
+      description: Gets information about unique device types.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listdevices
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-information-about-all-instance
+      description: Returns information about all the instance profiles in an AWS account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listinstanceprofiles
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-jobs-given
+      description: Gets information about jobs for a given test run.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listjobs
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-list-available-network-profiles
+      description: Returns the list of available network profiles.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listnetworkprofiles
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-list-offering-promotions-each
+      description: Returns a list of offering promotions. Each offering promotion record contains the ID and description of
+        the promotion. The API returns a <code>NotEligible</code> error if the caller is not permitted to invoke the operation.
+        Contact <a href
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listofferingpromotions
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-list-all-historical-purchases
+      description: Returns a list of all historical purchases, renewals, and system renewal transactions for an AWS account.
+        The list is paginated and ordered by a descending timestamp (most recent transactions are first). The API returns
+        a <code>NotEligible<
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listofferingtransactions
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-list-products-offerings-that
+      description: 'Returns a list of products or offerings that the user can manage through the API. Each offering record
+        indicates the recurring price per unit and the frequency for that offering. The API returns a <code>NotEligible</code>
+        error if the user '
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listofferings
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-projects
+      description: Gets information about projects.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listprojects
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-list-all-currently-running
+      description: Returns a list of all currently running remote access sessions.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listremoteaccesssessions
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-runs-given
+      description: Gets information about runs, given an AWS Device Farm project ARN.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listruns
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-samples-given
+      description: Gets information about samples, given an AWS Device Farm job ARN.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listsamples
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-test-suites
+      description: Gets information about test suites for a given job.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listsuites
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-tags-aws-device-farm
+      description: List the tags for an AWS Device Farm resource.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listtagsforresource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-list-all-selenium-testing
+      description: Gets a list of all Selenium testing projects in your account.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listtestgridprojects
+      with:
+        maxResult: tools.maxResult
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-list-actions-taken-a-testgridsession
+      description: Returns a list of the actions taken in a <a>TestGridSession</a>.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listtestgridsessionactions
+      with:
+        maxResult: tools.maxResult
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-list-artifacts-created-during
+      description: Retrieves a list of artifacts created during the session.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listtestgridsessionartifacts
+      with:
+        maxResult: tools.maxResult
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-list-sessions-a-testgridproject
+      description: Retrieves a list of sessions for a <a>TestGridProject</a>.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listtestgridsessions
+      with:
+        maxResult: tools.maxResult
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-tests-given
+      description: Gets information about tests in a given test suite.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listtests
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-gets-information-about-unique-problems
+      description: <p>Gets information about unique problems, such as exceptions or crashes.</p> <p>Unique problems are defined
+        as a single instance of an error across a run, job, or suite. For example, if a call in your application consistently
+        raises an exc
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listuniqueproblems
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-uploads-given
+      description: Gets information about uploads, given an AWS Device Farm project ARN.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listuploads
+      with:
+        nextToken: tools.nextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-information-about-all-amazon
+      description: Returns information about all Amazon Virtual Private Cloud (VPC) endpoint configurations in the AWS account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.listvpceconfigurations
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: immediately-purchases-offerings-aws-account
+      description: Immediately purchases offerings for an AWS account. Offerings renew with the latest total purchased quantity
+        for an offering, unless the renewal was overridden. The API returns a <code>NotEligible</code> error if the user is
+        not permitted t
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.purchaseoffering
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: explicitly-sets-quantity-devices-renew
+      description: Explicitly sets the quantity of devices to renew for an offering, starting from the <code>effectiveDate</code>
+        of the next period. The API returns a <code>NotEligible</code> error if the user is not permitted to invoke the operation.
+        If you
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.renewoffering
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: schedules-run
+      description: Schedules a run.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.schedulerun
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: initiates-stop-request-current-job
+      description: Initiates a stop request for the current job. AWS Device Farm immediately stops the job on the device where
+        tests have not started. You are not billed for this device. On the device where tests have started, setup suite and
+        teardown suite t
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.stopjob
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: ends-specified-remote-access-session
+      description: Ends a specified remote access session.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.stopremoteaccesssession
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: initiates-stop-request-current-test
+      description: Initiates a stop request for the current test run. AWS Device Farm immediately stops the run on devices
+        where tests have not started. You are not billed for these devices. On devices where tests have started executing,
+        setup suite and teard
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.stoprun
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: associates-specified-tags-resource-specified
+      description: 'Associates the specified tags to a resource with the specified <code>resourceArn</code>. If existing tags
+        on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags
+        associated with '
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.tagresource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-specified-tags-resource
+      description: Deletes the specified tags from a resource.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.untagresource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-information-about-private-device
+      description: Updates information about a private device instance.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.updatedeviceinstance
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: modifies-name-description-and-rules
+      description: Modifies the name, description, and rules in a device pool given the attributes and the pool ARN. Rule
+        updates are all-or-nothing, meaning they can only be updated as a whole (or not at all).
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.updatedevicepool
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-information-about-existing-private
+      description: Updates information about an existing private device instance profile.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.updateinstanceprofile
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-network-profile
+      description: Updates the network profile.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.updatenetworkprofile
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: modifies-specified-project-name-given
+      description: Modifies the specified project name, given the project ARN and a new name.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.updateproject
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: change-details-project
+      description: Change details of a project.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.updatetestgridproject
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-uploaded-test-spec
+      description: Updates an uploaded test spec.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.updateupload
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-information-about-amazon-virtual
+      description: Updates information about an Amazon Virtual Private Cloud (VPC) endpoint configuration.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-device-farm.updatevpceconfiguration
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
