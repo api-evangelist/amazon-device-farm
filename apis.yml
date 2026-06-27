@@ -48,13 +48,13 @@ apis:
     url: json-structure/amazon-device-farm-device-structure.json
   - type: JSONLD
     url: json-ld/amazon-device-farm-context.jsonld
-  - type: Example
+  - type: Examples
     url: examples/amazon-device-farm-project-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-device-farm-run-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/amazon-device-farm.yaml
 common:
 - type: Portal
@@ -75,7 +75,7 @@ common:
   url: https://github.com/aws
 - type: Console
   url: https://console.aws.amazon.com/devicefarm/
-- type: SignUp
+- type: Signup
   url: https://portal.aws.amazon.com/billing/signup
 - type: Login
   url: https://signin.aws.amazon.com/
