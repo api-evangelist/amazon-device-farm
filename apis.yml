@@ -57,6 +57,14 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-device-farm.yaml
 common:
+- type: TrustCenter
+  url: security/amazon-device-farm-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-device-farm-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-device-farm-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-device-farm-authentication.yml
 - type: Portal
   url: https://aws.amazon.com/device-farm/
 - type: Website
