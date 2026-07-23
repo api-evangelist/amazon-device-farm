@@ -1,0 +1,373 @@
+openapi: 3.0.0
+info:
+  version: 2015-06-23
+  x-release: v4
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateNetworkProfile API'
+  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: devicefarm
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://devicefarm.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS Device Farm multi-region endpoint
+- url: https://devicefarm.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS Device Farm multi-region endpoint
+- url: http://devicefarm.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS Device Farm endpoint for China (Beijing) and China (Ningxia)
+- url: https://devicefarm.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS Device Farm endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=DeviceFarm 20150623.CreateNetworkProfile'
+paths:
+  /#X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: CreateNetworkProfile
+      description: Creates a network profile.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateNetworkProfileResult'
+        '480':
+          description: ArgumentException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArgumentException'
+        '481':
+          description: NotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundException'
+        '482':
+          description: LimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LimitExceededException'
+        '483':
+          description: ServiceAccountException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceAccountException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateNetworkProfileRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - DeviceFarm_20150623.CreateNetworkProfile
+      tags:
+      - '#X Amz Target=DeviceFarm 20150623.CreateNetworkProfile'
+components:
+  schemas:
+    Long:
+      type: integer
+    Message:
+      type: string
+      minLength: 0
+      maxLength: 16384
+    NetworkProfile:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the network profile.
+        name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: The name of the network profile.
+        description:
+          allOf:
+          - $ref: '#/components/schemas/Message'
+          - description: The description of the network profile.
+        type:
+          allOf:
+          - $ref: '#/components/schemas/NetworkProfileType'
+          - description: The type of network profile. Valid values are listed here.
+        uplinkBandwidthBits:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: The data throughput rate in bits per second, as an integer from 0 to 104857600.
+        downlinkBandwidthBits:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: The data throughput rate in bits per second, as an integer from 0 to 104857600.
+        uplinkDelayMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Delay time for all packets to destination in milliseconds as an integer from 0 to 2000.
+        downlinkDelayMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Delay time for all packets to destination in milliseconds as an integer from 0 to 2000.
+        uplinkJitterMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000.
+        downlinkJitterMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000.
+        uplinkLossPercent:
+          allOf:
+          - $ref: '#/components/schemas/PercentInteger'
+          - description: Proportion of transmitted packets that fail to arrive from 0 to 100 percent.
+        downlinkLossPercent:
+          allOf:
+          - $ref: '#/components/schemas/PercentInteger'
+          - description: Proportion of received packets that fail to arrive from 0 to 100 percent.
+      description: An array of settings that describes characteristics of a network profile.
+    LimitExceededException: {}
+    CreateNetworkProfileRequest:
+      type: object
+      required:
+      - projectArn
+      - name
+      title: CreateNetworkProfileRequest
+      properties:
+        projectArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the project for which you want to create a network profile.
+        name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: The name for the new network profile.
+        description:
+          allOf:
+          - $ref: '#/components/schemas/Message'
+          - description: The description of the network profile.
+        type:
+          allOf:
+          - $ref: '#/components/schemas/NetworkProfileType'
+          - description: The type of network profile to create. Valid values are listed here.
+        uplinkBandwidthBits:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: The data throughput rate in bits per second, as an integer from 0 to 104857600.
+        downlinkBandwidthBits:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: The data throughput rate in bits per second, as an integer from 0 to 104857600.
+        uplinkDelayMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Delay time for all packets to destination in milliseconds as an integer from 0 to 2000.
+        downlinkDelayMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Delay time for all packets to destination in milliseconds as an integer from 0 to 2000.
+        uplinkJitterMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000.
+        downlinkJitterMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000.
+        uplinkLossPercent:
+          allOf:
+          - $ref: '#/components/schemas/PercentInteger'
+          - description: Proportion of transmitted packets that fail to arrive from 0 to 100 percent.
+        downlinkLossPercent:
+          allOf:
+          - $ref: '#/components/schemas/PercentInteger'
+          - description: Proportion of received packets that fail to arrive from 0 to 100 percent.
+    PercentInteger:
+      type: integer
+      minimum: 0
+      maximum: 100
+    ServiceAccountException: {}
+    NotFoundException: {}
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
+    CreateNetworkProfileResult:
+      type: object
+      properties:
+        networkProfile:
+          allOf:
+          - $ref: '#/components/schemas/NetworkProfile'
+          - description: The network profile that is returned by the create network profile request.
+    ArgumentException: {}
+    NetworkProfileType:
+      type: string
+      enum:
+      - CURATED
+      - PRIVATE
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/devicefarm/
+x-hasEquivalentPaths: true

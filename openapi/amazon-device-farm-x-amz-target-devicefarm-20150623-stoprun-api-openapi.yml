@@ -1,0 +1,769 @@
+openapi: 3.0.0
+info:
+  version: 2015-06-23
+  x-release: v4
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.StopRun API'
+  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: devicefarm
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://devicefarm.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS Device Farm multi-region endpoint
+- url: https://devicefarm.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS Device Farm multi-region endpoint
+- url: http://devicefarm.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS Device Farm endpoint for China (Beijing) and China (Ningxia)
+- url: https://devicefarm.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS Device Farm endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=DeviceFarm 20150623.StopRun'
+paths:
+  /#X-Amz-Target=DeviceFarm_20150623.StopRun:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: StopRun
+      description: Initiates a stop request for the current test run. AWS Device Farm immediately stops the run on devices where tests have not started. You are not billed for these devices. On devices where tests have started executing, setup suite and teardown suite tests run to completion on those devices. You are billed for setup, teardown, and any tests that were in progress or already completed.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StopRunResult'
+        '480':
+          description: ArgumentException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArgumentException'
+        '481':
+          description: NotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundException'
+        '482':
+          description: LimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LimitExceededException'
+        '483':
+          description: ServiceAccountException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceAccountException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StopRunRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - DeviceFarm_20150623.StopRun
+      tags:
+      - '#X Amz Target=DeviceFarm 20150623.StopRun'
+components:
+  schemas:
+    Long:
+      type: integer
+    DevicePlatform:
+      type: string
+      enum:
+      - ANDROID
+      - IOS
+    String:
+      type: string
+    Integer:
+      type: integer
+    DeviceMinutes:
+      type: object
+      properties:
+        total:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents the total minutes used by the resource to run tests.
+        metered:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents only the sum of metered minutes used by the resource to run tests.
+        unmetered:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents only the sum of unmetered minutes used by the resource to run tests.
+      description: Represents the total (metered or unmetered) minutes used by the resource to run tests. Contains the sum of minutes consumed by all children.
+    Message:
+      type: string
+      minLength: 0
+      maxLength: 16384
+    DeviceFilterValues:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
+    AndroidPaths:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
+    VpcSubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SubnetId'
+      minItems: 1
+      maxItems: 8
+    NonEmptyString:
+      type: string
+      pattern: .*\S.*
+      minLength: 1
+      maxLength: 4096
+    NetworkProfile:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the network profile.
+        name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: The name of the network profile.
+        description:
+          allOf:
+          - $ref: '#/components/schemas/Message'
+          - description: The description of the network profile.
+        type:
+          allOf:
+          - $ref: '#/components/schemas/NetworkProfileType'
+          - description: The type of network profile. Valid values are listed here.
+        uplinkBandwidthBits:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: The data throughput rate in bits per second, as an integer from 0 to 104857600.
+        downlinkBandwidthBits:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: The data throughput rate in bits per second, as an integer from 0 to 104857600.
+        uplinkDelayMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Delay time for all packets to destination in milliseconds as an integer from 0 to 2000.
+        downlinkDelayMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Delay time for all packets to destination in milliseconds as an integer from 0 to 2000.
+        uplinkJitterMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000.
+        downlinkJitterMs:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000.
+        uplinkLossPercent:
+          allOf:
+          - $ref: '#/components/schemas/PercentInteger'
+          - description: Proportion of transmitted packets that fail to arrive from 0 to 100 percent.
+        downlinkLossPercent:
+          allOf:
+          - $ref: '#/components/schemas/PercentInteger'
+          - description: Proportion of received packets that fail to arrive from 0 to 100 percent.
+      description: An array of settings that describes characteristics of a network profile.
+    LimitExceededException: {}
+    Boolean:
+      type: boolean
+    Location:
+      type: object
+      required:
+      - latitude
+      - longitude
+      properties:
+        latitude:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: The latitude.
+        longitude:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: The longitude.
+      description: <p>Represents a latitude and longitude pair, expressed in geographic coordinate system degrees (for example, 47.6204, -122.3491).</p> <p>Elevation is currently not supported.</p>
+    DeviceFilters:
+      type: array
+      items:
+        $ref: '#/components/schemas/DeviceFilter'
+    DeviceFilterAttribute:
+      type: string
+      enum:
+      - ARN
+      - PLATFORM
+      - OS_VERSION
+      - MODEL
+      - AVAILABILITY
+      - FORM_FACTOR
+      - MANUFACTURER
+      - REMOTE_ACCESS_ENABLED
+      - REMOTE_DEBUG_ENABLED
+      - INSTANCE_ARN
+      - INSTANCE_LABELS
+      - FLEET_TYPE
+    SubnetId:
+      type: string
+      pattern: ^subnet-[0-9a-fA-F]{8,}$
+      minLength: 1
+      maxLength: 4096
+    DateTime:
+      type: string
+      format: date-time
+    DeviceHostPaths:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
+    ExecutionResult:
+      type: string
+      enum:
+      - PENDING
+      - PASSED
+      - WARNED
+      - FAILED
+      - SKIPPED
+      - ERRORED
+      - STOPPED
+    Counters:
+      type: object
+      properties:
+        total:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The total number of entities.
+        passed:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of passed entities.
+        failed:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of failed entities.
+        warned:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of warned entities.
+        errored:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of errored entities.
+        stopped:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of stopped entities.
+        skipped:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of skipped entities.
+      description: Represents entity counters.
+    CustomerArtifactPaths:
+      type: object
+      properties:
+        iosPaths:
+          allOf:
+          - $ref: '#/components/schemas/IosPaths'
+          - description: Comma-separated list of paths on the iOS device where the artifacts generated by the customer's tests are pulled from.
+        androidPaths:
+          allOf:
+          - $ref: '#/components/schemas/AndroidPaths'
+          - description: Comma-separated list of paths on the Android device where the artifacts generated by the customer's tests are pulled from.
+        deviceHostPaths:
+          allOf:
+          - $ref: '#/components/schemas/DeviceHostPaths'
+          - description: Comma-separated list of paths in the test execution environment where the artifacts generated by the customer's tests are pulled from.
+      description: <p>A JSON object that specifies the paths where the artifacts generated by the customer's tests, on the device or in the test environment, are pulled from.</p> <p>Specify <code>deviceHostPaths</code> and optionally specify either <code>iosPaths</code> or <code>androidPaths</code>.</p> <p>For web app tests, you can specify both <code>iosPaths</code> and <code>androidPaths</code>.</p>
+    ExecutionResultCode:
+      type: string
+      enum:
+      - PARSING_FAILED
+      - VPC_ENDPOINT_SETUP_FAILED
+    VpcConfig:
+      type: object
+      required:
+      - securityGroupIds
+      - subnetIds
+      - vpcId
+      properties:
+        securityGroupIds:
+          allOf:
+          - $ref: '#/components/schemas/VpcSecurityGroupIds'
+          - description: An array of one or more security groups IDs in your Amazon VPC.
+        subnetIds:
+          allOf:
+          - $ref: '#/components/schemas/VpcSubnetIds'
+          - description: An array of one or more subnet IDs in your Amazon VPC.
+        vpcId:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: The ID of the Amazon VPC.
+      description: Contains the VPC configuration data necessary to interface with AWS Device Farm's services.
+    VpcSecurityGroupIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SecurityGroupId'
+      minItems: 1
+      maxItems: 5
+    StopRunRequest:
+      type: object
+      required:
+      - arn
+      title: StopRunRequest
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: Represents the Amazon Resource Name (ARN) of the Device Farm run to stop.
+      description: Represents the request to stop a specific run.
+    DeviceFilter:
+      type: object
+      required:
+      - attribute
+      - operator
+      - values
+      properties:
+        attribute:
+          allOf:
+          - $ref: '#/components/schemas/DeviceFilterAttribute'
+          - description: '<p>The aspect of a device such as platform or model used as the selection criteria in a device filter.</p> <p>The supported operators for each attribute are provided in the following list.</p> <dl> <dt>ARN</dt> <dd> <p>The Amazon Resource Name (ARN) of the device (for example, <code>arn:aws:devicefarm:us-west-2::device:12345Example</code>).</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>PLATFORM</dt> <dd> <p>The device platform. Valid values are ANDROID or IOS.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>OS_VERSION</dt> <dd> <p>The operating system version (for example, 10.3.2).</p> <p>Supported operators: <code>EQUALS</code>, <code>GREATER_THAN</code>, <code>GREATER_THAN_OR_EQUALS</code>, <code>IN</code>, <code>LESS_THAN</code>, <code>LESS_THAN_OR_EQUALS</code>, <code>NOT_IN</code> </p> </dd> <dt>MODEL</dt> <dd> <p>The device model (for example, iPad 5th Gen).</p> <p>Supported operators: <code>CONTAINS</code>, <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>AVAILABILITY</dt> <dd> <p>The current availability of the device. Valid values are AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>FORM_FACTOR</dt> <dd> <p>The device form factor. Valid values are PHONE or TABLET.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>MANUFACTURER</dt> <dd> <p>The device manufacturer (for example, Apple).</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>REMOTE_ACCESS_ENABLED</dt> <dd> <p>Whether the device is enabled for remote access. Valid values are TRUE or FALSE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>REMOTE_DEBUG_ENABLED</dt> <dd> <p>Whether the device is enabled for remote debugging. Valid values are TRUE or FALSE.</p> <p>Supported operators: <code>EQUALS</code> </p> <p>Because remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>, this filter is ignored.</p> </dd> <dt>INSTANCE_ARN</dt> <dd> <p>The Amazon Resource Name (ARN) of the device instance.</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>INSTANCE_LABELS</dt> <dd> <p>The label of the device instance.</p> <p>Supported operators: <code>CONTAINS</code> </p> </dd> <dt>FLEET_TYPE</dt> <dd> <p>The fleet type. Valid values are PUBLIC or PRIVATE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> </dl>'
+        operator:
+          allOf:
+          - $ref: '#/components/schemas/RuleOperator'
+          - description: Specifies how Device Farm compares the filter's attribute to the value. See the attribute descriptions.
+        values:
+          allOf:
+          - $ref: '#/components/schemas/DeviceFilterValues'
+          - description: <p>An array of one or more filter values used in a device filter.</p> <p class="title"> <b>Operator Values</b> </p> <ul> <li> <p>The IN and NOT_IN operators can take a values array that has more than one element.</p> </li> <li> <p>The other operators require an array with a single element.</p> </li> </ul> <p class="title"> <b>Attribute Values</b> </p> <ul> <li> <p>The PLATFORM attribute can be set to ANDROID or IOS.</p> </li> <li> <p>The AVAILABILITY attribute can be set to AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> </li> <li> <p>The FORM_FACTOR attribute can be set to PHONE or TABLET.</p> </li> <li> <p>The FLEET_TYPE attribute can be set to PUBLIC or PRIVATE.</p> </li> </ul>
+      description: <p>Represents a device filter used to select a set of devices to be included in a test run. This data structure is passed in as the <code>deviceSelectionConfiguration</code> parameter to <code>ScheduleRun</code>. For an example of the JSON request syntax, see <a>ScheduleRun</a>.</p> <p>It is also passed in as the <code>filters</code> parameter to <code>ListDevices</code>. For an example of the JSON request syntax, see <a>ListDevices</a>.</p>
+    PercentInteger:
+      type: integer
+      minimum: 0
+      maximum: 100
+    Run:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The run's ARN.
+        name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: The run's name.
+        type:
+          allOf:
+          - $ref: '#/components/schemas/TestType'
+          - description: <p>The run's type.</p> <p>Must be one of the following values:</p> <ul> <li> <p>BUILTIN_FUZZ</p> </li> <li> <p>BUILTIN_EXPLORER</p> <note> <p>For Android, an app explorer that traverses an Android app, interacting with it and capturing screenshots at the same time.</p> </note> </li> <li> <p>APPIUM_JAVA_JUNIT</p> </li> <li> <p>APPIUM_JAVA_TESTNG</p> </li> <li> <p>APPIUM_PYTHON</p> </li> <li> <p>APPIUM_NODE</p> </li> <li> <p>APPIUM_RUBY</p> </li> <li> <p>APPIUM_WEB_JAVA_JUNIT</p> </li> <li> <p>APPIUM_WEB_JAVA_TESTNG</p> </li> <li> <p>APPIUM_WEB_PYTHON</p> </li> <li> <p>APPIUM_WEB_NODE</p> </li> <li> <p>APPIUM_WEB_RUBY</p> </li> <li> <p>CALABASH</p> </li> <li> <p>INSTRUMENTATION</p> </li> <li> <p>UIAUTOMATION</p> </li> <li> <p>UIAUTOMATOR</p> </li> <li> <p>XCTEST</p> </li> <li> <p>XCTEST_UI</p> </li> </ul>
+        platform:
+          allOf:
+          - $ref: '#/components/schemas/DevicePlatform'
+          - description: <p>The run's platform.</p> <p>Allowed values include:</p> <ul> <li> <p>ANDROID</p> </li> <li> <p>IOS</p> </li> </ul>
+        created:
+          allOf:
+          - $ref: '#/components/schemas/DateTime'
+          - description: When the run was created.
+        status:
+          allOf:
+          - $ref: '#/components/schemas/ExecutionStatus'
+          - description: <p>The run's status.</p> <p>Allowed values include:</p> <ul> <li> <p>PENDING</p> </li> <li> <p>PENDING_CONCURRENCY</p> </li> <li> <p>PENDING_DEVICE</p> </li> <li> <p>PROCESSING</p> </li> <li> <p>SCHEDULING</p> </li> <li> <p>PREPARING</p> </li> <li> <p>RUNNING</p> </li> <li> <p>COMPLETED</p> </li> <li> <p>STOPPING</p> </li> </ul>
+        result:
+          allOf:
+          - $ref: '#/components/schemas/ExecutionResult'
+          - description: <p>The run's result.</p> <p>Allowed values include:</p> <ul> <li> <p>PENDING</p> </li> <li> <p>PASSED</p> </li> <li> <p>WARNED</p> </li> <li> <p>FAILED</p> </li> <li> <p>SKIPPED</p> </li> <li> <p>ERRORED</p> </li> <li> <p>STOPPED</p> </li> </ul>
+        started:
+          allOf:
+          - $ref: '#/components/schemas/DateTime'
+          - description: The run's start time.
+        stopped:
+          allOf:
+          - $ref: '#/components/schemas/DateTime'
+          - description: The run's stop time.
+        counters:
+          allOf:
+          - $ref: '#/components/schemas/Counters'
+          - description: The run's result counters.
+        message:
+          allOf:
+          - $ref: '#/components/schemas/Message'
+          - description: A message about the run's result.
+        totalJobs:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The total number of jobs for the run.
+        completedJobs:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The total number of completed jobs.
+        billingMethod:
+          allOf:
+          - $ref: '#/components/schemas/BillingMethod'
+          - description: '<p>Specifies the billing method for a test run: <code>metered</code> or <code>unmetered</code>. If the parameter is not specified, the default value is <code>metered</code>.</p> <note> <p>If you have unmetered device slots, you must set this to <code>unmetered</code> to use them. Otherwise, the run is counted toward metered device minutes.</p> </note>'
+        deviceMinutes:
+          allOf:
+          - $ref: '#/components/schemas/DeviceMinutes'
+          - description: Represents the total (metered or unmetered) minutes used by the test run.
+        networkProfile:
+          allOf:
+          - $ref: '#/components/schemas/NetworkProfile'
+          - description: The network profile being used for a test run.
+        parsingResultUrl:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: Read-only URL for an object in an S3 bucket where you can get the parsing results of the test package. If the test package doesn't parse, the reason why it doesn't parse appears in the file that this URL points to.
+        resultCode:
+          allOf:
+          - $ref: '#/components/schemas/ExecutionResultCode'
+          - description: Supporting field for the result field. Set only if <code>result</code> is <code>SKIPPED</code>. <code>PARSING_FAILED</code> if the result is skipped because of test package parsing failure.
+        seed:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: For fuzz tests, this is a seed to use for randomizing the UI fuzz test. Using the same seed value between tests ensures identical event sequences.
+        appUpload:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: An app to upload or that has been uploaded.
+        eventCount:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: For fuzz tests, this is the number of events, between 1 and 10000, that the UI fuzz test should perform.
+        jobTimeoutMinutes:
+          allOf:
+          - $ref: '#/components/schemas/JobTimeoutMinutes'
+          - description: The number of minutes the job executes before it times out.
+        devicePoolArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN of the device pool for the run.
+        locale:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: Information about the locale that is used for the run.
+        radios:
+          allOf:
+          - $ref: '#/components/schemas/Radios'
+          - description: Information about the radio states for the run.
+        location:
+          allOf:
+          - $ref: '#/components/schemas/Location'
+          - description: Information about the location that is used for the run.
+        customerArtifactPaths:
+          allOf:
+          - $ref: '#/components/schemas/CustomerArtifactPaths'
+          - description: Output <code>CustomerArtifactPaths</code> object for the test run.
+        webUrl:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The Device Farm console URL for the recording of the run.
+        skipAppResign:
+          allOf:
+          - $ref: '#/components/schemas/SkipAppResign'
+          - description: <p>When set to <code>true</code>, for private devices, Device Farm does not sign your app again. For public devices, Device Farm always signs your apps again.</p> <p>For more information about how Device Farm re-signs your apps, see <a href="http://aws.amazon.com/device-farm/faqs/">Do you modify my app?</a> in the <i>AWS Device Farm FAQs</i>.</p>
+        testSpecArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN of the YAML-formatted test specification for the run.
+        deviceSelectionResult:
+          allOf:
+          - $ref: '#/components/schemas/DeviceSelectionResult'
+          - description: The results of a device filter used to select the devices for a test run.
+        vpcConfig:
+          allOf:
+          - $ref: '#/components/schemas/VpcConfig'
+          - description: The VPC security groups and subnets that are attached to a project.
+      description: Represents a test run on a set of devices with a given app package, test parameters, and so on.
+    SecurityGroupId:
+      type: string
+      pattern: ^sg-[0-9a-fA-F]{8,}$
+      minLength: 1
+      maxLength: 4096
+    ExecutionStatus:
+      type: string
+      enum:
+      - PENDING
+      - PENDING_CONCURRENCY
+      - PENDING_DEVICE
+      - PROCESSING
+      - SCHEDULING
+      - PREPARING
+      - RUNNING
+      - COMPLETED
+      - STOPPING
+    TestType:
+      type: string
+      enum:
+      - BUILTIN_FUZZ
+      - BUILTIN_EXPLORER
+      - WEB_PERFORMANCE_PROFILE
+      - APPIUM_JAVA_JUNIT
+      - APPIUM_JAVA_TESTNG
+      - APPIUM_PYTHON
+      - APPIUM_NODE
+      - APPIUM_RUBY
+      - APPIUM_WEB_JAVA_JUNIT
+      - APPIUM_WEB_JAVA_TESTNG
+      - APPIUM_WEB_PYTHON
+      - APPIUM_WEB_NODE
+      - APPIUM_WEB_RUBY
+      - CALABASH
+      - INSTRUMENTATION
+      - UIAUTOMATION
+      - UIAUTOMATOR
+      - XCTEST
+      - XCTEST_UI
+      - REMOTE_ACCESS_RECORD
+      - REMOTE_ACCESS_REPLAY
+    ServiceAccountException: {}
+    NotFoundException: {}
+    IosPaths:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    Double:
+      type: number
+      format: double
+    Radios:
+      type: object
+      properties:
+        wifi:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: True if Wi-Fi is enabled at the beginning of the test. Otherwise, false.
+        bluetooth:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: True if Bluetooth is enabled at the beginning of the test. Otherwise, false.
+        nfc:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: True if NFC is enabled at the beginning of the test. Otherwise, false.
+        gps:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: True if GPS is enabled at the beginning of the test. Otherwise, false.
+      description: Represents the set of radios and their states on a device. Examples of radios include Wi-Fi, GPS, Bluetooth, and NFC.
+    StopRunResult:
+      type: object
+      example:
+        run: {}
+      properties:
+        run:
+          allOf:
+          - $ref: '#/components/schemas/Run'
+          - description: The run that was stopped.
+      description: Represents the results of your stop run attempt.
+    JobTimeoutMinutes:
+      type: integer
+    DeviceSelectionResult:
+      type: object
+      properties:
+        filters:
+          allOf:
+          - $ref: '#/components/schemas/DeviceFilters'
+          - description: The filters in a device selection result.
+        matchedDevicesCount:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of devices that matched the device filter selection criteria.
+        maxDevices:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The maximum number of devices to be selected by a device filter and included in a test run.
+      description: Contains the run results requested by the device selection configuration and how many devices were returned. For an example of the JSON response syntax, see <a>ScheduleRun</a>.
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
+    BillingMethod:
+      type: string
+      enum:
+      - METERED
+      - UNMETERED
+    RuleOperator:
+      type: string
+      enum:
+      - EQUALS
+      - LESS_THAN
+      - LESS_THAN_OR_EQUALS
+      - GREATER_THAN
+      - GREATER_THAN_OR_EQUALS
+      - IN
+      - NOT_IN
+      - CONTAINS
+    ArgumentException: {}
+    SkipAppResign:
+      type: boolean
+    NetworkProfileType:
+      type: string
+      enum:
+      - CURATED
+      - PRIVATE
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/devicefarm/
+x-hasEquivalentPaths: true

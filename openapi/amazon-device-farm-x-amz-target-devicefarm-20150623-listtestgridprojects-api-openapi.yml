@@ -1,0 +1,339 @@
+openapi: 3.0.0
+info:
+  version: 2015-06-23
+  x-release: v4
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListTestGridProjects API'
+  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: devicefarm
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://devicefarm.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS Device Farm multi-region endpoint
+- url: https://devicefarm.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS Device Farm multi-region endpoint
+- url: http://devicefarm.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS Device Farm endpoint for China (Beijing) and China (Ningxia)
+- url: https://devicefarm.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS Device Farm endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=DeviceFarm 20150623.ListTestGridProjects'
+paths:
+  /#X-Amz-Target=DeviceFarm_20150623.ListTestGridProjects:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: ListTestGridProjects
+      description: Gets a list of all Selenium testing projects in your account.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListTestGridProjectsResult'
+        '480':
+          description: ArgumentException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArgumentException'
+        '481':
+          description: InternalServiceException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServiceException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ListTestGridProjectsRequest'
+      parameters:
+      - name: maxResult
+        in: query
+        schema:
+          type: string
+        description: Pagination limit
+        required: false
+      - name: nextToken
+        in: query
+        schema:
+          type: string
+        description: Pagination token
+        required: false
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - DeviceFarm_20150623.ListTestGridProjects
+      tags:
+      - '#X Amz Target=DeviceFarm 20150623.ListTestGridProjects'
+components:
+  schemas:
+    MaxPageSize:
+      type: integer
+      minimum: 1
+      maximum: 1000
+    String:
+      type: string
+    PaginationToken:
+      type: string
+      minLength: 4
+      maxLength: 1024
+    NonEmptyString:
+      type: string
+      pattern: .*\S.*
+      minLength: 1
+      maxLength: 4096
+    TestGridProject:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/DeviceFarmArn'
+          - description: The ARN for the project.
+        name:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: A human-readable name for the project.
+        description:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: A human-readable description for the project.
+        vpcConfig:
+          allOf:
+          - $ref: '#/components/schemas/TestGridVpcConfig'
+          - description: The VPC security groups and subnets that are attached to a project.
+        created:
+          allOf:
+          - $ref: '#/components/schemas/DateTime'
+          - description: When the project was created.
+      description: A Selenium testing project. Projects are used to collect and collate sessions.
+    DeviceFarmArn:
+      type: string
+      pattern: ^arn:aws:devicefarm:.+
+      minLength: 32
+      maxLength: 1011
+    ListTestGridProjectsRequest:
+      type: object
+      title: ListTestGridProjectsRequest
+      properties:
+        maxResult:
+          allOf:
+          - $ref: '#/components/schemas/MaxPageSize'
+          - description: Return no more than this number of results.
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: 'From a response, used to continue a paginated listing. '
+    DateTime:
+      type: string
+      format: date-time
+    InternalServiceException: {}
+    SubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/NonEmptyString'
+      minItems: 1
+      maxItems: 8
+    TestGridProjects:
+      type: array
+      items:
+        $ref: '#/components/schemas/TestGridProject'
+    TestGridVpcConfig:
+      type: object
+      required:
+      - securityGroupIds
+      - subnetIds
+      - vpcId
+      properties:
+        securityGroupIds:
+          allOf:
+          - $ref: '#/components/schemas/SecurityGroupIds'
+          - description: A list of VPC security group IDs in your Amazon VPC.
+        subnetIds:
+          allOf:
+          - $ref: '#/components/schemas/SubnetIds'
+          - description: A list of VPC subnet IDs in your Amazon VPC.
+        vpcId:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: The ID of the Amazon VPC.
+      description: The VPC security groups and subnets that are attached to a project.
+    SecurityGroupIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/NonEmptyString'
+      minItems: 1
+      maxItems: 5
+    ListTestGridProjectsResult:
+      type: object
+      properties:
+        testGridProjects:
+          allOf:
+          - $ref: '#/components/schemas/TestGridProjects'
+          - description: The list of TestGridProjects, based on a <a>ListTestGridProjectsRequest</a>.
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: Used for pagination. Pass into <a>ListTestGridProjects</a> to get more results in a paginated request.
+    ArgumentException: {}
+  parameters:
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/devicefarm/
+x-hasEquivalentPaths: true

@@ -1,0 +1,422 @@
+openapi: 3.0.0
+info:
+  version: 2015-06-23
+  x-release: v4
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.RenewOffering API'
+  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: devicefarm
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://devicefarm.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS Device Farm multi-region endpoint
+- url: https://devicefarm.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS Device Farm multi-region endpoint
+- url: http://devicefarm.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS Device Farm endpoint for China (Beijing) and China (Ningxia)
+- url: https://devicefarm.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS Device Farm endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=DeviceFarm 20150623.RenewOffering'
+paths:
+  /#X-Amz-Target=DeviceFarm_20150623.RenewOffering:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: RenewOffering
+      description: Explicitly sets the quantity of devices to renew for an offering, starting from the <code>effectiveDate</code> of the next period. The API returns a <code>NotEligible</code> error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact <a href="mailto:aws-devicefarm-support@amazon.com">aws-devicefarm-support@amazon.com</a>.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RenewOfferingResult'
+        '480':
+          description: ArgumentException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArgumentException'
+        '481':
+          description: NotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundException'
+        '482':
+          description: NotEligibleException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotEligibleException'
+        '483':
+          description: LimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LimitExceededException'
+        '484':
+          description: ServiceAccountException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceAccountException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RenewOfferingRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - DeviceFarm_20150623.RenewOffering
+      tags:
+      - '#X Amz Target=DeviceFarm 20150623.RenewOffering'
+components:
+  schemas:
+    DevicePlatform:
+      type: string
+      enum:
+      - ANDROID
+      - IOS
+    OfferingIdentifier:
+      type: string
+      minLength: 32
+    Integer:
+      type: integer
+    OfferingTransaction:
+      type: object
+      properties:
+        offeringStatus:
+          allOf:
+          - $ref: '#/components/schemas/OfferingStatus'
+          - description: The status of an offering transaction.
+        transactionId:
+          allOf:
+          - $ref: '#/components/schemas/TransactionIdentifier'
+          - description: The transaction ID of the offering transaction.
+        offeringPromotionId:
+          allOf:
+          - $ref: '#/components/schemas/OfferingPromotionIdentifier'
+          - description: The ID that corresponds to a device offering promotion.
+        createdOn:
+          allOf:
+          - $ref: '#/components/schemas/DateTime'
+          - description: The date on which an offering transaction was created.
+        cost:
+          allOf:
+          - $ref: '#/components/schemas/MonetaryAmount'
+          - description: The cost of an offering transaction.
+      description: Represents the metadata of an offering transaction.
+    NotEligibleException: {}
+    Message:
+      type: string
+      minLength: 0
+      maxLength: 16384
+    LimitExceededException: {}
+    RecurringChargeFrequency:
+      type: string
+      enum:
+      - MONTHLY
+    Offering:
+      type: object
+      properties:
+        id:
+          allOf:
+          - $ref: '#/components/schemas/OfferingIdentifier'
+          - description: The ID that corresponds to a device offering.
+        description:
+          allOf:
+          - $ref: '#/components/schemas/Message'
+          - description: A string that describes the offering.
+        type:
+          allOf:
+          - $ref: '#/components/schemas/OfferingType'
+          - description: The type of offering (for example, <code>RECURRING</code>) for a device.
+        platform:
+          allOf:
+          - $ref: '#/components/schemas/DevicePlatform'
+          - description: The platform of the device (for example, <code>ANDROID</code> or <code>IOS</code>).
+        recurringCharges:
+          allOf:
+          - $ref: '#/components/schemas/RecurringCharges'
+          - description: Specifies whether there are recurring charges for the offering.
+      description: Represents the metadata of a device offering.
+    OfferingType:
+      type: string
+      enum:
+      - RECURRING
+    DateTime:
+      type: string
+      format: date-time
+    RenewOfferingResult:
+      type: object
+      example:
+        offeringTransaction:
+          cost:
+            amount: 250
+            currencyCode: USD
+          createdOn: '1472648880'
+          offeringStatus:
+            type: RENEW
+            effectiveOn: '1472688000'
+            offering:
+              type: RECURRING
+              description: Android Remote Access Unmetered Device Slot
+              id: D68B3C05-1BA6-4360-BC69-12345EXAMPLE
+              platform: ANDROID
+            quantity: 1
+          transactionId: e90f1405-8c35-4561-be43-12345EXAMPLE
+      properties:
+        offeringTransaction:
+          allOf:
+          - $ref: '#/components/schemas/OfferingTransaction'
+          - description: Represents the status of the offering transaction for the renewal.
+      description: The result of a renewal offering.
+    RecurringCharge:
+      type: object
+      properties:
+        cost:
+          allOf:
+          - $ref: '#/components/schemas/MonetaryAmount'
+          - description: The cost of the recurring charge.
+        frequency:
+          allOf:
+          - $ref: '#/components/schemas/RecurringChargeFrequency'
+          - description: The frequency in which charges recur.
+      description: Specifies whether charges for devices are recurring.
+    RenewOfferingRequest:
+      type: object
+      required:
+      - offeringId
+      - quantity
+      title: RenewOfferingRequest
+      properties:
+        offeringId:
+          allOf:
+          - $ref: '#/components/schemas/OfferingIdentifier'
+          - description: The ID of a request to renew an offering.
+        quantity:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The quantity requested in an offering renewal.
+      description: A request that represents an offering renewal.
+    CurrencyCode:
+      type: string
+      enum:
+      - USD
+    OfferingStatus:
+      type: object
+      properties:
+        type:
+          allOf:
+          - $ref: '#/components/schemas/OfferingTransactionType'
+          - description: The type specified for the offering status.
+        offering:
+          allOf:
+          - $ref: '#/components/schemas/Offering'
+          - description: Represents the metadata of an offering status.
+        quantity:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of available devices in the offering.
+        effectiveOn:
+          allOf:
+          - $ref: '#/components/schemas/DateTime'
+          - description: The date on which the offering is effective.
+      description: The status of the offering.
+    ServiceAccountException: {}
+    NotFoundException: {}
+    MonetaryAmount:
+      type: object
+      properties:
+        amount:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: The numerical amount of an offering or transaction.
+        currencyCode:
+          allOf:
+          - $ref: '#/components/schemas/CurrencyCode'
+          - description: The currency code of a monetary amount. For example, <code>USD</code> means U.S. dollars.
+      description: A number that represents the monetary amount for an offering or transaction.
+    Double:
+      type: number
+      format: double
+    RecurringCharges:
+      type: array
+      items:
+        $ref: '#/components/schemas/RecurringCharge'
+    OfferingTransactionType:
+      type: string
+      enum:
+      - PURCHASE
+      - RENEW
+      - SYSTEM
+    OfferingPromotionIdentifier:
+      type: string
+      minLength: 4
+    TransactionIdentifier:
+      type: string
+      minLength: 32
+    ArgumentException: {}
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/devicefarm/
+x-hasEquivalentPaths: true

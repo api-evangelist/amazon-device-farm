@@ -1,0 +1,688 @@
+openapi: 3.0.0
+info:
+  version: 2015-06-23
+  x-release: v4
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.StopRemoteAccessSession API'
+  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: devicefarm
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://devicefarm.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS Device Farm multi-region endpoint
+- url: https://devicefarm.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS Device Farm multi-region endpoint
+- url: http://devicefarm.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS Device Farm endpoint for China (Beijing) and China (Ningxia)
+- url: https://devicefarm.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS Device Farm endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=DeviceFarm 20150623.StopRemoteAccessSession'
+paths:
+  /#X-Amz-Target=DeviceFarm_20150623.StopRemoteAccessSession:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: StopRemoteAccessSession
+      description: Ends a specified remote access session.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StopRemoteAccessSessionResult'
+        '480':
+          description: ArgumentException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArgumentException'
+        '481':
+          description: NotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotFoundException'
+        '482':
+          description: LimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LimitExceededException'
+        '483':
+          description: ServiceAccountException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceAccountException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StopRemoteAccessSessionRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - DeviceFarm_20150623.StopRemoteAccessSession
+      tags:
+      - '#X Amz Target=DeviceFarm 20150623.StopRemoteAccessSession'
+components:
+  schemas:
+    Long:
+      type: integer
+    DevicePlatform:
+      type: string
+      enum:
+      - ANDROID
+      - IOS
+    ClientId:
+      type: string
+      minLength: 0
+      maxLength: 64
+    RemoteAccessSession:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the remote access session.
+        name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: The name of the remote access session.
+        created:
+          allOf:
+          - $ref: '#/components/schemas/DateTime'
+          - description: The date and time the remote access session was created.
+        status:
+          allOf:
+          - $ref: '#/components/schemas/ExecutionStatus'
+          - description: <p>The status of the remote access session. Can be any of the following:</p> <ul> <li> <p>PENDING.</p> </li> <li> <p>PENDING_CONCURRENCY.</p> </li> <li> <p>PENDING_DEVICE.</p> </li> <li> <p>PROCESSING.</p> </li> <li> <p>SCHEDULING.</p> </li> <li> <p>PREPARING.</p> </li> <li> <p>RUNNING.</p> </li> <li> <p>COMPLETED.</p> </li> <li> <p>STOPPING.</p> </li> </ul>
+        result:
+          allOf:
+          - $ref: '#/components/schemas/ExecutionResult'
+          - description: <p>The result of the remote access session. Can be any of the following:</p> <ul> <li> <p>PENDING.</p> </li> <li> <p>PASSED.</p> </li> <li> <p>WARNED.</p> </li> <li> <p>FAILED.</p> </li> <li> <p>SKIPPED.</p> </li> <li> <p>ERRORED.</p> </li> <li> <p>STOPPED.</p> </li> </ul>
+        message:
+          allOf:
+          - $ref: '#/components/schemas/Message'
+          - description: A message about the remote access session.
+        started:
+          allOf:
+          - $ref: '#/components/schemas/DateTime'
+          - description: The date and time the remote access session was started.
+        stopped:
+          allOf:
+          - $ref: '#/components/schemas/DateTime'
+          - description: The date and time the remote access session was stopped.
+        device:
+          allOf:
+          - $ref: '#/components/schemas/Device'
+          - description: The device (phone or tablet) used in the remote access session.
+        instanceArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN of the instance.
+        remoteDebugEnabled:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: <p>This flag is set to <code>true</code> if remote debugging is enabled for the remote access session.</p> <p>Remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>.</p>
+        remoteRecordEnabled:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: This flag is set to <code>true</code> if remote recording is enabled for the remote access session.
+        remoteRecordAppArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN for the app to be recorded in the remote access session.
+        hostAddress:
+          allOf:
+          - $ref: '#/components/schemas/HostAddress'
+          - description: <p>IP address of the EC2 host where you need to connect to remotely debug devices. Only returned if remote debugging is enabled for the remote access session.</p> <p>Remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>.</p>
+        clientId:
+          allOf:
+          - $ref: '#/components/schemas/ClientId'
+          - description: <p>Unique identifier of your client for the remote access session. Only returned if remote debugging is enabled for the remote access session.</p> <p>Remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>.</p>
+        billingMethod:
+          allOf:
+          - $ref: '#/components/schemas/BillingMethod'
+          - description: The billing method of the remote access session. Possible values include <code>METERED</code> or <code>UNMETERED</code>. For more information about metered devices, see <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/welcome.html#welcome-terminology">AWS Device Farm terminology</a>.
+        deviceMinutes:
+          allOf:
+          - $ref: '#/components/schemas/DeviceMinutes'
+          - description: The number of minutes a device is used in a remote access session (including setup and teardown minutes).
+        endpoint:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The endpoint for the remote access sesssion.
+        deviceUdid:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: <p>Unique device identifier for the remote device. Only returned if remote debugging is enabled for the remote access session.</p> <p>Remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>.</p>
+        interactionMode:
+          allOf:
+          - $ref: '#/components/schemas/InteractionMode'
+          - description: '<p>The interaction mode of the remote access session. Valid values are:</p> <ul> <li> <p>INTERACTIVE: You can interact with the iOS device by viewing, touching, and rotating the screen. You cannot run XCUITest framework-based tests in this mode.</p> </li> <li> <p>NO_VIDEO: You are connected to the device, but cannot interact with it or view the screen. This mode has the fastest test execution speed. You can run XCUITest framework-based tests in this mode.</p> </li> <li> <p>VIDEO_ONLY: You can view the screen, but cannot touch or rotate it. You can run XCUITest framework-based tests and watch the screen in this mode.</p> </li> </ul>'
+        skipAppResign:
+          allOf:
+          - $ref: '#/components/schemas/SkipAppResign'
+          - description: <p>When set to <code>true</code>, for private devices, Device Farm does not sign your app again. For public devices, Device Farm always signs your apps again.</p> <p>For more information about how Device Farm re-signs your apps, see <a href="http://aws.amazon.com/device-farm/faqs/">Do you modify my app?</a> in the <i>AWS Device Farm FAQs</i>.</p>
+        vpcConfig:
+          allOf:
+          - $ref: '#/components/schemas/VpcConfig'
+          - description: The VPC security groups and subnets that are attached to a project.
+      description: Represents information about the remote access session.
+    InstanceLabels:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
+    String:
+      type: string
+    DeviceAvailability:
+      type: string
+      enum:
+      - TEMPORARY_NOT_AVAILABLE
+      - BUSY
+      - AVAILABLE
+      - HIGHLY_AVAILABLE
+    Integer:
+      type: integer
+    DeviceMinutes:
+      type: object
+      properties:
+        total:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents the total minutes used by the resource to run tests.
+        metered:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents only the sum of metered minutes used by the resource to run tests.
+        unmetered:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents only the sum of unmetered minutes used by the resource to run tests.
+      description: Represents the total (metered or unmetered) minutes used by the resource to run tests. Contains the sum of minutes consumed by all children.
+    StopRemoteAccessSessionResult:
+      type: object
+      properties:
+        remoteAccessSession:
+          allOf:
+          - $ref: '#/components/schemas/RemoteAccessSession'
+          - description: A container that represents the metadata from the service about the remote access session you are stopping.
+      description: Represents the response from the server that describes the remote access session when AWS Device Farm stops the session.
+    Message:
+      type: string
+      minLength: 0
+      maxLength: 16384
+    VpcSubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SubnetId'
+      minItems: 1
+      maxItems: 8
+    DeviceFormFactor:
+      type: string
+      enum:
+      - PHONE
+      - TABLET
+    NonEmptyString:
+      type: string
+      pattern: .*\S.*
+      minLength: 1
+      maxLength: 4096
+    LimitExceededException: {}
+    Boolean:
+      type: boolean
+    DeviceInstance:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the device instance.
+        deviceArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN of the device.
+        labels:
+          allOf:
+          - $ref: '#/components/schemas/InstanceLabels'
+          - description: An array of strings that describe the device instance.
+        status:
+          allOf:
+          - $ref: '#/components/schemas/InstanceStatus'
+          - description: The status of the device instance. Valid values are listed here.
+        udid:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: Unique device identifier for the device instance.
+        instanceProfile:
+          allOf:
+          - $ref: '#/components/schemas/InstanceProfile'
+          - description: A object that contains information about the instance profile.
+      description: Represents the device instance.
+    SubnetId:
+      type: string
+      pattern: ^subnet-[0-9a-fA-F]{8,}$
+      minLength: 1
+      maxLength: 4096
+    DateTime:
+      type: string
+      format: date-time
+    ExecutionResult:
+      type: string
+      enum:
+      - PENDING
+      - PASSED
+      - WARNED
+      - FAILED
+      - SKIPPED
+      - ERRORED
+      - STOPPED
+    StopRemoteAccessSessionRequest:
+      type: object
+      required:
+      - arn
+      title: StopRemoteAccessSessionRequest
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the remote access session to stop.
+      description: Represents the request to stop the remote access session.
+    VpcConfig:
+      type: object
+      required:
+      - securityGroupIds
+      - subnetIds
+      - vpcId
+      properties:
+        securityGroupIds:
+          allOf:
+          - $ref: '#/components/schemas/VpcSecurityGroupIds'
+          - description: An array of one or more security groups IDs in your Amazon VPC.
+        subnetIds:
+          allOf:
+          - $ref: '#/components/schemas/VpcSubnetIds'
+          - description: An array of one or more subnet IDs in your Amazon VPC.
+        vpcId:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: The ID of the Amazon VPC.
+      description: Contains the VPC configuration data necessary to interface with AWS Device Farm's services.
+    VpcSecurityGroupIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SecurityGroupId'
+      minItems: 1
+      maxItems: 5
+    CPU:
+      type: object
+      properties:
+        frequency:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The CPU's frequency.
+        architecture:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The CPU's architecture (for example, x86 or ARM).
+        clock:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: The clock speed of the device's CPU, expressed in hertz (Hz). For example, a 1.2 GHz CPU is expressed as 1200000000.
+      description: Represents the amount of CPU that an app is using on a physical device. Does not represent system-wide CPU usage.
+    PackageIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
+    SecurityGroupId:
+      type: string
+      pattern: ^sg-[0-9a-fA-F]{8,}$
+      minLength: 1
+      maxLength: 4096
+    InteractionMode:
+      type: string
+      enum:
+      - INTERACTIVE
+      - NO_VIDEO
+      - VIDEO_ONLY
+      minLength: 0
+      maxLength: 64
+    ExecutionStatus:
+      type: string
+      enum:
+      - PENDING
+      - PENDING_CONCURRENCY
+      - PENDING_DEVICE
+      - PROCESSING
+      - SCHEDULING
+      - PREPARING
+      - RUNNING
+      - COMPLETED
+      - STOPPING
+    ServiceAccountException: {}
+    NotFoundException: {}
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    Double:
+      type: number
+      format: double
+    HostAddress:
+      type: string
+      maxLength: 1024
+    InstanceStatus:
+      type: string
+      enum:
+      - IN_USE
+      - PREPARING
+      - AVAILABLE
+      - NOT_AVAILABLE
+    DeviceInstances:
+      type: array
+      items:
+        $ref: '#/components/schemas/DeviceInstance'
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
+    Device:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The device's ARN.
+        name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: The device's display name.
+        manufacturer:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The device's manufacturer name.
+        model:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The device's model name.
+        modelId:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The device's model ID.
+        formFactor:
+          allOf:
+          - $ref: '#/components/schemas/DeviceFormFactor'
+          - description: <p>The device's form factor.</p> <p>Allowed values include:</p> <ul> <li> <p>PHONE</p> </li> <li> <p>TABLET</p> </li> </ul>
+        platform:
+          allOf:
+          - $ref: '#/components/schemas/DevicePlatform'
+          - description: <p>The device's platform.</p> <p>Allowed values include:</p> <ul> <li> <p>ANDROID</p> </li> <li> <p>IOS</p> </li> </ul>
+        os:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The device's operating system type.
+        cpu:
+          allOf:
+          - $ref: '#/components/schemas/CPU'
+          - description: Information about the device's CPU.
+        resolution:
+          allOf:
+          - $ref: '#/components/schemas/Resolution'
+          - description: The resolution of the device.
+        heapSize:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: The device's heap size, expressed in bytes.
+        memory:
+          allOf:
+          - $ref: '#/components/schemas/Long'
+          - description: The device's total memory size, expressed in bytes.
+        image:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The device's image name.
+        carrier:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The device's carrier.
+        radio:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The device's radio.
+        remoteAccessEnabled:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: Specifies whether remote access has been enabled for the specified device.
+        remoteDebugEnabled:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: <p>This flag is set to <code>true</code> if remote debugging is enabled for the device.</p> <p>Remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>.</p>
+        fleetType:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The type of fleet to which this device belongs. Possible values are PRIVATE and PUBLIC.
+        fleetName:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The name of the fleet to which this device belongs.
+        instances:
+          allOf:
+          - $ref: '#/components/schemas/DeviceInstances'
+          - description: The instances that belong to this device.
+        availability:
+          allOf:
+          - $ref: '#/components/schemas/DeviceAvailability'
+          - description: Indicates how likely a device is available for a test run. Currently available in the <a>ListDevices</a> and GetDevice API methods.
+      description: Represents a device type that an app is tested against.
+    BillingMethod:
+      type: string
+      enum:
+      - METERED
+      - UNMETERED
+    Resolution:
+      type: object
+      properties:
+        width:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The screen resolution's width, expressed in pixels.
+        height:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The screen resolution's height, expressed in pixels.
+      description: Represents the screen resolution of a device in height and width, expressed in pixels.
+    ArgumentException: {}
+    InstanceProfile:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the instance profile.
+        packageCleanup:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: When set to <code>true</code>, Device Farm removes app packages after a test run. The default value is <code>false</code> for private devices.
+        excludeAppPackagesFromCleanup:
+          allOf:
+          - $ref: '#/components/schemas/PackageIds'
+          - description: <p>An array of strings containing the list of app packages that should not be cleaned up from the device after a test run completes.</p> <p>The list of packages is considered only if you set <code>packageCleanup</code> to <code>true</code>.</p>
+        rebootAfterUse:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: When set to <code>true</code>, Device Farm reboots the instance after a test run. The default value is <code>true</code>.
+        name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: The name of the instance profile.
+        description:
+          allOf:
+          - $ref: '#/components/schemas/Message'
+          - description: The description of the instance profile.
+      description: Represents the instance profile.
+    SkipAppResign:
+      type: boolean
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/devicefarm/
+x-hasEquivalentPaths: true
