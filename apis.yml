@@ -2,28 +2,3634 @@ name: Amazon Device Farm
 description: AWS Device Farm is an application testing service that lets you improve the quality of your web and mobile apps
   by testing them across an extensive range of desktop browsers and real mobile devices without having to provision and manage
   any testing infrastructure.
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
 url: https://aws.amazon.com/device-farm/
 created: '2026-03-16'
 modified: '2026-05-19'
 apis:
-- name: AWS Device Farm API
-  description: The AWS Device Farm API enables programmatic access to create and manage test runs, device pools, projects,
-    and jobs for testing mobile and web applications across real devices and browsers. Supports 77 operations covering projects,
-    runs, devices, uploads, remote access sessions, Selenium test grid, network profiles, instance profiles, VPC endpoint
-    configurations, and resource tagging.
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.CreateDevicePool API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.createdevicepool.
   humanURL: https://aws.amazon.com/device-farm/
   baseURL: https://devicefarm.amazonaws.com
   tags:
-  - Application Testing
-  - Device Management
-  - Mobile Testing
-  - Quality Assurance
+  - '#X Amz Target=DeviceFarm 20150623.CreateDevicePool'
   properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateInstanceProfile API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.CreateInstanceProfile API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.createinstanceprofile.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.CreateInstanceProfile'
+  properties:
   - type: OpenAPI
-    url: openapi/amazon-device-farm-openapi.yaml
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateNetworkProfile API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.CreateNetworkProfile API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.createnetworkprofile.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.CreateNetworkProfile'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateProject API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.CreateProject API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.createproject.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.CreateProject'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateRemoteAccessSession API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.CreateRemoteAccessSession API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.createremoteaccesssession.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.CreateRemoteAccessSession'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateTestGridProject API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.CreateTestGridProject API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.createtestgridproject.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.CreateTestGridProject'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateTestGridUrl API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.CreateTestGridUrl API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.createtestgridurl.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.CreateTestGridUrl'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateUpload API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.CreateUpload API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.createupload.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.CreateUpload'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateVPCEConfiguration API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.CreateVPCEConfiguration API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.createvpceconfiguration.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.CreateVPCEConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteDevicePool API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.DeleteDevicePool API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.deletedevicepool.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.DeleteDevicePool'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteInstanceProfile API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.DeleteInstanceProfile API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.deleteinstanceprofile.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.DeleteInstanceProfile'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteNetworkProfile API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.DeleteNetworkProfile API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.deletenetworkprofile.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.DeleteNetworkProfile'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteProject API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.DeleteProject API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.deleteproject.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.DeleteProject'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteRemoteAccessSession API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.DeleteRemoteAccessSession API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.deleteremoteaccesssession.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.DeleteRemoteAccessSession'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteRun API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.DeleteRun API from Amazon Device Farm — 1 operation(s) for #x
+    amz target=devicefarm 20150623.deleterun.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.DeleteRun'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteTestGridProject API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.DeleteTestGridProject API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.deletetestgridproject.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.DeleteTestGridProject'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteUpload API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.DeleteUpload API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.deleteupload.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.DeleteUpload'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteVPCEConfiguration API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.DeleteVPCEConfiguration API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.deletevpceconfiguration.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.DeleteVPCEConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetAccountSettings API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetAccountSettings API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.getaccountsettings.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetAccountSettings'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetDevice API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetDevice API from Amazon Device Farm — 1 operation(s) for #x
+    amz target=devicefarm 20150623.getdevice.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetDevice'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetDeviceInstance API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetDeviceInstance API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.getdeviceinstance.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetDeviceInstance'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetDevicePool API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetDevicePool API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.getdevicepool.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetDevicePool'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.getdevicepoolcompatibility.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetInstanceProfile API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetInstanceProfile API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.getinstanceprofile.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetInstanceProfile'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetJob API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetJob API from Amazon Device Farm — 1 operation(s) for #x amz
+    target=devicefarm 20150623.getjob.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetJob'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetNetworkProfile API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetNetworkProfile API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.getnetworkprofile.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetNetworkProfile'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetOfferingStatus API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetOfferingStatus API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.getofferingstatus.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetOfferingStatus'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetProject API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetProject API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.getproject.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetProject'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetRemoteAccessSession API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetRemoteAccessSession API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.getremoteaccesssession.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetRemoteAccessSession'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetRun API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetRun API from Amazon Device Farm — 1 operation(s) for #x amz
+    target=devicefarm 20150623.getrun.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetRun'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetSuite API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetSuite API from Amazon Device Farm — 1 operation(s) for #x
+    amz target=devicefarm 20150623.getsuite.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetSuite'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetTest API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetTest API from Amazon Device Farm — 1 operation(s) for #x
+    amz target=devicefarm 20150623.gettest.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetTest'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetTestGridProject API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetTestGridProject API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.gettestgridproject.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetTestGridProject'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetTestGridSession API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetTestGridSession API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.gettestgridsession.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetTestGridSession'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetUpload API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetUpload API from Amazon Device Farm — 1 operation(s) for #x
+    amz target=devicefarm 20150623.getupload.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetUpload'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetVPCEConfiguration API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.GetVPCEConfiguration API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.getvpceconfiguration.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.GetVPCEConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.InstallToRemoteAccessSession API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.InstallToRemoteAccessSession API from Amazon Device Farm — 1
+    operation(s) for #x amz target=devicefarm 20150623.installtoremoteaccesssession.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.InstallToRemoteAccessSession'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListArtifacts API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListArtifacts API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.listartifacts.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListArtifacts'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListDeviceInstances API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListDeviceInstances API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listdeviceinstances.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListDeviceInstances'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListDevicePools API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListDevicePools API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listdevicepools.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListDevicePools'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListDevices API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListDevices API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.listdevices.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListDevices'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListInstanceProfiles API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListInstanceProfiles API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listinstanceprofiles.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListInstanceProfiles'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListJobs API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListJobs API from Amazon Device Farm — 1 operation(s) for #x
+    amz target=devicefarm 20150623.listjobs.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListJobs'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListNetworkProfiles API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListNetworkProfiles API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listnetworkprofiles.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListNetworkProfiles'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListOfferingPromotions API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListOfferingPromotions API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listofferingpromotions.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListOfferingPromotions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListOfferings API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListOfferings API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.listofferings.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListOfferings'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListOfferingTransactions API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListOfferingTransactions API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listofferingtransactions.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListOfferingTransactions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListProjects API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListProjects API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.listprojects.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListProjects'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListRemoteAccessSessions API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListRemoteAccessSessions API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listremoteaccesssessions.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListRemoteAccessSessions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListRuns API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListRuns API from Amazon Device Farm — 1 operation(s) for #x
+    amz target=devicefarm 20150623.listruns.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListRuns'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListSamples API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListSamples API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.listsamples.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListSamples'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListSuites API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListSuites API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.listsuites.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListSuites'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTagsForResource API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListTagsForResource API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listtagsforresource.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListTagsForResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTestGridProjects API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListTestGridProjects API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listtestgridprojects.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListTestGridProjects'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTestGridSessionActions API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListTestGridSessionActions API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listtestgridsessionactions.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListTestGridSessionActions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts API from Amazon Device Farm — 1
+    operation(s) for #x amz target=devicefarm 20150623.listtestgridsessionartifacts.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTestGridSessions API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListTestGridSessions API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listtestgridsessions.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListTestGridSessions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTests API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListTests API from Amazon Device Farm — 1 operation(s) for #x
+    amz target=devicefarm 20150623.listtests.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListTests'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListUniqueProblems API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListUniqueProblems API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listuniqueproblems.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListUniqueProblems'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListUploads API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListUploads API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.listuploads.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListUploads'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListVPCEConfigurations API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ListVPCEConfigurations API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.listvpceconfigurations.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ListVPCEConfigurations'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.PurchaseOffering API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.PurchaseOffering API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.purchaseoffering.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.PurchaseOffering'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.RenewOffering API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.RenewOffering API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.renewoffering.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.RenewOffering'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ScheduleRun API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.ScheduleRun API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.schedulerun.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.ScheduleRun'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.StopJob API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.StopJob API from Amazon Device Farm — 1 operation(s) for #x
+    amz target=devicefarm 20150623.stopjob.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.StopJob'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.StopRemoteAccessSession API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.StopRemoteAccessSession API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.stopremoteaccesssession.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.StopRemoteAccessSession'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.StopRun API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.StopRun API from Amazon Device Farm — 1 operation(s) for #x
+    amz target=devicefarm 20150623.stoprun.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.StopRun'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.TagResource API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.TagResource API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.tagresource.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.TagResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UntagResource API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.UntagResource API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.untagresource.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.UntagResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateDeviceInstance API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.UpdateDeviceInstance API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.updatedeviceinstance.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.UpdateDeviceInstance'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateDevicePool API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.UpdateDevicePool API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.updatedevicepool.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.UpdateDevicePool'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateInstanceProfile API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.UpdateInstanceProfile API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.updateinstanceprofile.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.UpdateInstanceProfile'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateNetworkProfile API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.UpdateNetworkProfile API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.updatenetworkprofile.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.UpdateNetworkProfile'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateProject API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.UpdateProject API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.updateproject.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.UpdateProject'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateTestGridProject API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.UpdateTestGridProject API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.updatetestgridproject.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.UpdateTestGridProject'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateUpload API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.UpdateUpload API from Amazon Device Farm — 1 operation(s) for
+    #x amz target=devicefarm 20150623.updateupload.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.UpdateUpload'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/device-farm/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-device-farm.yaml
+- aid: >-
+    amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api
+  name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateVPCEConfiguration API'
+  description: >-
+    The #X Amz Target=DeviceFarm 20150623.UpdateVPCEConfiguration API from Amazon Device Farm — 1 operation(s)
+    for #x amz target=devicefarm 20150623.updatevpceconfiguration.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - '#X Amz Target=DeviceFarm 20150623.UpdateVPCEConfiguration'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
   - type: GettingStarted
     url: https://aws.amazon.com/device-farm/getting-started/
   - type: Pricing
@@ -57,6 +3663,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-device-farm.yaml
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-device-farm/overview
 - type: AgenticAccess
   url: agentic-access/amazon-device-farm-agentic-access.yml
 - type: TrustCenter
