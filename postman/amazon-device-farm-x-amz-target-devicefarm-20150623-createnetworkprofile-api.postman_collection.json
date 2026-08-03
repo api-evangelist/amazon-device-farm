@@ -1,0 +1,574 @@
+{
+  "info": {
+    "_postman_id": "66ab5e2b-22de-4c71-ba3d-3086b1b62e9a",
+    "name": "AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateNetworkProfile API",
+    "description": "<p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href=\"https://docs.aws.amazon.com/devicefarm/latest/testgrid/\">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href=\"https://docs.aws.amazon.com/devicefarm/latest/developerguide/\">Device Farm Developer Guide</a>.</p> </li> </ul>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:11:29.000Z",
+    "updatedAt": "2026-07-28T10:11:29.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-66ab5e2b-22de-4c71-ba3d-3086b1b62e9a"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile",
+      "item": [
+        {
+          "name": "Create Network Profile",
+          "id": "418a8b7a-1d94-4cab-ab34-aee3d7147c3c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "DeviceFarm_20150623.CreateNetworkProfile"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"projectArn\": \"arn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!C\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"CURATED\",\n  \"uplinkBandwidthBits\": \"<integer>\",\n  \"downlinkBandwidthBits\": \"<integer>\",\n  \"uplinkDelayMs\": \"<integer>\",\n  \"downlinkDelayMs\": \"<integer>\",\n  \"uplinkJitterMs\": \"<integer>\",\n  \"downlinkJitterMs\": \"<integer>\",\n  \"uplinkLossPercent\": \"<integer>\",\n  \"downlinkLossPercent\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile"
+            },
+            "description": "Creates a network profile."
+          },
+          "response": [
+            {
+              "id": "a5c3110f-f2ce-4bc6-97f6-0efca31da644",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.CreateNetworkProfile"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!C\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"CURATED\",\n  \"uplinkBandwidthBits\": \"<integer>\",\n  \"downlinkBandwidthBits\": \"<integer>\",\n  \"uplinkDelayMs\": \"<integer>\",\n  \"downlinkDelayMs\": \"<integer>\",\n  \"uplinkJitterMs\": \"<integer>\",\n  \"downlinkJitterMs\": \"<integer>\",\n  \"uplinkLossPercent\": \"<integer>\",\n  \"downlinkLossPercent\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"networkProfile\": {\n    \"arn\": \"arn:W}(;}Jx`karn:W}(;}Jx`karn:W}(;}Jx`karn:W}(;}Jx`k\",\n    \"name\": \"<string>\",\n    \"description\": \"<string>\",\n    \"type\": \"PRIVATE\",\n    \"uplinkBandwidthBits\": \"<integer>\",\n    \"downlinkBandwidthBits\": \"<integer>\",\n    \"uplinkDelayMs\": \"<integer>\",\n    \"downlinkDelayMs\": \"<integer>\",\n    \"uplinkJitterMs\": \"<integer>\",\n    \"downlinkJitterMs\": \"<integer>\",\n    \"uplinkLossPercent\": \"<integer>\",\n    \"downlinkLossPercent\": \"<integer>\"\n  }\n}",
+              "createdAt": "2026-07-28T10:11:29.000Z",
+              "updatedAt": "2026-07-28T10:11:29.000Z",
+              "uid": "35240-a5c3110f-f2ce-4bc6-97f6-0efca31da644"
+            },
+            {
+              "id": "320b10bb-9ca8-43c0-9778-aecce0764f5f",
+              "name": "ArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.CreateNetworkProfile"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!C\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"CURATED\",\n  \"uplinkBandwidthBits\": \"<integer>\",\n  \"downlinkBandwidthBits\": \"<integer>\",\n  \"uplinkDelayMs\": \"<integer>\",\n  \"downlinkDelayMs\": \"<integer>\",\n  \"uplinkJitterMs\": \"<integer>\",\n  \"downlinkJitterMs\": \"<integer>\",\n  \"uplinkLossPercent\": \"<integer>\",\n  \"downlinkLossPercent\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:11:29.000Z",
+              "updatedAt": "2026-07-28T10:11:29.000Z",
+              "uid": "35240-320b10bb-9ca8-43c0-9778-aecce0764f5f"
+            },
+            {
+              "id": "50724514-94eb-4658-ab43-ad650c7caaec",
+              "name": "NotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.CreateNetworkProfile"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!C\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"CURATED\",\n  \"uplinkBandwidthBits\": \"<integer>\",\n  \"downlinkBandwidthBits\": \"<integer>\",\n  \"uplinkDelayMs\": \"<integer>\",\n  \"downlinkDelayMs\": \"<integer>\",\n  \"uplinkJitterMs\": \"<integer>\",\n  \"downlinkJitterMs\": \"<integer>\",\n  \"uplinkLossPercent\": \"<integer>\",\n  \"downlinkLossPercent\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:11:29.000Z",
+              "updatedAt": "2026-07-28T10:11:29.000Z",
+              "uid": "35240-50724514-94eb-4658-ab43-ad650c7caaec"
+            },
+            {
+              "id": "9c3c5b11-b52d-4215-b652-272b1bde8aea",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.CreateNetworkProfile"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!C\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"CURATED\",\n  \"uplinkBandwidthBits\": \"<integer>\",\n  \"downlinkBandwidthBits\": \"<integer>\",\n  \"uplinkDelayMs\": \"<integer>\",\n  \"downlinkDelayMs\": \"<integer>\",\n  \"uplinkJitterMs\": \"<integer>\",\n  \"downlinkJitterMs\": \"<integer>\",\n  \"uplinkLossPercent\": \"<integer>\",\n  \"downlinkLossPercent\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:11:29.000Z",
+              "updatedAt": "2026-07-28T10:11:29.000Z",
+              "uid": "35240-9c3c5b11-b52d-4215-b652-272b1bde8aea"
+            },
+            {
+              "id": "e5622011-ca8a-40a9-946f-71d076a44c20",
+              "name": "ServiceAccountException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.CreateNetworkProfile"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!Carn:NY4B\\\"!C\",\n  \"name\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"CURATED\",\n  \"uplinkBandwidthBits\": \"<integer>\",\n  \"downlinkBandwidthBits\": \"<integer>\",\n  \"uplinkDelayMs\": \"<integer>\",\n  \"downlinkDelayMs\": \"<integer>\",\n  \"uplinkJitterMs\": \"<integer>\",\n  \"downlinkJitterMs\": \"<integer>\",\n  \"uplinkLossPercent\": \"<integer>\",\n  \"downlinkLossPercent\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.CreateNetworkProfile"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:11:29.000Z",
+              "updatedAt": "2026-07-28T10:11:29.000Z",
+              "uid": "35240-e5622011-ca8a-40a9-946f-71d076a44c20"
+            }
+          ],
+          "createdAt": "2026-07-28T10:11:29.000Z",
+          "updatedAt": "2026-07-28T10:11:29.000Z",
+          "uid": "35240-418a8b7a-1d94-4cab-ab34-aee3d7147c3c"
+        }
+      ],
+      "id": "56ba6fe0-f24b-49ea-b7e3-43be0e7633fa",
+      "createdAt": "2026-07-28T10:11:29.000Z",
+      "updatedAt": "2026-07-28T10:11:29.000Z",
+      "uid": "35240-56ba6fe0-f24b-49ea-b7e3-43be0e7633fa"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://devicefarm.{{region}}.amazonaws.com"
+    }
+  ]
+}

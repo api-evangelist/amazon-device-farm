@@ -1,0 +1,574 @@
+{
+  "info": {
+    "_postman_id": "636558b0-894b-415f-829b-37ef3ba69c49",
+    "name": "AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetRemoteAccessSession API",
+    "description": "<p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href=\"https://docs.aws.amazon.com/devicefarm/latest/testgrid/\">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href=\"https://docs.aws.amazon.com/devicefarm/latest/developerguide/\">Device Farm Developer Guide</a>.</p> </li> </ul>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:13:03.000Z",
+    "updatedAt": "2026-07-28T10:13:03.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-636558b0-894b-415f-829b-37ef3ba69c49"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession",
+      "item": [
+        {
+          "name": "Get Remote Access Session",
+          "id": "79d4e4b4-5a4e-4afa-bbe1-97db0c013d20",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "DeviceFarm_20150623.GetRemoteAccessSession"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"arn\": \"arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession"
+            },
+            "description": "Returns a link to a currently running remote access session."
+          },
+          "response": [
+            {
+              "id": "f431ffa0-9bb9-4a15-80af-a7bee488c5c5",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.GetRemoteAccessSession"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"remoteAccessSession\": {\n    \"arn\": \"arn:16uarn:16uarn:16uarn:16uarn:16uarn:16uarn:16uarn:16u\",\n    \"name\": \"<string>\",\n    \"created\": \"<dateTime>\",\n    \"status\": \"PENDING_CONCURRENCY\",\n    \"result\": \"ERRORED\",\n    \"message\": \"<string>\",\n    \"started\": \"<dateTime>\",\n    \"stopped\": \"<dateTime>\",\n    \"device\": {\n      \"arn\": \"arn:&Y%TUZFPSN/arn:&Y%TUZFPSN/arn:&Y%TUZFPSN/arn:&Y%TUZFPSN/\",\n      \"name\": \"<string>\",\n      \"manufacturer\": \"<string>\",\n      \"model\": \"<string>\",\n      \"modelId\": \"<string>\",\n      \"formFactor\": \"PHONE\",\n      \"platform\": \"ANDROID\",\n      \"os\": \"<string>\",\n      \"cpu\": {\n        \"frequency\": \"<string>\",\n        \"architecture\": \"<string>\",\n        \"clock\": \"<double>\"\n      },\n      \"resolution\": {\n        \"width\": \"<integer>\",\n        \"height\": \"<integer>\"\n      },\n      \"heapSize\": \"<integer>\",\n      \"memory\": \"<integer>\",\n      \"image\": \"<string>\",\n      \"carrier\": \"<string>\",\n      \"radio\": \"<string>\",\n      \"remoteAccessEnabled\": \"<boolean>\",\n      \"remoteDebugEnabled\": \"<boolean>\",\n      \"fleetType\": \"<string>\",\n      \"fleetName\": \"<string>\",\n      \"instances\": [\n        {\n          \"arn\": \"arn:>2|arn:>2|arn:>2|arn:>2|arn:>2|arn:>2|arn:>2|arn:>2|\",\n          \"deviceArn\": \"arn:JAKqKEarn:JAKqKEarn:JAKqKEarn:JAKqKE\",\n          \"labels\": [\n            \"<string>\",\n            \"<string>\"\n          ],\n          \"status\": \"AVAILABLE\",\n          \"udid\": \"<string>\",\n          \"instanceProfile\": {\n            \"arn\": \"arn:+arn:+arn:+arn:+arn:+arn:+arn:+arn:+\",\n            \"packageCleanup\": \"<boolean>\",\n            \"excludeAppPackagesFromCleanup\": [\n              \"<string>\",\n              \"<string>\"\n            ],\n            \"rebootAfterUse\": \"<boolean>\",\n            \"name\": \"<string>\",\n            \"description\": \"<string>\"\n          }\n        },\n        {\n          \"arn\": \"arn:-Jarn:-Jarn:-Jarn:-Jarn:-Jarn:-Jarn:-Jarn:-J\",\n          \"deviceArn\": \"arn:\\\\]AK6Eg9tnarn:\\\\]AK6Eg9tnarn:\\\\]AK6Eg9tnarn:\\\\]AK6Eg9tn\",\n          \"labels\": [\n            \"<string>\",\n            \"<string>\"\n          ],\n          \"status\": \"PREPARING\",\n          \"udid\": \"<string>\",\n          \"instanceProfile\": {\n            \"arn\": \"arn:L~earn:L~earn:L~earn:L~earn:L~earn:L~earn:L~earn:L~e\",\n            \"packageCleanup\": \"<boolean>\",\n            \"excludeAppPackagesFromCleanup\": [\n              \"<string>\",\n              \"<string>\"\n            ],\n            \"rebootAfterUse\": \"<boolean>\",\n            \"name\": \"<string>\",\n            \"description\": \"<string>\"\n          }\n        }\n      ],\n      \"availability\": \"HIGHLY_AVAILABLE\"\n    },\n    \"instanceArn\": \"arn:.6D~T$Garn:.6D~T$Garn:.6D~T$Garn:.6D~T$G\",\n    \"remoteDebugEnabled\": \"<boolean>\",\n    \"remoteRecordEnabled\": \"<boolean>\",\n    \"remoteRecordAppArn\": \"arn:lvarn:lvarn:lvarn:lvarn:lvarn:lvarn:lvarn:lv\",\n    \"hostAddress\": \"<string>\",\n    \"clientId\": \"<string>\",\n    \"billingMethod\": \"METERED\",\n    \"deviceMinutes\": {\n      \"total\": \"<double>\",\n      \"metered\": \"<double>\",\n      \"unmetered\": \"<double>\"\n    },\n    \"endpoint\": \"<string>\",\n    \"deviceUdid\": \"<string>\",\n    \"interactionMode\": \"NO_VIDEO\",\n    \"skipAppResign\": \"<boolean>\",\n    \"vpcConfig\": {\n      \"securityGroupIds\": [\n        \"sg-D5E9FFcc5677C4B3b\"\n      ],\n      \"subnetIds\": [\n        \"subnet-DE1CD2fe\"\n      ],\n      \"vpcId\": \"S1\\\"b6g\\\\\"\n    }\n  }\n}",
+              "createdAt": "2026-07-28T10:13:04.000Z",
+              "updatedAt": "2026-07-28T10:13:04.000Z",
+              "uid": "35240-f431ffa0-9bb9-4a15-80af-a7bee488c5c5"
+            },
+            {
+              "id": "c227f94b-1c13-407a-8842-488555f7faaf",
+              "name": "ArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.GetRemoteAccessSession"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:13:04.000Z",
+              "updatedAt": "2026-07-28T10:13:04.000Z",
+              "uid": "35240-c227f94b-1c13-407a-8842-488555f7faaf"
+            },
+            {
+              "id": "86450ac0-b40e-4776-a076-7de05fb0419b",
+              "name": "NotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.GetRemoteAccessSession"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:13:04.000Z",
+              "updatedAt": "2026-07-28T10:13:04.000Z",
+              "uid": "35240-86450ac0-b40e-4776-a076-7de05fb0419b"
+            },
+            {
+              "id": "a95545a8-5e24-4644-a07e-6843d07d8961",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.GetRemoteAccessSession"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:13:04.000Z",
+              "updatedAt": "2026-07-28T10:13:04.000Z",
+              "uid": "35240-a95545a8-5e24-4644-a07e-6843d07d8961"
+            },
+            {
+              "id": "9354321f-6d48-47fc-b31b-415ef94a702e",
+              "name": "ServiceAccountException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.GetRemoteAccessSession"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.arn:Vh.\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:13:04.000Z",
+              "updatedAt": "2026-07-28T10:13:04.000Z",
+              "uid": "35240-9354321f-6d48-47fc-b31b-415ef94a702e"
+            }
+          ],
+          "createdAt": "2026-07-28T10:13:04.000Z",
+          "updatedAt": "2026-07-28T10:13:04.000Z",
+          "uid": "35240-79d4e4b4-5a4e-4afa-bbe1-97db0c013d20"
+        }
+      ],
+      "id": "7e79dfce-14ac-4533-8214-9e99a8bfbbab",
+      "createdAt": "2026-07-28T10:13:03.000Z",
+      "updatedAt": "2026-07-28T10:13:03.000Z",
+      "uid": "35240-7e79dfce-14ac-4533-8214-9e99a8bfbbab"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://devicefarm.{{region}}.amazonaws.com"
+    }
+  ]
+}

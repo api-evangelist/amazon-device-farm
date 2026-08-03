@@ -1,0 +1,616 @@
+{
+  "info": {
+    "_postman_id": "5651a026-8cf2-4681-a6f9-a3b2705559e5",
+    "name": "AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListRuns API",
+    "description": "<p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href=\"https://docs.aws.amazon.com/devicefarm/latest/testgrid/\">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href=\"https://docs.aws.amazon.com/devicefarm/latest/developerguide/\">Device Farm Developer Guide</a>.</p> </li> </ul>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:14:30.000Z",
+    "updatedAt": "2026-07-28T10:14:30.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-5651a026-8cf2-4681-a6f9-a3b2705559e5"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=DeviceFarm_20150623.ListRuns",
+      "item": [
+        {
+          "name": "List Runs",
+          "id": "f4b2e808-2f57-4048-87f5-dc22e9f01b06",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "DeviceFarm_20150623.ListRuns"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"arn\": \"arn:M/#~arn:M/#~arn:M/#~arn:M/#~\",\n  \"nextToken\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListRuns",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "query": [
+                {
+                  "description": "Pagination token",
+                  "key": "nextToken",
+                  "value": "<string>"
+                }
+              ],
+              "hash": "X-Amz-Target=DeviceFarm_20150623.ListRuns"
+            },
+            "description": "Gets information about runs, given an AWS Device Farm project ARN."
+          },
+          "response": [
+            {
+              "id": "dd476262-21d6-49b5-9f62-9183dce58785",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ListRuns"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:M/#~arn:M/#~arn:M/#~arn:M/#~\",\n  \"nextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListRuns",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ListRuns"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"runs\": [\n    {\n      \"arn\": \"arn:T'MMORVY_^*arn:T'MMORVY_^*arn:T'MMORVY_^*arn:T'MMORVY_^*\",\n      \"name\": \"<string>\",\n      \"type\": \"BUILTIN_EXPLORER\",\n      \"platform\": \"ANDROID\",\n      \"created\": \"<dateTime>\",\n      \"status\": \"COMPLETED\",\n      \"result\": \"PASSED\",\n      \"started\": \"<dateTime>\",\n      \"stopped\": \"<dateTime>\",\n      \"counters\": {\n        \"total\": \"<integer>\",\n        \"passed\": \"<integer>\",\n        \"failed\": \"<integer>\",\n        \"warned\": \"<integer>\",\n        \"errored\": \"<integer>\",\n        \"stopped\": \"<integer>\",\n        \"skipped\": \"<integer>\"\n      },\n      \"message\": \"<string>\",\n      \"totalJobs\": \"<integer>\",\n      \"completedJobs\": \"<integer>\",\n      \"billingMethod\": \"UNMETERED\",\n      \"deviceMinutes\": {\n        \"total\": \"<double>\",\n        \"metered\": \"<double>\",\n        \"unmetered\": \"<double>\"\n      },\n      \"networkProfile\": {\n        \"arn\": \"arn:(DqBm]F(WBtarn:(DqBm]F(WBtarn:(DqBm]F(WBtarn:(DqBm]F(WBt\",\n        \"name\": \"<string>\",\n        \"description\": \"<string>\",\n        \"type\": \"CURATED\",\n        \"uplinkBandwidthBits\": \"<integer>\",\n        \"downlinkBandwidthBits\": \"<integer>\",\n        \"uplinkDelayMs\": \"<integer>\",\n        \"downlinkDelayMs\": \"<integer>\",\n        \"uplinkJitterMs\": \"<integer>\",\n        \"downlinkJitterMs\": \"<integer>\",\n        \"uplinkLossPercent\": \"<integer>\",\n        \"downlinkLossPercent\": \"<integer>\"\n      },\n      \"parsingResultUrl\": \"<string>\",\n      \"resultCode\": \"PARSING_FAILED\",\n      \"seed\": \"<integer>\",\n      \"appUpload\": \"arn:iauarn:iauarn:iauarn:iauarn:iauarn:iauarn:iauarn:iau\",\n      \"eventCount\": \"<integer>\",\n      \"jobTimeoutMinutes\": \"<integer>\",\n      \"devicePoolArn\": \"arn:&SD~ ~g(S!arn:&SD~ ~g(S!arn:&SD~ ~g(S!arn:&SD~ ~g(S!\",\n      \"locale\": \"<string>\",\n      \"radios\": {\n        \"wifi\": \"<boolean>\",\n        \"bluetooth\": \"<boolean>\",\n        \"nfc\": \"<boolean>\",\n        \"gps\": \"<boolean>\"\n      },\n      \"location\": {\n        \"latitude\": \"<double>\",\n        \"longitude\": \"<double>\"\n      },\n      \"customerArtifactPaths\": {\n        \"iosPaths\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"androidPaths\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"deviceHostPaths\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      \"webUrl\": \"<string>\",\n      \"skipAppResign\": \"<boolean>\",\n      \"testSpecArn\": \"arn:$evh\\\\2w+arn:$evh\\\\2w+arn:$evh\\\\2w+arn:$evh\\\\2w+\",\n      \"deviceSelectionResult\": {\n        \"filters\": [\n          {\n            \"attribute\": \"REMOTE_DEBUG_ENABLED\",\n            \"operator\": \"IN\",\n            \"values\": [\n              \"<string>\",\n              \"<string>\"\n            ]\n          },\n          {\n            \"attribute\": \"PLATFORM\",\n            \"operator\": \"EQUALS\",\n            \"values\": [\n              \"<string>\",\n              \"<string>\"\n            ]\n          }\n        ],\n        \"matchedDevicesCount\": \"<integer>\",\n        \"maxDevices\": \"<integer>\"\n      },\n      \"vpcConfig\": {\n        \"securityGroupIds\": [\n          \"sg-03eA22CDCe5D0\"\n        ],\n        \"subnetIds\": [\n          \"subnet-19acb0857054371A\"\n        ],\n        \"vpcId\": \"w<!PjX1>`QW(c;qJ-Q\"\n      }\n    },\n    {\n      \"arn\": \"arn:sdarn:sdarn:sdarn:sdarn:sdarn:sdarn:sdarn:sd\",\n      \"name\": \"<string>\",\n      \"type\": \"APPIUM_JAVA_JUNIT\",\n      \"platform\": \"IOS\",\n      \"created\": \"<dateTime>\",\n      \"status\": \"PENDING\",\n      \"result\": \"PENDING\",\n      \"started\": \"<dateTime>\",\n      \"stopped\": \"<dateTime>\",\n      \"counters\": {\n        \"total\": \"<integer>\",\n        \"passed\": \"<integer>\",\n        \"failed\": \"<integer>\",\n        \"warned\": \"<integer>\",\n        \"errored\": \"<integer>\",\n        \"stopped\": \"<integer>\",\n        \"skipped\": \"<integer>\"\n      },\n      \"message\": \"<string>\",\n      \"totalJobs\": \"<integer>\",\n      \"completedJobs\": \"<integer>\",\n      \"billingMethod\": \"METERED\",\n      \"deviceMinutes\": {\n        \"total\": \"<double>\",\n        \"metered\": \"<double>\",\n        \"unmetered\": \"<double>\"\n      },\n      \"networkProfile\": {\n        \"arn\": \"arn:f31VHarn:f31VHarn:f31VHarn:f31VH\",\n        \"name\": \"<string>\",\n        \"description\": \"<string>\",\n        \"type\": \"CURATED\",\n        \"uplinkBandwidthBits\": \"<integer>\",\n        \"downlinkBandwidthBits\": \"<integer>\",\n        \"uplinkDelayMs\": \"<integer>\",\n        \"downlinkDelayMs\": \"<integer>\",\n        \"uplinkJitterMs\": \"<integer>\",\n        \"downlinkJitterMs\": \"<integer>\",\n        \"uplinkLossPercent\": \"<integer>\",\n        \"downlinkLossPercent\": \"<integer>\"\n      },\n      \"parsingResultUrl\": \"<string>\",\n      \"resultCode\": \"VPC_ENDPOINT_SETUP_FAILED\",\n      \"seed\": \"<integer>\",\n      \"appUpload\": \"arn:T2Rp>Ig&>Jarn:T2Rp>Ig&>Jarn:T2Rp>Ig&>Jarn:T2Rp>Ig&>J\",\n      \"eventCount\": \"<integer>\",\n      \"jobTimeoutMinutes\": \"<integer>\",\n      \"devicePoolArn\": \"arn:3|G,_)T%Earn:3|G,_)T%Earn:3|G,_)T%Earn:3|G,_)T%E\",\n      \"locale\": \"<string>\",\n      \"radios\": {\n        \"wifi\": \"<boolean>\",\n        \"bluetooth\": \"<boolean>\",\n        \"nfc\": \"<boolean>\",\n        \"gps\": \"<boolean>\"\n      },\n      \"location\": {\n        \"latitude\": \"<double>\",\n        \"longitude\": \"<double>\"\n      },\n      \"customerArtifactPaths\": {\n        \"iosPaths\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"androidPaths\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"deviceHostPaths\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      \"webUrl\": \"<string>\",\n      \"skipAppResign\": \"<boolean>\",\n      \"testSpecArn\": \"arn:k0I:1<}`aarn:k0I:1<}`aarn:k0I:1<}`aarn:k0I:1<}`a\",\n      \"deviceSelectionResult\": {\n        \"filters\": [\n          {\n            \"attribute\": \"PLATFORM\",\n            \"operator\": \"NOT_IN\",\n            \"values\": [\n              \"<string>\",\n              \"<string>\"\n            ]\n          },\n          {\n            \"attribute\": \"PLATFORM\",\n            \"operator\": \"CONTAINS\",\n            \"values\": [\n              \"<string>\",\n              \"<string>\"\n            ]\n          }\n        ],\n        \"matchedDevicesCount\": \"<integer>\",\n        \"maxDevices\": \"<integer>\"\n      },\n      \"vpcConfig\": {\n        \"securityGroupIds\": [\n          \"sg-af72b8BB809b5CcD\"\n        ],\n        \"subnetIds\": [\n          \"subnet-AE0FAFb53213\"\n        ],\n        \"vpcId\": \"@=8\"\n      }\n    }\n  ],\n  \"nextToken\": \"<string>\"\n}",
+              "createdAt": "2026-07-28T10:14:30.000Z",
+              "updatedAt": "2026-07-28T10:14:30.000Z",
+              "uid": "35240-dd476262-21d6-49b5-9f62-9183dce58785"
+            },
+            {
+              "id": "0c377bec-a978-44fd-9d8d-f4ccfa1541ac",
+              "name": "ArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ListRuns"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:M/#~arn:M/#~arn:M/#~arn:M/#~\",\n  \"nextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListRuns",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ListRuns"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:14:30.000Z",
+              "updatedAt": "2026-07-28T10:14:30.000Z",
+              "uid": "35240-0c377bec-a978-44fd-9d8d-f4ccfa1541ac"
+            },
+            {
+              "id": "e362f4d5-bd8b-480a-bd32-849aeb71310a",
+              "name": "NotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ListRuns"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:M/#~arn:M/#~arn:M/#~arn:M/#~\",\n  \"nextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListRuns",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ListRuns"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:14:30.000Z",
+              "updatedAt": "2026-07-28T10:14:30.000Z",
+              "uid": "35240-e362f4d5-bd8b-480a-bd32-849aeb71310a"
+            },
+            {
+              "id": "82d002a7-0fbb-411c-aad8-61d6b5a66e6a",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ListRuns"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:M/#~arn:M/#~arn:M/#~arn:M/#~\",\n  \"nextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListRuns",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ListRuns"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:14:30.000Z",
+              "updatedAt": "2026-07-28T10:14:30.000Z",
+              "uid": "35240-82d002a7-0fbb-411c-aad8-61d6b5a66e6a"
+            },
+            {
+              "id": "4ad979ae-ab37-4574-9203-ff7fa3ddf071",
+              "name": "ServiceAccountException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ListRuns"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:M/#~arn:M/#~arn:M/#~arn:M/#~\",\n  \"nextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListRuns",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ListRuns"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:14:30.000Z",
+              "updatedAt": "2026-07-28T10:14:30.000Z",
+              "uid": "35240-4ad979ae-ab37-4574-9203-ff7fa3ddf071"
+            }
+          ],
+          "createdAt": "2026-07-28T10:14:30.000Z",
+          "updatedAt": "2026-07-28T10:14:30.000Z",
+          "uid": "35240-f4b2e808-2f57-4048-87f5-dc22e9f01b06"
+        }
+      ],
+      "id": "eecb598d-24ad-4d7d-aa9c-0068e1f33612",
+      "createdAt": "2026-07-28T10:14:30.000Z",
+      "updatedAt": "2026-07-28T10:14:30.000Z",
+      "uid": "35240-eecb598d-24ad-4d7d-aa9c-0068e1f33612"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://devicefarm.{{region}}.amazonaws.com"
+    }
+  ]
+}

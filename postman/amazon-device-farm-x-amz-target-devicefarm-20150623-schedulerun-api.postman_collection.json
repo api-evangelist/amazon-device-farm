@@ -1,0 +1,662 @@
+{
+  "info": {
+    "_postman_id": "576ed317-1f80-4080-9032-a6cbab0c6cbb",
+    "name": "AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ScheduleRun API",
+    "description": "<p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href=\"https://docs.aws.amazon.com/devicefarm/latest/testgrid/\">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href=\"https://docs.aws.amazon.com/devicefarm/latest/developerguide/\">Device Farm Developer Guide</a>.</p> </li> </ul>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:16:44.000Z",
+    "updatedAt": "2026-07-28T10:16:44.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-576ed317-1f80-4080-9032-a6cbab0c6cbb"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=DeviceFarm_20150623.ScheduleRun",
+      "item": [
+        {
+          "name": "Schedule Run",
+          "id": "78ea0d58-88cd-4047-a1c5-793d8d916c2b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "DeviceFarm_20150623.ScheduleRun"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"projectArn\": \"arn:Farn:Farn:Farn:Farn:Farn:Farn:Farn:F\",\n  \"test\": {\n    \"type\": \"UIAUTOMATION\",\n    \"testPackageArn\": \"arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\\",\n    \"testSpecArn\": \"arn:#_{3k3arn:#_{3k3arn:#_{3k3arn:#_{3k3\",\n    \"filter\": \"<string>\",\n    \"parameters\": {\n      \"Excepteur_6c_\": \"<string>\",\n      \"voluptate50a\": \"<string>\"\n    }\n  },\n  \"appArn\": \"arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,\",\n  \"devicePoolArn\": \"arn:|arn:|arn:|arn:|arn:|arn:|arn:|arn:|\",\n  \"deviceSelectionConfiguration\": {\n    \"filters\": [\n      {\n        \"attribute\": \"OS_VERSION\",\n        \"operator\": \"EQUALS\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      {\n        \"attribute\": \"REMOTE_DEBUG_ENABLED\",\n        \"operator\": \"IN\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      }\n    ],\n    \"maxDevices\": \"<integer>\"\n  },\n  \"name\": \"<string>\",\n  \"configuration\": {\n    \"extraDataPackageArn\": \"arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+\",\n    \"networkProfileArn\": \"arn:8HU0narn:8HU0narn:8HU0narn:8HU0n\",\n    \"locale\": \"<string>\",\n    \"location\": {\n      \"latitude\": \"<double>\",\n      \"longitude\": \"<double>\"\n    },\n    \"vpceConfigurationArns\": [\n      \"arn:,dIj<arn:,dIj<arn:,dIj<arn:,dIj<\",\n      \"arn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*R\"\n    ],\n    \"customerArtifactPaths\": {\n      \"iosPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"androidPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"deviceHostPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ]\n    },\n    \"radios\": {\n      \"wifi\": \"<boolean>\",\n      \"bluetooth\": \"<boolean>\",\n      \"nfc\": \"<boolean>\",\n      \"gps\": \"<boolean>\"\n    },\n    \"auxiliaryApps\": [\n      \"arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!\",\n      \"arn:garn:garn:garn:garn:garn:garn:garn:g\"\n    ],\n    \"billingMethod\": \"METERED\"\n  },\n  \"executionConfiguration\": {\n    \"jobTimeoutMinutes\": \"<integer>\",\n    \"accountsCleanup\": \"<boolean>\",\n    \"appPackagesCleanup\": \"<boolean>\",\n    \"videoCapture\": \"<boolean>\",\n    \"skipAppResign\": \"<boolean>\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.ScheduleRun",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=DeviceFarm_20150623.ScheduleRun"
+            },
+            "description": "Schedules a run."
+          },
+          "response": [
+            {
+              "id": "f5cfe4d8-6c0c-44df-8963-552726872711",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ScheduleRun"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:Farn:Farn:Farn:Farn:Farn:Farn:Farn:F\",\n  \"test\": {\n    \"type\": \"UIAUTOMATION\",\n    \"testPackageArn\": \"arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\\",\n    \"testSpecArn\": \"arn:#_{3k3arn:#_{3k3arn:#_{3k3arn:#_{3k3\",\n    \"filter\": \"<string>\",\n    \"parameters\": {\n      \"Excepteur_6c_\": \"<string>\",\n      \"voluptate50a\": \"<string>\"\n    }\n  },\n  \"appArn\": \"arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,\",\n  \"devicePoolArn\": \"arn:|arn:|arn:|arn:|arn:|arn:|arn:|arn:|\",\n  \"deviceSelectionConfiguration\": {\n    \"filters\": [\n      {\n        \"attribute\": \"OS_VERSION\",\n        \"operator\": \"EQUALS\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      {\n        \"attribute\": \"REMOTE_DEBUG_ENABLED\",\n        \"operator\": \"IN\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      }\n    ],\n    \"maxDevices\": \"<integer>\"\n  },\n  \"name\": \"<string>\",\n  \"configuration\": {\n    \"extraDataPackageArn\": \"arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+\",\n    \"networkProfileArn\": \"arn:8HU0narn:8HU0narn:8HU0narn:8HU0n\",\n    \"locale\": \"<string>\",\n    \"location\": {\n      \"latitude\": \"<double>\",\n      \"longitude\": \"<double>\"\n    },\n    \"vpceConfigurationArns\": [\n      \"arn:,dIj<arn:,dIj<arn:,dIj<arn:,dIj<\",\n      \"arn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*R\"\n    ],\n    \"customerArtifactPaths\": {\n      \"iosPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"androidPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"deviceHostPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ]\n    },\n    \"radios\": {\n      \"wifi\": \"<boolean>\",\n      \"bluetooth\": \"<boolean>\",\n      \"nfc\": \"<boolean>\",\n      \"gps\": \"<boolean>\"\n    },\n    \"auxiliaryApps\": [\n      \"arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!\",\n      \"arn:garn:garn:garn:garn:garn:garn:garn:g\"\n    ],\n    \"billingMethod\": \"METERED\"\n  },\n  \"executionConfiguration\": {\n    \"jobTimeoutMinutes\": \"<integer>\",\n    \"accountsCleanup\": \"<boolean>\",\n    \"appPackagesCleanup\": \"<boolean>\",\n    \"videoCapture\": \"<boolean>\",\n    \"skipAppResign\": \"<boolean>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.ScheduleRun",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ScheduleRun"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"run\": {\n    \"arn\": \"arn:Darn:Darn:Darn:Darn:Darn:Darn:Darn:D\",\n    \"name\": \"<string>\",\n    \"type\": \"APPIUM_JAVA_TESTNG\",\n    \"platform\": \"IOS\",\n    \"created\": \"<dateTime>\",\n    \"status\": \"RUNNING\",\n    \"result\": \"PENDING\",\n    \"started\": \"<dateTime>\",\n    \"stopped\": \"<dateTime>\",\n    \"counters\": {\n      \"total\": \"<integer>\",\n      \"passed\": \"<integer>\",\n      \"failed\": \"<integer>\",\n      \"warned\": \"<integer>\",\n      \"errored\": \"<integer>\",\n      \"stopped\": \"<integer>\",\n      \"skipped\": \"<integer>\"\n    },\n    \"message\": \"<string>\",\n    \"totalJobs\": \"<integer>\",\n    \"completedJobs\": \"<integer>\",\n    \"billingMethod\": \"METERED\",\n    \"deviceMinutes\": {\n      \"total\": \"<double>\",\n      \"metered\": \"<double>\",\n      \"unmetered\": \"<double>\"\n    },\n    \"networkProfile\": {\n      \"arn\": \"arn:beYD*arn:beYD*arn:beYD*arn:beYD*\",\n      \"name\": \"<string>\",\n      \"description\": \"<string>\",\n      \"type\": \"CURATED\",\n      \"uplinkBandwidthBits\": \"<integer>\",\n      \"downlinkBandwidthBits\": \"<integer>\",\n      \"uplinkDelayMs\": \"<integer>\",\n      \"downlinkDelayMs\": \"<integer>\",\n      \"uplinkJitterMs\": \"<integer>\",\n      \"downlinkJitterMs\": \"<integer>\",\n      \"uplinkLossPercent\": \"<integer>\",\n      \"downlinkLossPercent\": \"<integer>\"\n    },\n    \"parsingResultUrl\": \"<string>\",\n    \"resultCode\": \"PARSING_FAILED\",\n    \"seed\": \"<integer>\",\n    \"appUpload\": \"arn:sy#jarn:sy#jarn:sy#jarn:sy#j\",\n    \"eventCount\": \"<integer>\",\n    \"jobTimeoutMinutes\": \"<integer>\",\n    \"devicePoolArn\": \"arn:Farn:Farn:Farn:Farn:Farn:Farn:Farn:F\",\n    \"locale\": \"<string>\",\n    \"radios\": {\n      \"wifi\": \"<boolean>\",\n      \"bluetooth\": \"<boolean>\",\n      \"nfc\": \"<boolean>\",\n      \"gps\": \"<boolean>\"\n    },\n    \"location\": {\n      \"latitude\": \"<double>\",\n      \"longitude\": \"<double>\"\n    },\n    \"customerArtifactPaths\": {\n      \"iosPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"androidPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"deviceHostPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ]\n    },\n    \"webUrl\": \"<string>\",\n    \"skipAppResign\": \"<boolean>\",\n    \"testSpecArn\": \"arn:QYmMD~a@Ubarn:QYmMD~a@Ubarn:QYmMD~a@Ubarn:QYmMD~a@Ub\",\n    \"deviceSelectionResult\": {\n      \"filters\": [\n        {\n          \"attribute\": \"MODEL\",\n          \"operator\": \"GREATER_THAN\",\n          \"values\": [\n            \"<string>\",\n            \"<string>\"\n          ]\n        },\n        {\n          \"attribute\": \"MANUFACTURER\",\n          \"operator\": \"LESS_THAN_OR_EQUALS\",\n          \"values\": [\n            \"<string>\",\n            \"<string>\"\n          ]\n        }\n      ],\n      \"matchedDevicesCount\": \"<integer>\",\n      \"maxDevices\": \"<integer>\"\n    },\n    \"vpcConfig\": {\n      \"securityGroupIds\": [\n        \"sg-d4A1dFfeD24CBD7AeB\"\n      ],\n      \"subnetIds\": [\n        \"subnet-cdcde8Ba85FaEb6f5\"\n      ],\n      \"vpcId\": \"iWIf/S@tF\"\n    }\n  }\n}",
+              "createdAt": "2026-07-28T10:16:45.000Z",
+              "updatedAt": "2026-07-28T10:16:45.000Z",
+              "uid": "35240-f5cfe4d8-6c0c-44df-8963-552726872711"
+            },
+            {
+              "id": "6c11f2e8-5048-476e-bbd0-a4acc0fd9d35",
+              "name": "ArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ScheduleRun"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:Farn:Farn:Farn:Farn:Farn:Farn:Farn:F\",\n  \"test\": {\n    \"type\": \"UIAUTOMATION\",\n    \"testPackageArn\": \"arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\\",\n    \"testSpecArn\": \"arn:#_{3k3arn:#_{3k3arn:#_{3k3arn:#_{3k3\",\n    \"filter\": \"<string>\",\n    \"parameters\": {\n      \"Excepteur_6c_\": \"<string>\",\n      \"voluptate50a\": \"<string>\"\n    }\n  },\n  \"appArn\": \"arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,\",\n  \"devicePoolArn\": \"arn:|arn:|arn:|arn:|arn:|arn:|arn:|arn:|\",\n  \"deviceSelectionConfiguration\": {\n    \"filters\": [\n      {\n        \"attribute\": \"OS_VERSION\",\n        \"operator\": \"EQUALS\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      {\n        \"attribute\": \"REMOTE_DEBUG_ENABLED\",\n        \"operator\": \"IN\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      }\n    ],\n    \"maxDevices\": \"<integer>\"\n  },\n  \"name\": \"<string>\",\n  \"configuration\": {\n    \"extraDataPackageArn\": \"arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+\",\n    \"networkProfileArn\": \"arn:8HU0narn:8HU0narn:8HU0narn:8HU0n\",\n    \"locale\": \"<string>\",\n    \"location\": {\n      \"latitude\": \"<double>\",\n      \"longitude\": \"<double>\"\n    },\n    \"vpceConfigurationArns\": [\n      \"arn:,dIj<arn:,dIj<arn:,dIj<arn:,dIj<\",\n      \"arn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*R\"\n    ],\n    \"customerArtifactPaths\": {\n      \"iosPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"androidPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"deviceHostPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ]\n    },\n    \"radios\": {\n      \"wifi\": \"<boolean>\",\n      \"bluetooth\": \"<boolean>\",\n      \"nfc\": \"<boolean>\",\n      \"gps\": \"<boolean>\"\n    },\n    \"auxiliaryApps\": [\n      \"arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!\",\n      \"arn:garn:garn:garn:garn:garn:garn:garn:g\"\n    ],\n    \"billingMethod\": \"METERED\"\n  },\n  \"executionConfiguration\": {\n    \"jobTimeoutMinutes\": \"<integer>\",\n    \"accountsCleanup\": \"<boolean>\",\n    \"appPackagesCleanup\": \"<boolean>\",\n    \"videoCapture\": \"<boolean>\",\n    \"skipAppResign\": \"<boolean>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.ScheduleRun",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ScheduleRun"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:16:45.000Z",
+              "updatedAt": "2026-07-28T10:16:45.000Z",
+              "uid": "35240-6c11f2e8-5048-476e-bbd0-a4acc0fd9d35"
+            },
+            {
+              "id": "d3e1d33d-59d2-4977-a3cb-e6af1d92f9e2",
+              "name": "NotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ScheduleRun"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:Farn:Farn:Farn:Farn:Farn:Farn:Farn:F\",\n  \"test\": {\n    \"type\": \"UIAUTOMATION\",\n    \"testPackageArn\": \"arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\\",\n    \"testSpecArn\": \"arn:#_{3k3arn:#_{3k3arn:#_{3k3arn:#_{3k3\",\n    \"filter\": \"<string>\",\n    \"parameters\": {\n      \"Excepteur_6c_\": \"<string>\",\n      \"voluptate50a\": \"<string>\"\n    }\n  },\n  \"appArn\": \"arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,\",\n  \"devicePoolArn\": \"arn:|arn:|arn:|arn:|arn:|arn:|arn:|arn:|\",\n  \"deviceSelectionConfiguration\": {\n    \"filters\": [\n      {\n        \"attribute\": \"OS_VERSION\",\n        \"operator\": \"EQUALS\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      {\n        \"attribute\": \"REMOTE_DEBUG_ENABLED\",\n        \"operator\": \"IN\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      }\n    ],\n    \"maxDevices\": \"<integer>\"\n  },\n  \"name\": \"<string>\",\n  \"configuration\": {\n    \"extraDataPackageArn\": \"arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+\",\n    \"networkProfileArn\": \"arn:8HU0narn:8HU0narn:8HU0narn:8HU0n\",\n    \"locale\": \"<string>\",\n    \"location\": {\n      \"latitude\": \"<double>\",\n      \"longitude\": \"<double>\"\n    },\n    \"vpceConfigurationArns\": [\n      \"arn:,dIj<arn:,dIj<arn:,dIj<arn:,dIj<\",\n      \"arn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*R\"\n    ],\n    \"customerArtifactPaths\": {\n      \"iosPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"androidPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"deviceHostPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ]\n    },\n    \"radios\": {\n      \"wifi\": \"<boolean>\",\n      \"bluetooth\": \"<boolean>\",\n      \"nfc\": \"<boolean>\",\n      \"gps\": \"<boolean>\"\n    },\n    \"auxiliaryApps\": [\n      \"arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!\",\n      \"arn:garn:garn:garn:garn:garn:garn:garn:g\"\n    ],\n    \"billingMethod\": \"METERED\"\n  },\n  \"executionConfiguration\": {\n    \"jobTimeoutMinutes\": \"<integer>\",\n    \"accountsCleanup\": \"<boolean>\",\n    \"appPackagesCleanup\": \"<boolean>\",\n    \"videoCapture\": \"<boolean>\",\n    \"skipAppResign\": \"<boolean>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.ScheduleRun",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ScheduleRun"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:16:45.000Z",
+              "updatedAt": "2026-07-28T10:16:45.000Z",
+              "uid": "35240-d3e1d33d-59d2-4977-a3cb-e6af1d92f9e2"
+            },
+            {
+              "id": "f1bdcb17-4cc6-4722-b537-c8aab396363b",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ScheduleRun"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:Farn:Farn:Farn:Farn:Farn:Farn:Farn:F\",\n  \"test\": {\n    \"type\": \"UIAUTOMATION\",\n    \"testPackageArn\": \"arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\\",\n    \"testSpecArn\": \"arn:#_{3k3arn:#_{3k3arn:#_{3k3arn:#_{3k3\",\n    \"filter\": \"<string>\",\n    \"parameters\": {\n      \"Excepteur_6c_\": \"<string>\",\n      \"voluptate50a\": \"<string>\"\n    }\n  },\n  \"appArn\": \"arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,\",\n  \"devicePoolArn\": \"arn:|arn:|arn:|arn:|arn:|arn:|arn:|arn:|\",\n  \"deviceSelectionConfiguration\": {\n    \"filters\": [\n      {\n        \"attribute\": \"OS_VERSION\",\n        \"operator\": \"EQUALS\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      {\n        \"attribute\": \"REMOTE_DEBUG_ENABLED\",\n        \"operator\": \"IN\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      }\n    ],\n    \"maxDevices\": \"<integer>\"\n  },\n  \"name\": \"<string>\",\n  \"configuration\": {\n    \"extraDataPackageArn\": \"arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+\",\n    \"networkProfileArn\": \"arn:8HU0narn:8HU0narn:8HU0narn:8HU0n\",\n    \"locale\": \"<string>\",\n    \"location\": {\n      \"latitude\": \"<double>\",\n      \"longitude\": \"<double>\"\n    },\n    \"vpceConfigurationArns\": [\n      \"arn:,dIj<arn:,dIj<arn:,dIj<arn:,dIj<\",\n      \"arn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*R\"\n    ],\n    \"customerArtifactPaths\": {\n      \"iosPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"androidPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"deviceHostPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ]\n    },\n    \"radios\": {\n      \"wifi\": \"<boolean>\",\n      \"bluetooth\": \"<boolean>\",\n      \"nfc\": \"<boolean>\",\n      \"gps\": \"<boolean>\"\n    },\n    \"auxiliaryApps\": [\n      \"arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!\",\n      \"arn:garn:garn:garn:garn:garn:garn:garn:g\"\n    ],\n    \"billingMethod\": \"METERED\"\n  },\n  \"executionConfiguration\": {\n    \"jobTimeoutMinutes\": \"<integer>\",\n    \"accountsCleanup\": \"<boolean>\",\n    \"appPackagesCleanup\": \"<boolean>\",\n    \"videoCapture\": \"<boolean>\",\n    \"skipAppResign\": \"<boolean>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.ScheduleRun",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ScheduleRun"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:16:45.000Z",
+              "updatedAt": "2026-07-28T10:16:45.000Z",
+              "uid": "35240-f1bdcb17-4cc6-4722-b537-c8aab396363b"
+            },
+            {
+              "id": "76edd7ff-cc7c-4437-9bd0-6809e5b92ed3",
+              "name": "IdempotencyException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ScheduleRun"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:Farn:Farn:Farn:Farn:Farn:Farn:Farn:F\",\n  \"test\": {\n    \"type\": \"UIAUTOMATION\",\n    \"testPackageArn\": \"arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\\",\n    \"testSpecArn\": \"arn:#_{3k3arn:#_{3k3arn:#_{3k3arn:#_{3k3\",\n    \"filter\": \"<string>\",\n    \"parameters\": {\n      \"Excepteur_6c_\": \"<string>\",\n      \"voluptate50a\": \"<string>\"\n    }\n  },\n  \"appArn\": \"arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,\",\n  \"devicePoolArn\": \"arn:|arn:|arn:|arn:|arn:|arn:|arn:|arn:|\",\n  \"deviceSelectionConfiguration\": {\n    \"filters\": [\n      {\n        \"attribute\": \"OS_VERSION\",\n        \"operator\": \"EQUALS\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      {\n        \"attribute\": \"REMOTE_DEBUG_ENABLED\",\n        \"operator\": \"IN\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      }\n    ],\n    \"maxDevices\": \"<integer>\"\n  },\n  \"name\": \"<string>\",\n  \"configuration\": {\n    \"extraDataPackageArn\": \"arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+\",\n    \"networkProfileArn\": \"arn:8HU0narn:8HU0narn:8HU0narn:8HU0n\",\n    \"locale\": \"<string>\",\n    \"location\": {\n      \"latitude\": \"<double>\",\n      \"longitude\": \"<double>\"\n    },\n    \"vpceConfigurationArns\": [\n      \"arn:,dIj<arn:,dIj<arn:,dIj<arn:,dIj<\",\n      \"arn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*R\"\n    ],\n    \"customerArtifactPaths\": {\n      \"iosPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"androidPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"deviceHostPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ]\n    },\n    \"radios\": {\n      \"wifi\": \"<boolean>\",\n      \"bluetooth\": \"<boolean>\",\n      \"nfc\": \"<boolean>\",\n      \"gps\": \"<boolean>\"\n    },\n    \"auxiliaryApps\": [\n      \"arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!\",\n      \"arn:garn:garn:garn:garn:garn:garn:garn:g\"\n    ],\n    \"billingMethod\": \"METERED\"\n  },\n  \"executionConfiguration\": {\n    \"jobTimeoutMinutes\": \"<integer>\",\n    \"accountsCleanup\": \"<boolean>\",\n    \"appPackagesCleanup\": \"<boolean>\",\n    \"videoCapture\": \"<boolean>\",\n    \"skipAppResign\": \"<boolean>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.ScheduleRun",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ScheduleRun"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:16:45.000Z",
+              "updatedAt": "2026-07-28T10:16:45.000Z",
+              "uid": "35240-76edd7ff-cc7c-4437-9bd0-6809e5b92ed3"
+            },
+            {
+              "id": "33103c70-275d-44f7-a085-3c7319121acf",
+              "name": "ServiceAccountException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ScheduleRun"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"projectArn\": \"arn:Farn:Farn:Farn:Farn:Farn:Farn:Farn:F\",\n  \"test\": {\n    \"type\": \"UIAUTOMATION\",\n    \"testPackageArn\": \"arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\arn:.+M\\\"4*9\\\\\\\\\",\n    \"testSpecArn\": \"arn:#_{3k3arn:#_{3k3arn:#_{3k3arn:#_{3k3\",\n    \"filter\": \"<string>\",\n    \"parameters\": {\n      \"Excepteur_6c_\": \"<string>\",\n      \"voluptate50a\": \"<string>\"\n    }\n  },\n  \"appArn\": \"arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,arn:jnGN0i-{,\",\n  \"devicePoolArn\": \"arn:|arn:|arn:|arn:|arn:|arn:|arn:|arn:|\",\n  \"deviceSelectionConfiguration\": {\n    \"filters\": [\n      {\n        \"attribute\": \"OS_VERSION\",\n        \"operator\": \"EQUALS\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      {\n        \"attribute\": \"REMOTE_DEBUG_ENABLED\",\n        \"operator\": \"IN\",\n        \"values\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      }\n    ],\n    \"maxDevices\": \"<integer>\"\n  },\n  \"name\": \"<string>\",\n  \"configuration\": {\n    \"extraDataPackageArn\": \"arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+arn:Z+\",\n    \"networkProfileArn\": \"arn:8HU0narn:8HU0narn:8HU0narn:8HU0n\",\n    \"locale\": \"<string>\",\n    \"location\": {\n      \"latitude\": \"<double>\",\n      \"longitude\": \"<double>\"\n    },\n    \"vpceConfigurationArns\": [\n      \"arn:,dIj<arn:,dIj<arn:,dIj<arn:,dIj<\",\n      \"arn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*Rarn:q&HEix}*R\"\n    ],\n    \"customerArtifactPaths\": {\n      \"iosPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"androidPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"deviceHostPaths\": [\n        \"<string>\",\n        \"<string>\"\n      ]\n    },\n    \"radios\": {\n      \"wifi\": \"<boolean>\",\n      \"bluetooth\": \"<boolean>\",\n      \"nfc\": \"<boolean>\",\n      \"gps\": \"<boolean>\"\n    },\n    \"auxiliaryApps\": [\n      \"arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!arn:97c`D=WOK!\",\n      \"arn:garn:garn:garn:garn:garn:garn:garn:g\"\n    ],\n    \"billingMethod\": \"METERED\"\n  },\n  \"executionConfiguration\": {\n    \"jobTimeoutMinutes\": \"<integer>\",\n    \"accountsCleanup\": \"<boolean>\",\n    \"appPackagesCleanup\": \"<boolean>\",\n    \"videoCapture\": \"<boolean>\",\n    \"skipAppResign\": \"<boolean>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DeviceFarm_20150623.ScheduleRun",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ScheduleRun"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:16:45.000Z",
+              "updatedAt": "2026-07-28T10:16:45.000Z",
+              "uid": "35240-33103c70-275d-44f7-a085-3c7319121acf"
+            }
+          ],
+          "createdAt": "2026-07-28T10:16:45.000Z",
+          "updatedAt": "2026-07-28T10:16:45.000Z",
+          "uid": "35240-78ea0d58-88cd-4047-a1c5-793d8d916c2b"
+        }
+      ],
+      "id": "652a5462-f918-44fc-9082-966625f47636",
+      "createdAt": "2026-07-28T10:16:45.000Z",
+      "updatedAt": "2026-07-28T10:16:45.000Z",
+      "uid": "35240-652a5462-f918-44fc-9082-966625f47636"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://devicefarm.{{region}}.amazonaws.com"
+    }
+  ]
+}

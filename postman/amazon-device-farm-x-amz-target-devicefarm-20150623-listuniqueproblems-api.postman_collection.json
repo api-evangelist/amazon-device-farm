@@ -1,0 +1,616 @@
+{
+  "info": {
+    "_postman_id": "e19f726c-1af1-4c4a-8437-981b464592ee",
+    "name": "AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListUniqueProblems API",
+    "description": "<p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href=\"https://docs.aws.amazon.com/devicefarm/latest/testgrid/\">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href=\"https://docs.aws.amazon.com/devicefarm/latest/developerguide/\">Device Farm Developer Guide</a>.</p> </li> </ul>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:15:27.000Z",
+    "updatedAt": "2026-07-28T10:15:28.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-e19f726c-1af1-4c4a-8437-981b464592ee"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems",
+      "item": [
+        {
+          "name": "List Unique Problems",
+          "id": "10f57675-83d1-443d-a18e-900d25c466d3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "DeviceFarm_20150623.ListUniqueProblems"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"arn\": \"arn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rH\",\n  \"nextToken\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "query": [
+                {
+                  "description": "Pagination token",
+                  "key": "nextToken",
+                  "value": "<string>"
+                }
+              ],
+              "hash": "X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems"
+            },
+            "description": "<p>Gets information about unique problems, such as exceptions or crashes.</p> <p>Unique problems are defined as a single instance of an error across a run, job, or suite. For example, if a call in your application consistently raises an exception (<code>OutOfBoundsException in MyActivity.java:386</code>), <code>ListUniqueProblems</code> returns a single entry instead of many individual entries for that exception.</p>"
+          },
+          "response": [
+            {
+              "id": "edb227cf-e066-4e66-a388-a94608e9c184",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ListUniqueProblems"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rH\",\n  \"nextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"uniqueProblems\": {\n    \"proident__2f\": [\n      {\n        \"message\": \"<string>\",\n        \"problems\": [\n          {\n            \"run\": {\n              \"arn\": \"arn:#at$Q8-ziarn:#at$Q8-ziarn:#at$Q8-ziarn:#at$Q8-zi\",\n              \"name\": \"<string>\"\n            },\n            \"job\": {\n              \"arn\": \"arn:x6\\\"P9|C>arn:x6\\\"P9|C>arn:x6\\\"P9|C>arn:x6\\\"P9|C>\",\n              \"name\": \"<string>\"\n            },\n            \"suite\": {\n              \"arn\": \"arn:)i_mb&5arn:)i_mb&5arn:)i_mb&5arn:)i_mb&5\",\n              \"name\": \"<string>\"\n            },\n            \"test\": {\n              \"arn\": \"arn:p_0arn:p_0arn:p_0arn:p_0arn:p_0arn:p_0arn:p_0arn:p_0\",\n              \"name\": \"<string>\"\n            },\n            \"device\": {\n              \"arn\": \"arn:YJ@Darn:YJ@Darn:YJ@Darn:YJ@D\",\n              \"name\": \"<string>\",\n              \"manufacturer\": \"<string>\",\n              \"model\": \"<string>\",\n              \"modelId\": \"<string>\",\n              \"formFactor\": \"TABLET\",\n              \"platform\": \"IOS\",\n              \"os\": \"<string>\",\n              \"cpu\": {\n                \"frequency\": \"<string>\",\n                \"architecture\": \"<string>\",\n                \"clock\": \"<double>\"\n              },\n              \"resolution\": {\n                \"width\": \"<integer>\",\n                \"height\": \"<integer>\"\n              },\n              \"heapSize\": \"<integer>\",\n              \"memory\": \"<integer>\",\n              \"image\": \"<string>\",\n              \"carrier\": \"<string>\",\n              \"radio\": \"<string>\",\n              \"remoteAccessEnabled\": \"<boolean>\",\n              \"remoteDebugEnabled\": \"<boolean>\",\n              \"fleetType\": \"<string>\",\n              \"fleetName\": \"<string>\",\n              \"instances\": [\n                {\n                  \"arn\": \"arn:u&M}%=%NKarn:u&M}%=%NKarn:u&M}%=%NKarn:u&M}%=%NK\",\n                  \"deviceArn\": \"arn:P\\\"kM8p:Yarn:P\\\"kM8p:Yarn:P\\\"kM8p:Yarn:P\\\"kM8p:Y\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"IN_USE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:jpv3vb?arn:jpv3vb?arn:jpv3vb?arn:jpv3vb?\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                },\n                {\n                  \"arn\": \"arn:r7#)rdqs{[5arn:r7#)rdqs{[5arn:r7#)rdqs{[5arn:r7#)rdqs{[5\",\n                  \"deviceArn\": \"arn:eUarn:eUarn:eUarn:eUarn:eUarn:eUarn:eUarn:eU\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"NOT_AVAILABLE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn: X}}^0:bXl3arn: X}}^0:bXl3arn: X}}^0:bXl3arn: X}}^0:bXl3\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                }\n              ],\n              \"availability\": \"AVAILABLE\"\n            },\n            \"result\": \"WARNED\",\n            \"message\": \"<string>\"\n          },\n          {\n            \"run\": {\n              \"arn\": \"arn:`,varn:`,varn:`,varn:`,varn:`,varn:`,varn:`,varn:`,v\",\n              \"name\": \"<string>\"\n            },\n            \"job\": {\n              \"arn\": \"arn:12|bH9:Ukarn:12|bH9:Ukarn:12|bH9:Ukarn:12|bH9:Uk\",\n              \"name\": \"<string>\"\n            },\n            \"suite\": {\n              \"arn\": \"arn:V6)in]B/arn:V6)in]B/arn:V6)in]B/arn:V6)in]B/\",\n              \"name\": \"<string>\"\n            },\n            \"test\": {\n              \"arn\": \"arn:f` TQ0z_+,arn:f` TQ0z_+,arn:f` TQ0z_+,arn:f` TQ0z_+,\",\n              \"name\": \"<string>\"\n            },\n            \"device\": {\n              \"arn\": \"arn:?\\\\,arn:?\\\\,arn:?\\\\,arn:?\\\\,arn:?\\\\,arn:?\\\\,arn:?\\\\,arn:?\\\\,\",\n              \"name\": \"<string>\",\n              \"manufacturer\": \"<string>\",\n              \"model\": \"<string>\",\n              \"modelId\": \"<string>\",\n              \"formFactor\": \"PHONE\",\n              \"platform\": \"IOS\",\n              \"os\": \"<string>\",\n              \"cpu\": {\n                \"frequency\": \"<string>\",\n                \"architecture\": \"<string>\",\n                \"clock\": \"<double>\"\n              },\n              \"resolution\": {\n                \"width\": \"<integer>\",\n                \"height\": \"<integer>\"\n              },\n              \"heapSize\": \"<integer>\",\n              \"memory\": \"<integer>\",\n              \"image\": \"<string>\",\n              \"carrier\": \"<string>\",\n              \"radio\": \"<string>\",\n              \"remoteAccessEnabled\": \"<boolean>\",\n              \"remoteDebugEnabled\": \"<boolean>\",\n              \"fleetType\": \"<string>\",\n              \"fleetName\": \"<string>\",\n              \"instances\": [\n                {\n                  \"arn\": \"arn:{Jharn:{Jharn:{Jharn:{Jharn:{Jharn:{Jharn:{Jharn:{Jh\",\n                  \"deviceArn\": \"arn:Npl8O7X)#qgarn:Npl8O7X)#qgarn:Npl8O7X)#qgarn:Npl8O7X)#qg\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"PREPARING\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:n5arn:n5arn:n5arn:n5arn:n5arn:n5arn:n5arn:n5\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                },\n                {\n                  \"arn\": \"arn:Dqarn:Dqarn:Dqarn:Dqarn:Dqarn:Dqarn:Dqarn:Dq\",\n                  \"deviceArn\": \"arn:9Fi%arn:9Fi%arn:9Fi%arn:9Fi%\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"IN_USE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:pNYIq!arn:pNYIq!arn:pNYIq!arn:pNYIq!\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                }\n              ],\n              \"availability\": \"AVAILABLE\"\n            },\n            \"result\": \"STOPPED\",\n            \"message\": \"<string>\"\n          }\n        ]\n      },\n      {\n        \"message\": \"<string>\",\n        \"problems\": [\n          {\n            \"run\": {\n              \"arn\": \"arn:pTaDarn:pTaDarn:pTaDarn:pTaD\",\n              \"name\": \"<string>\"\n            },\n            \"job\": {\n              \"arn\": \"arn:)~WBwnDkarn:)~WBwnDkarn:)~WBwnDkarn:)~WBwnDk\",\n              \"name\": \"<string>\"\n            },\n            \"suite\": {\n              \"arn\": \"arn:R,4Ff^Y1+e1arn:R,4Ff^Y1+e1arn:R,4Ff^Y1+e1arn:R,4Ff^Y1+e1\",\n              \"name\": \"<string>\"\n            },\n            \"test\": {\n              \"arn\": \"arn:H{Z}5J(arn:H{Z}5J(arn:H{Z}5J(arn:H{Z}5J(\",\n              \"name\": \"<string>\"\n            },\n            \"device\": {\n              \"arn\": \"arn:t2' 9arn:t2' 9arn:t2' 9arn:t2' 9\",\n              \"name\": \"<string>\",\n              \"manufacturer\": \"<string>\",\n              \"model\": \"<string>\",\n              \"modelId\": \"<string>\",\n              \"formFactor\": \"TABLET\",\n              \"platform\": \"IOS\",\n              \"os\": \"<string>\",\n              \"cpu\": {\n                \"frequency\": \"<string>\",\n                \"architecture\": \"<string>\",\n                \"clock\": \"<double>\"\n              },\n              \"resolution\": {\n                \"width\": \"<integer>\",\n                \"height\": \"<integer>\"\n              },\n              \"heapSize\": \"<integer>\",\n              \"memory\": \"<integer>\",\n              \"image\": \"<string>\",\n              \"carrier\": \"<string>\",\n              \"radio\": \"<string>\",\n              \"remoteAccessEnabled\": \"<boolean>\",\n              \"remoteDebugEnabled\": \"<boolean>\",\n              \"fleetType\": \"<string>\",\n              \"fleetName\": \"<string>\",\n              \"instances\": [\n                {\n                  \"arn\": \"arn:vhr8Zt;Qlgkarn:vhr8Zt;Qlgkarn:vhr8Zt;Qlgkarn:vhr8Zt;Qlgk\",\n                  \"deviceArn\": \"arn:>E0nzz89arn:>E0nzz89arn:>E0nzz89arn:>E0nzz89\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"NOT_AVAILABLE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:darn:darn:darn:darn:darn:darn:darn:d\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                },\n                {\n                  \"arn\": \"arn:#w<VAy~HxZarn:#w<VAy~HxZarn:#w<VAy~HxZarn:#w<VAy~HxZ\",\n                  \"deviceArn\": \"arn:=/d.-arn:=/d.-arn:=/d.-arn:=/d.-\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"NOT_AVAILABLE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn::5fF^Garn::5fF^Garn::5fF^Garn::5fF^G\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                }\n              ],\n              \"availability\": \"BUSY\"\n            },\n            \"result\": \"ERRORED\",\n            \"message\": \"<string>\"\n          },\n          {\n            \"run\": {\n              \"arn\": \"arn:-3|,tP$,Q6)arn:-3|,tP$,Q6)arn:-3|,tP$,Q6)arn:-3|,tP$,Q6)\",\n              \"name\": \"<string>\"\n            },\n            \"job\": {\n              \"arn\": \"arn:whYGG%%7BmTarn:whYGG%%7BmTarn:whYGG%%7BmTarn:whYGG%%7BmT\",\n              \"name\": \"<string>\"\n            },\n            \"suite\": {\n              \"arn\": \"arn:GK\\\\NA(jUarn:GK\\\\NA(jUarn:GK\\\\NA(jUarn:GK\\\\NA(jU\",\n              \"name\": \"<string>\"\n            },\n            \"test\": {\n              \"arn\": \"arn:Z$j@f)oI3 arn:Z$j@f)oI3 arn:Z$j@f)oI3 arn:Z$j@f)oI3 \",\n              \"name\": \"<string>\"\n            },\n            \"device\": {\n              \"arn\": \"arn:M6U67+'0I>arn:M6U67+'0I>arn:M6U67+'0I>arn:M6U67+'0I>\",\n              \"name\": \"<string>\",\n              \"manufacturer\": \"<string>\",\n              \"model\": \"<string>\",\n              \"modelId\": \"<string>\",\n              \"formFactor\": \"TABLET\",\n              \"platform\": \"ANDROID\",\n              \"os\": \"<string>\",\n              \"cpu\": {\n                \"frequency\": \"<string>\",\n                \"architecture\": \"<string>\",\n                \"clock\": \"<double>\"\n              },\n              \"resolution\": {\n                \"width\": \"<integer>\",\n                \"height\": \"<integer>\"\n              },\n              \"heapSize\": \"<integer>\",\n              \"memory\": \"<integer>\",\n              \"image\": \"<string>\",\n              \"carrier\": \"<string>\",\n              \"radio\": \"<string>\",\n              \"remoteAccessEnabled\": \"<boolean>\",\n              \"remoteDebugEnabled\": \"<boolean>\",\n              \"fleetType\": \"<string>\",\n              \"fleetName\": \"<string>\",\n              \"instances\": [\n                {\n                  \"arn\": \"arn:)-;S{nu%arn:)-;S{nu%arn:)-;S{nu%arn:)-;S{nu%\",\n                  \"deviceArn\": \"arn:89\\\\k#Rarn:89\\\\k#Rarn:89\\\\k#Rarn:89\\\\k#R\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"NOT_AVAILABLE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:-$V.9UPHarn:-$V.9UPHarn:-$V.9UPHarn:-$V.9UPH\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                },\n                {\n                  \"arn\": \"arn:\\\\i*ocPy]FParn:\\\\i*ocPy]FParn:\\\\i*ocPy]FParn:\\\\i*ocPy]FP\",\n                  \"deviceArn\": \"arn:A_D,arn:A_D,arn:A_D,arn:A_D,\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"IN_USE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:Cparn:Cparn:Cparn:Cparn:Cparn:Cparn:Cparn:Cp\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                }\n              ],\n              \"availability\": \"AVAILABLE\"\n            },\n            \"result\": \"PENDING\",\n            \"message\": \"<string>\"\n          }\n        ]\n      }\n    ],\n    \"in_a7\": [\n      {\n        \"message\": \"<string>\",\n        \"problems\": [\n          {\n            \"run\": {\n              \"arn\": \"arn:<S@^&FQarn:<S@^&FQarn:<S@^&FQarn:<S@^&FQ\",\n              \"name\": \"<string>\"\n            },\n            \"job\": {\n              \"arn\": \"arn:&O5\\\"KnBcarn:&O5\\\"KnBcarn:&O5\\\"KnBcarn:&O5\\\"KnBc\",\n              \"name\": \"<string>\"\n            },\n            \"suite\": {\n              \"arn\": \"arn:/&'m$UXparn:/&'m$UXparn:/&'m$UXparn:/&'m$UXp\",\n              \"name\": \"<string>\"\n            },\n            \"test\": {\n              \"arn\": \"arn:T)arn:T)arn:T)arn:T)arn:T)arn:T)arn:T)arn:T)\",\n              \"name\": \"<string>\"\n            },\n            \"device\": {\n              \"arn\": \"arn:PaZarn:PaZarn:PaZarn:PaZarn:PaZarn:PaZarn:PaZarn:PaZ\",\n              \"name\": \"<string>\",\n              \"manufacturer\": \"<string>\",\n              \"model\": \"<string>\",\n              \"modelId\": \"<string>\",\n              \"formFactor\": \"TABLET\",\n              \"platform\": \"ANDROID\",\n              \"os\": \"<string>\",\n              \"cpu\": {\n                \"frequency\": \"<string>\",\n                \"architecture\": \"<string>\",\n                \"clock\": \"<double>\"\n              },\n              \"resolution\": {\n                \"width\": \"<integer>\",\n                \"height\": \"<integer>\"\n              },\n              \"heapSize\": \"<integer>\",\n              \"memory\": \"<integer>\",\n              \"image\": \"<string>\",\n              \"carrier\": \"<string>\",\n              \"radio\": \"<string>\",\n              \"remoteAccessEnabled\": \"<boolean>\",\n              \"remoteDebugEnabled\": \"<boolean>\",\n              \"fleetType\": \"<string>\",\n              \"fleetName\": \"<string>\",\n              \"instances\": [\n                {\n                  \"arn\": \"arn:IDV\\\"FK9arn:IDV\\\"FK9arn:IDV\\\"FK9arn:IDV\\\"FK9\",\n                  \"deviceArn\": \"arn:.zt(L7#huvarn:.zt(L7#huvarn:.zt(L7#huvarn:.zt(L7#huv\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"NOT_AVAILABLE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:~Xarn:~Xarn:~Xarn:~Xarn:~Xarn:~Xarn:~Xarn:~X\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                },\n                {\n                  \"arn\": \"arn:Sk($fX'Xarn:Sk($fX'Xarn:Sk($fX'Xarn:Sk($fX'X\",\n                  \"deviceArn\": \"arn:@gxsAR>S;arn:@gxsAR>S;arn:@gxsAR>S;arn:@gxsAR>S;\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"IN_USE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:\\\\4;narn:\\\\4;narn:\\\\4;narn:\\\\4;n\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                }\n              ],\n              \"availability\": \"BUSY\"\n            },\n            \"result\": \"PASSED\",\n            \"message\": \"<string>\"\n          },\n          {\n            \"run\": {\n              \"arn\": \"arn:+EyY, hq@Kkarn:+EyY, hq@Kkarn:+EyY, hq@Kkarn:+EyY, hq@Kk\",\n              \"name\": \"<string>\"\n            },\n            \"job\": {\n              \"arn\": \"arn:Au^J{z{PN~arn:Au^J{z{PN~arn:Au^J{z{PN~arn:Au^J{z{PN~\",\n              \"name\": \"<string>\"\n            },\n            \"suite\": {\n              \"arn\": \"arn:rp#@'\\\\ICh6rarn:rp#@'\\\\ICh6rarn:rp#@'\\\\ICh6rarn:rp#@'\\\\ICh6r\",\n              \"name\": \"<string>\"\n            },\n            \"test\": {\n              \"arn\": \"arn:PfA<vb'?arn:PfA<vb'?arn:PfA<vb'?arn:PfA<vb'?\",\n              \"name\": \"<string>\"\n            },\n            \"device\": {\n              \"arn\": \"arn:fJ1:arn:fJ1:arn:fJ1:arn:fJ1:\",\n              \"name\": \"<string>\",\n              \"manufacturer\": \"<string>\",\n              \"model\": \"<string>\",\n              \"modelId\": \"<string>\",\n              \"formFactor\": \"PHONE\",\n              \"platform\": \"ANDROID\",\n              \"os\": \"<string>\",\n              \"cpu\": {\n                \"frequency\": \"<string>\",\n                \"architecture\": \"<string>\",\n                \"clock\": \"<double>\"\n              },\n              \"resolution\": {\n                \"width\": \"<integer>\",\n                \"height\": \"<integer>\"\n              },\n              \"heapSize\": \"<integer>\",\n              \"memory\": \"<integer>\",\n              \"image\": \"<string>\",\n              \"carrier\": \"<string>\",\n              \"radio\": \"<string>\",\n              \"remoteAccessEnabled\": \"<boolean>\",\n              \"remoteDebugEnabled\": \"<boolean>\",\n              \"fleetType\": \"<string>\",\n              \"fleetName\": \"<string>\",\n              \"instances\": [\n                {\n                  \"arn\": \"arn:LXrYXU':arn:LXrYXU':arn:LXrYXU':arn:LXrYXU':\",\n                  \"deviceArn\": \"arn::narn::narn::narn::narn::narn::narn::narn::n\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"PREPARING\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:x-ITVq.jarn:x-ITVq.jarn:x-ITVq.jarn:x-ITVq.j\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                },\n                {\n                  \"arn\": \"arn:eaN8cQarn:eaN8cQarn:eaN8cQarn:eaN8cQ\",\n                  \"deviceArn\": \"arn:Ubarn:Ubarn:Ubarn:Ubarn:Ubarn:Ubarn:Ubarn:Ub\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"AVAILABLE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:c-[miC Narn:c-[miC Narn:c-[miC Narn:c-[miC N\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                }\n              ],\n              \"availability\": \"HIGHLY_AVAILABLE\"\n            },\n            \"result\": \"SKIPPED\",\n            \"message\": \"<string>\"\n          }\n        ]\n      },\n      {\n        \"message\": \"<string>\",\n        \"problems\": [\n          {\n            \"run\": {\n              \"arn\": \"arn:2g^'|_AF9arn:2g^'|_AF9arn:2g^'|_AF9arn:2g^'|_AF9\",\n              \"name\": \"<string>\"\n            },\n            \"job\": {\n              \"arn\": \"arn:E%)arn:E%)arn:E%)arn:E%)arn:E%)arn:E%)arn:E%)arn:E%)\",\n              \"name\": \"<string>\"\n            },\n            \"suite\": {\n              \"arn\": \"arn:_A82L1\\\\/karn:_A82L1\\\\/karn:_A82L1\\\\/karn:_A82L1\\\\/k\",\n              \"name\": \"<string>\"\n            },\n            \"test\": {\n              \"arn\": \"arn:u=E5pm3dp\\\"arn:u=E5pm3dp\\\"arn:u=E5pm3dp\\\"arn:u=E5pm3dp\\\"\",\n              \"name\": \"<string>\"\n            },\n            \"device\": {\n              \"arn\": \"arn:>[arn:>[arn:>[arn:>[arn:>[arn:>[arn:>[arn:>[\",\n              \"name\": \"<string>\",\n              \"manufacturer\": \"<string>\",\n              \"model\": \"<string>\",\n              \"modelId\": \"<string>\",\n              \"formFactor\": \"TABLET\",\n              \"platform\": \"IOS\",\n              \"os\": \"<string>\",\n              \"cpu\": {\n                \"frequency\": \"<string>\",\n                \"architecture\": \"<string>\",\n                \"clock\": \"<double>\"\n              },\n              \"resolution\": {\n                \"width\": \"<integer>\",\n                \"height\": \"<integer>\"\n              },\n              \"heapSize\": \"<integer>\",\n              \"memory\": \"<integer>\",\n              \"image\": \"<string>\",\n              \"carrier\": \"<string>\",\n              \"radio\": \"<string>\",\n              \"remoteAccessEnabled\": \"<boolean>\",\n              \"remoteDebugEnabled\": \"<boolean>\",\n              \"fleetType\": \"<string>\",\n              \"fleetName\": \"<string>\",\n              \"instances\": [\n                {\n                  \"arn\": \"arn:%arn:%arn:%arn:%arn:%arn:%arn:%arn:%\",\n                  \"deviceArn\": \"arn:k}UaPFS)g~arn:k}UaPFS)g~arn:k}UaPFS)g~arn:k}UaPFS)g~\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"IN_USE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:_^ x@vViioDarn:_^ x@vViioDarn:_^ x@vViioDarn:_^ x@vViioD\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                },\n                {\n                  \"arn\": \"arn:2Ra-01Lb(arn:2Ra-01Lb(arn:2Ra-01Lb(arn:2Ra-01Lb(\",\n                  \"deviceArn\": \"arn:*Garn:*Garn:*Garn:*Garn:*Garn:*Garn:*Garn:*G\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"NOT_AVAILABLE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:OParn:OParn:OParn:OParn:OParn:OParn:OParn:OP\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                }\n              ],\n              \"availability\": \"HIGHLY_AVAILABLE\"\n            },\n            \"result\": \"PASSED\",\n            \"message\": \"<string>\"\n          },\n          {\n            \"run\": {\n              \"arn\": \"arn:Zarn:Zarn:Zarn:Zarn:Zarn:Zarn:Zarn:Z\",\n              \"name\": \"<string>\"\n            },\n            \"job\": {\n              \"arn\": \"arn:QCO~Carn:QCO~Carn:QCO~Carn:QCO~C\",\n              \"name\": \"<string>\"\n            },\n            \"suite\": {\n              \"arn\": \"arn:aarn:aarn:aarn:aarn:aarn:aarn:aarn:a\",\n              \"name\": \"<string>\"\n            },\n            \"test\": {\n              \"arn\": \"arn:c.8tarn:c.8tarn:c.8tarn:c.8t\",\n              \"name\": \"<string>\"\n            },\n            \"device\": {\n              \"arn\": \"arn:6qharn:6qharn:6qharn:6qharn:6qharn:6qharn:6qharn:6qh\",\n              \"name\": \"<string>\",\n              \"manufacturer\": \"<string>\",\n              \"model\": \"<string>\",\n              \"modelId\": \"<string>\",\n              \"formFactor\": \"TABLET\",\n              \"platform\": \"ANDROID\",\n              \"os\": \"<string>\",\n              \"cpu\": {\n                \"frequency\": \"<string>\",\n                \"architecture\": \"<string>\",\n                \"clock\": \"<double>\"\n              },\n              \"resolution\": {\n                \"width\": \"<integer>\",\n                \"height\": \"<integer>\"\n              },\n              \"heapSize\": \"<integer>\",\n              \"memory\": \"<integer>\",\n              \"image\": \"<string>\",\n              \"carrier\": \"<string>\",\n              \"radio\": \"<string>\",\n              \"remoteAccessEnabled\": \"<boolean>\",\n              \"remoteDebugEnabled\": \"<boolean>\",\n              \"fleetType\": \"<string>\",\n              \"fleetName\": \"<string>\",\n              \"instances\": [\n                {\n                  \"arn\": \"arn:\\\"|c;arn:\\\"|c;arn:\\\"|c;arn:\\\"|c;\",\n                  \"deviceArn\": \"arn:c>kBiy ey:arn:c>kBiy ey:arn:c>kBiy ey:arn:c>kBiy ey:\",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"PREPARING\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:28Gb~1hBQarn:28Gb~1hBQarn:28Gb~1hBQarn:28Gb~1hBQ\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                },\n                {\n                  \"arn\": \"arn:p>Warn:p>Warn:p>Warn:p>Warn:p>Warn:p>Warn:p>Warn:p>W\",\n                  \"deviceArn\": \"arn:Ag)A]$lu arn:Ag)A]$lu arn:Ag)A]$lu arn:Ag)A]$lu \",\n                  \"labels\": [\n                    \"<string>\",\n                    \"<string>\"\n                  ],\n                  \"status\": \"AVAILABLE\",\n                  \"udid\": \"<string>\",\n                  \"instanceProfile\": {\n                    \"arn\": \"arn:aiarn:aiarn:aiarn:aiarn:aiarn:aiarn:aiarn:ai\",\n                    \"packageCleanup\": \"<boolean>\",\n                    \"excludeAppPackagesFromCleanup\": [\n                      \"<string>\",\n                      \"<string>\"\n                    ],\n                    \"rebootAfterUse\": \"<boolean>\",\n                    \"name\": \"<string>\",\n                    \"description\": \"<string>\"\n                  }\n                }\n              ],\n              \"availability\": \"BUSY\"\n            },\n            \"result\": \"ERRORED\",\n            \"message\": \"<string>\"\n          }\n        ]\n      }\n    ]\n  },\n  \"nextToken\": \"<string>\"\n}",
+              "createdAt": "2026-07-28T10:15:28.000Z",
+              "updatedAt": "2026-07-28T10:15:28.000Z",
+              "uid": "35240-edb227cf-e066-4e66-a388-a94608e9c184"
+            },
+            {
+              "id": "5da9c7b5-7b20-41ba-9d3c-4a877c6304f5",
+              "name": "ArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ListUniqueProblems"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rH\",\n  \"nextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:15:28.000Z",
+              "updatedAt": "2026-07-28T10:15:28.000Z",
+              "uid": "35240-5da9c7b5-7b20-41ba-9d3c-4a877c6304f5"
+            },
+            {
+              "id": "d1032d4b-dc54-458c-8117-c5c565f41fe0",
+              "name": "NotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ListUniqueProblems"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rH\",\n  \"nextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:15:28.000Z",
+              "updatedAt": "2026-07-28T10:15:28.000Z",
+              "uid": "35240-d1032d4b-dc54-458c-8117-c5c565f41fe0"
+            },
+            {
+              "id": "4a468be9-5a37-4593-b260-c212c353d618",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ListUniqueProblems"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rH\",\n  \"nextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:15:28.000Z",
+              "updatedAt": "2026-07-28T10:15:28.000Z",
+              "uid": "35240-4a468be9-5a37-4593-b260-c212c353d618"
+            },
+            {
+              "id": "79e7e790-ab7c-49ac-b951-4b613ea8159e",
+              "name": "ServiceAccountException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DeviceFarm_20150623.ListUniqueProblems"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"arn\": \"arn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rHarn:rH\",\n  \"nextToken\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?nextToken=<string>#X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:15:28.000Z",
+              "updatedAt": "2026-07-28T10:15:28.000Z",
+              "uid": "35240-79e7e790-ab7c-49ac-b951-4b613ea8159e"
+            }
+          ],
+          "createdAt": "2026-07-28T10:15:28.000Z",
+          "updatedAt": "2026-07-28T10:15:28.000Z",
+          "uid": "35240-10f57675-83d1-443d-a18e-900d25c466d3"
+        }
+      ],
+      "id": "a19d04d2-6ca5-4fa8-a8bc-ad8125001cfd",
+      "createdAt": "2026-07-28T10:15:28.000Z",
+      "updatedAt": "2026-07-28T10:15:28.000Z",
+      "uid": "35240-a19d04d2-6ca5-4fa8-a8bc-ad8125001cfd"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://devicefarm.{{region}}.amazonaws.com"
+    }
+  ]
+}
