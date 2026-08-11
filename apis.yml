@@ -66,8 +66,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateInstanceProfile API'
@@ -114,8 +112,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateNetworkProfile API'
@@ -162,8 +158,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateProject API'
   description: >-
@@ -209,8 +203,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateRemoteAccessSession API'
@@ -257,8 +249,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateTestGridProject API'
@@ -305,8 +295,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateTestGridUrl API'
@@ -353,8 +341,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateUpload API'
   description: >-
@@ -399,8 +385,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.CreateVPCEConfiguration API'
@@ -447,8 +431,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteDevicePool API'
@@ -495,8 +477,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteInstanceProfile API'
@@ -543,8 +523,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteNetworkProfile API'
@@ -591,8 +569,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteProject API'
   description: >-
@@ -638,8 +614,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteRemoteAccessSession API'
@@ -686,8 +660,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteRun API'
   description: >-
@@ -732,8 +704,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteTestGridProject API'
@@ -780,8 +750,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteUpload API'
   description: >-
@@ -826,8 +794,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.DeleteVPCEConfiguration API'
@@ -874,8 +840,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetAccountSettings API'
@@ -922,8 +886,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetDevice API'
   description: >-
@@ -968,8 +930,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetDeviceInstance API'
@@ -1016,8 +976,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetDevicePool API'
   description: >-
@@ -1063,8 +1021,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility API'
@@ -1111,8 +1067,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetInstanceProfile API'
@@ -1159,8 +1113,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetJob API'
   description: >-
@@ -1205,8 +1157,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetNetworkProfile API'
@@ -1253,8 +1203,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetOfferingStatus API'
@@ -1301,8 +1249,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetProject API'
   description: >-
@@ -1347,8 +1293,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetRemoteAccessSession API'
@@ -1395,8 +1339,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetRun API'
   description: >-
@@ -1441,8 +1383,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetSuite API'
   description: >-
@@ -1487,8 +1427,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetTest API'
   description: >-
@@ -1533,8 +1471,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetTestGridProject API'
@@ -1581,8 +1517,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetTestGridSession API'
@@ -1629,8 +1563,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetUpload API'
   description: >-
@@ -1675,8 +1607,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.GetVPCEConfiguration API'
@@ -1723,8 +1653,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.InstallToRemoteAccessSession API'
@@ -1771,8 +1699,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListArtifacts API'
   description: >-
@@ -1818,8 +1744,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListDeviceInstances API'
@@ -1866,8 +1790,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListDevicePools API'
@@ -1914,8 +1836,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListDevices API'
   description: >-
@@ -1960,8 +1880,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListInstanceProfiles API'
@@ -2008,8 +1926,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListJobs API'
   description: >-
@@ -2054,8 +1970,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListNetworkProfiles API'
@@ -2102,8 +2016,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListOfferingPromotions API'
@@ -2150,8 +2062,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListOfferings API'
   description: >-
@@ -2197,8 +2107,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListOfferingTransactions API'
@@ -2245,8 +2153,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListProjects API'
   description: >-
@@ -2291,8 +2197,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListRemoteAccessSessions API'
@@ -2339,8 +2243,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListRuns API'
   description: >-
@@ -2385,8 +2287,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListSamples API'
   description: >-
@@ -2431,8 +2331,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListSuites API'
   description: >-
@@ -2477,8 +2375,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTagsForResource API'
@@ -2525,8 +2421,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTestGridProjects API'
@@ -2573,8 +2467,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTestGridSessionActions API'
@@ -2621,8 +2513,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts API'
@@ -2669,8 +2559,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTestGridSessions API'
@@ -2717,8 +2605,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListTests API'
   description: >-
@@ -2763,8 +2649,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListUniqueProblems API'
@@ -2811,8 +2695,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListUploads API'
   description: >-
@@ -2857,8 +2739,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ListVPCEConfigurations API'
@@ -2905,8 +2785,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.PurchaseOffering API'
@@ -2953,8 +2831,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.RenewOffering API'
   description: >-
@@ -3000,8 +2876,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.ScheduleRun API'
   description: >-
@@ -3046,8 +2920,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.StopJob API'
   description: >-
@@ -3092,8 +2964,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.StopRemoteAccessSession API'
@@ -3140,8 +3010,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.StopRun API'
   description: >-
@@ -3186,8 +3054,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.TagResource API'
   description: >-
@@ -3232,8 +3098,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UntagResource API'
   description: >-
@@ -3279,8 +3143,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateDeviceInstance API'
@@ -3327,8 +3189,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateDevicePool API'
@@ -3375,8 +3235,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateInstanceProfile API'
@@ -3423,8 +3281,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateNetworkProfile API'
@@ -3471,8 +3327,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateProject API'
   description: >-
@@ -3518,8 +3372,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateTestGridProject API'
@@ -3566,8 +3418,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateUpload API'
   description: >-
@@ -3612,8 +3462,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 - aid: >-
     amazon-device-farm:amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api
   name: 'Amazon Device Farm #X Amz Target=DeviceFarm 20150623.UpdateVPCEConfiguration API'
@@ -3660,8 +3508,6 @@ apis:
     url: examples/amazon-device-farm-run-example.json
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-device-farm.yaml
 common:
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-device-farm/overview
