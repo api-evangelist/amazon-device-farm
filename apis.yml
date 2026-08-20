@@ -1662,7 +1662,8 @@ apis:
     operation(s) for #x amz target=devicefarm 20150623.installtoremoteaccesssession.
   humanURL: https://aws.amazon.com/device-farm/
   baseURL: https://devicefarm.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DeviceFarm 20150623.InstallToRemoteAccessSession'
   properties:
   - type: OpenAPI
@@ -2522,7 +2523,8 @@ apis:
     operation(s) for #x amz target=devicefarm 20150623.listtestgridsessionartifacts.
   humanURL: https://aws.amazon.com/device-farm/
   baseURL: https://devicefarm.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts'
   properties:
   - type: OpenAPI
