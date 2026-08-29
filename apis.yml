@@ -3524,6 +3524,9 @@ apis:
   - type: Examples
     url: examples/amazon-device-farm-device-example.json
 common:
+- type: CapabilityMap
+  url: capabilities/amazon-device-farm-capability-edges.yml
+  name: Amazon Device Farm Business Capability Map
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-device-farm/overview
 - type: AgenticAccess

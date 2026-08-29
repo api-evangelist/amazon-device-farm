@@ -1,0 +1,321 @@
+slug: amazon-device-farm
+provider: Amazon Device Farm
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 32
+edges:
+- tag: '#X Amz Target=DeviceFarm 20150623.ScheduleRun'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.88
+  evidence: ScheduleRun ... ScheduleRunTest, TestParameters, DeviceSelectionConfiguration, ExecutionResult
+  reason: Schedules a test run across selected devices with test parameters — execution of automated tests,
+    squarely software quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.GetSuite'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.85
+  evidence: GetSuite; schemas Suite, TestType, ExecutionResult, Counters, DeviceMinutes
+  reason: Retrieves a test suite with execution results and test type — plainly automated test suite stewardship
+    / quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.GetTest'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.85
+  evidence: GetTest; schemas Test, TestType, ExecutionStatus, ExecutionResult, Counters
+  reason: Retrieves an individual test and its execution result within the app-testing service — software
+    quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListRuns'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.85
+  evidence: ListRuns; schemas ExecutionStatus, ExecutionResult, CustomerArtifactPaths, ListRunsResult
+    in "an application testing service"
+  reason: Test runs executed against devices/browsers; listing and inspecting their execution status and
+    results is automated test suite stewardship — Software Quality Engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListSuites'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.85
+  evidence: ListSuites; schemas Suite, TestType, ExecutionResult, DeviceMinutes, Counters
+  reason: Test suites within a run, with test type and pass/fail counters — plainly automated test suite
+    and result management under Software Quality Engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListTests'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.85
+  evidence: 'ListTests ... schemas: Test, ExecutionResult, Counters, TestType, ListTestsResult'
+  reason: Enumerates tests and their execution results within test runs — automated test suite stewardship
+    / quality engineering, not any business-domain noun.
+- tag: '#X Amz Target=DeviceFarm 20150623.DeleteRun'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.8
+  evidence: DeleteRun ... DeleteRunRequest / DeleteRunResult — "application testing service that lets
+    you improve the quality of your web and mobile apps"
+  reason: A run is a test run of an app across devices; managing test runs is squarely test suite/defect-oriented
+    software quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.DeleteTestGridProject'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.8
+  evidence: DeleteTestGridProject — "test your web applications on desktop browsers using Selenium. The
+    APIs for desktop browser testing contain TestGrid in their names"
+  reason: TestGrid projects hold Selenium browser test sessions; this is explicitly automated software
+    test execution.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListTestGridProjects'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.8
+  evidence: ListTestGridProjects; schemas TestGridProject, TestGridVpcConfig; description "test your web
+    applications on desktop browsers using Selenium"
+  reason: TestGrid projects organise Selenium browser test execution, which is automated test suite stewardship
+    — Software Quality Engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListTestGridSessionActions'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.8
+  evidence: ListTestGridSessionActions; schemas TestGridSessionAction, TestGridSessionActions
+  reason: Lists the Selenium commands executed within a browser test session — test execution detail within
+    the testing service, i.e. Software Quality Engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.8
+  evidence: ListTestGridSessionArtifacts; schemas TestGridSessionArtifact, TestGridSessionArtifactType,
+    TestGridSessionArtifactCategory
+  reason: Retrieval of logs/video artefacts produced by Selenium test sessions — part of automated test
+    execution and defect diagnosis under Software Quality Engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListTestGridSessions'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.8
+  evidence: ListTestGridSessions; "Device Farm makes it possible for you to test your web applications
+    on desktop browsers using Selenium"
+  reason: Lists Selenium desktop-browser test sessions — execution of automated test suites for a software
+    product, i.e. software quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListUniqueProblems'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.78
+  evidence: ListUniqueProblems ... UniqueProblemsByExecutionResultMap, ExecutionResult
+  reason: Lists unique defects/problems surfaced by app test executions — defect management within software
+    quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.75
+  evidence: GetDevicePoolCompatibility; schemas ScheduleRunTest, TestParameters, IncompatibilityMessage
+  reason: Determines which devices are compatible with a test run — directly part of automated test execution
+    planning in software quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.GetRun'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.75
+  evidence: GetRun; schemas ExecutionStatus, ExecutionResult, CustomerArtifactPaths, DeviceFilterAttribute
+  reason: A Run is a test run against a device pool with results — core automated test execution and reporting.
+- tag: '#X Amz Target=DeviceFarm 20150623.GetTestGridProject'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.75
+  evidence: '"GetTestGridProject"; "Device Farm makes it possible for you to test your web applications
+    on desktop browsers using Selenium"'
+  reason: The operation retrieves a Selenium TestGrid project — a container for automated browser test
+    execution — which is software quality engineering / test execution tooling, not any industry business
+    capability.
+- tag: '#X Amz Target=DeviceFarm 20150623.GetTestGridSession'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.75
+  evidence: '"GetTestGridSession"; schemas "TestGridSession", "TestGridSessionStatus"'
+  reason: Retrieves a Selenium browser test session and its status; this is automated test execution,
+    mapping to software quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListJobs'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.75
+  evidence: '"ListJobs"; schemas "ExecutionStatus", "ExecutionResult", "Counters"'
+  reason: Lists test jobs with execution status, results and pass/fail counters — automated test execution
+    and results management, i.e. software quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListProjects'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.75
+  evidence: ListProjects; schemas Project, JobTimeoutMinutes, DevicePool context in an "application testing
+    service"
+  reason: Projects in Device Farm are the containers for mobile/web test runs, so listing them is stewardship
+    of the automated test estate — Software Quality Engineering. Slight generic-tag discount as the operation
+    itself is a simple list.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListRemoteAccessSessions'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.75
+  evidence: ListRemoteAccessSessions; schemas ExecutionStatus, ExecutionResult, SkipAppResign, DeviceFormFactor,
+    InstanceProfile
+  reason: Remote access sessions are interactive manual testing sessions against real devices in the testing
+    service, i.e. test execution management under Software Quality Engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.StopJob'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.75
+  evidence: StopJob ... StopJobRequest, ExecutionStatus, ExecutionResult, Counters
+  reason: Stops a running test job on a device — control of test execution within quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.StopRun'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.75
+  evidence: StopRun ... StopRunRequest, ExecutionStatus, ExecutionResult, CustomerArtifactPaths
+  reason: Stops an in-flight test run — test execution control, part of software quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.CreateDevicePool'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.7
+  evidence: CreateDevicePool; "Device Farm makes it possible for you to test apps on physical phones,
+    tablets, and other devices in the cloud"; schemas DevicePool, DeviceAttribute, Rule
+  reason: Defines a pool of devices used to execute application tests, i.e. stewardship of the automated
+    test estate for a software product — software quality engineering. Some overlap with test environment
+    management keeps confidence moderate.
+- tag: '#X Amz Target=DeviceFarm 20150623.CreateTestGridProject'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.7
+  evidence: CreateTestGridProject; schemas TestGridProject, TestGridVpcConfig; "Device Farm makes it possible
+    for you to test your web applications on desktop browsers using Selenium"
+  reason: Creates a Selenium test grid project for browser-based automated testing of web apps — clearly
+    automated test suite execution infrastructure, i.e. software quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.DeleteDevicePool'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.7
+  evidence: DeleteDevicePool — "Device Farm makes it possible for you to test apps on physical phones,
+    tablets, and other devices in the cloud"
+  reason: Device pools are the sets of test devices used for automated test runs; managing them is part
+    of test execution/quality engineering for software products, not any cross-industry capability.
+- tag: '#X Amz Target=DeviceFarm 20150623.DeleteRemoteAccessSession'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.7
+  evidence: DeleteRemoteAccessSession — "test apps on physical phones, tablets, and other devices in the
+    cloud"
+  reason: Remote access sessions are interactive manual test sessions on cloud devices; lifecycle of these
+    sessions is software test execution.
+- tag: '#X Amz Target=DeviceFarm 20150623.GetDeviceInstance'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.7
+  evidence: GetDeviceInstance; schemas DeviceInstance, InstanceProfile, InstanceStatus — "application
+    testing service that lets you improve the quality of your web and mobile apps by testing them"
+  reason: Retrieves a test device instance within an app-testing service; supports test execution infrastructure
+    for software quality engineering. Mapped at L2 quality engineering with moderate confidence since
+    the operation itself is device inventory retrieval.
+- tag: '#X Amz Target=DeviceFarm 20150623.GetDevicePool'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.7
+  evidence: 'GetDevicePool; schemas DevicePool, Rule, DeviceAttribute — vendor: "testing them across an
+    extensive range of desktop browsers and real mobile devices"'
+  reason: Device pools define the device set against which automated tests run; part of test strategy/automated
+    test suite stewardship.
+- tag: '#X Amz Target=DeviceFarm 20150623.GetJob'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.7
+  evidence: GetJob; schemas ExecutionStatus, ExecutionResult, Counters, DeviceMinutes
+  reason: A Job is a per-device test execution unit with execution status/results — test execution reporting
+    within software quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListArtifacts'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.7
+  evidence: '"ListArtifacts"; schemas "ArtifactType", "ArtifactCategory"'
+  reason: Lists artefacts (logs, screenshots, results) produced by test runs on Device Farm — test execution
+    output, i.e. software quality engineering.
+- tag: '#X Amz Target=DeviceFarm 20150623.ListSamples'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.7
+  evidence: ListSamples; schemas Sample, SampleType, ListSamplesResult
+  reason: Samples are the performance/measurement data points captured during a Device Farm test job,
+    so they belong to test execution and result analysis. Somewhat generic tag hence moderate confidence;
+    could arguably be read as performance measurement.
+- tag: '#X Amz Target=DeviceFarm 20150623.UpdateTestGridProject'
+  spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.7
+  evidence: UpdateTestGridProject; schemas TestGridProject — "test your web applications on desktop browsers
+    using Selenium. The APIs for desktop browser testing contain TestGrid in their names"
+  reason: Explicitly the Selenium browser-test project surface, i.e. automated test execution for software
+    quality.
