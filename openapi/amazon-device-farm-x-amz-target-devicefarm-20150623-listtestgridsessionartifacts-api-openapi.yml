@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts API'
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts #X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts #X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts API'
   description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -179,14 +179,67 @@ paths:
       tags:
       - '#X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts'
 components:
+  parameters:
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    SensitiveString:
+    TestGridSessionArtifacts:
+      type: array
+      items:
+        $ref: '#/components/schemas/TestGridSessionArtifact'
+    String:
       type: string
-      format: password
-    MaxPageSize:
-      type: integer
-      minimum: 1
-      maximum: 1000
+    ArgumentException: {}
+    PaginationToken:
+      type: string
+      minLength: 4
+      maxLength: 1024
+    TestGridSessionArtifactCategory:
+      type: string
+      enum:
+      - VIDEO
+      - LOG
+    NotFoundException: {}
     TestGridSessionArtifact:
       type: object
       properties:
@@ -203,21 +256,20 @@ components:
           - $ref: '#/components/schemas/SensitiveString'
           - description: A semi-stable URL to the content of the object.
       description: <p>Artifacts are video and other files that are produced in the process of running a browser in an automated context. </p> <note> <p>Video elements might be broken up into multiple artifacts as they grow in size during creation. </p> </note>
-    String:
+    TestGridSessionArtifactType:
       type: string
-    PaginationToken:
+      enum:
+      - UNKNOWN
+      - VIDEO
+      - SELENIUM_LOG
+    SensitiveString:
       type: string
-      minLength: 4
-      maxLength: 1024
+      format: password
     DeviceFarmArn:
       type: string
       pattern: ^arn:aws:devicefarm:.+
       minLength: 32
       maxLength: 1011
-    TestGridSessionArtifacts:
-      type: array
-      items:
-        $ref: '#/components/schemas/TestGridSessionArtifact'
     ListTestGridSessionArtifactsResult:
       type: object
       properties:
@@ -229,19 +281,11 @@ components:
           allOf:
           - $ref: '#/components/schemas/PaginationToken'
           - description: Pagination token.
-    TestGridSessionArtifactType:
-      type: string
-      enum:
-      - UNKNOWN
-      - VIDEO
-      - SELENIUM_LOG
     InternalServiceException: {}
-    NotFoundException: {}
-    TestGridSessionArtifactCategory:
-      type: string
-      enum:
-      - VIDEO
-      - LOG
+    MaxPageSize:
+      type: integer
+      minimum: 1
+      maximum: 1000
     ListTestGridSessionArtifactsRequest:
       type: object
       required:
@@ -264,50 +308,6 @@ components:
           allOf:
           - $ref: '#/components/schemas/PaginationToken'
           - description: Pagination token.
-    ArgumentException: {}
-  parameters:
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
   securitySchemes:
     hmac:
       type: apiKey

@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateTestGridUrl API'
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateTestGridUrl #X Amz Target=DeviceFarm 20150623.CreateTestGridUrl #X Amz Target=DeviceFarm 20150623.CreateTestGridUrl API'
   description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -168,20 +168,10 @@ paths:
       - '#X Amz Target=DeviceFarm 20150623.CreateTestGridUrl'
 components:
   schemas:
+    NotFoundException: {}
     SensitiveString:
       type: string
       format: password
-    CreateTestGridUrlResult:
-      type: object
-      properties:
-        url:
-          allOf:
-          - $ref: '#/components/schemas/SensitiveString'
-          - description: 'A signed URL, expiring in <a>CreateTestGridUrlRequest$expiresInSeconds</a> seconds, to be passed to a <code>RemoteWebDriver</code>. '
-        expires:
-          allOf:
-          - $ref: '#/components/schemas/DateTime'
-          - description: The number of seconds the URL from <a>CreateTestGridUrlResult$url</a> stays active.
     CreateTestGridUrlRequest:
       type: object
       required:
@@ -197,24 +187,34 @@ components:
           allOf:
           - $ref: '#/components/schemas/TestGridUrlExpiresInSecondsInput'
           - description: Lifetime, in seconds, of the URL.
+    InternalServiceException: {}
+    DateTime:
+      type: string
+      format: date-time
+    CreateTestGridUrlResult:
+      type: object
+      properties:
+        url:
+          allOf:
+          - $ref: '#/components/schemas/SensitiveString'
+          - description: 'A signed URL, expiring in <a>CreateTestGridUrlRequest$expiresInSeconds</a> seconds, to be passed to a <code>RemoteWebDriver</code>. '
+        expires:
+          allOf:
+          - $ref: '#/components/schemas/DateTime'
+          - description: The number of seconds the URL from <a>CreateTestGridUrlResult$url</a> stays active.
+    TestGridUrlExpiresInSecondsInput:
+      type: integer
+      minimum: 60
+      maximum: 86400
     DeviceFarmArn:
       type: string
       pattern: ^arn:aws:devicefarm:.+
       minLength: 32
       maxLength: 1011
-    DateTime:
-      type: string
-      format: date-time
-    InternalServiceException: {}
-    TestGridUrlExpiresInSecondsInput:
-      type: integer
-      minimum: 60
-      maximum: 86400
-    NotFoundException: {}
     ArgumentException: {}
   parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -225,20 +225,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Date:
+      name: X-Amz-Date
       in: header
       schema:
         type: string
@@ -249,8 +237,20 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string

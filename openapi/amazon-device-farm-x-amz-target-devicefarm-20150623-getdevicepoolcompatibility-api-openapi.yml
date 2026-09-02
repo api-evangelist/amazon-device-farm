@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility API'
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility #X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility #X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility API'
   description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -173,73 +173,71 @@ paths:
       tags:
       - '#X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility'
 components:
+  parameters:
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    Long:
-      type: integer
-    DevicePlatform:
+    Filter:
       type: string
-      enum:
-      - ANDROID
-      - IOS
-    InstanceLabels:
-      type: array
-      items:
-        $ref: '#/components/schemas/String'
-    IncompatibilityMessages:
-      type: array
-      items:
-        $ref: '#/components/schemas/IncompatibilityMessage'
-    String:
-      type: string
-    DeviceAvailability:
-      type: string
-      enum:
-      - TEMPORARY_NOT_AVAILABLE
-      - BUSY
-      - AVAILABLE
-      - HIGHLY_AVAILABLE
-    Integer:
-      type: integer
+      minLength: 0
+      maxLength: 8192
     Message:
       type: string
       minLength: 0
       maxLength: 16384
-    AndroidPaths:
-      type: array
-      items:
+    String:
+      type: string
+    TestParameters:
+      type: object
+      additionalProperties:
         $ref: '#/components/schemas/String'
-    DeviceFormFactor:
+    InstanceStatus:
       type: string
       enum:
-      - PHONE
-      - TABLET
-    GetDevicePoolCompatibilityRequest:
-      type: object
-      required:
-      - devicePoolArn
-      title: GetDevicePoolCompatibilityRequest
-      properties:
-        devicePoolArn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The device pool's ARN.
-        appArn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The ARN of the app that is associated with the specified device pool.
-        testType:
-          allOf:
-          - $ref: '#/components/schemas/TestType'
-          - description: <p>The test type for the specified device pool.</p> <p>Allowed values include the following:</p> <ul> <li> <p>BUILTIN_FUZZ.</p> </li> <li> <p>BUILTIN_EXPLORER. For Android, an app explorer that traverses an Android app, interacting with it and capturing screenshots at the same time.</p> </li> <li> <p>APPIUM_JAVA_JUNIT.</p> </li> <li> <p>APPIUM_JAVA_TESTNG.</p> </li> <li> <p>APPIUM_PYTHON.</p> </li> <li> <p>APPIUM_NODE.</p> </li> <li> <p>APPIUM_RUBY.</p> </li> <li> <p>APPIUM_WEB_JAVA_JUNIT.</p> </li> <li> <p>APPIUM_WEB_JAVA_TESTNG.</p> </li> <li> <p>APPIUM_WEB_PYTHON.</p> </li> <li> <p>APPIUM_WEB_NODE.</p> </li> <li> <p>APPIUM_WEB_RUBY.</p> </li> <li> <p>CALABASH.</p> </li> <li> <p>INSTRUMENTATION.</p> </li> <li> <p>UIAUTOMATION.</p> </li> <li> <p>UIAUTOMATOR.</p> </li> <li> <p>XCTEST.</p> </li> <li> <p>XCTEST_UI.</p> </li> </ul>
-        test:
-          allOf:
-          - $ref: '#/components/schemas/ScheduleRunTest'
-          - description: Information about the uploaded test to be run against the device pool.
-        configuration:
-          allOf:
-          - $ref: '#/components/schemas/ScheduleRunConfiguration'
-          - description: An object that contains information about the settings for a run.
-      description: Represents a request to the get device pool compatibility operation.
+      - IN_USE
+      - PREPARING
+      - AVAILABLE
+      - NOT_AVAILABLE
     InstanceProfile:
       type: object
       properties:
@@ -268,56 +266,10 @@ components:
           - $ref: '#/components/schemas/Message'
           - description: The description of the instance profile.
       description: Represents the instance profile.
-    Location:
-      type: object
-      required:
-      - latitude
-      - longitude
-      properties:
-        latitude:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: The latitude.
-        longitude:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: The longitude.
-      description: <p>Represents a latitude and longitude pair, expressed in geographic coordinate system degrees (for example, 47.6204, -122.3491).</p> <p>Elevation is currently not supported.</p>
-    Boolean:
-      type: boolean
-    AmazonResourceNames:
-      type: array
-      items:
-        $ref: '#/components/schemas/AmazonResourceName'
-    DeviceInstance:
-      type: object
-      properties:
-        arn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The Amazon Resource Name (ARN) of the device instance.
-        deviceArn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The ARN of the device.
-        labels:
-          allOf:
-          - $ref: '#/components/schemas/InstanceLabels'
-          - description: An array of strings that describe the device instance.
-        status:
-          allOf:
-          - $ref: '#/components/schemas/InstanceStatus'
-          - description: The status of the device instance. Valid values are listed here.
-        udid:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: Unique device identifier for the device instance.
-        instanceProfile:
-          allOf:
-          - $ref: '#/components/schemas/InstanceProfile'
-          - description: A object that contains information about the instance profile.
-      description: Represents the device instance.
-    LimitExceededException: {}
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
     ScheduleRunTest:
       type: object
       required:
@@ -344,26 +296,55 @@ components:
           - $ref: '#/components/schemas/TestParameters'
           - description: '<p>The test''s parameters, such as test framework parameters and fixture settings. Parameters are represented by name-value pairs of strings.</p> <p>For all tests:</p> <ul> <li> <p> <code>app_performance_monitoring</code>: Performance monitoring is enabled by default. Set this parameter to false to disable it.</p> </li> </ul> <p>For Calabash tests:</p> <ul> <li> <p>profile: A cucumber profile (for example, <code>my_profile_name</code>).</p> </li> <li> <p>tags: You can limit execution to features or scenarios that have (or don''t have) certain tags (for example, @smoke or @smoke,~@wip).</p> </li> </ul> <p>For Appium tests (all types):</p> <ul> <li> <p>appium_version: The Appium version. Currently supported values are 1.6.5 (and later), latest, and default.</p> <ul> <li> <p>latest runs the latest Appium version supported by Device Farm (1.9.1).</p> </li> <li> <p>For default, Device Farm selects a compatible version of Appium for the device. The current behavior is to run 1.7.2 on Android devices and iOS 9 and earlier and 1.7.2 for iOS 10 and later.</p> </li> <li> <p>This behavior is subject to change.</p> </li> </ul> </li> </ul> <p>For fuzz tests (Android only):</p> <ul> <li> <p>event_count: The number of events, between 1 and 10000, that the UI fuzz test should perform.</p> </li> <li> <p>throttle: The time, in ms, between 0 and 1000, that the UI fuzz test should wait between events.</p> </li> <li> <p>seed: A seed to use for randomizing the UI fuzz test. Using the same seed value between tests ensures identical event sequences.</p> </li> </ul> <p>For Explorer tests:</p> <ul> <li> <p>username: A user name to use if the Explorer encounters a login form. If not supplied, no user name is inserted.</p> </li> <li> <p>password: A password to use if the Explorer encounters a login form. If not supplied, no password is inserted.</p> </li> </ul> <p>For Instrumentation:</p> <ul> <li> <p>filter: A test filter string. Examples:</p> <ul> <li> <p>Running a single test case: <code>com.android.abc.Test1</code> </p> </li> <li> <p>Running a single test: <code>com.android.abc.Test1#smoke</code> </p> </li> <li> <p>Running multiple tests: <code>com.android.abc.Test1,com.android.abc.Test2</code> </p> </li> </ul> </li> </ul> <p>For XCTest and XCTestUI:</p> <ul> <li> <p>filter: A test filter string. Examples:</p> <ul> <li> <p>Running a single test class: <code>LoginTests</code> </p> </li> <li> <p>Running a multiple test classes: <code>LoginTests,SmokeTests</code> </p> </li> <li> <p>Running a single test: <code>LoginTests/testValid</code> </p> </li> <li> <p>Running multiple tests: <code>LoginTests/testValid,LoginTests/testInvalid</code> </p> </li> </ul> </li> </ul> <p>For UIAutomator:</p> <ul> <li> <p>filter: A test filter string. Examples:</p> <ul> <li> <p>Running a single test case: <code>com.android.abc.Test1</code> </p> </li> <li> <p>Running a single test: <code>com.android.abc.Test1#smoke</code> </p> </li> <li> <p>Running multiple tests: <code>com.android.abc.Test1,com.android.abc.Test2</code> </p> </li> </ul> </li> </ul>'
       description: Represents test settings. This data structure is passed in as the test parameter to ScheduleRun. For an example of the JSON request syntax, see <a>ScheduleRun</a>.
-    IncompatibilityMessage:
-      type: object
-      properties:
-        message:
-          allOf:
-          - $ref: '#/components/schemas/Message'
-          - description: A message about the incompatibility.
-        type:
-          allOf:
-          - $ref: '#/components/schemas/DeviceAttribute'
-          - description: <p>The type of incompatibility.</p> <p>Allowed values include:</p> <ul> <li> <p>ARN</p> </li> <li> <p>FORM_FACTOR (for example, phone or tablet)</p> </li> <li> <p>MANUFACTURER</p> </li> <li> <p>PLATFORM (for example, Android or iOS)</p> </li> <li> <p>REMOTE_ACCESS_ENABLED</p> </li> <li> <p>APPIUM_VERSION</p> </li> </ul>
-      description: Represents information about incompatibility.
-    DeviceHostPaths:
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    ArgumentException: {}
+    LimitExceededException: {}
+    DeviceAttribute:
+      type: string
+      enum:
+      - ARN
+      - PLATFORM
+      - FORM_FACTOR
+      - MANUFACTURER
+      - REMOTE_ACCESS_ENABLED
+      - REMOTE_DEBUG_ENABLED
+      - APPIUM_VERSION
+      - INSTANCE_ARN
+      - INSTANCE_LABELS
+      - FLEET_TYPE
+      - OS_VERSION
+      - MODEL
+      - AVAILABILITY
+    PackageIds:
       type: array
       items:
         $ref: '#/components/schemas/String'
-    Filter:
+    DeviceFormFactor:
       type: string
-      minLength: 0
-      maxLength: 8192
+      enum:
+      - PHONE
+      - TABLET
+    GetDevicePoolCompatibilityResult:
+      type: object
+      example:
+        compatibleDevices: []
+        incompatibleDevices: []
+      properties:
+        compatibleDevices:
+          allOf:
+          - $ref: '#/components/schemas/DevicePoolCompatibilityResults'
+          - description: Information about compatible devices.
+        incompatibleDevices:
+          allOf:
+          - $ref: '#/components/schemas/DevicePoolCompatibilityResults'
+          - description: Information about incompatible devices.
+      description: Represents the result of describe device pool compatibility request.
+    Boolean:
+      type: boolean
     CustomerArtifactPaths:
       type: object
       properties:
@@ -380,6 +361,62 @@ components:
           - $ref: '#/components/schemas/DeviceHostPaths'
           - description: Comma-separated list of paths in the test execution environment where the artifacts generated by the customer's tests are pulled from.
       description: <p>A JSON object that specifies the paths where the artifacts generated by the customer's tests, on the device or in the test environment, are pulled from.</p> <p>Specify <code>deviceHostPaths</code> and optionally specify either <code>iosPaths</code> or <code>androidPaths</code>.</p> <p>For web app tests, you can specify both <code>iosPaths</code> and <code>androidPaths</code>.</p>
+    IncompatibilityMessage:
+      type: object
+      properties:
+        message:
+          allOf:
+          - $ref: '#/components/schemas/Message'
+          - description: A message about the incompatibility.
+        type:
+          allOf:
+          - $ref: '#/components/schemas/DeviceAttribute'
+          - description: <p>The type of incompatibility.</p> <p>Allowed values include:</p> <ul> <li> <p>ARN</p> </li> <li> <p>FORM_FACTOR (for example, phone or tablet)</p> </li> <li> <p>MANUFACTURER</p> </li> <li> <p>PLATFORM (for example, Android or iOS)</p> </li> <li> <p>REMOTE_ACCESS_ENABLED</p> </li> <li> <p>APPIUM_VERSION</p> </li> </ul>
+      description: Represents information about incompatibility.
+    AmazonResourceNames:
+      type: array
+      items:
+        $ref: '#/components/schemas/AmazonResourceName'
+    DeviceInstances:
+      type: array
+      items:
+        $ref: '#/components/schemas/DeviceInstance'
+    Resolution:
+      type: object
+      properties:
+        width:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The screen resolution's width, expressed in pixels.
+        height:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The screen resolution's height, expressed in pixels.
+      description: Represents the screen resolution of a device in height and width, expressed in pixels.
+    Radios:
+      type: object
+      properties:
+        wifi:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: True if Wi-Fi is enabled at the beginning of the test. Otherwise, false.
+        bluetooth:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: True if Bluetooth is enabled at the beginning of the test. Otherwise, false.
+        nfc:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: True if NFC is enabled at the beginning of the test. Otherwise, false.
+        gps:
+          allOf:
+          - $ref: '#/components/schemas/Boolean'
+          - description: True if GPS is enabled at the beginning of the test. Otherwise, false.
+      description: Represents the set of radios and their states on a device. Examples of radios include Wi-Fi, GPS, Bluetooth, and NFC.
+    InstanceLabels:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
     CPU:
       type: object
       properties:
@@ -396,81 +433,42 @@ components:
           - $ref: '#/components/schemas/Double'
           - description: The clock speed of the device's CPU, expressed in hertz (Hz). For example, a 1.2 GHz CPU is expressed as 1200000000.
       description: Represents the amount of CPU that an app is using on a physical device. Does not represent system-wide CPU usage.
-    PackageIds:
-      type: array
-      items:
-        $ref: '#/components/schemas/String'
-    ScheduleRunConfiguration:
+    GetDevicePoolCompatibilityRequest:
       type: object
+      required:
+      - devicePoolArn
+      title: GetDevicePoolCompatibilityRequest
       properties:
-        extraDataPackageArn:
+        devicePoolArn:
           allOf:
           - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The ARN of the extra data for the run. The extra data is a .zip file that AWS Device Farm extracts to external data for Android or the app's sandbox for iOS.
-        networkProfileArn:
+          - description: The device pool's ARN.
+        appArn:
           allOf:
           - $ref: '#/components/schemas/AmazonResourceName'
-          - description: Reserved for internal use.
-        locale:
+          - description: The ARN of the app that is associated with the specified device pool.
+        testType:
           allOf:
-          - $ref: '#/components/schemas/String'
-          - description: Information about the locale that is used for the run.
-        location:
+          - $ref: '#/components/schemas/TestType'
+          - description: <p>The test type for the specified device pool.</p> <p>Allowed values include the following:</p> <ul> <li> <p>BUILTIN_FUZZ.</p> </li> <li> <p>BUILTIN_EXPLORER. For Android, an app explorer that traverses an Android app, interacting with it and capturing screenshots at the same time.</p> </li> <li> <p>APPIUM_JAVA_JUNIT.</p> </li> <li> <p>APPIUM_JAVA_TESTNG.</p> </li> <li> <p>APPIUM_PYTHON.</p> </li> <li> <p>APPIUM_NODE.</p> </li> <li> <p>APPIUM_RUBY.</p> </li> <li> <p>APPIUM_WEB_JAVA_JUNIT.</p> </li> <li> <p>APPIUM_WEB_JAVA_TESTNG.</p> </li> <li> <p>APPIUM_WEB_PYTHON.</p> </li> <li> <p>APPIUM_WEB_NODE.</p> </li> <li> <p>APPIUM_WEB_RUBY.</p> </li> <li> <p>CALABASH.</p> </li> <li> <p>INSTRUMENTATION.</p> </li> <li> <p>UIAUTOMATION.</p> </li> <li> <p>UIAUTOMATOR.</p> </li> <li> <p>XCTEST.</p> </li> <li> <p>XCTEST_UI.</p> </li> </ul>
+        test:
           allOf:
-          - $ref: '#/components/schemas/Location'
-          - description: Information about the location that is used for the run.
-        vpceConfigurationArns:
+          - $ref: '#/components/schemas/ScheduleRunTest'
+          - description: Information about the uploaded test to be run against the device pool.
+        configuration:
           allOf:
-          - $ref: '#/components/schemas/AmazonResourceNames'
-          - description: An array of ARNs for your VPC endpoint configurations.
-        customerArtifactPaths:
-          allOf:
-          - $ref: '#/components/schemas/CustomerArtifactPaths'
-          - description: Input <code>CustomerArtifactPaths</code> object for the scheduled run configuration.
-        radios:
-          allOf:
-          - $ref: '#/components/schemas/Radios'
-          - description: Information about the radio states for the run.
-        auxiliaryApps:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceNames'
-          - description: A list of upload ARNs for app packages to be installed with your app.
-        billingMethod:
-          allOf:
-          - $ref: '#/components/schemas/BillingMethod'
-          - description: '<p>Specifies the billing method for a test run: <code>metered</code> or <code>unmetered</code>. If the parameter is not specified, the default value is <code>metered</code>.</p> <note> <p>If you have purchased unmetered device slots, you must set this parameter to <code>unmetered</code> to make use of them. Otherwise, your run counts against your metered time.</p> </note>'
-      description: Represents the settings for a run. Includes things like location, radio states, auxiliary apps, and network profiles.
-    GetDevicePoolCompatibilityResult:
-      type: object
-      example:
-        compatibleDevices: []
-        incompatibleDevices: []
-      properties:
-        compatibleDevices:
-          allOf:
-          - $ref: '#/components/schemas/DevicePoolCompatibilityResults'
-          - description: Information about compatible devices.
-        incompatibleDevices:
-          allOf:
-          - $ref: '#/components/schemas/DevicePoolCompatibilityResults'
-          - description: Information about incompatible devices.
-      description: Represents the result of describe device pool compatibility request.
-    DevicePoolCompatibilityResult:
-      type: object
-      properties:
-        device:
-          allOf:
-          - $ref: '#/components/schemas/Device'
-          - description: The device (phone or tablet) to return information about.
-        compatible:
-          allOf:
-          - $ref: '#/components/schemas/Boolean'
-          - description: Whether the result was compatible with the device pool.
-        incompatibilityMessages:
-          allOf:
-          - $ref: '#/components/schemas/IncompatibilityMessages'
-          - description: Information about the compatibility.
-      description: Represents a device pool compatibility result.
+          - $ref: '#/components/schemas/ScheduleRunConfiguration'
+          - description: An object that contains information about the settings for a run.
+      description: Represents a request to the get device pool compatibility operation.
+    Long:
+      type: integer
+    DevicePlatform:
+      type: string
+      enum:
+      - ANDROID
+      - IOS
+    ServiceAccountException: {}
+    NotFoundException: {}
     TestType:
       type: string
       enum:
@@ -495,59 +493,36 @@ components:
       - XCTEST_UI
       - REMOTE_ACCESS_RECORD
       - REMOTE_ACCESS_REPLAY
-    ServiceAccountException: {}
-    NotFoundException: {}
+    DeviceAvailability:
+      type: string
+      enum:
+      - TEMPORARY_NOT_AVAILABLE
+      - BUSY
+      - AVAILABLE
+      - HIGHLY_AVAILABLE
+    Location:
+      type: object
+      required:
+      - latitude
+      - longitude
+      properties:
+        latitude:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: The latitude.
+        longitude:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: The longitude.
+      description: <p>Represents a latitude and longitude pair, expressed in geographic coordinate system degrees (for example, 47.6204, -122.3491).</p> <p>Elevation is currently not supported.</p>
     IosPaths:
       type: array
       items:
         $ref: '#/components/schemas/String'
-    DevicePoolCompatibilityResults:
+    AndroidPaths:
       type: array
       items:
-        $ref: '#/components/schemas/DevicePoolCompatibilityResult'
-    AmazonResourceName:
-      type: string
-      pattern: ^arn:.+
-      minLength: 32
-      maxLength: 1011
-    Double:
-      type: number
-      format: double
-    Radios:
-      type: object
-      properties:
-        wifi:
-          allOf:
-          - $ref: '#/components/schemas/Boolean'
-          - description: True if Wi-Fi is enabled at the beginning of the test. Otherwise, false.
-        bluetooth:
-          allOf:
-          - $ref: '#/components/schemas/Boolean'
-          - description: True if Bluetooth is enabled at the beginning of the test. Otherwise, false.
-        nfc:
-          allOf:
-          - $ref: '#/components/schemas/Boolean'
-          - description: True if NFC is enabled at the beginning of the test. Otherwise, false.
-        gps:
-          allOf:
-          - $ref: '#/components/schemas/Boolean'
-          - description: True if GPS is enabled at the beginning of the test. Otherwise, false.
-      description: Represents the set of radios and their states on a device. Examples of radios include Wi-Fi, GPS, Bluetooth, and NFC.
-    InstanceStatus:
-      type: string
-      enum:
-      - IN_USE
-      - PREPARING
-      - AVAILABLE
-      - NOT_AVAILABLE
-    DeviceInstances:
-      type: array
-      items:
-        $ref: '#/components/schemas/DeviceInstance'
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
+        $ref: '#/components/schemas/String'
     Device:
       type: object
       properties:
@@ -636,87 +611,112 @@ components:
           - $ref: '#/components/schemas/DeviceAvailability'
           - description: Indicates how likely a device is available for a test run. Currently available in the <a>ListDevices</a> and GetDevice API methods.
       description: Represents a device type that an app is tested against.
-    DeviceAttribute:
-      type: string
-      enum:
-      - ARN
-      - PLATFORM
-      - FORM_FACTOR
-      - MANUFACTURER
-      - REMOTE_ACCESS_ENABLED
-      - REMOTE_DEBUG_ENABLED
-      - APPIUM_VERSION
-      - INSTANCE_ARN
-      - INSTANCE_LABELS
-      - FLEET_TYPE
-      - OS_VERSION
-      - MODEL
-      - AVAILABILITY
+    DeviceHostPaths:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
+    ScheduleRunConfiguration:
+      type: object
+      properties:
+        extraDataPackageArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN of the extra data for the run. The extra data is a .zip file that AWS Device Farm extracts to external data for Android or the app's sandbox for iOS.
+        networkProfileArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: Reserved for internal use.
+        locale:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: Information about the locale that is used for the run.
+        location:
+          allOf:
+          - $ref: '#/components/schemas/Location'
+          - description: Information about the location that is used for the run.
+        vpceConfigurationArns:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceNames'
+          - description: An array of ARNs for your VPC endpoint configurations.
+        customerArtifactPaths:
+          allOf:
+          - $ref: '#/components/schemas/CustomerArtifactPaths'
+          - description: Input <code>CustomerArtifactPaths</code> object for the scheduled run configuration.
+        radios:
+          allOf:
+          - $ref: '#/components/schemas/Radios'
+          - description: Information about the radio states for the run.
+        auxiliaryApps:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceNames'
+          - description: A list of upload ARNs for app packages to be installed with your app.
+        billingMethod:
+          allOf:
+          - $ref: '#/components/schemas/BillingMethod'
+          - description: '<p>Specifies the billing method for a test run: <code>metered</code> or <code>unmetered</code>. If the parameter is not specified, the default value is <code>metered</code>.</p> <note> <p>If you have purchased unmetered device slots, you must set this parameter to <code>unmetered</code> to make use of them. Otherwise, your run counts against your metered time.</p> </note>'
+      description: Represents the settings for a run. Includes things like location, radio states, auxiliary apps, and network profiles.
     BillingMethod:
       type: string
       enum:
       - METERED
       - UNMETERED
-    Resolution:
+    DevicePoolCompatibilityResults:
+      type: array
+      items:
+        $ref: '#/components/schemas/DevicePoolCompatibilityResult'
+    DevicePoolCompatibilityResult:
       type: object
       properties:
-        width:
+        device:
           allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The screen resolution's width, expressed in pixels.
-        height:
+          - $ref: '#/components/schemas/Device'
+          - description: The device (phone or tablet) to return information about.
+        compatible:
           allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The screen resolution's height, expressed in pixels.
-      description: Represents the screen resolution of a device in height and width, expressed in pixels.
-    ArgumentException: {}
-    TestParameters:
+          - $ref: '#/components/schemas/Boolean'
+          - description: Whether the result was compatible with the device pool.
+        incompatibilityMessages:
+          allOf:
+          - $ref: '#/components/schemas/IncompatibilityMessages'
+          - description: Information about the compatibility.
+      description: Represents a device pool compatibility result.
+    DeviceInstance:
       type: object
-      additionalProperties:
-        $ref: '#/components/schemas/String'
-  parameters:
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the device instance.
+        deviceArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN of the device.
+        labels:
+          allOf:
+          - $ref: '#/components/schemas/InstanceLabels'
+          - description: An array of strings that describe the device instance.
+        status:
+          allOf:
+          - $ref: '#/components/schemas/InstanceStatus'
+          - description: The status of the device instance. Valid values are listed here.
+        udid:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: Unique device identifier for the device instance.
+        instanceProfile:
+          allOf:
+          - $ref: '#/components/schemas/InstanceProfile'
+          - description: A object that contains information about the instance profile.
+      description: Represents the device instance.
+    Integer:
+      type: integer
+    IncompatibilityMessages:
+      type: array
+      items:
+        $ref: '#/components/schemas/IncompatibilityMessage'
+    Double:
+      type: number
+      format: double
   securitySchemes:
     hmac:
       type: apiKey

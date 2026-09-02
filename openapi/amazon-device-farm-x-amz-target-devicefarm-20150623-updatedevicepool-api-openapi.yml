@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.UpdateDevicePool API'
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.UpdateDevicePool #X Amz Target=DeviceFarm 20150623.UpdateDevicePool #X Amz Target=DeviceFarm 20150623.UpdateDevicePool API'
   description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -173,78 +173,94 @@ paths:
       tags:
       - '#X Amz Target=DeviceFarm 20150623.UpdateDevicePool'
 components:
+  parameters:
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    Rules:
-      type: array
-      items:
-        $ref: '#/components/schemas/Rule'
-    String:
+    Message:
       type: string
+      minLength: 0
+      maxLength: 16384
     DevicePoolType:
       type: string
       enum:
       - CURATED
       - PRIVATE
-    Integer:
-      type: integer
-    Message:
+    String:
+      type: string
+    Name:
       type: string
       minLength: 0
-      maxLength: 16384
-    LimitExceededException: {}
-    Boolean:
-      type: boolean
-    DevicePool:
-      type: object
-      properties:
-        arn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The device pool's ARN.
-        name:
-          allOf:
-          - $ref: '#/components/schemas/Name'
-          - description: The device pool's name.
-        description:
-          allOf:
-          - $ref: '#/components/schemas/Message'
-          - description: The device pool's description.
-        type:
-          allOf:
-          - $ref: '#/components/schemas/DevicePoolType'
-          - description: '<p>The device pool''s type.</p> <p>Allowed values include:</p> <ul> <li> <p>CURATED: A device pool that is created and managed by AWS Device Farm.</p> </li> <li> <p>PRIVATE: A device pool that is created and managed by the device pool developer.</p> </li> </ul>'
-        rules:
-          allOf:
-          - $ref: '#/components/schemas/Rules'
-          - description: Information about the device pool's rules.
-        maxDevices:
-          allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: <p>The number of devices that Device Farm can add to your device pool. Device Farm adds devices that are available and meet the criteria that you assign for the <code>rules</code> parameter. Depending on how many devices meet these constraints, your device pool might contain fewer devices than the value for this parameter.</p> <p>By specifying the maximum number of devices, you can control the costs that you incur by running tests.</p>
-      description: Represents a collection of device types.
-    Rule:
-      type: object
-      properties:
-        attribute:
-          allOf:
-          - $ref: '#/components/schemas/DeviceAttribute'
-          - description: '<p>The rule''s stringified attribute. For example, specify the value as <code>"\"abc\""</code>.</p> <p>The supported operators for each attribute are provided in the following list.</p> <dl> <dt>APPIUM_VERSION</dt> <dd> <p>The Appium version for the test.</p> <p>Supported operators: <code>CONTAINS</code> </p> </dd> <dt>ARN</dt> <dd> <p>The Amazon Resource Name (ARN) of the device (for example, <code>arn:aws:devicefarm:us-west-2::device:12345Example</code>.</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>AVAILABILITY</dt> <dd> <p>The current availability of the device. Valid values are AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>FLEET_TYPE</dt> <dd> <p>The fleet type. Valid values are PUBLIC or PRIVATE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>FORM_FACTOR</dt> <dd> <p>The device form factor. Valid values are PHONE or TABLET.</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>INSTANCE_ARN</dt> <dd> <p>The Amazon Resource Name (ARN) of the device instance.</p> <p>Supported operators: <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>INSTANCE_LABELS</dt> <dd> <p>The label of the device instance.</p> <p>Supported operators: <code>CONTAINS</code> </p> </dd> <dt>MANUFACTURER</dt> <dd> <p>The device manufacturer (for example, Apple).</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>MODEL</dt> <dd> <p>The device model, such as Apple iPad Air 2 or Google Pixel.</p> <p>Supported operators: <code>CONTAINS</code>, <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>OS_VERSION</dt> <dd> <p>The operating system version (for example, 10.3.2).</p> <p>Supported operators: <code>EQUALS</code>, <code>GREATER_THAN</code>, <code>GREATER_THAN_OR_EQUALS</code>, <code>IN</code>, <code>LESS_THAN</code>, <code>LESS_THAN_OR_EQUALS</code>, <code>NOT_IN</code> </p> </dd> <dt>PLATFORM</dt> <dd> <p>The device platform. Valid values are ANDROID or IOS.</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>REMOTE_ACCESS_ENABLED</dt> <dd> <p>Whether the device is enabled for remote access. Valid values are TRUE or FALSE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>REMOTE_DEBUG_ENABLED</dt> <dd> <p>Whether the device is enabled for remote debugging. Valid values are TRUE or FALSE.</p> <p>Supported operators: <code>EQUALS</code> </p> <p>Because remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>, this filter is ignored.</p> </dd> </dl>'
-        operator:
-          allOf:
-          - $ref: '#/components/schemas/RuleOperator'
-          - description: Specifies how Device Farm compares the rule's attribute to the value. For the operators that are supported by each attribute, see the attribute descriptions.
-        value:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: The rule's value.
-      description: Represents a condition for a device pool.
-    ServiceAccountException: {}
-    NotFoundException: {}
+      maxLength: 256
+    Rules:
+      type: array
+      items:
+        $ref: '#/components/schemas/Rule'
+    DeviceAttribute:
+      type: string
+      enum:
+      - ARN
+      - PLATFORM
+      - FORM_FACTOR
+      - MANUFACTURER
+      - REMOTE_ACCESS_ENABLED
+      - REMOTE_DEBUG_ENABLED
+      - APPIUM_VERSION
+      - INSTANCE_ARN
+      - INSTANCE_LABELS
+      - FLEET_TYPE
+      - OS_VERSION
+      - MODEL
+      - AVAILABILITY
     AmazonResourceName:
       type: string
       pattern: ^arn:.+
       minLength: 32
       maxLength: 1011
+    ArgumentException: {}
+    LimitExceededException: {}
+    Boolean:
+      type: boolean
     UpdateDevicePoolRequest:
       type: object
       required:
@@ -276,26 +292,34 @@ components:
           - $ref: '#/components/schemas/Boolean'
           - description: <p>Sets whether the <code>maxDevices</code> parameter applies to your device pool. If you set this parameter to <code>true</code>, the <code>maxDevices</code> parameter does not apply, and Device Farm does not limit the number of devices that it adds to your device pool. In this case, Device Farm adds all available devices that meet the criteria specified in the <code>rules</code> parameter.</p> <p>If you use this parameter in your request, you cannot use the <code>maxDevices</code> parameter in the same request.</p>
       description: Represents a request to the update device pool operation.
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
-    DeviceAttribute:
-      type: string
-      enum:
-      - ARN
-      - PLATFORM
-      - FORM_FACTOR
-      - MANUFACTURER
-      - REMOTE_ACCESS_ENABLED
-      - REMOTE_DEBUG_ENABLED
-      - APPIUM_VERSION
-      - INSTANCE_ARN
-      - INSTANCE_LABELS
-      - FLEET_TYPE
-      - OS_VERSION
-      - MODEL
-      - AVAILABILITY
+    DevicePool:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The device pool's ARN.
+        name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: The device pool's name.
+        description:
+          allOf:
+          - $ref: '#/components/schemas/Message'
+          - description: The device pool's description.
+        type:
+          allOf:
+          - $ref: '#/components/schemas/DevicePoolType'
+          - description: '<p>The device pool''s type.</p> <p>Allowed values include:</p> <ul> <li> <p>CURATED: A device pool that is created and managed by AWS Device Farm.</p> </li> <li> <p>PRIVATE: A device pool that is created and managed by the device pool developer.</p> </li> </ul>'
+        rules:
+          allOf:
+          - $ref: '#/components/schemas/Rules'
+          - description: Information about the device pool's rules.
+        maxDevices:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: <p>The number of devices that Device Farm can add to your device pool. Device Farm adds devices that are available and meet the criteria that you assign for the <code>rules</code> parameter. Depending on how many devices meet these constraints, your device pool might contain fewer devices than the value for this parameter.</p> <p>By specifying the maximum number of devices, you can control the costs that you incur by running tests.</p>
+      description: Represents a collection of device types.
     RuleOperator:
       type: string
       enum:
@@ -307,7 +331,24 @@ components:
       - IN
       - NOT_IN
       - CONTAINS
-    ArgumentException: {}
+    ServiceAccountException: {}
+    NotFoundException: {}
+    Rule:
+      type: object
+      properties:
+        attribute:
+          allOf:
+          - $ref: '#/components/schemas/DeviceAttribute'
+          - description: '<p>The rule''s stringified attribute. For example, specify the value as <code>"\"abc\""</code>.</p> <p>The supported operators for each attribute are provided in the following list.</p> <dl> <dt>APPIUM_VERSION</dt> <dd> <p>The Appium version for the test.</p> <p>Supported operators: <code>CONTAINS</code> </p> </dd> <dt>ARN</dt> <dd> <p>The Amazon Resource Name (ARN) of the device (for example, <code>arn:aws:devicefarm:us-west-2::device:12345Example</code>.</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>AVAILABILITY</dt> <dd> <p>The current availability of the device. Valid values are AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>FLEET_TYPE</dt> <dd> <p>The fleet type. Valid values are PUBLIC or PRIVATE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>FORM_FACTOR</dt> <dd> <p>The device form factor. Valid values are PHONE or TABLET.</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>INSTANCE_ARN</dt> <dd> <p>The Amazon Resource Name (ARN) of the device instance.</p> <p>Supported operators: <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>INSTANCE_LABELS</dt> <dd> <p>The label of the device instance.</p> <p>Supported operators: <code>CONTAINS</code> </p> </dd> <dt>MANUFACTURER</dt> <dd> <p>The device manufacturer (for example, Apple).</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>MODEL</dt> <dd> <p>The device model, such as Apple iPad Air 2 or Google Pixel.</p> <p>Supported operators: <code>CONTAINS</code>, <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>OS_VERSION</dt> <dd> <p>The operating system version (for example, 10.3.2).</p> <p>Supported operators: <code>EQUALS</code>, <code>GREATER_THAN</code>, <code>GREATER_THAN_OR_EQUALS</code>, <code>IN</code>, <code>LESS_THAN</code>, <code>LESS_THAN_OR_EQUALS</code>, <code>NOT_IN</code> </p> </dd> <dt>PLATFORM</dt> <dd> <p>The device platform. Valid values are ANDROID or IOS.</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>REMOTE_ACCESS_ENABLED</dt> <dd> <p>Whether the device is enabled for remote access. Valid values are TRUE or FALSE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>REMOTE_DEBUG_ENABLED</dt> <dd> <p>Whether the device is enabled for remote debugging. Valid values are TRUE or FALSE.</p> <p>Supported operators: <code>EQUALS</code> </p> <p>Because remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>, this filter is ignored.</p> </dd> </dl>'
+        operator:
+          allOf:
+          - $ref: '#/components/schemas/RuleOperator'
+          - description: Specifies how Device Farm compares the rule's attribute to the value. For the operators that are supported by each attribute, see the attribute descriptions.
+        value:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The rule's value.
+      description: Represents a condition for a device pool.
     UpdateDevicePoolResult:
       type: object
       example:
@@ -318,49 +359,8 @@ components:
           - $ref: '#/components/schemas/DevicePool'
           - description: The device pool you just updated.
       description: Represents the result of an update device pool request.
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
+    Integer:
+      type: integer
   securitySchemes:
     hmac:
       type: apiKey

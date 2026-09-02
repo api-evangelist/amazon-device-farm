@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.UpdateProject API'
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.UpdateProject #X Amz Target=DeviceFarm 20150623.UpdateProject #X Amz Target=DeviceFarm 20150623.UpdateProject API'
   description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -174,6 +174,12 @@ paths:
       - '#X Amz Target=DeviceFarm 20150623.UpdateProject'
 components:
   parameters:
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Credential:
       name: X-Amz-Credential
       in: header
@@ -186,26 +192,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-SignedHeaders:
       name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
       in: header
       schema:
         type: string
@@ -216,27 +204,107 @@ components:
       schema:
         type: string
       required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
+    NonEmptyString:
+      type: string
+      pattern: .*\S.*
+      minLength: 1
+      maxLength: 4096
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    ArgumentException: {}
+    LimitExceededException: {}
     VpcSubnetIds:
       type: array
       items:
         $ref: '#/components/schemas/SubnetId'
       minItems: 1
       maxItems: 8
-    NonEmptyString:
-      type: string
-      pattern: .*\S.*
-      minLength: 1
-      maxLength: 4096
-    LimitExceededException: {}
     SubnetId:
       type: string
       pattern: ^subnet-[0-9a-fA-F]{8,}$
       minLength: 1
       maxLength: 4096
+    VpcSecurityGroupIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SecurityGroupId'
+      minItems: 1
+      maxItems: 5
+    SecurityGroupId:
+      type: string
+      pattern: ^sg-[0-9a-fA-F]{8,}$
+      minLength: 1
+      maxLength: 4096
     DateTime:
       type: string
       format: date-time
+    ServiceAccountException: {}
+    NotFoundException: {}
+    JobTimeoutMinutes:
+      type: integer
+    VpcConfig:
+      type: object
+      required:
+      - securityGroupIds
+      - subnetIds
+      - vpcId
+      properties:
+        securityGroupIds:
+          allOf:
+          - $ref: '#/components/schemas/VpcSecurityGroupIds'
+          - description: An array of one or more security groups IDs in your Amazon VPC.
+        subnetIds:
+          allOf:
+          - $ref: '#/components/schemas/VpcSubnetIds'
+          - description: An array of one or more subnet IDs in your Amazon VPC.
+        vpcId:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: The ID of the Amazon VPC.
+      description: Contains the VPC configuration data necessary to interface with AWS Device Farm's services.
+    UpdateProjectRequest:
+      type: object
+      required:
+      - arn
+      title: UpdateProjectRequest
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the project whose name to update.
+        name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: A string that represents the new name of the project that you are updating.
+        defaultJobTimeoutMinutes:
+          allOf:
+          - $ref: '#/components/schemas/JobTimeoutMinutes'
+          - description: The number of minutes a test run in the project executes before it times out.
+        vpcConfig:
+          allOf:
+          - $ref: '#/components/schemas/VpcConfig'
+          - description: The VPC security groups and subnets that are attached to a project.
+      description: Represents a request to the update project operation.
     Project:
       type: object
       properties:
@@ -274,74 +342,6 @@ components:
           - $ref: '#/components/schemas/Project'
           - description: The project to update.
       description: Represents the result of an update project request.
-    VpcConfig:
-      type: object
-      required:
-      - securityGroupIds
-      - subnetIds
-      - vpcId
-      properties:
-        securityGroupIds:
-          allOf:
-          - $ref: '#/components/schemas/VpcSecurityGroupIds'
-          - description: An array of one or more security groups IDs in your Amazon VPC.
-        subnetIds:
-          allOf:
-          - $ref: '#/components/schemas/VpcSubnetIds'
-          - description: An array of one or more subnet IDs in your Amazon VPC.
-        vpcId:
-          allOf:
-          - $ref: '#/components/schemas/NonEmptyString'
-          - description: The ID of the Amazon VPC.
-      description: Contains the VPC configuration data necessary to interface with AWS Device Farm's services.
-    VpcSecurityGroupIds:
-      type: array
-      items:
-        $ref: '#/components/schemas/SecurityGroupId'
-      minItems: 1
-      maxItems: 5
-    SecurityGroupId:
-      type: string
-      pattern: ^sg-[0-9a-fA-F]{8,}$
-      minLength: 1
-      maxLength: 4096
-    ServiceAccountException: {}
-    NotFoundException: {}
-    AmazonResourceName:
-      type: string
-      pattern: ^arn:.+
-      minLength: 32
-      maxLength: 1011
-    UpdateProjectRequest:
-      type: object
-      required:
-      - arn
-      title: UpdateProjectRequest
-      properties:
-        arn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The Amazon Resource Name (ARN) of the project whose name to update.
-        name:
-          allOf:
-          - $ref: '#/components/schemas/Name'
-          - description: A string that represents the new name of the project that you are updating.
-        defaultJobTimeoutMinutes:
-          allOf:
-          - $ref: '#/components/schemas/JobTimeoutMinutes'
-          - description: The number of minutes a test run in the project executes before it times out.
-        vpcConfig:
-          allOf:
-          - $ref: '#/components/schemas/VpcConfig'
-          - description: The VPC security groups and subnets that are attached to a project.
-      description: Represents a request to the update project operation.
-    JobTimeoutMinutes:
-      type: integer
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
-    ArgumentException: {}
   securitySchemes:
     hmac:
       type: apiKey

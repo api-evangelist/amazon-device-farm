@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateProject API'
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateProject #X Amz Target=DeviceFarm 20150623.CreateProject #X Amz Target=DeviceFarm 20150623.CreateProject API'
   description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -179,28 +179,148 @@ paths:
       tags:
       - '#X Amz Target=DeviceFarm 20150623.CreateProject'
 components:
+  parameters:
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    TagOperationException: {}
+    NonEmptyString:
+      type: string
+      pattern: .*\S.*
+      minLength: 1
+      maxLength: 4096
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    ArgumentException: {}
+    LimitExceededException: {}
     VpcSubnetIds:
       type: array
       items:
         $ref: '#/components/schemas/SubnetId'
       minItems: 1
       maxItems: 8
-    NonEmptyString:
-      type: string
-      pattern: .*\S.*
-      minLength: 1
-      maxLength: 4096
-    LimitExceededException: {}
     SubnetId:
       type: string
       pattern: ^subnet-[0-9a-fA-F]{8,}$
       minLength: 1
       maxLength: 4096
+    VpcSecurityGroupIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SecurityGroupId'
+      minItems: 1
+      maxItems: 5
+    SecurityGroupId:
+      type: string
+      pattern: ^sg-[0-9a-fA-F]{8,}$
+      minLength: 1
+      maxLength: 4096
     DateTime:
       type: string
       format: date-time
+    TagOperationException: {}
+    ServiceAccountException: {}
+    CreateProjectRequest:
+      type: object
+      required:
+      - name
+      title: CreateProjectRequest
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: The project's name.
+        defaultJobTimeoutMinutes:
+          allOf:
+          - $ref: '#/components/schemas/JobTimeoutMinutes'
+          - description: Sets the execution timeout value (in minutes) for a project. All test runs in this project use the specified execution timeout value unless overridden when scheduling a run.
+        vpcConfig:
+          allOf:
+          - $ref: '#/components/schemas/VpcConfig'
+          - description: The VPC security groups and subnets that are attached to a project.
+      description: Represents a request to the create project operation.
+    NotFoundException: {}
+    JobTimeoutMinutes:
+      type: integer
+    CreateProjectResult:
+      type: object
+      example:
+        project:
+          name: MyProject
+          arn: arn:aws:devicefarm:us-west-2:123456789101:project:5e01a8c7-c861-4c0a-b1d5-12345EXAMPLE
+          created: '1472660939.152'
+      properties:
+        project:
+          allOf:
+          - $ref: '#/components/schemas/Project'
+          - description: The newly created project.
+      description: Represents the result of a create project request.
+    VpcConfig:
+      type: object
+      required:
+      - securityGroupIds
+      - subnetIds
+      - vpcId
+      properties:
+        securityGroupIds:
+          allOf:
+          - $ref: '#/components/schemas/VpcSecurityGroupIds'
+          - description: An array of one or more security groups IDs in your Amazon VPC.
+        subnetIds:
+          allOf:
+          - $ref: '#/components/schemas/VpcSubnetIds'
+          - description: An array of one or more subnet IDs in your Amazon VPC.
+        vpcId:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: The ID of the Amazon VPC.
+      description: Contains the VPC configuration data necessary to interface with AWS Device Farm's services.
     Project:
       type: object
       properties:
@@ -225,126 +345,6 @@ components:
           - $ref: '#/components/schemas/VpcConfig'
           - description: The VPC security groups and subnets that are attached to a project.
       description: Represents an operating-system neutral workspace for running and managing tests.
-    VpcConfig:
-      type: object
-      required:
-      - securityGroupIds
-      - subnetIds
-      - vpcId
-      properties:
-        securityGroupIds:
-          allOf:
-          - $ref: '#/components/schemas/VpcSecurityGroupIds'
-          - description: An array of one or more security groups IDs in your Amazon VPC.
-        subnetIds:
-          allOf:
-          - $ref: '#/components/schemas/VpcSubnetIds'
-          - description: An array of one or more subnet IDs in your Amazon VPC.
-        vpcId:
-          allOf:
-          - $ref: '#/components/schemas/NonEmptyString'
-          - description: The ID of the Amazon VPC.
-      description: Contains the VPC configuration data necessary to interface with AWS Device Farm's services.
-    VpcSecurityGroupIds:
-      type: array
-      items:
-        $ref: '#/components/schemas/SecurityGroupId'
-      minItems: 1
-      maxItems: 5
-    CreateProjectRequest:
-      type: object
-      required:
-      - name
-      title: CreateProjectRequest
-      properties:
-        name:
-          allOf:
-          - $ref: '#/components/schemas/Name'
-          - description: The project's name.
-        defaultJobTimeoutMinutes:
-          allOf:
-          - $ref: '#/components/schemas/JobTimeoutMinutes'
-          - description: Sets the execution timeout value (in minutes) for a project. All test runs in this project use the specified execution timeout value unless overridden when scheduling a run.
-        vpcConfig:
-          allOf:
-          - $ref: '#/components/schemas/VpcConfig'
-          - description: The VPC security groups and subnets that are attached to a project.
-      description: Represents a request to the create project operation.
-    SecurityGroupId:
-      type: string
-      pattern: ^sg-[0-9a-fA-F]{8,}$
-      minLength: 1
-      maxLength: 4096
-    ServiceAccountException: {}
-    NotFoundException: {}
-    AmazonResourceName:
-      type: string
-      pattern: ^arn:.+
-      minLength: 32
-      maxLength: 1011
-    CreateProjectResult:
-      type: object
-      example:
-        project:
-          name: MyProject
-          arn: arn:aws:devicefarm:us-west-2:123456789101:project:5e01a8c7-c861-4c0a-b1d5-12345EXAMPLE
-          created: '1472660939.152'
-      properties:
-        project:
-          allOf:
-          - $ref: '#/components/schemas/Project'
-          - description: The newly created project.
-      description: Represents the result of a create project request.
-    JobTimeoutMinutes:
-      type: integer
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
-    ArgumentException: {}
-  parameters:
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
   securitySchemes:
     hmac:
       type: apiKey

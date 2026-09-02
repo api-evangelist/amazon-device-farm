@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListTests API'
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListTests #X Amz Target=DeviceFarm 20150623.ListTests #X Amz Target=DeviceFarm 20150623.ListTests API'
   description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -179,43 +179,54 @@ paths:
       tags:
       - '#X Amz Target=DeviceFarm 20150623.ListTests'
 components:
+  parameters:
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    ListTestsResult:
-      type: object
-      example:
-        tests: []
-      properties:
-        tests:
-          allOf:
-          - $ref: '#/components/schemas/Tests'
-          - description: Information about the tests.
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: If the number of items that are returned is significantly large, this is an identifier that is also returned. It can be used in a subsequent call to this operation to return the next set of items in the list.
-      description: Represents the result of a list tests request.
-    Tests:
-      type: array
-      items:
-        $ref: '#/components/schemas/Test'
-    Integer:
-      type: integer
-    DeviceMinutes:
-      type: object
-      properties:
-        total:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: When specified, represents the total minutes used by the resource to run tests.
-        metered:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: When specified, represents only the sum of metered minutes used by the resource to run tests.
-        unmetered:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: When specified, represents only the sum of unmetered minutes used by the resource to run tests.
-      description: Represents the total (metered or unmetered) minutes used by the resource to run tests. Contains the sum of minutes consumed by all children.
+    Message:
+      type: string
+      minLength: 0
+      maxLength: 16384
     Test:
       type: object
       properties:
@@ -264,18 +275,28 @@ components:
           - $ref: '#/components/schemas/DeviceMinutes'
           - description: Represents the total (metered or unmetered) minutes used by the test.
       description: Represents a condition that is evaluated.
-    Message:
+    Name:
       type: string
       minLength: 0
-      maxLength: 16384
-    PaginationToken:
+      maxLength: 256
+    ExecutionStatus:
       type: string
-      minLength: 4
-      maxLength: 1024
-    LimitExceededException: {}
-    DateTime:
+      enum:
+      - PENDING
+      - PENDING_CONCURRENCY
+      - PENDING_DEVICE
+      - PROCESSING
+      - SCHEDULING
+      - PREPARING
+      - RUNNING
+      - COMPLETED
+      - STOPPING
+    AmazonResourceName:
       type: string
-      format: date-time
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    ArgumentException: {}
     ExecutionResult:
       type: string
       enum:
@@ -286,6 +307,11 @@ components:
       - SKIPPED
       - ERRORED
       - STOPPED
+    PaginationToken:
+      type: string
+      minLength: 4
+      maxLength: 1024
+    LimitExceededException: {}
     Counters:
       type: object
       properties:
@@ -318,33 +344,11 @@ components:
           - $ref: '#/components/schemas/Integer'
           - description: The number of skipped entities.
       description: Represents entity counters.
-    ListTestsRequest:
-      type: object
-      required:
-      - arn
-      title: ListTestsRequest
-      properties:
-        arn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The test suite's Amazon Resource Name (ARN).
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
-      description: Represents a request to the list tests operation.
-    ExecutionStatus:
+    DateTime:
       type: string
-      enum:
-      - PENDING
-      - PENDING_CONCURRENCY
-      - PENDING_DEVICE
-      - PROCESSING
-      - SCHEDULING
-      - PREPARING
-      - RUNNING
-      - COMPLETED
-      - STOPPING
+      format: date-time
+    ServiceAccountException: {}
+    NotFoundException: {}
     TestType:
       type: string
       enum:
@@ -369,64 +373,60 @@ components:
       - XCTEST_UI
       - REMOTE_ACCESS_RECORD
       - REMOTE_ACCESS_REPLAY
-    ServiceAccountException: {}
-    NotFoundException: {}
-    AmazonResourceName:
-      type: string
-      pattern: ^arn:.+
-      minLength: 32
-      maxLength: 1011
+    ListTestsRequest:
+      type: object
+      required:
+      - arn
+      title: ListTestsRequest
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The test suite's Amazon Resource Name (ARN).
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+      description: Represents a request to the list tests operation.
+    ListTestsResult:
+      type: object
+      example:
+        tests: []
+      properties:
+        tests:
+          allOf:
+          - $ref: '#/components/schemas/Tests'
+          - description: Information about the tests.
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: If the number of items that are returned is significantly large, this is an identifier that is also returned. It can be used in a subsequent call to this operation to return the next set of items in the list.
+      description: Represents the result of a list tests request.
+    DeviceMinutes:
+      type: object
+      properties:
+        total:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents the total minutes used by the resource to run tests.
+        metered:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents only the sum of metered minutes used by the resource to run tests.
+        unmetered:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents only the sum of unmetered minutes used by the resource to run tests.
+      description: Represents the total (metered or unmetered) minutes used by the resource to run tests. Contains the sum of minutes consumed by all children.
+    Integer:
+      type: integer
+    Tests:
+      type: array
+      items:
+        $ref: '#/components/schemas/Test'
     Double:
       type: number
       format: double
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
-    ArgumentException: {}
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
   securitySchemes:
     hmac:
       type: apiKey

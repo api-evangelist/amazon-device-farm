@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListArtifacts API'
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListArtifacts #X Amz Target=DeviceFarm 20150623.ListArtifacts #X Amz Target=DeviceFarm 20150623.ListArtifacts API'
   description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -180,6 +180,12 @@ paths:
       - '#X Amz Target=DeviceFarm 20150623.ListArtifacts'
 components:
   parameters:
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Credential:
       name: X-Amz-Credential
       in: header
@@ -192,26 +198,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-SignedHeaders:
       name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
       in: header
       schema:
         type: string
@@ -222,20 +210,89 @@ components:
       schema:
         type: string
       required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    String:
-      type: string
-    ArtifactCategory:
+    ArtifactType:
       type: string
       enum:
+      - UNKNOWN
       - SCREENSHOT
-      - FILE
-      - LOG
+      - DEVICE_LOG
+      - MESSAGE_LOG
+      - VIDEO_LOG
+      - RESULT_LOG
+      - SERVICE_LOG
+      - WEBKIT_LOG
+      - INSTRUMENTATION_OUTPUT
+      - EXERCISER_MONKEY_OUTPUT
+      - CALABASH_JSON_OUTPUT
+      - CALABASH_PRETTY_OUTPUT
+      - CALABASH_STANDARD_OUTPUT
+      - CALABASH_JAVA_XML_OUTPUT
+      - AUTOMATION_OUTPUT
+      - APPIUM_SERVER_OUTPUT
+      - APPIUM_JAVA_OUTPUT
+      - APPIUM_JAVA_XML_OUTPUT
+      - APPIUM_PYTHON_OUTPUT
+      - APPIUM_PYTHON_XML_OUTPUT
+      - EXPLORER_EVENT_LOG
+      - EXPLORER_SUMMARY_LOG
+      - APPLICATION_CRASH_REPORT
+      - XCTEST_LOG
+      - VIDEO
+      - CUSTOMER_ARTIFACT
+      - CUSTOMER_ARTIFACT_LOG
+      - TESTSPEC_OUTPUT
+    String:
+      type: string
+    Artifacts:
+      type: array
+      items:
+        $ref: '#/components/schemas/Artifact'
+    ListArtifactsResult:
+      type: object
+      properties:
+        artifacts:
+          allOf:
+          - $ref: '#/components/schemas/Artifacts'
+          - description: Information about the artifacts.
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: If the number of items that are returned is significantly large, this is an identifier that is also returned. It can be used in a subsequent call to this operation to return the next set of items in the list.
+      description: Represents the result of a list artifacts operation.
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    LimitExceededException: {}
     PaginationToken:
       type: string
       minLength: 4
       maxLength: 1024
-    LimitExceededException: {}
+    ArgumentException: {}
+    URL:
+      type: string
+      minLength: 0
+      maxLength: 2048
+    ServiceAccountException: {}
+    NotFoundException: {}
     ListArtifactsRequest:
       type: object
       required:
@@ -280,69 +337,12 @@ components:
           - $ref: '#/components/schemas/URL'
           - description: The presigned Amazon S3 URL that can be used with a GET request to download the artifact's file.
       description: Represents the output of a test. Examples of artifacts include logs and screenshots.
-    ArtifactType:
+    ArtifactCategory:
       type: string
       enum:
-      - UNKNOWN
       - SCREENSHOT
-      - DEVICE_LOG
-      - MESSAGE_LOG
-      - VIDEO_LOG
-      - RESULT_LOG
-      - SERVICE_LOG
-      - WEBKIT_LOG
-      - INSTRUMENTATION_OUTPUT
-      - EXERCISER_MONKEY_OUTPUT
-      - CALABASH_JSON_OUTPUT
-      - CALABASH_PRETTY_OUTPUT
-      - CALABASH_STANDARD_OUTPUT
-      - CALABASH_JAVA_XML_OUTPUT
-      - AUTOMATION_OUTPUT
-      - APPIUM_SERVER_OUTPUT
-      - APPIUM_JAVA_OUTPUT
-      - APPIUM_JAVA_XML_OUTPUT
-      - APPIUM_PYTHON_OUTPUT
-      - APPIUM_PYTHON_XML_OUTPUT
-      - EXPLORER_EVENT_LOG
-      - EXPLORER_SUMMARY_LOG
-      - APPLICATION_CRASH_REPORT
-      - XCTEST_LOG
-      - VIDEO
-      - CUSTOMER_ARTIFACT
-      - CUSTOMER_ARTIFACT_LOG
-      - TESTSPEC_OUTPUT
-    URL:
-      type: string
-      minLength: 0
-      maxLength: 2048
-    ServiceAccountException: {}
-    NotFoundException: {}
-    Artifacts:
-      type: array
-      items:
-        $ref: '#/components/schemas/Artifact'
-    AmazonResourceName:
-      type: string
-      pattern: ^arn:.+
-      minLength: 32
-      maxLength: 1011
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
-    ListArtifactsResult:
-      type: object
-      properties:
-        artifacts:
-          allOf:
-          - $ref: '#/components/schemas/Artifacts'
-          - description: Information about the artifacts.
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: If the number of items that are returned is significantly large, this is an identifier that is also returned. It can be used in a subsequent call to this operation to return the next set of items in the list.
-      description: Represents the result of a list artifacts operation.
-    ArgumentException: {}
+      - FILE
+      - LOG
   securitySchemes:
     hmac:
       type: apiKey
