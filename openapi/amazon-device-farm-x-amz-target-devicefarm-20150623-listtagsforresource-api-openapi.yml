@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListTagsForResource #X Amz Target=DeviceFarm 20150623.ListTagsForResource #X Amz Target=DeviceFarm 20150623.ListTagsForResource API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -166,9 +173,58 @@ paths:
           - DeviceFarm_20150623.ListTagsForResource
       tags:
       - '#X Amz Target=DeviceFarm 20150623.ListTagsForResource'
+      summary: List tags for resource
+      x-summary-source: derived
 components:
+  parameters:
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    NotFoundException: {}
+    TagValue:
+      type: string
+      minLength: 0
+      maxLength: 256
+    TagOperationException: {}
     ListTagsForResourceRequest:
       type: object
       required:
@@ -194,7 +250,6 @@ components:
           - $ref: '#/components/schemas/TagValue'
           - description: The optional part of a key-value pair that makes up a tag. A <code>value</code> acts as a descriptor in a tag category (key).
       description: 'The metadata that you apply to a resource to help you categorize and organize it. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters. Tag values can have a maximum length of 256 characters. '
-    TagOperationException: {}
     DeviceFarmArn:
       type: string
       pattern: ^arn:aws:devicefarm:.+
@@ -209,6 +264,7 @@ components:
       type: string
       minLength: 1
       maxLength: 128
+    ArgumentException: {}
     ListTagsForResourceResponse:
       type: object
       properties:
@@ -216,54 +272,7 @@ components:
           allOf:
           - $ref: '#/components/schemas/TagList'
           - description: The tags to add to the resource. A tag is an array of key-value pairs. Tag keys can have a maximum character length of 128 characters. Tag values can have a maximum length of 256 characters.
-    ArgumentException: {}
-    TagValue:
-      type: string
-      minLength: 0
-      maxLength: 256
-  parameters:
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
+    NotFoundException: {}
   securitySchemes:
     hmac:
       type: apiKey

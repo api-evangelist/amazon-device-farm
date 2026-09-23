@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts #X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts #X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -178,8 +185,28 @@ paths:
           - DeviceFarm_20150623.ListTestGridSessionArtifacts
       tags:
       - '#X Amz Target=DeviceFarm 20150623.ListTestGridSessionArtifacts'
+      summary: List test grid session artifacts
+      x-summary-source: derived
 components:
   parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Security-Token:
       name: X-Amz-Security-Token
       in: header
@@ -198,24 +225,6 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
       in: header
@@ -223,23 +232,6 @@ components:
         type: string
       required: false
   schemas:
-    TestGridSessionArtifacts:
-      type: array
-      items:
-        $ref: '#/components/schemas/TestGridSessionArtifact'
-    String:
-      type: string
-    ArgumentException: {}
-    PaginationToken:
-      type: string
-      minLength: 4
-      maxLength: 1024
-    TestGridSessionArtifactCategory:
-      type: string
-      enum:
-      - VIDEO
-      - LOG
-    NotFoundException: {}
     TestGridSessionArtifact:
       type: object
       properties:
@@ -256,15 +248,6 @@ components:
           - $ref: '#/components/schemas/SensitiveString'
           - description: A semi-stable URL to the content of the object.
       description: <p>Artifacts are video and other files that are produced in the process of running a browser in an automated context. </p> <note> <p>Video elements might be broken up into multiple artifacts as they grow in size during creation. </p> </note>
-    TestGridSessionArtifactType:
-      type: string
-      enum:
-      - UNKNOWN
-      - VIDEO
-      - SELENIUM_LOG
-    SensitiveString:
-      type: string
-      format: password
     DeviceFarmArn:
       type: string
       pattern: ^arn:aws:devicefarm:.+
@@ -281,11 +264,37 @@ components:
           allOf:
           - $ref: '#/components/schemas/PaginationToken'
           - description: Pagination token.
-    InternalServiceException: {}
+    SensitiveString:
+      type: string
+      format: password
     MaxPageSize:
       type: integer
       minimum: 1
       maximum: 1000
+    TestGridSessionArtifactType:
+      type: string
+      enum:
+      - UNKNOWN
+      - VIDEO
+      - SELENIUM_LOG
+    String:
+      type: string
+    NotFoundException: {}
+    PaginationToken:
+      type: string
+      minLength: 4
+      maxLength: 1024
+    TestGridSessionArtifacts:
+      type: array
+      items:
+        $ref: '#/components/schemas/TestGridSessionArtifact'
+    TestGridSessionArtifactCategory:
+      type: string
+      enum:
+      - VIDEO
+      - LOG
+    InternalServiceException: {}
+    ArgumentException: {}
     ListTestGridSessionArtifactsRequest:
       type: object
       required:

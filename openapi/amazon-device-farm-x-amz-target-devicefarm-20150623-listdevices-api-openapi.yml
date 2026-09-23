@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListDevices #X Amz Target=DeviceFarm 20150623.ListDevices #X Amz Target=DeviceFarm 20150623.ListDevices API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -178,61 +185,113 @@ paths:
           - DeviceFarm_20150623.ListDevices
       tags:
       - '#X Amz Target=DeviceFarm 20150623.ListDevices'
+      summary: List devices
+      x-summary-source: derived
 components:
-  parameters:
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
+    ServiceAccountException: {}
     Devices:
       type: array
       items:
         $ref: '#/components/schemas/Device'
+    Long:
+      type: integer
+    RuleOperator:
+      type: string
+      enum:
+      - EQUALS
+      - LESS_THAN
+      - LESS_THAN_OR_EQUALS
+      - GREATER_THAN
+      - GREATER_THAN_OR_EQUALS
+      - IN
+      - NOT_IN
+      - CONTAINS
+    Integer:
+      type: integer
+    InstanceLabels:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
     Message:
       type: string
       minLength: 0
       maxLength: 16384
-    String:
+    CPU:
+      type: object
+      properties:
+        frequency:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The CPU's frequency.
+        architecture:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The CPU's architecture (for example, x86 or ARM).
+        clock:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: The clock speed of the device's CPU, expressed in hertz (Hz). For example, a 1.2 GHz CPU is expressed as 1200000000.
+      description: Represents the amount of CPU that an app is using on a physical device. Does not represent system-wide CPU usage.
+    Boolean:
+      type: boolean
+    DeviceInstance:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the device instance.
+        deviceArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN of the device.
+        labels:
+          allOf:
+          - $ref: '#/components/schemas/InstanceLabels'
+          - description: An array of strings that describe the device instance.
+        status:
+          allOf:
+          - $ref: '#/components/schemas/InstanceStatus'
+          - description: The status of the device instance. Valid values are listed here.
+        udid:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: Unique device identifier for the device instance.
+        instanceProfile:
+          allOf:
+          - $ref: '#/components/schemas/InstanceProfile'
+          - description: A object that contains information about the instance profile.
+      description: Represents the device instance.
+    DeviceAvailability:
       type: string
+      enum:
+      - TEMPORARY_NOT_AVAILABLE
+      - BUSY
+      - AVAILABLE
+      - HIGHLY_AVAILABLE
+    ListDevicesRequest:
+      type: object
+      title: ListDevicesRequest
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the project.
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+        filters:
+          allOf:
+          - $ref: '#/components/schemas/DeviceFilters'
+          - description: '<p>Used to select a set of devices. A filter is made up of an attribute, an operator, and one or more values.</p> <ul> <li> <p>Attribute: The aspect of a device such as platform or model used as the selection criteria in a device filter.</p> <p>Allowed values include:</p> <ul> <li> <p>ARN: The Amazon Resource Name (ARN) of the device (for example, <code>arn:aws:devicefarm:us-west-2::device:12345Example</code>).</p> </li> <li> <p>PLATFORM: The device platform. Valid values are ANDROID or IOS.</p> </li> <li> <p>OS_VERSION: The operating system version (for example, 10.3.2).</p> </li> <li> <p>MODEL: The device model (for example, iPad 5th Gen).</p> </li> <li> <p>AVAILABILITY: The current availability of the device. Valid values are AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> </li> <li> <p>FORM_FACTOR: The device form factor. Valid values are PHONE or TABLET.</p> </li> <li> <p>MANUFACTURER: The device manufacturer (for example, Apple).</p> </li> <li> <p>REMOTE_ACCESS_ENABLED: Whether the device is enabled for remote access. Valid values are TRUE or FALSE.</p> </li> <li> <p>REMOTE_DEBUG_ENABLED: Whether the device is enabled for remote debugging. Valid values are TRUE or FALSE. Because remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>, this attribute is ignored.</p> </li> <li> <p>INSTANCE_ARN: The Amazon Resource Name (ARN) of the device instance.</p> </li> <li> <p>INSTANCE_LABELS: The label of the device instance.</p> </li> <li> <p>FLEET_TYPE: The fleet type. Valid values are PUBLIC or PRIVATE.</p> </li> </ul> </li> <li> <p>Operator: The filter operator.</p> <ul> <li> <p>The EQUALS operator is available for every attribute except INSTANCE_LABELS.</p> </li> <li> <p>The CONTAINS operator is available for the INSTANCE_LABELS and MODEL attributes.</p> </li> <li> <p>The IN and NOT_IN operators are available for the ARN, OS_VERSION, MODEL, MANUFACTURER, and INSTANCE_ARN attributes.</p> </li> <li> <p>The LESS_THAN, GREATER_THAN, LESS_THAN_OR_EQUALS, and GREATER_THAN_OR_EQUALS operators are also available for the OS_VERSION attribute.</p> </li> </ul> </li> <li> <p>Values: An array of one or more filter values.</p> <ul> <li> <p>The IN and NOT_IN operators take a values array that has one or more elements.</p> </li> <li> <p>The other operators require an array with a single element.</p> </li> <li> <p>In a request, the AVAILABILITY attribute takes the following values: AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> </li> </ul> </li> </ul>'
+      description: Represents the result of a list devices request.
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
     ListDevicesResult:
       type: object
       example: {}
@@ -246,6 +305,33 @@ components:
           - $ref: '#/components/schemas/PaginationToken'
           - description: If the number of items that are returned is significantly large, this is an identifier that is also returned. It can be used in a subsequent call to this operation to return the next set of items in the list.
       description: Represents the result of a list devices operation.
+    PackageIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
+    DeviceFilters:
+      type: array
+      items:
+        $ref: '#/components/schemas/DeviceFilter'
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
+    String:
+      type: string
+    Resolution:
+      type: object
+      properties:
+        width:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The screen resolution's width, expressed in pixels.
+        height:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The screen resolution's height, expressed in pixels.
+      description: Represents the screen resolution of a device in height and width, expressed in pixels.
+    NotFoundException: {}
     InstanceProfile:
       type: object
       properties:
@@ -274,35 +360,34 @@ components:
           - $ref: '#/components/schemas/Message'
           - description: The description of the instance profile.
       description: Represents the instance profile.
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
-    AmazonResourceName:
-      type: string
-      pattern: ^arn:.+
-      minLength: 32
-      maxLength: 1011
-    ArgumentException: {}
+    DeviceFilterValues:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
     PaginationToken:
       type: string
       minLength: 4
       maxLength: 1024
+    DeviceInstances:
+      type: array
+      items:
+        $ref: '#/components/schemas/DeviceInstance'
+    InstanceStatus:
+      type: string
+      enum:
+      - IN_USE
+      - PREPARING
+      - AVAILABLE
+      - NOT_AVAILABLE
     Double:
       type: number
       format: double
-    LimitExceededException: {}
-    PackageIds:
-      type: array
-      items:
-        $ref: '#/components/schemas/String'
-    DeviceFormFactor:
+    DevicePlatform:
       type: string
       enum:
-      - PHONE
-      - TABLET
-    Boolean:
-      type: boolean
+      - ANDROID
+      - IOS
+    ArgumentException: {}
     DeviceFilterAttribute:
       type: string
       enum:
@@ -318,93 +403,6 @@ components:
       - INSTANCE_ARN
       - INSTANCE_LABELS
       - FLEET_TYPE
-    CPU:
-      type: object
-      properties:
-        frequency:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: The CPU's frequency.
-        architecture:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: The CPU's architecture (for example, x86 or ARM).
-        clock:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: The clock speed of the device's CPU, expressed in hertz (Hz). For example, a 1.2 GHz CPU is expressed as 1200000000.
-      description: Represents the amount of CPU that an app is using on a physical device. Does not represent system-wide CPU usage.
-    DeviceInstances:
-      type: array
-      items:
-        $ref: '#/components/schemas/DeviceInstance'
-    Resolution:
-      type: object
-      properties:
-        width:
-          allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The screen resolution's width, expressed in pixels.
-        height:
-          allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The screen resolution's height, expressed in pixels.
-      description: Represents the screen resolution of a device in height and width, expressed in pixels.
-    InstanceLabels:
-      type: array
-      items:
-        $ref: '#/components/schemas/String'
-    Long:
-      type: integer
-    DeviceFilter:
-      type: object
-      required:
-      - attribute
-      - operator
-      - values
-      properties:
-        attribute:
-          allOf:
-          - $ref: '#/components/schemas/DeviceFilterAttribute'
-          - description: '<p>The aspect of a device such as platform or model used as the selection criteria in a device filter.</p> <p>The supported operators for each attribute are provided in the following list.</p> <dl> <dt>ARN</dt> <dd> <p>The Amazon Resource Name (ARN) of the device (for example, <code>arn:aws:devicefarm:us-west-2::device:12345Example</code>).</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>PLATFORM</dt> <dd> <p>The device platform. Valid values are ANDROID or IOS.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>OS_VERSION</dt> <dd> <p>The operating system version (for example, 10.3.2).</p> <p>Supported operators: <code>EQUALS</code>, <code>GREATER_THAN</code>, <code>GREATER_THAN_OR_EQUALS</code>, <code>IN</code>, <code>LESS_THAN</code>, <code>LESS_THAN_OR_EQUALS</code>, <code>NOT_IN</code> </p> </dd> <dt>MODEL</dt> <dd> <p>The device model (for example, iPad 5th Gen).</p> <p>Supported operators: <code>CONTAINS</code>, <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>AVAILABILITY</dt> <dd> <p>The current availability of the device. Valid values are AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>FORM_FACTOR</dt> <dd> <p>The device form factor. Valid values are PHONE or TABLET.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>MANUFACTURER</dt> <dd> <p>The device manufacturer (for example, Apple).</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>REMOTE_ACCESS_ENABLED</dt> <dd> <p>Whether the device is enabled for remote access. Valid values are TRUE or FALSE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>REMOTE_DEBUG_ENABLED</dt> <dd> <p>Whether the device is enabled for remote debugging. Valid values are TRUE or FALSE.</p> <p>Supported operators: <code>EQUALS</code> </p> <p>Because remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>, this filter is ignored.</p> </dd> <dt>INSTANCE_ARN</dt> <dd> <p>The Amazon Resource Name (ARN) of the device instance.</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>INSTANCE_LABELS</dt> <dd> <p>The label of the device instance.</p> <p>Supported operators: <code>CONTAINS</code> </p> </dd> <dt>FLEET_TYPE</dt> <dd> <p>The fleet type. Valid values are PUBLIC or PRIVATE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> </dl>'
-        operator:
-          allOf:
-          - $ref: '#/components/schemas/RuleOperator'
-          - description: Specifies how Device Farm compares the filter's attribute to the value. See the attribute descriptions.
-        values:
-          allOf:
-          - $ref: '#/components/schemas/DeviceFilterValues'
-          - description: <p>An array of one or more filter values used in a device filter.</p> <p class="title"> <b>Operator Values</b> </p> <ul> <li> <p>The IN and NOT_IN operators can take a values array that has more than one element.</p> </li> <li> <p>The other operators require an array with a single element.</p> </li> </ul> <p class="title"> <b>Attribute Values</b> </p> <ul> <li> <p>The PLATFORM attribute can be set to ANDROID or IOS.</p> </li> <li> <p>The AVAILABILITY attribute can be set to AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> </li> <li> <p>The FORM_FACTOR attribute can be set to PHONE or TABLET.</p> </li> <li> <p>The FLEET_TYPE attribute can be set to PUBLIC or PRIVATE.</p> </li> </ul>
-      description: <p>Represents a device filter used to select a set of devices to be included in a test run. This data structure is passed in as the <code>deviceSelectionConfiguration</code> parameter to <code>ScheduleRun</code>. For an example of the JSON request syntax, see <a>ScheduleRun</a>.</p> <p>It is also passed in as the <code>filters</code> parameter to <code>ListDevices</code>. For an example of the JSON request syntax, see <a>ListDevices</a>.</p>
-    RuleOperator:
-      type: string
-      enum:
-      - EQUALS
-      - LESS_THAN
-      - LESS_THAN_OR_EQUALS
-      - GREATER_THAN
-      - GREATER_THAN_OR_EQUALS
-      - IN
-      - NOT_IN
-      - CONTAINS
-    DevicePlatform:
-      type: string
-      enum:
-      - ANDROID
-      - IOS
-    ServiceAccountException: {}
-    NotFoundException: {}
-    DeviceAvailability:
-      type: string
-      enum:
-      - TEMPORARY_NOT_AVAILABLE
-      - BUSY
-      - AVAILABLE
-      - HIGHLY_AVAILABLE
-    DeviceFilters:
-      type: array
-      items:
-        $ref: '#/components/schemas/DeviceFilter'
     Device:
       type: object
       properties:
@@ -493,64 +491,75 @@ components:
           - $ref: '#/components/schemas/DeviceAvailability'
           - description: Indicates how likely a device is available for a test run. Currently available in the <a>ListDevices</a> and GetDevice API methods.
       description: Represents a device type that an app is tested against.
-    ListDevicesRequest:
+    DeviceFilter:
       type: object
-      title: ListDevicesRequest
+      required:
+      - attribute
+      - operator
+      - values
       properties:
-        arn:
+        attribute:
           allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The Amazon Resource Name (ARN) of the project.
-        nextToken:
+          - $ref: '#/components/schemas/DeviceFilterAttribute'
+          - description: '<p>The aspect of a device such as platform or model used as the selection criteria in a device filter.</p> <p>The supported operators for each attribute are provided in the following list.</p> <dl> <dt>ARN</dt> <dd> <p>The Amazon Resource Name (ARN) of the device (for example, <code>arn:aws:devicefarm:us-west-2::device:12345Example</code>).</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>PLATFORM</dt> <dd> <p>The device platform. Valid values are ANDROID or IOS.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>OS_VERSION</dt> <dd> <p>The operating system version (for example, 10.3.2).</p> <p>Supported operators: <code>EQUALS</code>, <code>GREATER_THAN</code>, <code>GREATER_THAN_OR_EQUALS</code>, <code>IN</code>, <code>LESS_THAN</code>, <code>LESS_THAN_OR_EQUALS</code>, <code>NOT_IN</code> </p> </dd> <dt>MODEL</dt> <dd> <p>The device model (for example, iPad 5th Gen).</p> <p>Supported operators: <code>CONTAINS</code>, <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>AVAILABILITY</dt> <dd> <p>The current availability of the device. Valid values are AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>FORM_FACTOR</dt> <dd> <p>The device form factor. Valid values are PHONE or TABLET.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>MANUFACTURER</dt> <dd> <p>The device manufacturer (for example, Apple).</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>REMOTE_ACCESS_ENABLED</dt> <dd> <p>Whether the device is enabled for remote access. Valid values are TRUE or FALSE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> <dt>REMOTE_DEBUG_ENABLED</dt> <dd> <p>Whether the device is enabled for remote debugging. Valid values are TRUE or FALSE.</p> <p>Supported operators: <code>EQUALS</code> </p> <p>Because remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>, this filter is ignored.</p> </dd> <dt>INSTANCE_ARN</dt> <dd> <p>The Amazon Resource Name (ARN) of the device instance.</p> <p>Supported operators: <code>EQUALS</code>, <code>IN</code>, <code>NOT_IN</code> </p> </dd> <dt>INSTANCE_LABELS</dt> <dd> <p>The label of the device instance.</p> <p>Supported operators: <code>CONTAINS</code> </p> </dd> <dt>FLEET_TYPE</dt> <dd> <p>The fleet type. Valid values are PUBLIC or PRIVATE.</p> <p>Supported operators: <code>EQUALS</code> </p> </dd> </dl>'
+        operator:
           allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
-        filters:
+          - $ref: '#/components/schemas/RuleOperator'
+          - description: Specifies how Device Farm compares the filter's attribute to the value. See the attribute descriptions.
+        values:
           allOf:
-          - $ref: '#/components/schemas/DeviceFilters'
-          - description: '<p>Used to select a set of devices. A filter is made up of an attribute, an operator, and one or more values.</p> <ul> <li> <p>Attribute: The aspect of a device such as platform or model used as the selection criteria in a device filter.</p> <p>Allowed values include:</p> <ul> <li> <p>ARN: The Amazon Resource Name (ARN) of the device (for example, <code>arn:aws:devicefarm:us-west-2::device:12345Example</code>).</p> </li> <li> <p>PLATFORM: The device platform. Valid values are ANDROID or IOS.</p> </li> <li> <p>OS_VERSION: The operating system version (for example, 10.3.2).</p> </li> <li> <p>MODEL: The device model (for example, iPad 5th Gen).</p> </li> <li> <p>AVAILABILITY: The current availability of the device. Valid values are AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> </li> <li> <p>FORM_FACTOR: The device form factor. Valid values are PHONE or TABLET.</p> </li> <li> <p>MANUFACTURER: The device manufacturer (for example, Apple).</p> </li> <li> <p>REMOTE_ACCESS_ENABLED: Whether the device is enabled for remote access. Valid values are TRUE or FALSE.</p> </li> <li> <p>REMOTE_DEBUG_ENABLED: Whether the device is enabled for remote debugging. Valid values are TRUE or FALSE. Because remote debugging is <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/history.html">no longer supported</a>, this attribute is ignored.</p> </li> <li> <p>INSTANCE_ARN: The Amazon Resource Name (ARN) of the device instance.</p> </li> <li> <p>INSTANCE_LABELS: The label of the device instance.</p> </li> <li> <p>FLEET_TYPE: The fleet type. Valid values are PUBLIC or PRIVATE.</p> </li> </ul> </li> <li> <p>Operator: The filter operator.</p> <ul> <li> <p>The EQUALS operator is available for every attribute except INSTANCE_LABELS.</p> </li> <li> <p>The CONTAINS operator is available for the INSTANCE_LABELS and MODEL attributes.</p> </li> <li> <p>The IN and NOT_IN operators are available for the ARN, OS_VERSION, MODEL, MANUFACTURER, and INSTANCE_ARN attributes.</p> </li> <li> <p>The LESS_THAN, GREATER_THAN, LESS_THAN_OR_EQUALS, and GREATER_THAN_OR_EQUALS operators are also available for the OS_VERSION attribute.</p> </li> </ul> </li> <li> <p>Values: An array of one or more filter values.</p> <ul> <li> <p>The IN and NOT_IN operators take a values array that has one or more elements.</p> </li> <li> <p>The other operators require an array with a single element.</p> </li> <li> <p>In a request, the AVAILABILITY attribute takes the following values: AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> </li> </ul> </li> </ul>'
-      description: Represents the result of a list devices request.
-    DeviceFilterValues:
-      type: array
-      items:
-        $ref: '#/components/schemas/String'
-    DeviceInstance:
-      type: object
-      properties:
-        arn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The Amazon Resource Name (ARN) of the device instance.
-        deviceArn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The ARN of the device.
-        labels:
-          allOf:
-          - $ref: '#/components/schemas/InstanceLabels'
-          - description: An array of strings that describe the device instance.
-        status:
-          allOf:
-          - $ref: '#/components/schemas/InstanceStatus'
-          - description: The status of the device instance. Valid values are listed here.
-        udid:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: Unique device identifier for the device instance.
-        instanceProfile:
-          allOf:
-          - $ref: '#/components/schemas/InstanceProfile'
-          - description: A object that contains information about the instance profile.
-      description: Represents the device instance.
-    Integer:
-      type: integer
-    InstanceStatus:
+          - $ref: '#/components/schemas/DeviceFilterValues'
+          - description: <p>An array of one or more filter values used in a device filter.</p> <p class="title"> <b>Operator Values</b> </p> <ul> <li> <p>The IN and NOT_IN operators can take a values array that has more than one element.</p> </li> <li> <p>The other operators require an array with a single element.</p> </li> </ul> <p class="title"> <b>Attribute Values</b> </p> <ul> <li> <p>The PLATFORM attribute can be set to ANDROID or IOS.</p> </li> <li> <p>The AVAILABILITY attribute can be set to AVAILABLE, HIGHLY_AVAILABLE, BUSY, or TEMPORARY_NOT_AVAILABLE.</p> </li> <li> <p>The FORM_FACTOR attribute can be set to PHONE or TABLET.</p> </li> <li> <p>The FLEET_TYPE attribute can be set to PUBLIC or PRIVATE.</p> </li> </ul>
+      description: <p>Represents a device filter used to select a set of devices to be included in a test run. This data structure is passed in as the <code>deviceSelectionConfiguration</code> parameter to <code>ScheduleRun</code>. For an example of the JSON request syntax, see <a>ScheduleRun</a>.</p> <p>It is also passed in as the <code>filters</code> parameter to <code>ListDevices</code>. For an example of the JSON request syntax, see <a>ListDevices</a>.</p>
+    DeviceFormFactor:
       type: string
       enum:
-      - IN_USE
-      - PREPARING
-      - AVAILABLE
-      - NOT_AVAILABLE
+      - PHONE
+      - TABLET
+    LimitExceededException: {}
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

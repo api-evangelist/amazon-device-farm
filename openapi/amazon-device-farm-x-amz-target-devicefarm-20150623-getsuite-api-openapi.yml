@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetSuite #X Amz Target=DeviceFarm 20150623.GetSuite #X Amz Target=DeviceFarm 20150623.GetSuite API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.GetSuite…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -172,55 +179,10 @@ paths:
           - DeviceFarm_20150623.GetSuite
       tags:
       - '#X Amz Target=DeviceFarm 20150623.GetSuite'
+      summary: Get suite
+      x-summary-source: derived
 components:
-  parameters:
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    Message:
-      type: string
-      minLength: 0
-      maxLength: 16384
     GetSuiteRequest:
       type: object
       required:
@@ -232,20 +194,7 @@ components:
           - $ref: '#/components/schemas/AmazonResourceName'
           - description: The suite's ARN.
       description: Represents a request to the get suite operation.
-    GetSuiteResult:
-      type: object
-      example:
-        suite: {}
-      properties:
-        suite:
-          allOf:
-          - $ref: '#/components/schemas/Suite'
-          - description: A collection of one or more tests.
-      description: Represents the result of a get suite request.
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
+    ServiceAccountException: {}
     ExecutionStatus:
       type: string
       enum:
@@ -258,58 +207,38 @@ components:
       - RUNNING
       - COMPLETED
       - STOPPING
-    AmazonResourceName:
-      type: string
-      pattern: ^arn:.+
-      minLength: 32
-      maxLength: 1011
-    ArgumentException: {}
-    ExecutionResult:
-      type: string
-      enum:
-      - PENDING
-      - PASSED
-      - WARNED
-      - FAILED
-      - SKIPPED
-      - ERRORED
-      - STOPPED
-    LimitExceededException: {}
-    Counters:
+    DeviceMinutes:
       type: object
       properties:
         total:
           allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The total number of entities.
-        passed:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents the total minutes used by the resource to run tests.
+        metered:
           allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The number of passed entities.
-        failed:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents only the sum of metered minutes used by the resource to run tests.
+        unmetered:
           allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The number of failed entities.
-        warned:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents only the sum of unmetered minutes used by the resource to run tests.
+      description: Represents the total (metered or unmetered) minutes used by the resource to run tests. Contains the sum of minutes consumed by all children.
+    GetSuiteResult:
+      type: object
+      example:
+        suite: {}
+      properties:
+        suite:
           allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The number of warned entities.
-        errored:
-          allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The number of errored entities.
-        stopped:
-          allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The number of stopped entities.
-        skipped:
-          allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The number of skipped entities.
-      description: Represents entity counters.
-    DateTime:
+          - $ref: '#/components/schemas/Suite'
+          - description: A collection of one or more tests.
+      description: Represents the result of a get suite request.
+    Integer:
+      type: integer
+    Message:
       type: string
-      format: date-time
+      minLength: 0
+      maxLength: 16384
     Suite:
       type: object
       properties:
@@ -358,8 +287,51 @@ components:
           - $ref: '#/components/schemas/DeviceMinutes'
           - description: Represents the total (metered or unmetered) minutes used by the test suite.
       description: Represents a collection of one or more tests.
-    ServiceAccountException: {}
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
     NotFoundException: {}
+    Counters:
+      type: object
+      properties:
+        total:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The total number of entities.
+        passed:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of passed entities.
+        failed:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of failed entities.
+        warned:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of warned entities.
+        errored:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of errored entities.
+        stopped:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of stopped entities.
+        skipped:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The number of skipped entities.
+      description: Represents entity counters.
+    Double:
+      type: number
+      format: double
     TestType:
       type: string
       enum:
@@ -384,27 +356,64 @@ components:
       - XCTEST_UI
       - REMOTE_ACCESS_RECORD
       - REMOTE_ACCESS_REPLAY
-    DeviceMinutes:
-      type: object
-      properties:
-        total:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: When specified, represents the total minutes used by the resource to run tests.
-        metered:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: When specified, represents only the sum of metered minutes used by the resource to run tests.
-        unmetered:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: When specified, represents only the sum of unmetered minutes used by the resource to run tests.
-      description: Represents the total (metered or unmetered) minutes used by the resource to run tests. Contains the sum of minutes consumed by all children.
-    Integer:
-      type: integer
-    Double:
-      type: number
-      format: double
+    ArgumentException: {}
+    ExecutionResult:
+      type: string
+      enum:
+      - PENDING
+      - PASSED
+      - WARNED
+      - FAILED
+      - SKIPPED
+      - ERRORED
+      - STOPPED
+    DateTime:
+      type: string
+      format: date-time
+    LimitExceededException: {}
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

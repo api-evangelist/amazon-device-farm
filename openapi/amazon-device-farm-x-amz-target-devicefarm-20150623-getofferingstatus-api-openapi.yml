@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetOfferingStatus #X Amz Target=DeviceFarm 20150623.GetOfferingStatus #X Amz Target=DeviceFarm 20150623.GetOfferingStatus API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -124,7 +131,7 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: GetOfferingStatus
-      description: Gets the current status and future status of all offerings purchased by an AWS account. The response indicates how many offerings are currently available and the offerings that will be available in the next period. The API returns a <code>NotEligible</code> error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact <a href="mailto:aws-devicefarm-support@amazon.com">aws-devicefarm-support@amazon.com</a>.
+      description: Gets the current status and future status of all offerings purchased by an AWS account. The response indicates how many offerings are currently available and the offerings that will be available in the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
       responses:
         '200':
           description: Success
@@ -184,8 +191,11 @@ paths:
           - DeviceFarm_20150623.GetOfferingStatus
       tags:
       - '#X Amz Target=DeviceFarm 20150623.GetOfferingStatus'
+      summary: Get offering status
+      x-summary-source: derived
 components:
   schemas:
+    ServiceAccountException: {}
     RecurringCharge:
       type: object
       properties:
@@ -198,20 +208,25 @@ components:
           - $ref: '#/components/schemas/RecurringChargeFrequency'
           - description: The frequency in which charges recur.
       description: Specifies whether charges for devices are recurring.
-    NotEligibleException: {}
+    Integer:
+      type: integer
+    OfferingIdentifier:
+      type: string
+      minLength: 32
     Message:
       type: string
       minLength: 0
       maxLength: 16384
-    ArgumentException: {}
-    PaginationToken:
+    OfferingTransactionType:
       type: string
-      minLength: 4
-      maxLength: 1024
-    LimitExceededException: {}
-    DateTime:
+      enum:
+      - PURCHASE
+      - RENEW
+      - SYSTEM
+    CurrencyCode:
       type: string
-      format: date-time
+      enum:
+      - USD
     GetOfferingStatusRequest:
       type: object
       title: GetOfferingStatusRequest
@@ -221,25 +236,11 @@ components:
           - $ref: '#/components/schemas/PaginationToken'
           - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
       description: Represents the request to retrieve the offering status for the specified customer or account.
-    MonetaryAmount:
-      type: object
-      properties:
-        amount:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: The numerical amount of an offering or transaction.
-        currencyCode:
-          allOf:
-          - $ref: '#/components/schemas/CurrencyCode'
-          - description: The currency code of a monetary amount. For example, <code>USD</code> means U.S. dollars.
-      description: A number that represents the monetary amount for an offering or transaction.
-    DevicePlatform:
-      type: string
-      enum:
-      - ANDROID
-      - IOS
-    ServiceAccountException: {}
     NotFoundException: {}
+    PaginationToken:
+      type: string
+      minLength: 4
+      maxLength: 1024
     GetOfferingStatusResult:
       type: object
       example:
@@ -298,35 +299,31 @@ components:
           - $ref: '#/components/schemas/RecurringCharges'
           - description: Specifies whether there are recurring charges for the offering.
       description: Represents the metadata of a device offering.
-    RecurringChargeFrequency:
+    Double:
+      type: number
+      format: double
+    DevicePlatform:
       type: string
       enum:
-      - MONTHLY
+      - ANDROID
+      - IOS
+    ArgumentException: {}
     RecurringCharges:
       type: array
       items:
         $ref: '#/components/schemas/RecurringCharge'
-    OfferingType:
-      type: string
-      enum:
-      - RECURRING
-    OfferingTransactionType:
-      type: string
-      enum:
-      - PURCHASE
-      - RENEW
-      - SYSTEM
-    OfferingIdentifier:
-      type: string
-      minLength: 32
-    CurrencyCode:
-      type: string
-      enum:
-      - USD
-    OfferingStatusMap:
+    MonetaryAmount:
       type: object
-      additionalProperties:
-        $ref: '#/components/schemas/OfferingStatus'
+      properties:
+        amount:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: The numerical amount of an offering or transaction.
+        currencyCode:
+          allOf:
+          - $ref: '#/components/schemas/CurrencyCode'
+          - description: The currency code of a monetary amount. For example, <code>USD</code> means U.S. dollars.
+      description: A number that represents the monetary amount for an offering or transaction.
     OfferingStatus:
       type: object
       properties:
@@ -347,26 +344,26 @@ components:
           - $ref: '#/components/schemas/DateTime'
           - description: The date on which the offering is effective.
       description: The status of the offering.
-    Integer:
-      type: integer
-    Double:
-      type: number
-      format: double
+    RecurringChargeFrequency:
+      type: string
+      enum:
+      - MONTHLY
+    OfferingStatusMap:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/OfferingStatus'
+    NotEligibleException: {}
+    DateTime:
+      type: string
+      format: date-time
+    OfferingType:
+      type: string
+      enum:
+      - RECURRING
+    LimitExceededException: {}
   parameters:
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Date:
+      name: X-Amz-Date
       in: header
       schema:
         type: string
@@ -383,8 +380,20 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string

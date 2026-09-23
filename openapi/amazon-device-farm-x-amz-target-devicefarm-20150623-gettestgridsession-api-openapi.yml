@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetTestGridSession #X Amz Target=DeviceFarm 20150623.GetTestGridSession #X Amz Target=DeviceFarm 20150623.GetTestGridSession API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -124,7 +131,13 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: GetTestGridSession
-      description: <p>A session is an instance of a browser created through a <code>RemoteWebDriver</code> with the URL from <a>CreateTestGridUrlResult$url</a>. You can use the following to look up sessions:</p> <ul> <li> <p>The session ARN (<a>GetTestGridSessionRequest$sessionArn</a>).</p> </li> <li> <p>The project ARN and a session ID (<a>GetTestGridSessionRequest$projectArn</a> and <a>GetTestGridSessionRequest$sessionId</a>).</p> </li> </ul> <p/>
+      description: 'A session is an instance of a browser created through a RemoteWebDriver with the URL from CreateTestGridUrlResult$url. You can use the following to look up sessions:
+
+
+        The session ARN (GetTestGridSessionRequest$sessionArn).
+
+
+        The project ARN and a session ID (GetTestGridSessionRequest$projectArn and GetTestGridSessionRequest$sessionId).'
       responses:
         '200':
           description: Success
@@ -166,8 +179,28 @@ paths:
           - DeviceFarm_20150623.GetTestGridSession
       tags:
       - '#X Amz Target=DeviceFarm 20150623.GetTestGridSession'
+      summary: Get test grid session
+      x-summary-source: derived
 components:
   parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Security-Token:
       name: X-Amz-Security-Token
       in: header
@@ -186,24 +219,6 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
       in: header
@@ -211,8 +226,37 @@ components:
         type: string
       required: false
   schemas:
+    DeviceFarmArn:
+      type: string
+      pattern: ^arn:aws:devicefarm:.+
+      minLength: 32
+      maxLength: 1011
+    ResourceId:
+      type: string
+      pattern: .*\S.*
+      minLength: 1
+      maxLength: 128
+    TestGridSessionStatus:
+      type: string
+      enum:
+      - ACTIVE
+      - CLOSED
+      - ERRORED
     String:
       type: string
+    NotFoundException: {}
+    InternalServiceException: {}
+    Double:
+      type: number
+      format: double
+    ArgumentException: {}
+    GetTestGridSessionResult:
+      type: object
+      properties:
+        testGridSession:
+          allOf:
+          - $ref: '#/components/schemas/TestGridSession'
+          - description: The <a>TestGridSession</a> that was requested.
     TestGridSession:
       type: object
       properties:
@@ -241,34 +285,6 @@ components:
           - $ref: '#/components/schemas/String'
           - description: A JSON object of options and parameters passed to the Selenium WebDriver.
       description: A <a>TestGridSession</a> is a single instance of a browser launched from the URL provided by a call to <a>CreateTestGridUrl</a>.
-    ArgumentException: {}
-    GetTestGridSessionResult:
-      type: object
-      properties:
-        testGridSession:
-          allOf:
-          - $ref: '#/components/schemas/TestGridSession'
-          - description: The <a>TestGridSession</a> that was requested.
-    DateTime:
-      type: string
-      format: date-time
-    NotFoundException: {}
-    ResourceId:
-      type: string
-      pattern: .*\S.*
-      minLength: 1
-      maxLength: 128
-    TestGridSessionStatus:
-      type: string
-      enum:
-      - ACTIVE
-      - CLOSED
-      - ERRORED
-    DeviceFarmArn:
-      type: string
-      pattern: ^arn:aws:devicefarm:.+
-      minLength: 32
-      maxLength: 1011
     GetTestGridSessionRequest:
       type: object
       title: GetTestGridSessionRequest
@@ -285,10 +301,9 @@ components:
           allOf:
           - $ref: '#/components/schemas/DeviceFarmArn'
           - description: An ARN that uniquely identifies a <a>TestGridSession</a>.
-    InternalServiceException: {}
-    Double:
-      type: number
-      format: double
+    DateTime:
+      type: string
+      format: date-time
   securitySchemes:
     hmac:
       type: apiKey

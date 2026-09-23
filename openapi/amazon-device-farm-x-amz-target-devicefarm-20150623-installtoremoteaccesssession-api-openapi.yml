@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.InstallToRemoteAccessSession #X Amz Target=DeviceFarm 20150623.InstallToRemoteAccessSession #X Amz Target=DeviceFarm 20150623.InstallToRemoteAccessSession API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -172,145 +179,11 @@ paths:
           - DeviceFarm_20150623.InstallToRemoteAccessSession
       tags:
       - '#X Amz Target=DeviceFarm 20150623.InstallToRemoteAccessSession'
+      summary: Install to remote access session
+      x-summary-source: derived
 components:
-  parameters:
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    Message:
-      type: string
-      minLength: 0
-      maxLength: 16384
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
-    AmazonResourceName:
-      type: string
-      pattern: ^arn:.+
-      minLength: 32
-      maxLength: 1011
-    ArgumentException: {}
-    LimitExceededException: {}
-    SensitiveURL:
-      type: string
-      minLength: 0
-      maxLength: 2048
-      format: password
-    InstallToRemoteAccessSessionResult:
-      type: object
-      example:
-        appUpload: {}
-      properties:
-        appUpload:
-          allOf:
-          - $ref: '#/components/schemas/Upload'
-          - description: An app to upload or that has been uploaded.
-      description: Represents the response from the server after AWS Device Farm makes a request to install to a remote access session.
-    DateTime:
-      type: string
-      format: date-time
     ServiceAccountException: {}
-    NotFoundException: {}
-    ContentType:
-      type: string
-      minLength: 0
-      maxLength: 64
-    UploadType:
-      type: string
-      enum:
-      - ANDROID_APP
-      - IOS_APP
-      - WEB_APP
-      - EXTERNAL_DATA
-      - APPIUM_JAVA_JUNIT_TEST_PACKAGE
-      - APPIUM_JAVA_TESTNG_TEST_PACKAGE
-      - APPIUM_PYTHON_TEST_PACKAGE
-      - APPIUM_NODE_TEST_PACKAGE
-      - APPIUM_RUBY_TEST_PACKAGE
-      - APPIUM_WEB_JAVA_JUNIT_TEST_PACKAGE
-      - APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE
-      - APPIUM_WEB_PYTHON_TEST_PACKAGE
-      - APPIUM_WEB_NODE_TEST_PACKAGE
-      - APPIUM_WEB_RUBY_TEST_PACKAGE
-      - CALABASH_TEST_PACKAGE
-      - INSTRUMENTATION_TEST_PACKAGE
-      - UIAUTOMATION_TEST_PACKAGE
-      - UIAUTOMATOR_TEST_PACKAGE
-      - XCTEST_TEST_PACKAGE
-      - XCTEST_UI_TEST_PACKAGE
-      - APPIUM_JAVA_JUNIT_TEST_SPEC
-      - APPIUM_JAVA_TESTNG_TEST_SPEC
-      - APPIUM_PYTHON_TEST_SPEC
-      - APPIUM_NODE_TEST_SPEC
-      - APPIUM_RUBY_TEST_SPEC
-      - APPIUM_WEB_JAVA_JUNIT_TEST_SPEC
-      - APPIUM_WEB_JAVA_TESTNG_TEST_SPEC
-      - APPIUM_WEB_PYTHON_TEST_SPEC
-      - APPIUM_WEB_NODE_TEST_SPEC
-      - APPIUM_WEB_RUBY_TEST_SPEC
-      - INSTRUMENTATION_TEST_SPEC
-      - XCTEST_UI_TEST_SPEC
-    Metadata:
-      type: string
-      minLength: 0
-      maxLength: 8192
-    InstallToRemoteAccessSessionRequest:
-      type: object
-      required:
-      - remoteAccessSessionArn
-      - appArn
-      title: InstallToRemoteAccessSessionRequest
-      properties:
-        remoteAccessSessionArn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The Amazon Resource Name (ARN) of the remote access session about which you are requesting information.
-        appArn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The ARN of the app about which you are requesting information.
-      description: Represents the request to install an Android application (in .apk format) or an iOS application (in .ipa format) as part of a remote access session.
     Upload:
       type: object
       properties:
@@ -355,6 +228,70 @@ components:
           - $ref: '#/components/schemas/UploadCategory'
           - description: '<p>The upload''s category. Allowed values include:</p> <ul> <li> <p>CURATED: An upload managed by AWS Device Farm.</p> </li> <li> <p>PRIVATE: An upload managed by the AWS Device Farm customer.</p> </li> </ul>'
       description: An app or a set of one or more tests to upload or that have been uploaded.
+    InstallToRemoteAccessSessionRequest:
+      type: object
+      required:
+      - remoteAccessSessionArn
+      - appArn
+      title: InstallToRemoteAccessSessionRequest
+      properties:
+        remoteAccessSessionArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the remote access session about which you are requesting information.
+        appArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN of the app about which you are requesting information.
+      description: Represents the request to install an Android application (in .apk format) or an iOS application (in .ipa format) as part of a remote access session.
+    UploadType:
+      type: string
+      enum:
+      - ANDROID_APP
+      - IOS_APP
+      - WEB_APP
+      - EXTERNAL_DATA
+      - APPIUM_JAVA_JUNIT_TEST_PACKAGE
+      - APPIUM_JAVA_TESTNG_TEST_PACKAGE
+      - APPIUM_PYTHON_TEST_PACKAGE
+      - APPIUM_NODE_TEST_PACKAGE
+      - APPIUM_RUBY_TEST_PACKAGE
+      - APPIUM_WEB_JAVA_JUNIT_TEST_PACKAGE
+      - APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE
+      - APPIUM_WEB_PYTHON_TEST_PACKAGE
+      - APPIUM_WEB_NODE_TEST_PACKAGE
+      - APPIUM_WEB_RUBY_TEST_PACKAGE
+      - CALABASH_TEST_PACKAGE
+      - INSTRUMENTATION_TEST_PACKAGE
+      - UIAUTOMATION_TEST_PACKAGE
+      - UIAUTOMATOR_TEST_PACKAGE
+      - XCTEST_TEST_PACKAGE
+      - XCTEST_UI_TEST_PACKAGE
+      - APPIUM_JAVA_JUNIT_TEST_SPEC
+      - APPIUM_JAVA_TESTNG_TEST_SPEC
+      - APPIUM_PYTHON_TEST_SPEC
+      - APPIUM_NODE_TEST_SPEC
+      - APPIUM_RUBY_TEST_SPEC
+      - APPIUM_WEB_JAVA_JUNIT_TEST_SPEC
+      - APPIUM_WEB_JAVA_TESTNG_TEST_SPEC
+      - APPIUM_WEB_PYTHON_TEST_SPEC
+      - APPIUM_WEB_NODE_TEST_SPEC
+      - APPIUM_WEB_RUBY_TEST_SPEC
+      - INSTRUMENTATION_TEST_SPEC
+      - XCTEST_UI_TEST_SPEC
+    Metadata:
+      type: string
+      minLength: 0
+      maxLength: 8192
+    Message:
+      type: string
+      minLength: 0
+      maxLength: 16384
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
     UploadCategory:
       type: string
       enum:
@@ -367,6 +304,78 @@ components:
       - PROCESSING
       - SUCCEEDED
       - FAILED
+    SensitiveURL:
+      type: string
+      minLength: 0
+      maxLength: 2048
+      format: password
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
+    NotFoundException: {}
+    InstallToRemoteAccessSessionResult:
+      type: object
+      example:
+        appUpload: {}
+      properties:
+        appUpload:
+          allOf:
+          - $ref: '#/components/schemas/Upload'
+          - description: An app to upload or that has been uploaded.
+      description: Represents the response from the server after AWS Device Farm makes a request to install to a remote access session.
+    ArgumentException: {}
+    ContentType:
+      type: string
+      minLength: 0
+      maxLength: 64
+    DateTime:
+      type: string
+      format: date-time
+    LimitExceededException: {}
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListOfferingPromotions #X Amz Target=DeviceFarm 20150623.ListOfferingPromotions #X Amz Target=DeviceFarm 20150623.ListOfferingPromotions API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -124,7 +131,7 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: ListOfferingPromotions
-      description: Returns a list of offering promotions. Each offering promotion record contains the ID and description of the promotion. The API returns a <code>NotEligible</code> error if the caller is not permitted to invoke the operation. Contact <a href="mailto:aws-devicefarm-support@amazon.com">aws-devicefarm-support@amazon.com</a> if you must be able to invoke this operation.
+      description: Returns a list of offering promotions. Each offering promotion record contains the ID and description of the promotion. The API returns a NotEligible error if the caller is not permitted to invoke the operation. Contact aws-devicefarm-support@amazon.com if you must be able to invoke this operation.
       responses:
         '200':
           description: Success
@@ -178,8 +185,80 @@ paths:
           - DeviceFarm_20150623.ListOfferingPromotions
       tags:
       - '#X Amz Target=DeviceFarm 20150623.ListOfferingPromotions'
+      summary: List offering promotions
+      x-summary-source: derived
 components:
+  schemas:
+    ServiceAccountException: {}
+    ListOfferingPromotionsRequest:
+      type: object
+      title: ListOfferingPromotionsRequest
+      properties:
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+    OfferingPromotions:
+      type: array
+      items:
+        $ref: '#/components/schemas/OfferingPromotion'
+    Message:
+      type: string
+      minLength: 0
+      maxLength: 16384
+    ListOfferingPromotionsResult:
+      type: object
+      properties:
+        offeringPromotions:
+          allOf:
+          - $ref: '#/components/schemas/OfferingPromotions'
+          - description: Information about the offering promotions.
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: An identifier to be used in the next call to this operation, to return the next set of items in the list.
+    NotFoundException: {}
+    PaginationToken:
+      type: string
+      minLength: 4
+      maxLength: 1024
+    OfferingPromotionIdentifier:
+      type: string
+      minLength: 4
+    ArgumentException: {}
+    OfferingPromotion:
+      type: object
+      properties:
+        id:
+          allOf:
+          - $ref: '#/components/schemas/OfferingPromotionIdentifier'
+          - description: The ID of the offering promotion.
+        description:
+          allOf:
+          - $ref: '#/components/schemas/Message'
+          - description: A string that describes the offering promotion.
+      description: Represents information about an offering promotion.
+    NotEligibleException: {}
+    LimitExceededException: {}
   parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Security-Token:
       name: X-Amz-Security-Token
       in: header
@@ -198,82 +277,12 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
-  schemas:
-    NotEligibleException: {}
-    Message:
-      type: string
-      minLength: 0
-      maxLength: 16384
-    LimitExceededException: {}
-    PaginationToken:
-      type: string
-      minLength: 4
-      maxLength: 1024
-    ArgumentException: {}
-    OfferingPromotion:
-      type: object
-      properties:
-        id:
-          allOf:
-          - $ref: '#/components/schemas/OfferingPromotionIdentifier'
-          - description: The ID of the offering promotion.
-        description:
-          allOf:
-          - $ref: '#/components/schemas/Message'
-          - description: A string that describes the offering promotion.
-      description: Represents information about an offering promotion.
-    ServiceAccountException: {}
-    NotFoundException: {}
-    OfferingPromotionIdentifier:
-      type: string
-      minLength: 4
-    ListOfferingPromotionsResult:
-      type: object
-      properties:
-        offeringPromotions:
-          allOf:
-          - $ref: '#/components/schemas/OfferingPromotions'
-          - description: Information about the offering promotions.
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: An identifier to be used in the next call to this operation, to return the next set of items in the list.
-    ListOfferingPromotionsRequest:
-      type: object
-      title: ListOfferingPromotionsRequest
-      properties:
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
-    OfferingPromotions:
-      type: array
-      items:
-        $ref: '#/components/schemas/OfferingPromotion'
   securitySchemes:
     hmac:
       type: apiKey

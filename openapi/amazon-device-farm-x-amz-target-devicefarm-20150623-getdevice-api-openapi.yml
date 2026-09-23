@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetDevice #X Amz Target=DeviceFarm 20150623.GetDevice #X Amz Target=DeviceFarm 20150623.GetDevice API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.GetDevice…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -172,51 +179,11 @@ paths:
           - DeviceFarm_20150623.GetDevice
       tags:
       - '#X Amz Target=DeviceFarm 20150623.GetDevice'
+      summary: Get device
+      x-summary-source: derived
 components:
-  parameters:
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
+    ServiceAccountException: {}
     GetDeviceRequest:
       type: object
       required:
@@ -228,12 +195,99 @@ components:
           - $ref: '#/components/schemas/AmazonResourceName'
           - description: The device type's ARN.
       description: Represents a request to the get device request.
+    Long:
+      type: integer
+    Integer:
+      type: integer
+    InstanceLabels:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
     Message:
       type: string
       minLength: 0
       maxLength: 16384
+    CPU:
+      type: object
+      properties:
+        frequency:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The CPU's frequency.
+        architecture:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The CPU's architecture (for example, x86 or ARM).
+        clock:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: The clock speed of the device's CPU, expressed in hertz (Hz). For example, a 1.2 GHz CPU is expressed as 1200000000.
+      description: Represents the amount of CPU that an app is using on a physical device. Does not represent system-wide CPU usage.
+    Boolean:
+      type: boolean
+    DeviceInstance:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the device instance.
+        deviceArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN of the device.
+        labels:
+          allOf:
+          - $ref: '#/components/schemas/InstanceLabels'
+          - description: An array of strings that describe the device instance.
+        status:
+          allOf:
+          - $ref: '#/components/schemas/InstanceStatus'
+          - description: The status of the device instance. Valid values are listed here.
+        udid:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: Unique device identifier for the device instance.
+        instanceProfile:
+          allOf:
+          - $ref: '#/components/schemas/InstanceProfile'
+          - description: A object that contains information about the instance profile.
+      description: Represents the device instance.
+    DeviceAvailability:
+      type: string
+      enum:
+      - TEMPORARY_NOT_AVAILABLE
+      - BUSY
+      - AVAILABLE
+      - HIGHLY_AVAILABLE
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    PackageIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
     String:
       type: string
+    NotFoundException: {}
+    Resolution:
+      type: object
+      properties:
+        width:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The screen resolution's width, expressed in pixels.
+        height:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The screen resolution's height, expressed in pixels.
+      description: Represents the screen resolution of a device in height and width, expressed in pixels.
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
     InstanceProfile:
       type: object
       properties:
@@ -262,83 +316,26 @@ components:
           - $ref: '#/components/schemas/Message'
           - description: The description of the instance profile.
       description: Represents the instance profile.
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
-    AmazonResourceName:
-      type: string
-      pattern: ^arn:.+
-      minLength: 32
-      maxLength: 1011
-    ArgumentException: {}
-    LimitExceededException: {}
-    Double:
-      type: number
-      format: double
-    PackageIds:
-      type: array
-      items:
-        $ref: '#/components/schemas/String'
-    DeviceFormFactor:
-      type: string
-      enum:
-      - PHONE
-      - TABLET
-    Boolean:
-      type: boolean
-    CPU:
-      type: object
-      properties:
-        frequency:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: The CPU's frequency.
-        architecture:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: The CPU's architecture (for example, x86 or ARM).
-        clock:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: The clock speed of the device's CPU, expressed in hertz (Hz). For example, a 1.2 GHz CPU is expressed as 1200000000.
-      description: Represents the amount of CPU that an app is using on a physical device. Does not represent system-wide CPU usage.
     DeviceInstances:
       type: array
       items:
         $ref: '#/components/schemas/DeviceInstance'
-    Resolution:
-      type: object
-      properties:
-        width:
-          allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The screen resolution's width, expressed in pixels.
-        height:
-          allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The screen resolution's height, expressed in pixels.
-      description: Represents the screen resolution of a device in height and width, expressed in pixels.
-    InstanceLabels:
-      type: array
-      items:
-        $ref: '#/components/schemas/String'
-    Long:
-      type: integer
+    InstanceStatus:
+      type: string
+      enum:
+      - IN_USE
+      - PREPARING
+      - AVAILABLE
+      - NOT_AVAILABLE
+    Double:
+      type: number
+      format: double
     DevicePlatform:
       type: string
       enum:
       - ANDROID
       - IOS
-    ServiceAccountException: {}
-    NotFoundException: {}
-    DeviceAvailability:
-      type: string
-      enum:
-      - TEMPORARY_NOT_AVAILABLE
-      - BUSY
-      - AVAILABLE
-      - HIGHLY_AVAILABLE
+    ArgumentException: {}
     Device:
       type: object
       properties:
@@ -454,43 +451,55 @@ components:
           - $ref: '#/components/schemas/Device'
           - description: An object that contains information about the requested device.
       description: Represents the result of a get device request.
-    DeviceInstance:
-      type: object
-      properties:
-        arn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The Amazon Resource Name (ARN) of the device instance.
-        deviceArn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The ARN of the device.
-        labels:
-          allOf:
-          - $ref: '#/components/schemas/InstanceLabels'
-          - description: An array of strings that describe the device instance.
-        status:
-          allOf:
-          - $ref: '#/components/schemas/InstanceStatus'
-          - description: The status of the device instance. Valid values are listed here.
-        udid:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: Unique device identifier for the device instance.
-        instanceProfile:
-          allOf:
-          - $ref: '#/components/schemas/InstanceProfile'
-          - description: A object that contains information about the instance profile.
-      description: Represents the device instance.
-    Integer:
-      type: integer
-    InstanceStatus:
+    DeviceFormFactor:
       type: string
       enum:
-      - IN_USE
-      - PREPARING
-      - AVAILABLE
-      - NOT_AVAILABLE
+      - PHONE
+      - TABLET
+    LimitExceededException: {}
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

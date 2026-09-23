@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.ListJobs #X Amz Target=DeviceFarm 20150623.ListJobs #X Amz Target=DeviceFarm 20150623.ListJobs API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.ListJobs…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -178,57 +185,161 @@ paths:
           - DeviceFarm_20150623.ListJobs
       tags:
       - '#X Amz Target=DeviceFarm 20150623.ListJobs'
+      summary: List jobs
+      x-summary-source: derived
 components:
-  parameters:
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
+    ServiceAccountException: {}
+    ListJobsResult:
+      type: object
+      properties:
+        jobs:
+          allOf:
+          - $ref: '#/components/schemas/Jobs'
+          - description: Information about the jobs.
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: If the number of items that are returned is significantly large, this is an identifier that is also returned. It can be used in a subsequent call to this operation to return the next set of items in the list.
+      description: Represents the result of a list jobs request.
+    ExecutionStatus:
+      type: string
+      enum:
+      - PENDING
+      - PENDING_CONCURRENCY
+      - PENDING_DEVICE
+      - PROCESSING
+      - SCHEDULING
+      - PREPARING
+      - RUNNING
+      - COMPLETED
+      - STOPPING
+    ListJobsRequest:
+      type: object
+      required:
+      - arn
+      title: ListJobsRequest
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The run's Amazon Resource Name (ARN).
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/PaginationToken'
+          - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+      description: Represents a request to the list jobs operation.
+    DeviceMinutes:
+      type: object
+      properties:
+        total:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents the total minutes used by the resource to run tests.
+        metered:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents only the sum of metered minutes used by the resource to run tests.
+        unmetered:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: When specified, represents only the sum of unmetered minutes used by the resource to run tests.
+      description: Represents the total (metered or unmetered) minutes used by the resource to run tests. Contains the sum of minutes consumed by all children.
+    Long:
+      type: integer
+    Integer:
+      type: integer
+    VideoCapture:
+      type: boolean
+    InstanceLabels:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
     Message:
       type: string
       minLength: 0
       maxLength: 16384
+    CPU:
+      type: object
+      properties:
+        frequency:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The CPU's frequency.
+        architecture:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: The CPU's architecture (for example, x86 or ARM).
+        clock:
+          allOf:
+          - $ref: '#/components/schemas/Double'
+          - description: The clock speed of the device's CPU, expressed in hertz (Hz). For example, a 1.2 GHz CPU is expressed as 1200000000.
+      description: Represents the amount of CPU that an app is using on a physical device. Does not represent system-wide CPU usage.
+    Boolean:
+      type: boolean
+    DeviceInstance:
+      type: object
+      properties:
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The Amazon Resource Name (ARN) of the device instance.
+        deviceArn:
+          allOf:
+          - $ref: '#/components/schemas/AmazonResourceName'
+          - description: The ARN of the device.
+        labels:
+          allOf:
+          - $ref: '#/components/schemas/InstanceLabels'
+          - description: An array of strings that describe the device instance.
+        status:
+          allOf:
+          - $ref: '#/components/schemas/InstanceStatus'
+          - description: The status of the device instance. Valid values are listed here.
+        udid:
+          allOf:
+          - $ref: '#/components/schemas/String'
+          - description: Unique device identifier for the device instance.
+        instanceProfile:
+          allOf:
+          - $ref: '#/components/schemas/InstanceProfile'
+          - description: A object that contains information about the instance profile.
+      description: Represents the device instance.
+    DeviceAvailability:
+      type: string
+      enum:
+      - TEMPORARY_NOT_AVAILABLE
+      - BUSY
+      - AVAILABLE
+      - HIGHLY_AVAILABLE
+    AmazonResourceName:
+      type: string
+      pattern: ^arn:.+
+      minLength: 32
+      maxLength: 1011
+    PackageIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/String'
+    Name:
+      type: string
+      minLength: 0
+      maxLength: 256
     String:
       type: string
+    Resolution:
+      type: object
+      properties:
+        width:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The screen resolution's width, expressed in pixels.
+        height:
+          allOf:
+          - $ref: '#/components/schemas/Integer'
+          - description: The screen resolution's height, expressed in pixels.
+      description: Represents the screen resolution of a device in height and width, expressed in pixels.
+    NotFoundException: {}
     InstanceProfile:
       type: object
       properties:
@@ -257,76 +368,21 @@ components:
           - $ref: '#/components/schemas/Message'
           - description: The description of the instance profile.
       description: Represents the instance profile.
-    Name:
-      type: string
-      minLength: 0
-      maxLength: 256
-    ListJobsRequest:
-      type: object
-      required:
-      - arn
-      title: ListJobsRequest
-      properties:
-        arn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The run's Amazon Resource Name (ARN).
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
-      description: Represents a request to the list jobs operation.
-    ExecutionStatus:
-      type: string
-      enum:
-      - PENDING
-      - PENDING_CONCURRENCY
-      - PENDING_DEVICE
-      - PROCESSING
-      - SCHEDULING
-      - PREPARING
-      - RUNNING
-      - COMPLETED
-      - STOPPING
-    AmazonResourceName:
-      type: string
-      pattern: ^arn:.+
-      minLength: 32
-      maxLength: 1011
-    LimitExceededException: {}
-    ExecutionResult:
-      type: string
-      enum:
-      - PENDING
-      - PASSED
-      - WARNED
-      - FAILED
-      - SKIPPED
-      - ERRORED
-      - STOPPED
     PaginationToken:
       type: string
       minLength: 4
       maxLength: 1024
-    ArgumentException: {}
-    PackageIds:
+    DeviceInstances:
       type: array
       items:
-        $ref: '#/components/schemas/String'
-    Jobs:
-      type: array
-      items:
-        $ref: '#/components/schemas/Job'
-    Double:
-      type: number
-      format: double
-    DeviceFormFactor:
+        $ref: '#/components/schemas/DeviceInstance'
+    InstanceStatus:
       type: string
       enum:
-      - PHONE
-      - TABLET
-    Boolean:
-      type: boolean
+      - IN_USE
+      - PREPARING
+      - AVAILABLE
+      - NOT_AVAILABLE
     Counters:
       type: object
       properties:
@@ -359,56 +415,17 @@ components:
           - $ref: '#/components/schemas/Integer'
           - description: The number of skipped entities.
       description: Represents entity counters.
-    CPU:
-      type: object
-      properties:
-        frequency:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: The CPU's frequency.
-        architecture:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: The CPU's architecture (for example, x86 or ARM).
-        clock:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: The clock speed of the device's CPU, expressed in hertz (Hz). For example, a 1.2 GHz CPU is expressed as 1200000000.
-      description: Represents the amount of CPU that an app is using on a physical device. Does not represent system-wide CPU usage.
-    DeviceInstances:
-      type: array
-      items:
-        $ref: '#/components/schemas/DeviceInstance'
-    Resolution:
-      type: object
-      properties:
-        width:
-          allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The screen resolution's width, expressed in pixels.
-        height:
-          allOf:
-          - $ref: '#/components/schemas/Integer'
-          - description: The screen resolution's height, expressed in pixels.
-      description: Represents the screen resolution of a device in height and width, expressed in pixels.
+    Double:
+      type: number
+      format: double
     DateTime:
       type: string
       format: date-time
-    InstanceLabels:
-      type: array
-      items:
-        $ref: '#/components/schemas/String'
-    Long:
-      type: integer
     DevicePlatform:
       type: string
       enum:
       - ANDROID
       - IOS
-    ServiceAccountException: {}
-    NotFoundException: {}
-    VideoCapture:
-      type: boolean
     TestType:
       type: string
       enum:
@@ -433,13 +450,7 @@ components:
       - XCTEST_UI
       - REMOTE_ACCESS_RECORD
       - REMOTE_ACCESS_REPLAY
-    DeviceAvailability:
-      type: string
-      enum:
-      - TEMPORARY_NOT_AVAILABLE
-      - BUSY
-      - AVAILABLE
-      - HIGHLY_AVAILABLE
+    ArgumentException: {}
     Device:
       type: object
       properties:
@@ -528,34 +539,20 @@ components:
           - $ref: '#/components/schemas/DeviceAvailability'
           - description: Indicates how likely a device is available for a test run. Currently available in the <a>ListDevices</a> and GetDevice API methods.
       description: Represents a device type that an app is tested against.
-    ListJobsResult:
-      type: object
-      properties:
-        jobs:
-          allOf:
-          - $ref: '#/components/schemas/Jobs'
-          - description: Information about the jobs.
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/PaginationToken'
-          - description: If the number of items that are returned is significantly large, this is an identifier that is also returned. It can be used in a subsequent call to this operation to return the next set of items in the list.
-      description: Represents the result of a list jobs request.
-    DeviceMinutes:
-      type: object
-      properties:
-        total:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: When specified, represents the total minutes used by the resource to run tests.
-        metered:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: When specified, represents only the sum of metered minutes used by the resource to run tests.
-        unmetered:
-          allOf:
-          - $ref: '#/components/schemas/Double'
-          - description: When specified, represents only the sum of unmetered minutes used by the resource to run tests.
-      description: Represents the total (metered or unmetered) minutes used by the resource to run tests. Contains the sum of minutes consumed by all children.
+    ExecutionResult:
+      type: string
+      enum:
+      - PENDING
+      - PASSED
+      - WARNED
+      - FAILED
+      - SKIPPED
+      - ERRORED
+      - STOPPED
+    Jobs:
+      type: array
+      items:
+        $ref: '#/components/schemas/Job'
     Job:
       type: object
       properties:
@@ -620,43 +617,55 @@ components:
           - $ref: '#/components/schemas/VideoCapture'
           - description: This value is set to true if video capture is enabled. Otherwise, it is set to false.
       description: Represents a device.
-    DeviceInstance:
-      type: object
-      properties:
-        arn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The Amazon Resource Name (ARN) of the device instance.
-        deviceArn:
-          allOf:
-          - $ref: '#/components/schemas/AmazonResourceName'
-          - description: The ARN of the device.
-        labels:
-          allOf:
-          - $ref: '#/components/schemas/InstanceLabels'
-          - description: An array of strings that describe the device instance.
-        status:
-          allOf:
-          - $ref: '#/components/schemas/InstanceStatus'
-          - description: The status of the device instance. Valid values are listed here.
-        udid:
-          allOf:
-          - $ref: '#/components/schemas/String'
-          - description: Unique device identifier for the device instance.
-        instanceProfile:
-          allOf:
-          - $ref: '#/components/schemas/InstanceProfile'
-          - description: A object that contains information about the instance profile.
-      description: Represents the device instance.
-    Integer:
-      type: integer
-    InstanceStatus:
+    DeviceFormFactor:
       type: string
       enum:
-      - IN_USE
-      - PREPARING
-      - AVAILABLE
-      - NOT_AVAILABLE
+      - PHONE
+      - TABLET
+    LimitExceededException: {}
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

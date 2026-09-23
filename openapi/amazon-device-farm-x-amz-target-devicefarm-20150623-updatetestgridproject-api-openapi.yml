@@ -1,9 +1,15 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-06-23
   x-release: v4
-  title: 'AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.UpdateTestGridProject #X Amz Target=DeviceFarm 20150623.UpdateTestGridProject #X Amz Target=DeviceFarm 20150623.UpdateTestGridProject API'
-  description: <p>Welcome to the AWS Device Farm API documentation, which contains APIs for:</p> <ul> <li> <p>Testing on desktop browsers</p> <p> Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium. The APIs for desktop browser testing contain <code>TestGrid</code> in their names. For more information, see <a href="https://docs.aws.amazon.com/devicefarm/latest/testgrid/">Testing Web Applications on Selenium with Device Farm</a>.</p> </li> <li> <p>Testing on real mobile devices</p> <p>Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the <a href="https://docs.aws.amazon.com/devicefarm/latest/developerguide/">Device Farm Developer Guide</a>.</p> </li> </ul>
+  title: 'AWS Device Farm #X Amz Target=DeviceFarm…'
+  description: 'Welcome to the AWS Device Farm API documentation, which contains APIs for:
+
+
+    Testing on desktop browsers
+
+
+    Device Farm makes it possible for you to test your web applications on desktop browsers using Selenium.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +29,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/devicefarm-2015-06-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -172,99 +179,32 @@ paths:
           - DeviceFarm_20150623.UpdateTestGridProject
       tags:
       - '#X Amz Target=DeviceFarm 20150623.UpdateTestGridProject'
+      summary: Update test grid project
+      x-summary-source: derived
 components:
-  parameters:
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
+    NonEmptyString:
+      type: string
+      pattern: .*\S.*
+      minLength: 1
+      maxLength: 4096
+    DeviceFarmArn:
+      type: string
+      pattern: ^arn:aws:devicefarm:.+
+      minLength: 32
+      maxLength: 1011
+    SubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/NonEmptyString'
+      minItems: 1
+      maxItems: 8
     SecurityGroupIds:
       type: array
       items:
         $ref: '#/components/schemas/NonEmptyString'
       minItems: 1
       maxItems: 5
-    String:
-      type: string
-    TestGridVpcConfig:
-      type: object
-      required:
-      - securityGroupIds
-      - subnetIds
-      - vpcId
-      properties:
-        securityGroupIds:
-          allOf:
-          - $ref: '#/components/schemas/SecurityGroupIds'
-          - description: A list of VPC security group IDs in your Amazon VPC.
-        subnetIds:
-          allOf:
-          - $ref: '#/components/schemas/SubnetIds'
-          - description: A list of VPC subnet IDs in your Amazon VPC.
-        vpcId:
-          allOf:
-          - $ref: '#/components/schemas/NonEmptyString'
-          - description: The ID of the Amazon VPC.
-      description: The VPC security groups and subnets that are attached to a project.
-    NonEmptyString:
-      type: string
-      pattern: .*\S.*
-      minLength: 1
-      maxLength: 4096
-    LimitExceededException: {}
-    ArgumentException: {}
-    ResourceDescription:
-      type: string
-      pattern: .*\S.*
-      minLength: 1
-      maxLength: 2048
-    ResourceName:
-      type: string
-      pattern: .*\S.*
-      minLength: 1
-      maxLength: 64
-    DateTime:
-      type: string
-      format: date-time
     TestGridProject:
       type: object
       properties:
@@ -289,26 +229,11 @@ components:
           - $ref: '#/components/schemas/DateTime'
           - description: When the project was created.
       description: A Selenium testing project. Projects are used to collect and collate sessions.
-    NotFoundException: {}
-    UpdateTestGridProjectResult:
-      type: object
-      properties:
-        testGridProject:
-          allOf:
-          - $ref: '#/components/schemas/TestGridProject'
-          - description: The project, including updated information.
-    DeviceFarmArn:
+    ResourceName:
       type: string
-      pattern: ^arn:aws:devicefarm:.+
-      minLength: 32
-      maxLength: 1011
-    SubnetIds:
-      type: array
-      items:
-        $ref: '#/components/schemas/NonEmptyString'
-      minItems: 1
-      maxItems: 8
-    InternalServiceException: {}
+      pattern: .*\S.*
+      minLength: 1
+      maxLength: 64
     UpdateTestGridProjectRequest:
       type: object
       required:
@@ -331,6 +256,90 @@ components:
           allOf:
           - $ref: '#/components/schemas/TestGridVpcConfig'
           - description: The VPC security groups and subnets that are attached to a project.
+    UpdateTestGridProjectResult:
+      type: object
+      properties:
+        testGridProject:
+          allOf:
+          - $ref: '#/components/schemas/TestGridProject'
+          - description: The project, including updated information.
+    NotFoundException: {}
+    String:
+      type: string
+    InternalServiceException: {}
+    ResourceDescription:
+      type: string
+      pattern: .*\S.*
+      minLength: 1
+      maxLength: 2048
+    TestGridVpcConfig:
+      type: object
+      required:
+      - securityGroupIds
+      - subnetIds
+      - vpcId
+      properties:
+        securityGroupIds:
+          allOf:
+          - $ref: '#/components/schemas/SecurityGroupIds'
+          - description: A list of VPC security group IDs in your Amazon VPC.
+        subnetIds:
+          allOf:
+          - $ref: '#/components/schemas/SubnetIds'
+          - description: A list of VPC subnet IDs in your Amazon VPC.
+        vpcId:
+          allOf:
+          - $ref: '#/components/schemas/NonEmptyString'
+          - description: The ID of the Amazon VPC.
+      description: The VPC security groups and subnets that are attached to a project.
+    ArgumentException: {}
+    DateTime:
+      type: string
+      format: date-time
+    LimitExceededException: {}
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey
