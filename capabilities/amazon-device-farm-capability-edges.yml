@@ -11,7 +11,7 @@ capability_model:
   attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
     CC BY 4.0
   notice: NOTICE
-edge_count: 32
+edge_count: 33
 edges:
 - tag: '#X Amz Target=DeviceFarm 20150623.ScheduleRun'
   spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api-openapi.yml
@@ -68,6 +68,16 @@ edges:
   evidence: 'ListTests ... schemas: Test, ExecutionResult, Counters, TestType, ListTestsResult'
   reason: Enumerates tests and their execution results within test runs — automated test suite stewardship
     / quality engineering, not any business-domain noun.
+- tag: AWS Device Farm
+  spec_file: amazon-device-farm-aws-device-farm-api-openapi.yml
+  capability_id: BC-4200.50
+  capability_id_l1: BC-4200
+  capability_name: Software Quality Engineering
+  confidence: 0.85
+  evidence: '''application testing service that lets you improve the quality of your web and mobile apps
+    by testing them across ... real mobile devices''; CreateDevicePool, CreateTestGridProject, CreateRemoteAccessSession'
+  reason: The surface provisions device pools and test grid projects/sessions to run automated app tests,
+    which is software quality engineering (test execution infrastructure and test suite stewardship).
 - tag: '#X Amz Target=DeviceFarm 20150623.DeleteRun'
   spec_file: amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api-openapi.yml
   capability_id: BC-4200.50
