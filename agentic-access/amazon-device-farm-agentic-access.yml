@@ -1,15 +1,78 @@
-generated: '2026-07-15'
+generated: '2026-09-23'
 method: generated
-source: openapi/amazon-device-farm-openapi.yaml
+source: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api-openapi.yml, openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api-openapi.yml,
+  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api-openapi.yml
 description: Recommended x-agentic-access execution contracts, classified heuristically from
   the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
   audience per deployment. See research/curity/agentic-governance/.
 summary:
   operations: 77
   by_action_class:
-    acting: 77
+    acting: 43
+    connected: 34
   by_consequence:
-    write: 73
+    write: 39
+    read: 34
     physical: 1
     safety-critical: 3
   human_in_the_loop_required: 3
@@ -306,162 +369,102 @@ operations:
   method: post
   operationId: GetAccountSettings
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetDevice
   method: post
   operationId: GetDevice
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetDeviceInstance
   method: post
   operationId: GetDeviceInstance
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetDevicePool
   method: post
   operationId: GetDevicePool
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetDevicePoolCompatibility
   method: post
   operationId: GetDevicePoolCompatibility
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetInstanceProfile
   method: post
   operationId: GetInstanceProfile
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetJob
   method: post
   operationId: GetJob
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetNetworkProfile
   method: post
   operationId: GetNetworkProfile
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetOfferingStatus
   method: post
   operationId: GetOfferingStatus
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetProject
   method: post
   operationId: GetProject
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetRemoteAccessSession
   method: post
   operationId: GetRemoteAccessSession
@@ -498,50 +501,32 @@ operations:
   method: post
   operationId: GetSuite
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetTest
   method: post
   operationId: GetTest
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetTestGridProject
   method: post
   operationId: GetTestGridProject
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.GetTestGridSession
   method: post
   operationId: GetTestGridSession
@@ -578,18 +563,12 @@ operations:
   method: post
   operationId: GetVPCEConfiguration
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.InstallToRemoteAccessSession
   method: post
   operationId: InstallToRemoteAccessSession
@@ -610,178 +589,112 @@ operations:
   method: post
   operationId: ListArtifacts
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListDeviceInstances
   method: post
   operationId: ListDeviceInstances
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListDevicePools
   method: post
   operationId: ListDevicePools
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListDevices
   method: post
   operationId: ListDevices
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListInstanceProfiles
   method: post
   operationId: ListInstanceProfiles
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListJobs
   method: post
   operationId: ListJobs
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListNetworkProfiles
   method: post
   operationId: ListNetworkProfiles
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListOfferingPromotions
   method: post
   operationId: ListOfferingPromotions
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=DeviceFarm_20150623.ListOfferingTransactions
-  method: post
-  operationId: ListOfferingTransactions
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListOfferings
   method: post
   operationId: ListOfferings
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
+- path: /#X-Amz-Target=DeviceFarm_20150623.ListOfferingTransactions
+  method: post
+  operationId: ListOfferingTransactions
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListProjects
   method: post
   operationId: ListProjects
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListRemoteAccessSessions
   method: post
   operationId: ListRemoteAccessSessions
@@ -802,82 +715,52 @@ operations:
   method: post
   operationId: ListRuns
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListSamples
   method: post
   operationId: ListSamples
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListSuites
   method: post
   operationId: ListSuites
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListTagsForResource
   method: post
   operationId: ListTagsForResource
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListTestGridProjects
   method: post
   operationId: ListTestGridProjects
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListTestGridSessionActions
   method: post
   operationId: ListTestGridSessionActions
@@ -930,66 +813,42 @@ operations:
   method: post
   operationId: ListTests
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListUniqueProblems
   method: post
   operationId: ListUniqueProblems
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListUploads
   method: post
   operationId: ListUploads
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.ListVPCEConfigurations
   method: post
   operationId: ListVPCEConfigurations
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=DeviceFarm_20150623.PurchaseOffering
   method: post
   operationId: PurchaseOffering
