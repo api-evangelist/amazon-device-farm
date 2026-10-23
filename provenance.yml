@@ -13,467 +13,467 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   examples/amazon-device-farm-account-settings-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -717,127 +717,7 @@ artifacts:
   json-structure/amazon-device-farm-vpce-configuration-structure.json:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-24T161608.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T125852.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T133943.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T143147.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T154045.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-26T215308.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T094438.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T103455.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T123021.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T132314.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T140727.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-28T221322.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T213958.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T230545.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T203505.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T220315.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-31T223420.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T063623.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T210448.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T222808.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T224043.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T161828.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T174231.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T062714.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T212454.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T224856.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T055819.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T144739.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T195450.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T211839.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T011047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T224210.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T200636.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T213054.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T214843.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T232836.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T204815.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T222408.yml:
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-12T062655.yml:
@@ -921,475 +801,262 @@ artifacts:
   kin/score-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   openapi/_original/amazon-device-farm-openapi.yaml:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api-openapi.yml:
+  openapi/amazon-device-farm-aws-device-farm-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   plans/amazon-device-farm-plans-pricing.yml:
     method: generated
     evidence: declared in the artifact
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getnetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getofferingstatus-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getproject-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getrun-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getsuite-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettest-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-gettestgridsession-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getupload-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-getvpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-installtoremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listartifacts-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdeviceinstances-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevicepools-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listdevices-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listinstanceprofiles-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listjobs-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listnetworkprofiles-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingpromotions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferings-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listofferingtransactions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listprojects-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listremoteaccesssessions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listruns-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsamples-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listsuites-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridprojects-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionactions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessionartifacts-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtestgridsessions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listtests-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuniqueproblems-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listuploads-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-listvpceconfigurations-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-purchaseoffering-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-renewoffering-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-schedulerun-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopjob-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stopremoteaccesssession-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-stoprun-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedeviceinstance-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatedevicepool-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateinstanceprofile-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatenetworkprofile-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateproject-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatetestgridproject-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updateupload-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   rate-limits/amazon-device-farm-rate-limits.yml:
     method: generated
     evidence: declared in the artifact
