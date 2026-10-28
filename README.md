@@ -1,4 +1,4 @@
-# Amazon Device Farm (amazon-device-farm)
+# Amazon Device Farm
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,160 +66,260 @@
 
 AWS Device Farm is an application testing service that lets you improve the quality of your web and mobile apps by testing them across an extensive range of desktop browsers and real mobile devices without having to provision and manage any testing infrastructure.
 
-**URL:** [Visit Amazon Device Farm](https://aws.amazon.com/device-farm/)
+**Areas:** Application Testing · AWS · Device Testing · Mobile Testing · Quality Assurance
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Amazon Device Farm on APIs.io
 
-## Tags:
+Everything profiled for Amazon Device Farm is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amazon-device-farm/](https://apis.io/providers/amazon-device-farm/)** — or go straight to one of the APIs or properties below.
 
- - Application Testing, AWS, Device Testing, Mobile Testing, Quality Assurance
+### APIs (1)
 
-## Timestamps
+- [Amazon Device Farm AWS Device Farm API](https://apis.io/apis/amazon-device-farm/amazon-device-farm-aws-device-farm-api/) — The AWS Device Farm API from Amazon Device Farm — 77 operation(s) for aws device farm.
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### AWS Device Farm API
-The AWS Device Farm API enables programmatic access to create and manage test runs, device pools, projects, and jobs for testing mobile and web applications across real devices and browsers. Supports 77 operations covering projects, runs, devices, uploads, remote access sessions, Selenium test grid, network profiles, instance profiles, VPC endpoint configurations, and resource tagging.
+#### Agentic access (1)
 
-**Human URL:** [https://aws.amazon.com/device-farm/](https://aws.amazon.com/device-farm/)
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags:
+- [Amazon Device Farm Agentic Access](https://apis.io/agentic-access/amazon-device-farm/amazon-device-farm-agentic-access/)
 
- - Application Testing, Device Management, Mobile Testing, Quality Assurance
+#### JSON Schema (26)
 
-#### Properties
+The data models the API reads and writes.
 
-- [Documentation](https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html)
-- [OpenAPI](openapi/amazon-device-farm-openapi.yaml)
-- [GettingStarted](https://aws.amazon.com/device-farm/getting-started/)
-- [Pricing](https://aws.amazon.com/device-farm/pricing/)
-- [FAQ](https://aws.amazon.com/device-farm/faqs/)
-- [JSONSchema - Project](json-schema/amazon-device-farm-project-schema.json)
-- [JSONSchema - Run](json-schema/amazon-device-farm-run-schema.json)
-- [JSONSchema - Device](json-schema/amazon-device-farm-device-schema.json)
-- [JSONSchema - Upload](json-schema/amazon-device-farm-upload-schema.json)
-- [JSONSchema - Device Pool](json-schema/amazon-device-farm-device-pool-schema.json)
-- [JSONStructure - Project](json-structure/amazon-device-farm-project-structure.json)
-- [JSONStructure - Run](json-structure/amazon-device-farm-run-structure.json)
-- [JSONStructure - Device](json-structure/amazon-device-farm-device-structure.json)
-- [JSON-LD](json-ld/amazon-device-farm-context.jsonld)
-- [Example - Project](examples/amazon-device-farm-project-example.json)
-- [Example - Run](examples/amazon-device-farm-run-example.json)
-- [Example - Device](examples/amazon-device-farm-device-example.json)
+- [AccountSettings](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-account-settings/)
+- [Artifact](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-artifact/)
+- [Device](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-device/)
+- [DeviceFilter](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-device-filter/)
+- [DeviceInstance](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-device-instance/)
+- [DevicePool](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-device-pool/)
+- [IncompatibilityMessage](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-incompatibility-message/)
+- [InstanceProfile](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-instance-profile/)
+- [Job](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-job/)
+- [NetworkProfile](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-network-profile/)
+- [Offering](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-offering/)
+- [OfferingTransaction](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-offering-transaction/)
+- [Problem](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-problem/)
+- [Project](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-project/)
+- [RemoteAccessSession](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-remote-access-session/)
+- [Rule](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-rule/)
+- [Run](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-run/)
+- [Sample](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-sample/)
+- [Suite](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-suite/)
+- [Test](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-test/)
+- [TestGridProject](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-test-grid-project/)
+- [TestGridSession](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-test-grid-session/)
+- [TestGridSessionAction](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-test-grid-session-action/)
+- [TestGridSessionArtifact](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-test-grid-session-artifact/)
+- [Upload](https://apis.io/schemas/amazon-device-farm/amazon-device-farm-upload/)
+- …and 1 more published on APIs.io
 
-## Common Properties
+#### JSON Structure (26)
 
-- [Portal](https://aws.amazon.com/device-farm/)
+Data models expressed in JSON Structure.
+
+- [Amazon Device Farm Account Settings Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-account-settings-structure/)
+- [Amazon Device Farm Artifact Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-artifact-structure/)
+- [Amazon Device Farm Device Filter Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-device-filter-structure/)
+- [Amazon Device Farm Device Instance Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-device-instance-structure/)
+- [Amazon Device Farm Device Pool Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-device-pool-structure/)
+- [Amazon Device Farm Device Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-device-structure/)
+- [Amazon Device Farm Incompatibility Message Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-incompatibility-message-structure/)
+- [Amazon Device Farm Instance Profile Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-instance-profile-structure/)
+- [Amazon Device Farm Job Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-job-structure/)
+- [Amazon Device Farm Network Profile Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-network-profile-structure/)
+- [Amazon Device Farm Offering Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-offering-structure/)
+- [Amazon Device Farm Offering Transaction Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-offering-transaction-structure/)
+- [Amazon Device Farm Problem Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-problem-structure/)
+- [Amazon Device Farm Project Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-project-structure/)
+- [Amazon Device Farm Remote Access Session Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-remote-access-session-structure/)
+- [Amazon Device Farm Rule Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-rule-structure/)
+- [Amazon Device Farm Run Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-run-structure/)
+- [Amazon Device Farm Sample Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-sample-structure/)
+- [Amazon Device Farm Suite Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-suite-structure/)
+- [Amazon Device Farm Test Grid Project Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-test-grid-project-structure/)
+- [Amazon Device Farm Test Grid Session Action Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-test-grid-session-action-structure/)
+- [Amazon Device Farm Test Grid Session Artifact Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-test-grid-session-artifact-structure/)
+- [Amazon Device Farm Test Grid Session Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-test-grid-session-structure/)
+- [Amazon Device Farm Test Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-test-structure/)
+- [Amazon Device Farm Upload Structure](https://apis.io/json-structure/amazon-device-farm/amazon-device-farm-upload-structure/)
+- …and 1 more published on APIs.io
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Amazon Device Farm Context](https://apis.io/jsonld/amazon-device-farm/amazon-device-farm-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Amazon Device Farm Vocabulary](https://apis.io/vocabularies/amazon-device-farm/amazon-device-farm-vocabulary/)
+
+#### Examples (26)
+
+Example requests and responses.
+
+- [Amazon Device Farm Account Settings Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-account-settings-example/)
+- [Amazon Device Farm Artifact Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-artifact-example/)
+- [Amazon Device Farm Device Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-device-example/)
+- [Amazon Device Farm Device Filter Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-device-filter-example/)
+- [Amazon Device Farm Device Instance Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-device-instance-example/)
+- [Amazon Device Farm Device Pool Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-device-pool-example/)
+- [Amazon Device Farm Incompatibility Message Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-incompatibility-message-example/)
+- [Amazon Device Farm Instance Profile Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-instance-profile-example/)
+- [Amazon Device Farm Job Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-job-example/)
+- [Amazon Device Farm Network Profile Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-network-profile-example/)
+- [Amazon Device Farm Offering Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-offering-example/)
+- [Amazon Device Farm Offering Transaction Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-offering-transaction-example/)
+- [Amazon Device Farm Problem Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-problem-example/)
+- [Amazon Device Farm Project Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-project-example/)
+- [Amazon Device Farm Remote Access Session Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-remote-access-session-example/)
+- [Amazon Device Farm Rule Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-rule-example/)
+- [Amazon Device Farm Run Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-run-example/)
+- [Amazon Device Farm Sample Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-sample-example/)
+- [Amazon Device Farm Suite Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-suite-example/)
+- [Amazon Device Farm Test Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-test-example/)
+- [Amazon Device Farm Test Grid Project Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-test-grid-project-example/)
+- [Amazon Device Farm Test Grid Session Action Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-test-grid-session-action-example/)
+- [Amazon Device Farm Test Grid Session Artifact Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-test-grid-session-artifact-example/)
+- [Amazon Device Farm Test Grid Session Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-test-grid-session-example/)
+- [Amazon Device Farm Upload Example](https://apis.io/examples/amazon-device-farm/amazon-device-farm-upload-example/)
+- …and 1 more published on APIs.io
+
+#### Collections (154)
+
+Postman and Open Collection request collections.
+
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateInstanceProfile API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-createinstanceprofile-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateNetworkProfile API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-createnetworkprofile-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateProject API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-createproject-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateRemoteAccessSession API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-createremoteaccesssession-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateTestGridProject API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridproject-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateTestGridUrl API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-createtestgridurl-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateUpload API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-createupload-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateVPCEConfiguration API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-createvpceconfiguration-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.DeleteDevicePool API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-deletedevicepool-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.DeleteInstanceProfile API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-deleteinstanceprofile-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.DeleteNetworkProfile API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-deletenetworkprofile-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.DeleteProject API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-deleteproject-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.DeleteRemoteAccessSession API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-deleteremoteaccesssession-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.DeleteRun API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-deleterun-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.DeleteTestGridProject API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-deletetestgridproject-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.DeleteUpload API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-deleteupload-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.DeleteVPCEConfiguration API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-deletevpceconfiguration-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetAccountSettings API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-getaccountsettings-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetDevice API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-getdevice-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetDeviceInstance API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-getdeviceinstance-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetDevicePool API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepool-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetDevicePoolCompatibility API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-getdevicepoolcompatibility-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetInstanceProfile API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-getinstanceprofile-api/)
+- [AWS Device Farm #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.CreateDevicePool #X Amz Target=DeviceFarm 20150623.GetJob API](https://apis.io/collections/amazon-device-farm/open-amazon-device-farm-x-amz-target-devicefarm-20150623-getjob-api/)
+- …and 129 more published on APIs.io
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Amazon Device Farm — jsonschema rules](https://apis.io/rules/amazon-device-farm/amazon-device-farm-jsonschema-spectral-rules/)
+- [Amazon Device Farm API Rules](https://apis.io/rules/amazon-device-farm/amazon-device-farm-spectral-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Amazon Device Farm Authentication](https://apis.io/security/amazon-device-farm/amazon-device-farm-authentication/)
+- [Amazon Device Farm Domain Security](https://apis.io/security/amazon-device-farm/amazon-device-farm-domain-security/)
+- [Amazon Device Farm Trust Center](https://apis.io/security/amazon-device-farm/amazon-device-farm-trust-center/)
+- [Amazon Device Farm Vulnerability Disclosure](https://apis.io/security/amazon-device-farm/amazon-device-farm-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Amazon Device Farm Plans Pricing](https://apis.io/plans/amazon-device-farm/amazon-device-farm-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Amazon Device Farm Rate Limits](https://apis.io/rate-limits/amazon-device-farm/amazon-device-farm-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Amazon Device Farm Finops](https://apis.io/finops/amazon-device-farm/amazon-device-farm-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://aws.amazon.com/device-farm/)
 - [Documentation](https://docs.aws.amazon.com/devicefarm/)
-- [TermsOfService](https://aws.amazon.com/service-terms/)
-- [PrivacyPolicy](https://aws.amazon.com/privacy/)
 - [Support](https://aws.amazon.com/premiumsupport/)
 - [Blog](https://aws.amazon.com/blogs/mobile/category/mobile-services/aws-device-farm/)
-- [GitHubOrganization](https://github.com/aws)
-- [Console](https://console.aws.amazon.com/devicefarm/)
-- [SignUp](https://portal.aws.amazon.com/billing/signup)
-- [Login](https://signin.aws.amazon.com/)
-- [StatusPage](https://health.aws.amazon.com/health/status)
-- [Contact](https://aws.amazon.com/contact-us/)
-- [SpectralRules](rules/amazon-device-farm-spectral-rules.yml)
-- [Vocabulary](vocabulary/amazon-device-farm-vocabulary.yaml)
-- [NaftikoCapability](capabilities/mobile-browser-testing.yaml)
+- [Terms of service](https://aws.amazon.com/service-terms/)
+- [Privacy policy](https://aws.amazon.com/privacy/)
+- [GitHub](https://github.com/aws)
+- [Status](https://health.aws.amazon.com/health/status)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Real Device Testing | Test mobile apps on thousands of real physical Android and iOS devices without managing any device infrastructure. |
-| Desktop Browser Testing | Test web applications on desktop browsers using Selenium RemoteWebDriver through Device Farm's test grid. |
-| Automated Test Frameworks | Supports popular test frameworks including Appium, XCTest, Espresso, Calabash, and built-in fuzz testing. |
-| Remote Access Sessions | Interactively access real devices via remote desktop to manually test and debug your app. |
-| Network Condition Simulation | Simulate different network conditions including bandwidth, latency, and packet loss using network profiles. |
-| Private Device Fleet | Provision and manage private dedicated devices for exclusive use in testing your applications. |
-| VPC Integration | Test apps hosted in private VPCs using VPC endpoint configurations without exposing them publicly. |
-| Parallel Test Execution | Run tests in parallel across multiple devices simultaneously to reduce overall testing time. |
+**Kin Score 54.7** — strong · rubric 0.25.0 · scored 2026-10-23
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 69.0 |
+| Contract governance | 27.3 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 49.5 |
+| Access clarity | 53.9 |
 
-| Name | Description |
-|------|-------------|
-| Mobile App Quality Assurance | Validate mobile app functionality, performance, and compatibility across a wide range of real Android and iOS devices. |
-| Cross-Device Compatibility Testing | Ensure your app behaves correctly on different device manufacturers, screen sizes, OS versions, and hardware configurations. |
-| Web Application Browser Testing | Run Selenium-based browser tests against your web application across multiple desktop browser environments. |
-| CI/CD Test Integration | Integrate device testing into your continuous integration and deployment pipelines for automated quality gates. |
-| App Performance Benchmarking | Measure app performance metrics including CPU usage, memory consumption, and network activity across different devices. |
+**Agent readiness 26.5** — agent-aware
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
 
-| Name | Description |
-|------|-------------|
-| AWS CodePipeline | Integrate Device Farm tests as a stage in your CodePipeline CI/CD pipelines for automated testing. |
-| AWS CodeBuild | Trigger Device Farm test runs from CodeBuild projects as part of build and deploy workflows. |
-| Jenkins | Run Device Farm tests from Jenkins CI using the AWS Device Farm plugin for Jenkins. |
-| Appium | Supports Appium test scripts for both Android and iOS cross-platform mobile testing. |
-| Selenium | Integrates with Selenium RemoteWebDriver for automated desktop browser testing. |
-| GitHub Actions | Trigger Device Farm test runs using the AWS Device Farm GitHub Action in your workflows. |
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
 
-## Artifacts
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amazon-device-farm/](https://apis.io/providers/amazon-device-farm/).
 
-Machine-readable API specifications organized by format.
+## How this profile is made
 
-### OpenAPI
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-- [AWS Device Farm OpenAPI](openapi/amazon-device-farm-openapi.yaml)
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amazon Device Farm: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-### JSON Schema
+## Open an issue
 
-- [Project Schema](json-schema/amazon-device-farm-project-schema.json)
-- [Run Schema](json-schema/amazon-device-farm-run-schema.json)
-- [Job Schema](json-schema/amazon-device-farm-job-schema.json)
-- [Device Schema](json-schema/amazon-device-farm-device-schema.json)
-- [Device Pool Schema](json-schema/amazon-device-farm-device-pool-schema.json)
-- [Upload Schema](json-schema/amazon-device-farm-upload-schema.json)
-- [Artifact Schema](json-schema/amazon-device-farm-artifact-schema.json)
-- [Remote Access Session Schema](json-schema/amazon-device-farm-remote-access-session-schema.json)
-- [Test Grid Project Schema](json-schema/amazon-device-farm-test-grid-project-schema.json)
-- [Network Profile Schema](json-schema/amazon-device-farm-network-profile-schema.json)
-
-### JSON Structure
-
-- [Project Structure](json-structure/amazon-device-farm-project-structure.json)
-- [Run Structure](json-structure/amazon-device-farm-run-structure.json)
-- [Device Structure](json-structure/amazon-device-farm-device-structure.json)
-- [Upload Structure](json-structure/amazon-device-farm-upload-structure.json)
-- [Device Pool Structure](json-structure/amazon-device-farm-device-pool-structure.json)
-
-### JSON-LD
-
-- [Amazon Device Farm Context](json-ld/amazon-device-farm-context.jsonld)
-
-## Capabilities
-
-Naftiko capabilities organized as shared per-API definitions composed into customer-facing workflows.
-
-### Shared Per-API Definitions
-
-- [AWS Device Farm API](capabilities/shared/device-farm-api.yaml) — 22 operations for project management, test scheduling, device catalog, upload handling, and remote access sessions
-
-### Workflow Capabilities
-
-| Workflow | APIs Combined | Tools | Persona |
-|----------|--------------|-------|---------|
-| [Mobile and Browser Testing](capabilities/mobile-browser-testing.yaml) | device-farm | 18 | QA Engineer, Mobile Developer |
-
-## Vocabulary
-
-- [Amazon Device Farm Vocabulary](vocabulary/amazon-device-farm-vocabulary.yaml) — Unified taxonomy mapping 17 resources, 11 actions, 1 workflow, and 2 personas across operational (OpenAPI) and capability (Naftiko) dimensions
-
-## Rules
-
-- [Amazon Device Farm Spectral Rules](rules/amazon-device-farm-spectral-rules.yml) — 25 rules across 9 categories enforcing AWS Device Farm API conventions
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amazon-device-farm/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
