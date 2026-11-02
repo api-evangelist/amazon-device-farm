@@ -1,0 +1,90 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-28'
+method: searched
+source: https://aws.amazon.com/device-farm/pricing/
+sources:
+- https://aws.amazon.com/device-farm/pricing/
+provenance:
+  tool: engine/economics/harvest_pricing.py
+  run: 20261028T161713
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: usage-other
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-28'
+  managed_tier: Pay as you go
+published: true
+note: Pricing based on device minutes, device slots (concurrency), and instance minutes; private devices
+  require contacting sales for exact quote.
+plan_count: 4
+currency: USD
+plans:
+- name: Testing on real mobile devices – Pay as you go
+  price_text: $0.17 / DEVICE MINUTE
+  price: 0.17
+  currency: USD
+  period: per-use
+  unit: device minute
+  included_quota: Your first 1,000 minutes are free*
+- name: Unlimited test and access
+  price_text: STARTS AT $250.00/MONTH
+  price: 250
+  currency: USD
+  period: month
+  unit: device slot per month
+  included_quota: Unlimited testing and remote access per device slot
+- name: Private devices
+  price_text: STARTS AT $200/MONTH.
+  price: 200
+  currency: USD
+  period: month
+  unit: dedicated device
+- name: Testing on desktop browsers – Pay as you go
+  price_text: $0.005 / instance minute
+  price: 0.005
+  currency: USD
+  period: per-use
+  unit: instance minute
+x-canonical:
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
+  models:
+  - hybrid
+  - subscription
+  units:
+  - compute
+  plans:
+  - name: Testing on real mobile devices – Pay as you go
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Unlimited test and access
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Private devices
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Testing on desktop browsers – Pay as you go
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
