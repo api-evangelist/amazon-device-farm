@@ -48,13 +48,14 @@ plans:
   period: per-use
   unit: instance minute
 x-canonical:
-  generated: '2026-11-02'
+  generated: '2026-11-06'
   vocabulary: engine/economics/plans-canonical.yml
   models:
   - hybrid
   - subscription
   units:
   - compute
+  - period
   plans:
   - name: Testing on real mobile devices – Pay as you go
     access: other
@@ -69,7 +70,7 @@ x-canonical:
     model: subscription
     model_how: derived
     units:
-    - other
+    - period
     periods:
     - month
   - name: Private devices
