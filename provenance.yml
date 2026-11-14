@@ -5,10 +5,19 @@ artifacts:
   agentic-access/amazon-device-farm-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/amazon-device-farm-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   authentication/amazon-device-farm-authentication.yml:
     method: derived
     evidence: declared in the artifact
   capabilities/amazon-device-farm-capability-edges.yml:
+    method: unknown
+    evidence: no authorship recorded
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
     method: unknown
     evidence: no authorship recorded
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-createdevicepool-api.opencollection.json:
@@ -473,6 +482,18 @@ artifacts:
   collections/amazon-device-farm-x-amz-target-devicefarm-20150623-updatevpceconfiguration-api.postman_collection.json:
     method: unknown
     evidence: no authorship recorded
+  compliance/amazon-device-farm-compliance.yml:
+    method: harvested
+    evidence: declared in the artifact
+  conformance/amazon-device-farm-conformance.yml:
+    method: derived
+    evidence: declared in the artifact
+  data-model/amazon-device-farm-data-model.yml:
+    method: derived
+    evidence: declared in the artifact
+  errors/amazon-device-farm-problem-types.yml:
+    method: derived
+    evidence: declared in the artifact
   examples/amazon-device-farm-account-settings-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -557,6 +578,9 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
+  hosts/amazon-device-farm-hosts.yml:
+    method: derived
+    evidence: declared in the artifact
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
@@ -725,7 +749,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -794,13 +818,27 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  openapi/_original/amazon-device-farm-openapi.yaml:
-    method: harvested
-    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
-      to the provider's source is unverified
-  openapi/amazon-device-farm-aws-device-farm-api-openapi.yml:
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  llms/amazon-device-farm-llms-provenance.yml:
+    method: unknown
+    evidence: no authorship recorded
+  llms/amazon-device-farm-llms.txt:
+    method: unknown
+    evidence: no authorship recorded
+  mcp/amazon-device-farm-mcp.yml:
     method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+    evidence: declared in the artifact
+  openapi/amazon-device-farm-aws-device-farm-api-openapi.yml:
+    method: unknown
+    evidence: no authorship recorded
+  packages/amazon-device-farm-packages.yml:
+    method: searched
+    evidence: declared in the artifact
+  patterns/amazon-device-farm-patterns.yml:
+    method: derived
+    evidence: declared in the artifact
   plans/amazon-device-farm-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
@@ -1044,6 +1082,9 @@ artifacts:
   rules/amazon-device-farm-jsonschema-spectral-rules.yml:
     method: generated
     evidence: declared in the artifact
+  rules/amazon-device-farm-rules.yml:
+    method: generated
+    evidence: declared in the artifact
   rules/amazon-device-farm-spectral-rules.yml:
     method: generated
     evidence: declared in the artifact
@@ -1060,8 +1101,27 @@ artifacts:
     method: generated
     evidence: declared in the artifact
   smithy/device-farm-2015-06-23.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/device-farm/service/2015-06-23/device-farm-2015-06-23.json
+      (sha256 2a04b105e0ad, fetched 2026-11-11T21:08:22+00:00)
+  terms/amazon-device-farm-terms-of-service.yml:
+    method: harvested
+    evidence: declared in the artifact
+  vendors/amazon-device-farm-vendors.yml:
     method: unknown
     evidence: no authorship recorded
   vocabulary/amazon-device-farm-vocabulary.yaml:
+    method: unknown
+    evidence: no authorship recorded
+  vocabulary/amazon-device-farm-vocabulary.yml:
+    method: derived
+    evidence: declared in the artifact
+  well-known/amazon-device-farm-midway-auth-openid-configuration.json:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-device-farm-security.txt:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-device-farm-well-known.yml:
     method: unknown
     evidence: no authorship recorded

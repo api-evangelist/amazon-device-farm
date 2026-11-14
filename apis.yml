@@ -1,7 +1,9 @@
 name: Amazon Device Farm
+
 description: AWS Device Farm is an application testing service that lets you improve the quality of your web and mobile apps
   by testing them across an extensive range of desktop browsers and real mobile devices without having to provision and manage
   any testing infrastructure.
+
 deliveryModel:
   model: saas
   open_source: false
@@ -14,7 +16,9 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 specificationVersion: '0.23'
+
 accessModel:
   pricing: paid
   onboarding: unknown
@@ -27,56 +31,71 @@ accessModel:
   - plans
   - authentication
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
+
 url: https://aws.amazon.com/device-farm/
+
 created: '2026-03-16'
+
 modified: '2026-05-19'
-apis:
-- aid: amazon-device-farm:amazon-device-farm-aws-device-farm-api
-  name: Amazon Device Farm AWS Device Farm API
-  description: The AWS Device Farm API from Amazon Device Farm — 77 operation(s) for aws device farm.
-  humanURL: https://aws.amazon.com/device-farm/
-  baseURL: https://devicefarm.amazonaws.com
-  tags:
-  - AWS Device Farm
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-device-farm-aws-device-farm-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
-  - type: GettingStarted
-    url: https://aws.amazon.com/device-farm/getting-started/
-  - type: Pricing
-    url: https://aws.amazon.com/device-farm/pricing/
-  - type: FAQ
-    url: https://aws.amazon.com/device-farm/faqs/
-  - type: JSONSchema
-    url: json-schema/amazon-device-farm-project-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-device-farm-run-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-device-farm-device-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-device-farm-upload-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-device-farm-device-pool-schema.json
-  - type: JSONStructure
-    url: json-structure/amazon-device-farm-project-structure.json
-  - type: JSONStructure
-    url: json-structure/amazon-device-farm-run-structure.json
-  - type: JSONStructure
-    url: json-structure/amazon-device-farm-device-structure.json
-  - type: JSONLD
-    url: json-ld/amazon-device-farm-context.jsonld
-  - type: Examples
-    url: examples/amazon-device-farm-project-example.json
-  - type: Examples
-    url: examples/amazon-device-farm-run-example.json
-  - type: Examples
-    url: examples/amazon-device-farm-device-example.json
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+  url: https://apievangelist.com
+
+tags:
+- Application Testing
+- Amazon Web Services
+- Device Testing
+- Mobile Testing
+- Quality Assurance
+tags_raw:
+- Application Testing
+- AWS
+- Device Testing
+- Mobile Testing
+- Quality Assurance
+
 common:
+- type: Spectral
+  url: rules/amazon-device-farm-spectral-rules.yml
+- type: Spectral
+  url: rules/amazon-device-farm-rules.yml
+- type: Spectral
+  url: rules/amazon-device-farm-jsonschema-spectral-rules.yml
+- type: Vocabulary
+  url: vocabulary/amazon-device-farm-vocabulary.yml
+- type: DataModel
+  url: data-model/amazon-device-farm-data-model.yml
+- type: Compliance
+  url: https://aws.amazon.com/compliance/
+- type: ErrorCatalog
+  url: errors/amazon-device-farm-problem-types.yml
+- type: Conformance
+  url: conformance/amazon-device-farm-conformance.yml
+- type: LLMsTxt
+  url: llms/amazon-device-farm-llms.txt
+- type: SecurityTxt
+  url: well-known/amazon-device-farm-security.txt
+- type: WellKnown
+  url: well-known/amazon-device-farm-well-known.yml
+- type: Hosts
+  url: hosts/amazon-device-farm-hosts.yml
+- type: Vendors
+  url: vendors/amazon-device-farm-vendors.yml
+- type: SDKs
+  url: packages/amazon-device-farm-packages.yml
+- type: Packages
+  url: packages/amazon-device-farm-packages.yml
+- type: Security
+  url: https://aws.amazon.com/security/?nc2=h_dsc_aa_sec
+- type: Newsroom
+  url: https://aws.amazon.com/media/?nc2=h_sol_ind_med
+- type: GettingStarted
+  url: https://docs.aws.amazon.com/AmazonRDS/latest/gettingstartedguide/what-is-rds
 - type: Plans
   url: plans/amazon-device-farm-plans-pricing.yml
 - type: RateLimits
@@ -178,6 +197,55 @@ common:
     description: Trigger Device Farm test runs using the AWS Device Farm GitHub Action in your workflows.
 - type: Integrations
   url: https://aws.amazon.com/marketplace
+- type: UsageTerms
+  url: terms/amazon-device-farm-terms-of-service.yml
+- type: Attestations
+  url: compliance/amazon-device-farm-compliance.yml
+- type: AIPreferences
+  url: ai-preferences/amazon-device-farm-ai-preferences.yml
+
+apis:
+- aid: amazon-device-farm:amazon-device-farm-aws-device-farm-api
+  name: Amazon Device Farm AWS Device Farm API
+  description: The AWS Device Farm API from Amazon Device Farm — 77 operation(s) for aws device farm.
+  humanURL: https://aws.amazon.com/device-farm/
+  baseURL: https://devicefarm.amazonaws.com
+  tags:
+  - AWS Device Farm
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-device-farm-aws-device-farm-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html
+  - type: Pricing
+    url: https://aws.amazon.com/device-farm/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/device-farm/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-project-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-run-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-upload-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-device-farm-device-pool-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-project-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-run-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-device-farm-device-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-device-farm-context.jsonld
+  - type: Examples
+    url: examples/amazon-device-farm-project-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-run-example.json
+  - type: Examples
+    url: examples/amazon-device-farm-device-example.json
+
 integrations:
 - name: Sign in
 - name: Agent Mode
@@ -188,21 +256,12 @@ integrations:
 - name: Become a Channel Partner
 - name: Sell in AWS Marketplace
 - name: Manage Your Account
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
-  url: https://apievangelist.com
-tags:
-- Application Testing
-- Amazon Web Services
-- Device Testing
-- Mobile Testing
-- Quality Assurance
-tags_raw:
-- Application Testing
-- AWS
-- Device Testing
-- Mobile Testing
-- Quality Assurance
+
 x-parent: amazon-web-services
+
 x-relationship: product
+x-enrichment:
+  date: '2026-11-11'
+  status: enriched
+  artifacts_added: 14
+  pass: local-v6

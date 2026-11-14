@@ -2,6 +2,7 @@
 generated: '2026-10-28'
 method: searched
 source: https://aws.amazon.com/device-farm/pricing/
+name: Amazon Device Farm API Plans
 sources:
 - https://aws.amazon.com/device-farm/pricing/
 provenance:
@@ -48,7 +49,7 @@ plans:
   period: per-use
   unit: instance minute
 x-canonical:
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   vocabulary: engine/economics/plans-canonical.yml
   models:
   - hybrid
